@@ -1,0 +1,16 @@
+{
+  "name": "biblioteca-ifms-frontend",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces --if-present",
+    "lint": "npm run lint --workspaces --if-present",
+    "dev:backoffice": "npm run dev --workspace @biblioteca-ifms/backoffice",
+    "dev:portal": "npm run dev --workspace @biblioteca-ifms/portal-leitor"
+  }
+}
+

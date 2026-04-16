@@ -1,0 +1,262 @@
+:root {
+  color-scheme: light;
+  font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #163028;
+  background:
+    radial-gradient(circle at top left, rgba(255, 188, 102, 0.34), transparent 26%),
+    radial-gradient(circle at bottom right, rgba(53, 151, 122, 0.18), transparent 22%),
+    linear-gradient(180deg, #fdf6ea 0%, #f7f0e1 58%, #eef3ea 100%);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+code {
+  font-family: "Cascadia Code", Consolas, monospace;
+}
+
+.portal-shell {
+  min-height: 100vh;
+  padding: 1.5rem;
+}
+
+.hero,
+.panel,
+.catalog-card,
+.receipt-card {
+  border-radius: 28px;
+  border: 1px solid rgba(50, 103, 84, 0.12);
+  box-shadow: 0 28px 80px rgba(53, 77, 67, 0.12);
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1.35fr minmax(280px, 360px);
+  gap: 1rem;
+  padding: 1.4rem;
+  background: linear-gradient(145deg, rgba(255, 251, 243, 0.92), rgba(252, 242, 224, 0.88));
+}
+
+.hero__copy h1,
+.panel h2,
+.catalog-card h3 {
+  margin: 0.35rem 0 0.6rem;
+}
+
+.hero__copy h1 {
+  font-size: clamp(2.3rem, 5vw, 4.7rem);
+  line-height: 0.98;
+  max-width: 12ch;
+}
+
+.hero__copy p,
+.panel p,
+.catalog-card p,
+.catalog-card small {
+  color: #546e61;
+}
+
+.eyebrow {
+  display: inline-flex;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  color: #2a7b69;
+}
+
+.hero__stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.8rem;
+  margin-top: 1.6rem;
+}
+
+.hero__stats article,
+.hero__card,
+.panel,
+.catalog-card,
+.receipt-card {
+  background: rgba(255, 255, 255, 0.78);
+}
+
+.hero__stats article,
+.hero__card,
+.catalog-card,
+.receipt-card {
+  padding: 1rem;
+  border-radius: 20px;
+}
+
+.hero__stats strong {
+  display: block;
+  font-size: 2rem;
+}
+
+.hero__card ul {
+  margin: 1rem 0 0;
+  padding-left: 1.15rem;
+}
+
+.portal-content {
+  margin-top: 1rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.banner {
+  border-radius: 18px;
+  padding: 0.9rem 1rem;
+}
+
+.banner--error {
+  background: rgba(183, 80, 69, 0.15);
+  border: 1px solid rgba(183, 80, 69, 0.2);
+  color: #8a3028;
+}
+
+.banner--success {
+  background: rgba(52, 136, 103, 0.15);
+  border: 1px solid rgba(52, 136, 103, 0.22);
+  color: #1f5c46;
+}
+
+.panel {
+  padding: 1.2rem;
+}
+
+.panel--filters {
+  background: linear-gradient(120deg, rgba(255, 255, 255, 0.84), rgba(240, 247, 241, 0.88));
+}
+
+.panel--accent {
+  background: linear-gradient(140deg, rgba(31, 88, 74, 0.94), rgba(24, 57, 49, 0.96));
+  color: #f3fbf6;
+}
+
+.panel--accent .eyebrow,
+.panel--accent p,
+.panel--accent strong {
+  color: inherit;
+}
+
+.filter-grid,
+.portal-grid,
+.catalog-grid,
+.roadmap-list,
+.stack-form {
+  display: grid;
+  gap: 1rem;
+}
+
+.filter-grid,
+.portal-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.catalog-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+label {
+  display: grid;
+  gap: 0.45rem;
+}
+
+input,
+select {
+  width: 100%;
+  border: 1px solid rgba(74, 114, 99, 0.18);
+  border-radius: 16px;
+  padding: 0.92rem 1rem;
+  color: #163028;
+  background: rgba(255, 255, 255, 0.92);
+  outline: none;
+}
+
+input:focus,
+select:focus {
+  border-color: rgba(42, 123, 105, 0.55);
+  box-shadow: 0 0 0 4px rgba(42, 123, 105, 0.12);
+}
+
+.primary-button {
+  border: 0;
+  border-radius: 999px;
+  padding: 0.92rem 1.15rem;
+  color: #fffdf5;
+  background: linear-gradient(120deg, #df7a34, #d9593e);
+}
+
+.catalog-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.catalog-card__meta {
+  color: #8d6a3b;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.74rem;
+}
+
+.catalog-card__footer {
+  display: grid;
+  gap: 0.2rem;
+}
+
+.receipt-card {
+  margin-top: 1rem;
+}
+
+.receipt-card code {
+  display: inline-flex;
+  margin-top: 0.7rem;
+  padding: 0.45rem 0.65rem;
+  border-radius: 12px;
+  background: rgba(31, 88, 74, 0.08);
+}
+
+@media (max-width: 1100px) {
+  .hero,
+  .filter-grid,
+  .portal-grid,
+  .catalog-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 680px) {
+  .portal-shell {
+    padding: 1rem;
+  }
+
+  .hero__stats {
+    grid-template-columns: 1fr;
+  }
+}
+
