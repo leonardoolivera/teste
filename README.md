@@ -1,125 +1,46 @@
-# IFMS Biblioteca Plataforma
+# {{PROJECT_NAME}}
 
-Base real de um sistema de biblioteca academica pensado para superar os concorrentes atuais em UX, automacao, visibilidade operacional e evolucao tecnica.
+> One-sentence description of what this project does and who it serves.
 
-## Estado atual
+## Status
 
-O repositorio ja contem:
+See [`STATE.md`](./STATE.md) for what is done, pending, and next.
 
-- planejamento do produto e arquitetura em `planejamento/`
-- memoria operacional viva em `codex.md`
-- backend Django funcional em `backend/`
-- frontend real em `frontend/` com backoffice e portal do leitor
-- integracao inicial de scanner patrimonial para inventario anual
-- scripts de operacao em `scripts/`
-- backlog e especificacoes em `docs/`
+## For humans getting started
 
-## Estrutura
+1. Read [`vision/01-product.md`](./vision/01-product.md) to understand the intent
+2. Read [`vision/03-architecture.md`](./vision/03-architecture.md) for the stack
+3. Follow [`playbooks/setup.md`](./playbooks/setup.md) to run locally
 
-```text
-backend/        API, dominio e administracao
-frontend/       backoffice, portal do leitor e pacote compartilhado
-infra/          docker, observabilidade e deploy
-planejamento/   produto, arquitetura e roadmap
-docs/           backlog, especificacoes e guias
-scripts/        bootstrap, testes e utilitarios
-.tools/node/    Node.js portatil oficial para ambientes sem permissao de admin
+## For AI agents
+
+Read [`AGENTS.md`](./AGENTS.md). It is mandatory and non-optional.
+
+## Repository layout
+
+```
+.
+├── AGENTS.md          Protocol for AI agents (read first)
+├── CLAUDE.md          Pointer to AGENTS.md for Claude Code
+├── STATE.md           Living status — updated every session
+├── README.md          This file
+│
+├── vision/            Target: what we want to be (changes rarely)
+├── system/            Reality: what currently exists (changes with code)
+├── decisions/         ADRs: one decision per file, immutable
+└── playbooks/         How-to guides: setup, deploy, tests, etc.
 ```
 
-## Backend
+## Why three folders for documentation
 
-Stack atual:
+Each folder answers a different question and changes at a different cadence:
 
-- Python 3.13
-- Django
-- Django REST Framework
-- Celery
-- Redis
-- PostgreSQL ou SQLite para desenvolvimento rapido
+- `vision/` → *what do we want to be?* (rare)
+- `system/` → *what exists now?* (with code)
+- `STATE.md` → *where are we right now?* (every session)
 
-Capacidades implementadas:
+This separation prevents the single most common failure mode of AI-assisted projects: documentation that blends intent, reality, and progress into one unreadable blob.
 
-- autenticacao por token para operadores
-- referencia institucional com instituicao, campus e biblioteca
-- dashboard resumido para o backoffice em `/api/v1/core/dashboard/overview/`
-- catalogo inicial com autores, assuntos, registros e exemplares
-- circulacao com emprestimo, reserva, devolucao e token auditavel
-- reserva com fila, disponibilidade automatica, prazo de retirada e expira��o de hold
-- multa e bloqueio automatico por atraso
-- notificacoes automaticas por e-mail para emprestimo, devolucao, atraso e reserva disponivel
-- inventario com campanhas, leituras e exportacao CSV
-- scanner patrimonial por patrimonio, barras, RFID, camera e entrada manual
+## License
 
-Comandos principais:
-
-```powershell
-powershell -ExecutionPolicy Bypass -File .\scripts\bootstrap_backend.ps1
-powershell -ExecutionPolicy Bypass -File .\scripts\test_backend.ps1
-powershell -ExecutionPolicy Bypass -File .\scripts\process_overdue_loans.ps1
-powershell -ExecutionPolicy Bypass -File .\scripts\process_reservation_queue.ps1
-powershell -ExecutionPolicy Bypass -File .\scripts\seed_demo_data.ps1
-```
-
-## Frontend
-
-O frontend esta ativo em monorepo Vite e usa `Node.js` portatil oficial em `.tools/node`, evitando instalacao global na maquina de trabalho.
-
-Apps disponiveis:
-
-- `frontend/apps/backoffice`: cockpit operacional para bibliotecarios
-- `frontend/apps/portal-leitor`: experiencia publica de descoberta e consulta de token
-- `frontend/packages/shared`: cliente de API tipado e utilitarios
-
-Comandos principais:
-
-```powershell
-powershell -ExecutionPolicy Bypass -File .\scripts\frontend.ps1 -Target install
-powershell -ExecutionPolicy Bypass -File .\scripts\frontend.ps1 -Target backoffice
-powershell -ExecutionPolicy Bypass -File .\scripts\frontend.ps1 -Target portal
-powershell -ExecutionPolicy Bypass -File .\scripts\frontend.ps1 -Target lint
-powershell -ExecutionPolicy Bypass -File .\scripts\frontend.ps1 -Target build
-```
-
-Portas de desenvolvimento:
-
-- backoffice: `http://127.0.0.1:5173`
-- portal: `http://127.0.0.1:5174`
-- backend Django: `http://127.0.0.1:8000`
-
-## Demo pronta
-
-A carga demo oficial cria biblioteca, operadores, leitores, acervo, emprestimos, devolucao e campanha de inventario.
-
-Credenciais:
-
-- admin: `admin@ifms.local` / `Biblioteca!2026`
-- bibliotecario: `bibliotecario@ifms.local` / `Biblioteca!2026`
-
-Token publico de teste:
-
-- `IFMS-DEV-RETORNO-0001`
-
-## Validacoes ja executadas
-
-- `powershell -ExecutionPolicy Bypass -File .\scripts\test_backend.ps1`
-- `python backend\manage.py check`
-- `powershell -ExecutionPolicy Bypass -File .\scripts\frontend.ps1 -Target lint`
-- `powershell -ExecutionPolicy Bypass -File .\scripts\frontend.ps1 -Target build`
-
-Estado mais recente:
-
-- backend com 31 testes passando
-- frontend com lint limpo
-- frontend com build de producao concluido para backoffice e portal
-
-## Documentos importantes
-
-- `codex.md`
-- `docs/API_INICIAL.md`
-- `docs/MVP_BACKLOG.md`
-- `docs/SCANNER_PATRIMONIO_ESPECIFICACAO.md`
-- `planejamento/INDICE_DO_PROJETO.md`
-
-## Meta permanente
-
-Toda decisao deve nos deixar melhores que os concorrentes atuais, e nao apenas equivalentes.
+{{LICENSE}}
