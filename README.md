@@ -1,88 +1,82 @@
-# agent-project-template
+# Alpha Forge
 
-> A minimal, opinionated starting point for software projects built collaboratively with AI agents (Claude, Codex, Cursor, etc.). Solves the single most common failure mode of AI-assisted projects: documentation that blends intent, reality, and progress into one unreadable blob.
-
----
-
-## Using this as a template
-
-This repository **is not a project** — it is the skeleton for one. When you clone it, you get an empty structure with placeholders. An AI agent reading it will interview you to fill in the blanks before writing any code.
-
-### Start a new project from this template
-
-```bash
-git clone https://github.com/<your-user>/agent-project-template.git my-new-project
-cd my-new-project
-rm -rf .git
-git init
-git add -A
-git commit -m "initial import from agent-project-template"
-```
-
-Then open the folder in Claude Code (or any agent that reads `AGENTS.md`) and say: **"let's start"**.
-
-The agent will read [`AGENTS.md`](./AGENTS.md), see that `vision/` files are full of `{{PLACEHOLDER}}` markers, and begin interviewing you one question at a time until the project is defined enough to scaffold.
-
-### Keep your fork in sync with template updates (optional)
-
-If you want to receive improvements to the template later:
-
-```bash
-git remote add template https://github.com/<your-user>/agent-project-template.git
-git fetch template
-git cherry-pick <commit-hash>   # pick specific template improvements
-```
+> Laboratório de pesquisa, backtest rigoroso, validação estatística e ranking de estratégias de trading cripto com alavancagem de até 10x, projetado para descobrir setups agressivos sem mascarar fragilidade com overfitting.
 
 ---
 
-## What's inside
+## Estado
 
-```
-.
-├── AGENTS.md          Protocol for AI agents (read first — mandatory)
-├── CLAUDE.md          Pointer to AGENTS.md for Claude Code auto-load
-├── STATE.md           Living status — updated every session
-├── README.md          This file
-│
-├── vision/            Target: what we want to be (changes rarely)
-│   ├── 01-product.md
-│   ├── 02-scope.md
-│   └── 03-architecture.md
-│
-├── system/            Reality: what currently exists (changes with code)
-│   ├── domain.md
-│   ├── api.md
-│   └── flows.md
-│
-├── decisions/         ADRs: one decision per file, immutable
-│   ├── README.md
-│   └── _TEMPLATE.md
-│
-└── playbooks/         How-to guides: setup, deploy, tests
-    ├── README.md
-    └── setup.md
-```
+**Fase atual: scaffolding.** A árvore de módulos existe, mas nenhum código de domínio está implementado. Consulte [`STATE.md`](./STATE.md) para o estado vivo do projeto.
 
-## The three-layer model
+## Ordem de leitura para agentes
 
-Each folder answers a different question and changes at a different cadence:
+Este projeto segue o protocolo do [`agent-project-template`](https://github.com/leonardoolivera/agent-project-template). Qualquer agente de IA que for trabalhar aqui **deve**:
 
-| Folder | Question | Cadence |
+1. Ler [`AGENTS.md`](./AGENTS.md) primeiro — é o protocolo obrigatório.
+2. Ler [`STATE.md`](./STATE.md) para entender o agora.
+3. Ler [`vision/`](./vision/) para entender o alvo.
+4. Ler [`system/`](./system/) para entender o que já existe.
+5. Consultar [`decisions/`](./decisions/) para ADRs relevantes.
+
+## Modelo de três camadas
+
+| Camada | Pasta | Pergunta |
 |---|---|---|
-| `vision/` | What do we want to be? | Rarely (per quarter) |
-| `system/` | What exists now? | With every code change |
-| `STATE.md` | Where are we right now? | Every session |
+| Target | [`vision/`](./vision/) | o que queremos ser? |
+| Reality | [`system/`](./system/) | o que existe agora? |
+| State | [`STATE.md`](./STATE.md) | onde estamos neste momento? |
 
-The separation is strict. `vision/` never describes existing code. `system/` never describes aspirations. `STATE.md` is the only document that talks about *now*.
+A separação é estrita. `vision/` nunca descreve código existente. `system/` nunca descreve aspirações.
 
-## Why this matters for AI agents
+## Estrutura do repositório
 
-Agents drift when they can't tell intent apart from reality. They invent features the user didn't ask for, or repeat work already done, or confidently describe code that doesn't exist. This template removes the ambiguity:
+```
+src/alpha_forge/      # pacote Python (7 módulos de domínio + cli + io)
+tests/                # unit / integration / property / fixtures
+configs/              # YAMLs de estratégias, experimentos, risco, regimes
+notebooks/            # Jupyter (exploratório e reports)
+data/                 # OHLCV bruto e processado (fora do git, exceto manifesto)
+results/              # runs, validação, rankings (fora do git)
+scripts/              # utilitários transitórios
+vision/               # alvo
+system/               # realidade
+decisions/            # ADRs imutáveis
+playbooks/            # guias operacionais
+```
 
-- **`AGENTS.md`** forces a reading order and an interview protocol.
-- **`{{PLACEHOLDER}}` markers** are tripwires: an agent that sees one knows it must ask the user, not guess.
-- **Immutable ADRs** in `decisions/` preserve the *why* behind choices, so agents don't relitigate settled questions.
+Detalhes em [`vision/03-architecture.md`](./vision/03-architecture.md).
 
-## License
+## Stack
 
-MIT — use freely, remix freely, no warranty.
+Python 3.12+ · vectorbt · pandas · numpy · scipy · pydantic v2 · pyyaml · pytest + hypothesis · matplotlib + plotly · Jupyter · ccxt (deferred) · Parquet local · uv · ruff · pyright · GitHub Actions.
+
+Decisões fundamentais registradas em [`decisions/0001-foundational-stack-and-architecture.md`](./decisions/0001-foundational-stack-and-architecture.md).
+
+## Setup
+
+Ver [`playbooks/setup.md`](./playbooks/setup.md).
+
+Resumo:
+
+```bash
+uv sync --extra dev
+uv run pytest -q
+uv run alpha-forge
+```
+
+## Princípios
+
+1. Honestidade estatística sobre performance bonita.
+2. Custo real antes de retorno bruto.
+3. Sem lookahead, nunca.
+4. Ranking multiobjetivo, não monobjetivo.
+5. Reproduzível ou não aconteceu.
+6. Flags explícitas de fragilidade.
+7. Agressividade com controles duros, nunca sem eles.
+8. Preferir simples e auditável a sofisticado e opaco.
+
+Detalhes em [`vision/01-product.md`](./vision/01-product.md).
+
+## Licença
+
+Proprietary. Uso interno. Sem warranty. O laboratório mede; não garante retornos.

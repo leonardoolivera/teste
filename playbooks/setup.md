@@ -1,63 +1,76 @@
-# Setup
+# Setup — Alpha Forge local
 
-> **Status:** `# DRAFT — untested` (delete this line once you've run this playbook on a clean machine)
-
-How to get the project running locally from a fresh clone.
+> **Status:** `# DRAFT — untested` (remover esta linha após rodar na máquina alvo).
+>
+> Este playbook vale para a **fase atual (scaffolding)**. Ainda não há fluxo de pesquisa funcional — o objetivo é ter o ambiente instalado, CI local passando e o pacote importável.
 
 ## Prerequisites
 
-_(List exact versions. "Latest" is not a version.)_
-
-- {{TOOL_1}} {{VERSION}}
-- {{TOOL_2}} {{VERSION}}
+- **Python** 3.12 (o arquivo `.python-version` pina `3.12`; qualquer 3.12.x funciona).
+- **`uv`** — gerenciador de dependências (instalação: https://docs.astral.sh/uv/).
+- **Git**.
+- **Ambiente primário recomendado:** WSL2 em Windows, ou Linux/macOS. Windows nativo não é suportado como ambiente principal (ver `vision/03-architecture.md`).
+- **Sem Docker, sem admin.** Nada disto é necessário.
 
 ## 1. Clone
 
-```
-git clone {{REPO_URL}}
-cd {{REPO_DIR}}
-```
-
-## 2. Install dependencies
-
-```
-{{INSTALL_COMMAND}}
+```bash
+git clone <URL-do-repo> alpha-forge
+cd alpha-forge
 ```
 
-## 3. Configure environment
+## 2. Instalar dependências
 
-Copy the example env file and fill in real values:
-
-```
-cp .env.example .env
+```bash
+uv sync --extra dev
 ```
 
-Required variables:
+Isto cria `.venv/` com deps de runtime + dev (pytest, hypothesis, ruff, pyright, jupyter).
 
-- `{{VAR_1}}` — {{WHAT_IT_IS}}
-- `{{VAR_2}}` — {{WHAT_IT_IS}}
+## 3. Verificar import do pacote
 
-## 4. Initialize data
-
-```
-{{MIGRATE_OR_SEED_COMMAND}}
+```bash
+uv run python -c "import alpha_forge; print(alpha_forge.__version__)"
 ```
 
-## 5. Run
+Esperado: `0.0.0`.
 
+## 4. Rodar o CLI placeholder
+
+```bash
+uv run alpha-forge
 ```
-{{RUN_COMMAND}}
+
+Esperado: mensagem informando que a CLI ainda não foi implementada, exit code 0.
+
+## 5. Rodar a suíte de testes
+
+```bash
+uv run pytest -q
 ```
 
-Open `{{URL}}` in your browser.
+Esperado: `1 passed` (o smoke test).
 
-## 6. Verify
+## 6. Rodar lint + format check + typecheck
 
-You should see:
+```bash
+uv run ruff check .
+uv run ruff format --check .
+uv run pyright
+```
 
-- {{VERIFICATION_1}}
-- {{VERIFICATION_2}}
+Tudo deve passar sem erros.
+
+## 7. (opcional) Jupyter
+
+```bash
+uv run jupyter lab
+```
+
+Notebooks vivem em `notebooks/exploratory/` e `notebooks/reports/`. Não há notebooks prontos ainda.
 
 ## Troubleshooting
 
-- **{{COMMON_ERROR_1}}** → {{FIX}}
+- **`uv: command not found`** → instale o `uv` (https://docs.astral.sh/uv/getting-started/installation/). Em Windows corporativo, prefira a instalação via pip em user-site (`pip install --user uv`) se o instalador padrão exigir admin.
+- **`pyright` falha por stubs ausentes** → rodar `uv sync --extra dev` garante as deps; stubs externos (vectorbt, plotly) podem gerar warnings `reportMissingTypeStubs`, que estão configurados como `warning` em `pyproject.toml`.
+- **Import de `vectorbt` lento na primeira vez** → normal; ele pré-compila Numba na primeira execução.

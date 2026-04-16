@@ -1,0 +1,26 @@
+# Manifesto de datasets (ADR-0005). Versionável no git.
+# Os arquivos Parquet são regeneráveis via scripts/bootstrap_* e scripts/ingest_*.
+
+datasets:
+- dataset_id: btcusdt_1h_20250705_20251231_binance_spot
+  symbol: BTCUSDT
+  timeframe: 1h
+  path: BTCUSDT/1h/btcusdt_1h_20250705_20251231_binance_spot.parquet
+  sha256: 228249e2ceb7239e5ecb31aa1093614fe5fd9d72a8c5cec2c0f90ebaec7a973f
+  row_count: 4320
+  start_ts: '2025-07-05T00:00:00Z'
+  end_ts: '2025-12-31T23:00:00Z'
+  timezone: UTC
+  declared_gaps: []
+  source: binance_vision_spot
+- dataset_id: synthetic_btcusdt_1h_seed42
+  symbol: SYNTHBTC
+  timeframe: 1h
+  path: SYNTHBTC/1h/synthetic_btcusdt_1h_seed42.parquet
+  sha256: 2e7ec662ae0e98ce07f5df263301aa9a02972cafd7186b795adcf5a63daaa876
+  row_count: 720
+  start_ts: '2024-01-01T00:00:00Z'
+  end_ts: '2024-01-30T23:00:00Z'
+  timezone: UTC
+  declared_gaps: []
+  source: synthetic
