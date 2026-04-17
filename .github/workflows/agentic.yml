@@ -1,0 +1,34 @@
+name: agentic-pilot
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  artifacts-and-smoke:
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v3
+        with:
+          python-version: "3.12"
+
+      - name: Sync deps
+        run: uv sync --extra dev
+
+      - name: Validate agentic artifacts
+        run: python scripts/validate_artifacts.py
+
+      - name: Backtest smoke (Donchian on synthetic)
+        run: |
+          uv run python -c "from alpha_forge.cli.app import run; raise SystemExit(run(['run-demo', '--strategy', 'donchian', '--entry-window', '20', '--exit-window', '10']))"
+
+      - name: Sensitivity run (synthetic — fees & slippage grid)
+        run: |
+          uv run python scripts/validate_pilot.py --strategy donchian \
+            --dataset-id synthetic_btcusdt_1h_seed42 \
+            --entry-window 20 --exit-window 10

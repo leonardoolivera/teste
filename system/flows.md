@@ -15,11 +15,11 @@ Primeiro fluxo de domínio do projeto. Orquestra o núcleo mínimo do começo ao
 - **Pré-requisitos:**
   - Dataset seminal gerado uma vez por `python scripts/bootstrap_synthetic_dataset.py` (produz Parquet + entrada em `data/datasets.yaml`).
 - **Steps:**
-  1. Parse de flags em `cli/app.py::run` (`--dataset-id`, `--capital`, `--fracao`, `--alavancagem`, `--taker-fee-bps`, `--slippage-bps-per-notional`, `--strategy`, `--short-window`, `--long-window`).
+  1. Parse de flags em `cli/app.py::run` (`--dataset-id`, `--capital`, `--fracao`, `--alavancagem`, `--taker-fee-bps`, `--slippage-bps-per-notional`, `--strategy`, `--short-window`, `--long-window`, `--entry-window`, `--exit-window`).
   2. `RiskBudget` construído com validação pydantic (rejeita fora de faixa).
   3. `CostModel` construído explicitamente a partir das flags de custo (sem default silencioso — ADR-0006).
   4. `data.loaders.load_dataset(dataset_id)` lê o manifesto, valida sha256, row_count, janela temporal e continuidade contra `declared_gaps`; devolve `pd.DataFrame` com index UTC-aware.
-  5. Estratégia é instanciada via `--strategy`. Default: `MovingAverageCrossoverStrategy(short_window, long_window)` (ADR-0008, long-only, stateless). Alternativa: `DummyAlternatingStrategy()` para sanidade estrutural.
+  5. Estratégia é instanciada via `--strategy`. Default: `MovingAverageCrossoverStrategy(short_window, long_window)` (ADR-0008, long-only, stateless). Alternativas: `DonchianBreakoutStrategy(entry_window, exit_window)` (ADR-0011, long-only, stateless) e `DummyAlternatingStrategy()` (sanidade estrutural).
   6. `backtest.engine.run_backtest` executa o loop causal:
      - Para cada barra `t`, `window = prices[:t+1]` é passada para `strategy.decide`.
      - Execução ocorre em `t+1 open` (última barra não executa).
@@ -81,6 +81,25 @@ max_drawdown     : 6.72%
 
 A dummy permanece acessível via `--strategy dummy` como ferramenta de sanidade do pipeline, reproduzindo o baseline de antes da ADR-0008.
 
+### Output exemplo 4 — Donchian 20/10 sobre BTCUSDT 1h 180d real (custo padrão)
+
+```
+dataset          : btcusdt_1h_20250705_20251231_binance_spot
+strategy         : donchian entry=20 exit=10
+barras           : 4320
+cost_model       : taker_fee_bps=5.00 slippage_bps/notional=2.00
+fills            : 220
+rejections       : 0
+equity final     : 9089.79
+--- metrics ---
+total_pnl        : -910.21 (-9.10%)
+trade_count      : 110
+hit_rate         : 25.45%
+max_drawdown     : 10.49%
+```
+
+Donchian 20/10 long-only sobre BTCUSDT 180d é estruturalmente perdedor neste recorte — confirmado em todas as 16 células do grid de sensibilidade fees × slippage (ver [BACKTEST.md](../BACKTEST.md)). Laboratório reporta resultado feio quando é feio.
+
 ## Flow: ingestão de dataset real de Binance Vision (ADR-0009)
 
 - **Trigger:** `uv run python scripts/ingest_binance_vision.py --symbols BTCUSDT --timeframe 1h --start 2025-07-05 --end 2025-12-31` (multi-símbolo no mesmo comando; sem ramo especial por ativo).
@@ -135,7 +154,19 @@ A dummy permanece acessível via `--strategy dummy` como ferramenta de sanidade 
 - **Outcome:** propriedade falha se alguma vez a estratégia usar uma barra futura; suite verde prova que `decide` é função pura de `prices[:t+1]`.
 - **Covered by test:** o próprio arquivo.
 
-## Flow: monotonicidade de custo (property-based, ADR-0010)
+## Flow: pureza causal da `DonchianBreakoutStrategy`
+
+- **Trigger:** `pytest tests/property/test_donchian_causal.py`.
+- **Steps:**
+  1. Hypothesis gera série OHLC completa e escolhe um `t` e um `perturb_offset` futuro.
+  2. Computa `strategy.decide(prices[:t+1])` na série original (`entry_window=5`, `exit_window=3`).
+  3. Muta `open`, `high`, `low`, `close` da barra `t + perturb_offset` (estritamente no futuro de `t`).
+  4. Computa `strategy.decide(prices[:t+1])` na série mutada.
+  5. Os dois sinais devem ser iguais.
+- **Outcome:** 80 exemplos; propriedade falha se a estratégia usar qualquer barra futura. Reforça o design "ignora `window.iloc[-1]`" (ADR-0011).
+- **Covered by test:** o próprio arquivo.
+
+## Flow: monotonicidade de custo em MA crossover (property-based, ADR-0010)
 
 - **Trigger:** `pytest tests/property/test_cost_monotonicity.py`.
 - **Steps:**
@@ -145,6 +176,13 @@ A dummy permanece acessível via `--strategy dummy` como ferramenta de sanidade 
   4. `assume(result_low.metrics.trade_count > 0)` — descarta cenários triviais (ADR-0010 §Ressalva 1).
   5. Assert: `final_equity_high - final_equity_low <= 1e-6 * capital_inicial`.
 - **Outcome:** 30 exemplos × 2 backtests cada (~60 backtests), ~18s. Qualquer violação vem com mensagem rica (cost_low, cost_high, final_equity_low/high, trade_count_low/high, fills_low/high) para depuração imediata.
+- **Covered by test:** o próprio arquivo.
+
+## Flow: monotonicidade de custo em Donchian (property-based, ADR-0012)
+
+- **Trigger:** `pytest tests/property/test_donchian_cost_monotonicity.py`.
+- **Steps:** idêntico ao flow de MA crossover, trocando apenas a estratégia para `DonchianBreakoutStrategy(20, 10)`. Mesma fixture (sintético seminal), mesmo budget, mesma tolerância `1e-6 * capital`, mesmo `assume` sobre dominância e `trade_count > 0`.
+- **Outcome:** 30 exemplos × 2 backtests cada, ~15s. ADR-0012 estende ADR-0010 à família Donchian — fecha o blocker #B-2 do AUDIT.
 - **Covered by test:** o próprio arquivo.
 
 ## Flow: rejeição determinística de sizing inválido
@@ -173,10 +211,65 @@ A dummy permanece acessível via `--strategy dummy` como ferramenta de sanidade 
 - **Defined in:** `.github/workflows/ci.yml`.
 - **Covered by test:** o próprio workflow.
 
+## Flow: grid de sensibilidade fees × slippage (`scripts/validate_pilot.py`)
+
+- **Trigger:** `python scripts/validate_pilot.py --strategy <name> --dataset-id <id> [flags da estratégia]`.
+- **Steps:**
+  1. Constrói cenário fixo a partir das flags (dataset, estratégia, `RiskBudget`).
+  2. Para cada `(fee, slip) ∈ {0, 5, 10, 20} × {0, 2, 5, 10}` bps: roda `run_backtest` com o mesmo cenário, variando apenas `CostModel`.
+  3. Imprime tabela com `fee, slip, trades, hit_rate, max_dd, final_equity, total_pnl`.
+  4. Verifica monotonicidade: para cada par `(cost_low, cost_high)` onde `cost_high` domina `cost_low`, `final_equity_high <= final_equity_low + tol`. Imprime `[monotonicidade] OK` ou lista violações.
+  5. Grava artefato JSON em `results/validation/<timestamp>_<strategy>.json` com todas as 16 linhas.
+- **Outcome:** caracterização empírica de sensibilidade a custos + sanidade adicional da invariante de ADR-0010/0012 num dataset real (complementa os property tests em sintético).
+- **Registro do piloto Donchian:** 16 células sobre BTCUSDT 1h 180d — todas negativas, monotonicidade confirmada (ver [BACKTEST.md](../BACKTEST.md)).
+- **Covered by test:** CI agentic (`.github/workflows/agentic.yml`, job `sensitivity-smoke` em sintético).
+
+## Flow: caracterização observacional paramétrica (ad-hoc, não automatizado)
+
+- **Trigger:** rodada manual de `run-demo` com combos `(entry_window, exit_window)` declarados a priori sobre o dataset 90d `btcusdt_1h_20251003_20251231_binance_spot`.
+- **Status epistêmico:** **observação, não validação.** Endereça parcialmente o blocker #B-3 do AUDIT; não fecha. Não altera `release_decision`.
+- **Steps (piloto Donchian, 2026-04-17):** 3 combos `(10,5)`, `(20,10)`, `(40,20)` — escolhidos a priori (Turtle clássico + metade do default). Custo fixo em `fee=5bps, slip=2bps`. Resultado em [BACKTEST.md §"Caracterização observacional paramétrica — 90d"](../BACKTEST.md).
+- **Outcome:** 3 runs, todos negativos, coerente com o recorte 180d. Documentado com disclaimer explícito sobre amostra única + janela curta.
+- **Covered by test:** N/A (observação; não é invariante). Regenerável a partir do comando no próprio BACKTEST.md.
+
+## Flow: gate de artefatos agentic (`scripts/validate_artifacts.py` + hook `check_gates.py`)
+
+- **Trigger:**
+  - Manual: `python scripts/validate_artifacts.py`.
+  - Automático (Stop hook): ao tentar encerrar uma sessão Claude Code sem `stop_hook_active=true`.
+  - CI: job `validate-artifacts` em `.github/workflows/agentic.yml` (não-bloqueante).
+- **Steps:**
+  1. Dicionário `ARTIFACTS` declara, para cada arquivo (`SPEC.md|IMPLEMENTATION.md|VALIDATION.md|BACKTEST.md|AUDIT.md|CHECKLIST.md|STATE.md`), as seções regex exigidas.
+  2. Para cada arquivo: verifica existência + match de cada seção.
+  3. Exit 0 se tudo presente; exit 1 (script) ou exit 2 (hook) com lista de faltantes caso contrário.
+- **Outcome (hook):** a sessão continua rodando — forçando o agente a completar os artefatos antes de parar. Defesa contra esquecimento, não policial: pode ser sobreposto se o usuário pressionar "parar" novamente.
+- **Outcome (script):** CI agentic marca o job como failed (mas `continue-on-error: true` — não bloqueia merge).
+
+## Flow: orquestração agentic ponta a ponta (subagentes)
+
+- **Trigger:** `Agent(subagent_type="lead-orchestrator", prompt="<hipótese ou tarefa>")` dentro do Claude Code.
+- **Pré-requisitos:** `CLAUDE.md` + `AGENTS.md` + `vision/` + `decisions/` presentes (carregados no system prompt do subagente via frontmatter).
+- **Steps (quando todo o fluxo é exercitado):**
+  1. `lead-orchestrator` lê `STATE.md` + `CHECKLIST.md`, identifica o próximo gate com `[ ]`, delega.
+  2. `strategy-researcher` → produz `SPEC.md` falsificável com ADR de referência.
+  3. `strategy-implementer` → traduz `SPEC` em código; atualiza `IMPLEMENTATION.md` com mapeamento.
+  4. `backtest-validator` → roda `pytest`, `run-demo`, `validate_pilot.py`; produz `VALIDATION.md` + `BACKTEST.md`.
+  5. `risk-auditor` (`claude-opus-4-7`) → revisão adversarial; produz `AUDIT.md` com `release_decision ∈ {fail, paper_only, canary_only}`. **Nunca** `live_trading`.
+  6. `lead-orchestrator` → atualiza `CHECKLIST.md` e `STATE.md` com o estado resultante.
+- **Hard rules aplicadas durante todo o fluxo (hooks):**
+  - `block_live_trading.py` bloqueia qualquer tentativa de setar `LIVE_TRADING=true`, editar secrets, importar venue real, ou chamar endpoint de produção.
+  - `session_reminder.py` reinjeta as 5 regras após compactação.
+  - `check_gates.py` impede encerramento com artefatos incompletos.
+- **Outcome:** piloto com `release_decision` explícito + `CHECKLIST.md` atualizado. Promoção real (paper_only) exige **assinatura humana** no commit final.
+- **Registro do piloto Donchian:** fluxo exercitado ponta a ponta; `release_decision = fail` justificado por ausência de infra paper-trade (#B-1) + validação incompleta (#B-3/#B-4/#B-5). Ver [AUDIT.md](../AUDIT.md).
+- **Covered by test:** N/A (orquestração humana + LLM; não é invariante de código). Sanity check pelo `validate_artifacts.py` garante que a sessão produziu todos os artefatos.
+
 ## Fluxos planejados, **ainda não implementados**
 
 Não descrever abaixo da linha até existirem em código:
 - walk-forward, monte carlo, stress de custos → `vision/02-scope.md` (`validation`).
 - scoring multiobjetivo e rankings → `vision/02-scope.md` (`ranking`).
 - classificação de regime por barra → `vision/02-scope.md` (`regimes`).
-- download de OHLCV real via ccxt (deferred).
+- módulo `paper-trade` → `vision/02-scope.md` (deferred; `paper_only` estruturalmente inacessível até existir).
+- equity guard / daily-loss limit / kill-switch em código → risco operacional #R-2 do AUDIT.
+- download de OHLCV real via ccxt (deferred; bloqueado por hook por doutrina).

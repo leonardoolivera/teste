@@ -159,12 +159,27 @@ Regra:
 
 **Stateless.** `decide(window) -> Signal` é função pura de `window` e parâmetros. O engine é quem mantém o estado "em posição ou não"; a estratégia só emite intenção. `ENTER_LONG` com posição aberta vira no-op no engine; `EXIT` sem posição vira no-op.
 
+### `DonchianBreakoutStrategy` (`strategies/families/donchian/strategy.py`, ADR-0011)
+Segunda estratégia real. **Long-only** nesta fase. Parâmetros: `entry_window: int`, `exit_window: int`, ambos `> 0`. Validação cedo e explícita: `TypeError` para não-inteiros (inclui `bool`); `ValueError` para valores `<= 0`. `exit_window >= entry_window` é permitido (não é erro estrutural); só é arbitragem reversiva e o engine absorve.
+
+Regra (todas as comparações usam `window.iloc[-2]` — a barra corrente `window.iloc[-1]` é ignorada por construção, reforçando ADR-0002):
+- Canal de entrada: `entry_window_max = max(high[-entry_window-2 : -2])` (slice exclui `iloc[-1]` e a própria barra `t-1`).
+- Canal de saída: `exit_window_min = min(low[-exit_window-2 : -2])`.
+- `EXIT` se `low[t-1] < exit_window_min` (**verificação de saída antes da entrada** — prioridade ordenada).
+- `ENTER_LONG` se `high[t-1] > entry_window_max`.
+- Caso contrário → `HOLD`.
+- Warm-up: `HOLD` enquanto `len(window) < max(entry_window, exit_window) + 2`.
+
+**Stateless.** Pureza causal coberta por property-based em `tests/property/test_donchian_causal.py` (80 exemplos, mutação de OHLC completo da barra futura).
+
+**Monotonicidade de custo:** coberta por property-based em `tests/property/test_donchian_cost_monotonicity.py` (ADR-0012, extensão de ADR-0010 à família Donchian). Invariante idêntica: `final_equity_high <= final_equity_low + 1e-6 * capital` quando `cost_high` domina `cost_low` componente a componente.
+
 ## CLI (`alpha_forge.cli`)
 
 ### `run-demo` (`cli/app.py`)
 Subcomando único. Orquestra: `load_dataset` → `RiskBudget` → `CostModel` → estratégia (escolhida por `--strategy`, default `ma_crossover`) → `run_backtest` → `_print_summary`. Sem lógica de domínio escondida na CLI.
 
-Flags: `--dataset-id`, `--capital`, `--fracao`, `--alavancagem`, `--taker-fee-bps`, `--slippage-bps-per-notional`, `--strategy {ma_crossover,dummy}`, `--short-window`, `--long-window`.
+Flags: `--dataset-id`, `--capital`, `--fracao`, `--alavancagem`, `--taker-fee-bps`, `--slippage-bps-per-notional`, `--strategy {ma_crossover,dummy,donchian}`, `--short-window`, `--long-window` (MA crossover), `--entry-window`, `--exit-window` (Donchian).
 
 ## IO (`alpha_forge.io`)
 
@@ -185,6 +200,53 @@ Entradas de `data/datasets.yaml`:
 - `symbol: BTCUSDT`, `source: binance_vision_spot`, `declared_gaps: []` (janela veio sem gaps detectados).
 - Regenerável via `uv run python scripts/ingest_binance_vision.py --symbols BTCUSDT --timeframe 1h --start 2025-07-05 --end 2025-12-31`.
 
+**`btcusdt_1h_20251003_20251231_binance_spot`** — recorte curto para caracterização observacional (90 dias), ingerido em 2026-04-17.
+- 2160 barras 1h (90 dias × 24), window 2025-10-03 00:00 → 2025-12-31 23:00 UTC.
+- `symbol: BTCUSDT`, `source: binance_vision_spot`, `declared_gaps: []`.
+- `sha256: 5db1a51578d430b8badc0097b03fceeb0eebfc077b0fb5fb65d3c309ecb9680d`.
+- Usado apenas na seção observacional de [BACKTEST.md](../BACKTEST.md) (não é validação). Regenerável via `uv run python scripts/ingest_binance_vision.py --symbols BTCUSDT --timeframe 1h --start 2025-10-03 --end 2025-12-31`.
+
+## Camada agentic (overlay, não substitui o protocolo `AGENTS.md`)
+
+A camada agentic foi instalada como **overlay operacional** sobre o núcleo. Nenhum módulo em `src/` depende dela; é infraestrutura de orquestração e segurança. Detalhes contratuais em [README_AGENTIC_PILOT.md](../README_AGENTIC_PILOT.md).
+
+### Subagentes (`.claude/agents/`)
+Cinco subagentes Claude Code, cada um com frontmatter (name/description/tools/model) declarando escopo, ferramentas permitidas e modelo:
+- `lead-orchestrator` (sonnet, effort high) — conduz o fluxo ponta a ponta; nunca avança sem gate verde; só delega.
+- `strategy-researcher` (sonnet, effort high) — transforma hipótese em `SPEC.md` rigoroso.
+- `strategy-implementer` (sonnet, effort high) — traduz `SPEC.md` em código; atualiza `IMPLEMENTATION.md`.
+- `backtest-validator` (sonnet, effort xhigh) — roda testes + backtest + sensibilidade; produz `VALIDATION.md` e `BACKTEST.md`.
+- `risk-auditor` (`claude-opus-4-7`, effort xhigh) — revisão adversarial; produz `AUDIT.md` com `release_decision`.
+
+### Hooks determinísticos (`.claude/hooks/`)
+Python stdlib-only, registrados em `.claude/settings.json`:
+- `block_live_trading.py` (PreToolUse) — bloqueia `LIVE_TRADING=true`, edição de `.env`/secrets/chaves, imports de venues reais (`ccxt`, `binance.client`, `exchange.create_order`, `.execute_order`) em `src/`, URLs de endpoints de produção de trading (`api.binance.com`, `fapi.binance.com`, `api.bybit.com`, `api.okx.com`, etc.). Exceção explícita: `data.binance.vision` (histórico público).
+- `session_reminder.py` (SessionStart) — reinjeta as 5 regras duras após compactação de contexto.
+- `check_gates.py` (Stop) — verifica presença/coerência dos artefatos `SPEC.md|IMPLEMENTATION.md|VALIDATION.md|BACKTEST.md|AUDIT.md|CHECKLIST.md|STATE.md`; força continuação se incompleto.
+
+### Artefatos por hipótese (raiz do repo)
+Contratos rígidos, nomes fixos; um conjunto por hipótese ativa. Schema completo em [README_AGENTIC_PILOT.md](../README_AGENTIC_PILOT.md).
+- `SPEC.md` — hipótese falsificável + contrato completo (mercado, timeframe, entradas/saídas, stops, sizing, fees, slippage, funding, condições inválidas, limitações).
+- `IMPLEMENTATION.md` — arquivos alterados, mapeamento `SPEC → código`, decisões técnicas, gaps.
+- `VALIDATION.md` — testes executados, conformidade por seção do `SPEC`, falhas conhecidas.
+- `BACKTEST.md` — dataset, métricas, grid de sensibilidade, robustez, lookahead check.
+- `AUDIT.md` — revisão adversarial, blockers, riscos operacionais, compliance, `release_decision`.
+- `CHECKLIST.md` — gates ordenados: pesquisa → implementação → validação → auditoria → release.
+- `ASSUMPTIONS.md` — suposições tomadas sem pedir ao usuário.
+
+### Política de promoção entre estágios
+Encadeamento hard, aplicado por hook + doutrina (CLAUDE.md §3):
+`backtest_only` → (VALIDATION verde + BACKTEST robusto + AUDIT = `paper_only`) → `paper_only` → **IMPOSSÍVEL HOJE** → `live_trading`.
+
+`live_trading` **nunca** sai deste repositório. Paper/live entra em repo separado, depois do núcleo maduro (`vision/02-scope.md` deferred).
+
+### Scripts operacionais do overlay
+- `scripts/validate_pilot.py` — grid de sensibilidade fees × slippage (4×4 por default) + checagem de monotonicidade + artefato JSON em `results/validation/<timestamp>_<strategy>.json`.
+- `scripts/validate_artifacts.py` — checa presença/coerência dos artefatos agentic (usado no CI agentic).
+
+### CI agentic (`.github/workflows/agentic.yml`)
+Não-bloqueante (`continue-on-error: true`) por design. Roda: validação de artefatos + smoke backtest + grid de sensibilidade sobre sintético. O CI principal (`.github/workflows/ci.yml`) continua bloqueando merge.
+
 ## O que ainda não existe
 
 Nenhum dos itens abaixo tem código correspondente. Eles vivem em `vision/` como alvo e não devem ser descritos aqui até existirem:
@@ -192,12 +254,14 @@ Nenhum dos itens abaixo tem código correspondente. Eles vivem em `vision/` como
 - Módulo `regimes` (classificação de regime).
 - Módulo `validation` (walk-forward, monte carlo, stress).
 - Módulo `ranking` (scoring multiobjetivo, reporting).
+- Módulo `paper-trade` (deferred em `vision/02-scope.md`; sem ele, `paper_only` é estágio inexistente).
 - Métricas além das quatro mínimas (`total_pnl`, `trade_count`, `hit_rate`, `max_drawdown`) — sem Sharpe, Sortino, profit factor, calmar, etc.
 - Custos além do mínimo (sem maker, sem funding, sem bid-ask spread sintético, sem impacto não-linear, sem tiers).
-- Short side em `MovingAverageCrossoverStrategy` (ADR-0008 fixou long-only nesta fase).
+- Short side em qualquer estratégia (tanto `MovingAverageCrossoverStrategy` quanto `DonchianBreakoutStrategy` são long-only nesta fase).
 - EMA/WMA ou qualquer MA adaptativa; grid de parâmetros; otimização de hiperparâmetros.
-- Estratégia não-MA/não-dummy (breakout, RSI, etc.).
-- Ordens além de market at next open (sem limit, sem stops).
+- Estratégia não-MA/não-Donchian/não-dummy (RSI, mean-reversion estatística, etc.).
+- Ordens além de market at next open (sem limit, sem stops explícitos — Donchian só tem saída por rompimento de canal).
+- Equity guard / daily-loss limit / kill-switch em código (risco operacional R-2 do AUDIT; documentados em `vision/` mas não implementados).
 - Múltiplas posições simultâneas; netting; portfolio-level risk.
-- Integração com exchanges reais (ccxt deferred).
+- Integração com exchanges reais (ccxt deferred; bloqueado por hook).
 - `vectorbt` como engine (ADR-0001 manteve como direção macro; núcleo mínimo usa loop próprio).

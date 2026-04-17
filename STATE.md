@@ -8,7 +8,7 @@
 
 ## Current phase
 
-`building` — **núcleo mínimo + custos + métricas + primeira estratégia real + primeiro dataset real + property-based de monotonicidade de custo implementados, validados e documentados em `system/`** (scaffolding + ADR-0001/0002/0004/0005/0006/0007/0008/0009/0010 → io/paths + data + risk + backtest causal com `CostModel` obrigatório + `Trade` fechado + `BacktestMetrics` + `MovingAverageCrossoverStrategy` + `DummyAlternatingStrategy` como sanidade + CLI `run-demo` com seletor de estratégia + `scripts/ingest_binance_vision.py` multi-símbolo + dataset real BTCUSDT 1h 180d + property-based garantindo `custo_maior ⇒ final_equity_menor`). Aguardando **direção do usuário** para a próxima frente.
+`building` — **núcleo mínimo + custos + métricas + primeira estratégia real + primeiro dataset real + property-based de monotonicidade de custo + segunda estratégia real (Donchian breakout, ADR-0011) + camada agentic overlay (SPEC/IMPLEMENTATION/VALIDATION/BACKTEST/AUDIT/CHECKLIST + 5 subagentes + hooks determinísticos)** já entregues. Piloto agentic Donchian fechado com `release_decision = fail` — decisão correta dado o estado atual (infra paper-trade ausente + validação completa não rodada). `system/` pendente de atualização para refletir Donchian.
 
 <!--
 empty:         no code yet, vision/ files are empty or partial
@@ -20,6 +20,26 @@ maintaining:   shipped, small changes only
 -->
 
 ## What was last delivered
+
+**Camada agentic overlay + piloto Donchian (ADR-0011) implementados em bloco.** O laboratório ganhou: (a) camada de orquestração agentic (`CLAUDE.md` estendido, `.claude/settings.json`, hooks `block_live_trading.py` / `session_reminder.py` / `check_gates.py`, 5 subagentes em `.claude/agents/`); (b) artefatos por hipótese (`SPEC.md`, `IMPLEMENTATION.md`, `VALIDATION.md`, `BACKTEST.md`, `AUDIT.md`, `CHECKLIST.md`, `ASSUMPTIONS.md`, `README_AGENTIC_PILOT.md`); (c) piloto Donchian (ADR-0011) com `DonchianBreakoutStrategy(entry_window, exit_window)`, 17 testes unit + 1 property-based (80 exemplos), integração CLI (`--strategy donchian --entry-window N --exit-window M`), grid de sensibilidade fees × slippage; (d) CI agentic não-bloqueante em `.github/workflows/agentic.yml`; (e) scripts `scripts/validate_pilot.py` e `scripts/validate_artifacts.py`.
+
+**Suíte final:** `86 passed, 1 skipped` (partiu de 66; ganhou 20 testes Donchian sem quebrar nada). **Property-based do Donchian reexecutado 3× sem flakiness.**
+
+**Caracterização BTCUSDT 1h 180d (20/10, fee=5bps, slip=2bps):** 220 fills, 110 trades, hit_rate=25.45%, max_drawdown=10.49%, total_pnl=−9.10%. Negativo em todas as 16 células do grid de custos (inclui custo zero). Laboratório reporta feio quando é feio — é exatamente o que a hipótese falsificável serve.
+
+**AUDIT do piloto:** `release_decision = fail`. Motivo: infraestrutura de `paper-trade` inexistente (deferred em `vision/02-scope.md`), grid search de parâmetros não rodado, walk-forward não rodado, Monte Carlo não rodado. Sem edge demonstrado no recorte. `live_trading` permanece inacessível por doutrina + hook. Compliance estrutural: 100% verde (nenhum import de venue real em `src/`; secrets bloqueados; hard cap de alavancagem respeitado).
+
+**Gap explícito (não mascarado):** `system/domain.md|api.md|flows.md` ainda não refletem o Donchian — blocker #B-6 no AUDIT, pendente deliberadamente para separar "overlay agentic" de "atualização da realidade por implementação".
+
+**Adendo observacional (2026-04-17, post-audit):** rodada caracterização paramétrica mínima sobre novo dataset `btcusdt_1h_20251003_20251231_binance_spot` (90d, 2160 barras, sha256=`5db1a51578d4...`). 3 combos declarados a priori: `(10,5)` / `(20,10)` / `(40,20)`. Resultados (fee=5bps, slip=2bps): PnL = −4.01% / −6.92% / −3.93%, hit_rate = 28%/24%/23%, max_dd = 4.28%/7.12%/4.42%. Todos negativos, coerentes com o recorte 180d. Endereça **parcialmente** o blocker #B-3 (sensibilidade de parâmetros) — não fecha: continua sendo 1 ativo, janela única, sem walk-forward, sem Monte Carlo. **Status epistêmico:** observação, não validação. Não altera `release_decision = fail`. Documentado em [BACKTEST.md §"Caracterização observacional paramétrica — 90d"](./BACKTEST.md).
+
+**Adendo B-2 resolvido (2026-04-17):** ADR-0012 aprovada (extensão de ADR-0010 à família Donchian); `tests/property/test_donchian_cost_monotonicity.py` replica a invariante de monotonicidade de custo em `final_equity` para `DonchianBreakoutStrategy(20, 10)` sobre o sintético seminal, 30 exemplos, tolerância `1e-6 * capital`. Blocker #B-2 do AUDIT fechado. Suíte: `87 passed, 1 skipped` (partiu de 86). `release_decision` permanece `fail` — B-3/B-4/B-5/B-6 pendentes.
+
+**Adendo B-6 resolvido (2026-04-17):** `system/domain.md|api.md|flows.md` atualizados para refletir realidade atual — `DonchianBreakoutStrategy` (ADR-0011), ADR-0012 (monotonicidade Donchian), dataset 90d `btcusdt_1h_20251003_20251231_binance_spot`, camada agentic completa (5 subagentes, 3 hooks, 7 artefatos, política de promoção, scripts `validate_pilot.py`/`validate_artifacts.py`, CI agentic). Adicionados flows: pureza causal Donchian, monotonicidade Donchian, grid de sensibilidade, caracterização observacional 90d, gate de artefatos, orquestração agentic ponta a ponta. Protocolo AGENTS.md §4 ("após mudança de código, atualize `system/`") honrado. `release_decision` permanece `fail` — B-3/B-4/B-5 pendentes.
+
+**Reauditoria adversarial independente (2026-04-17):** delegada a sub-processo isolado no papel do `risk-auditor`. Confirmações: (a) #B-2 genuinamente fechado — test de monotonicidade Donchian é isomorfo ao de MA crossover (mesmos ranges, mesma tolerância, mesma fixture, sem relaxamento); (b) #B-6 genuinamente fechado — as 3 atualizações em `system/` cobrem Donchian + ADR-0012 + dataset 90d + overlay agentic sem seção ficando pra trás; (c) #B-3 **segue formalmente aberto**, apenas endereçado observacionalmente (3 combos, 1 ativo, 1 recorte); (d) `release_decision = fail` **mantido** — B-1, B-4, B-5 sozinhos bastam. **Achado novo da reauditoria:** o dataset 90d é **subconjunto próprio** do 180d (2025-10-03→2025-12-31 ⊂ 2025-07-05→2025-12-31); "coerência" entre os dois não é evidência independente. Qualquer promoção futura exigirá dataset **disjunto temporalmente** (out-of-sample real), não recorte-de-recorte. Nota registrada em BACKTEST.md e em AUDIT.md #B-3.
+
+### Entrega anterior (ADRs 0009/0010) — mantida
 
 **ADRs 0009 e 0010 implementadas em bloco: primeiro dataset real (BTCUSDT 1h, 180 dias, Binance Vision) + property-based de monotonicidade de custo.** Seis guardrails operacionais explícitos do usuário respeitados integralmente: (1) símbolo canônico único normalizado na entrada do script; (2) `timezone` e `source` obrigatórios no manifesto; (3) gap declarado ou falha — rejeição bloqueia ingestão sem deixar Parquet órfão; (4) script multi-símbolo real desde o dia 1 (nenhum ramo `if symbol == "BTCUSDT"`); (5) código de rede isolado no script (`src/` não importa `urllib`/`ssl`/`certifi`); (6) nenhuma maquiagem — dataset real veio limpo e isso foi reportado como tal, não disfarçado. Delta entregue:
 

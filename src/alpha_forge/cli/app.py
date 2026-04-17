@@ -19,12 +19,13 @@ from alpha_forge.backtest.engine import StrategyProtocol, run_backtest
 from alpha_forge.backtest.schemas import BacktestResult
 from alpha_forge.data.loaders import load_dataset
 from alpha_forge.risk.schemas import RiskBudget
+from alpha_forge.strategies.families.donchian import DonchianBreakoutStrategy
 from alpha_forge.strategies.families.dummy import DummyAlternatingStrategy
 from alpha_forge.strategies.families.ma_crossover import MovingAverageCrossoverStrategy
 
 
 DEMO_DATASET_ID = "synthetic_btcusdt_1h_seed42"
-AVAILABLE_STRATEGIES = ("ma_crossover", "dummy")
+AVAILABLE_STRATEGIES = ("ma_crossover", "dummy", "donchian")
 DEFAULT_STRATEGY = "ma_crossover"
 
 
@@ -73,6 +74,18 @@ def build_parser() -> argparse.ArgumentParser:
         default=50,
         help="Janela longa do MA crossover (ignorada por outras estratégias).",
     )
+    demo.add_argument(
+        "--entry-window",
+        type=int,
+        default=20,
+        help="Janela de entrada do Donchian breakout (ignorada por outras estratégias).",
+    )
+    demo.add_argument(
+        "--exit-window",
+        type=int,
+        default=10,
+        help="Janela de saída do Donchian breakout (ignorada por outras estratégias).",
+    )
 
     return parser
 
@@ -96,6 +109,8 @@ def run(argv: Sequence[str] | None = None) -> int:
             strategy_name=args.strategy,
             short_window=args.short_window,
             long_window=args.long_window,
+            entry_window=args.entry_window,
+            exit_window=args.exit_window,
         )
 
     parser.error(f"subcomando desconhecido: {args.command}")
@@ -103,7 +118,11 @@ def run(argv: Sequence[str] | None = None) -> int:
 
 
 def _build_strategy(
-    name: str, short_window: int, long_window: int
+    name: str,
+    short_window: int,
+    long_window: int,
+    entry_window: int,
+    exit_window: int,
 ) -> StrategyProtocol:
     if name == "ma_crossover":
         return MovingAverageCrossoverStrategy(
@@ -111,12 +130,24 @@ def _build_strategy(
         )
     if name == "dummy":
         return DummyAlternatingStrategy()
+    if name == "donchian":
+        return DonchianBreakoutStrategy(
+            entry_window=entry_window, exit_window=exit_window
+        )
     raise ValueError(f"estratégia desconhecida: {name}")
 
 
-def _strategy_param_label(name: str, short_window: int, long_window: int) -> str:
+def _strategy_param_label(
+    name: str,
+    short_window: int,
+    long_window: int,
+    entry_window: int,
+    exit_window: int,
+) -> str:
     if name == "ma_crossover":
         return f"short={short_window} long={long_window}"
+    if name == "donchian":
+        return f"entry={entry_window} exit={exit_window}"
     return "(sem parâmetros)"
 
 
@@ -131,6 +162,8 @@ def _cmd_run_demo(
     strategy_name: str,
     short_window: int,
     long_window: int,
+    entry_window: int,
+    exit_window: int,
 ) -> int:
     budget = RiskBudget(
         capital_inicial=capital,
@@ -142,7 +175,13 @@ def _cmd_run_demo(
         slippage_bps_per_unit_notional=slippage_bps_per_notional,
     )
     prices = load_dataset(dataset_id)
-    strategy = _build_strategy(strategy_name, short_window, long_window)
+    strategy = _build_strategy(
+        strategy_name,
+        short_window,
+        long_window,
+        entry_window,
+        exit_window,
+    )
     result = run_backtest(
         prices=prices,
         strategy=strategy,
@@ -155,7 +194,9 @@ def _cmd_run_demo(
         budget,
         cost_model,
         strategy_name=strategy_name,
-        strategy_params=_strategy_param_label(strategy_name, short_window, long_window),
+        strategy_params=_strategy_param_label(
+            strategy_name, short_window, long_window, entry_window, exit_window
+        ),
     )
     return 0
 

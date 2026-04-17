@@ -24,9 +24,11 @@ Executa backtest mínimo sobre um dataset cadastrado.
 | `--alavancagem` | `2.0` | alavancagem máx (float ∈ [1, 10]). |
 | `--taker-fee-bps` | `5.0` | taker fee em basis points (float ≥ 0). |
 | `--slippage-bps-per-notional` | `2.0` | slippage linear por unidade de `notional/capital_inicial` (float ≥ 0). |
-| `--strategy` | `ma_crossover` | estratégia a executar. Opções: `ma_crossover` (ADR-0008, default) e `dummy` (sanidade estrutural). |
+| `--strategy` | `ma_crossover` | estratégia a executar. Opções: `ma_crossover` (ADR-0008, default), `donchian` (ADR-0011), `dummy` (sanidade estrutural). |
 | `--short-window` | `20` | janela curta da SMA do MA crossover (int > 0). Ignorado por outras estratégias. |
 | `--long-window` | `50` | janela longa da SMA do MA crossover (int > short_window). Ignorado por outras estratégias. |
+| `--entry-window` | `20` | janela do canal de entrada Donchian (int > 0). Ignorado por outras estratégias. |
+| `--exit-window` | `10` | janela do canal de saída Donchian (int > 0). Ignorado por outras estratégias. |
 
 Entry point: `alpha_forge.cli.app:main` (referenciado em `pyproject.toml`). Programaticamente: `from alpha_forge.cli.app import run; run(["run-demo", ...])`.
 
@@ -107,6 +109,9 @@ Nenhuma função cria diretórios; todas são puras (caminho deduzido).
 ### Módulo `alpha_forge.strategies.families.ma_crossover`
 - `MovingAverageCrossoverStrategy(short_window: int, long_window: int)` — primeira estratégia real (ADR-0008). SMA curta × SMA longa sobre `close`; long-only; stateless. `__init__` valida: `TypeError` para não-inteiros (inclui `bool`); `ValueError` para `short_window <= 0`, `long_window <= 0`, ou `short_window >= long_window`. `decide(window) -> Signal` retorna `HOLD` durante warm-up (`len(window) < long_window + 1`) e nas barras sem cruzamento.
 
+### Módulo `alpha_forge.strategies.families.donchian`
+- `DonchianBreakoutStrategy(entry_window: int, exit_window: int)` — segunda estratégia real (ADR-0011). Rompimento de canal Donchian sobre `high`/`low`; long-only; stateless. `__init__` valida: `TypeError` para não-inteiros (inclui `bool`); `ValueError` para `entry_window <= 0` ou `exit_window <= 0`. `decide(window) -> Signal` retorna `HOLD` durante warm-up (`len(window) < max(entry_window, exit_window) + 2`); ignora `window.iloc[-1]` por construção (ADR-0002); prioriza `EXIT` sobre `ENTER_LONG` em caso de arbitragem reversiva.
+
 ### Módulo `alpha_forge.cli.app`
 - `build_parser() -> argparse.ArgumentParser`
 - `run(argv: Sequence[str] | None = None) -> int`
@@ -122,8 +127,9 @@ Nenhuma função cria diretórios; todas são puras (caminho deduzido).
 - **Gaps declarados (ADR-0005):** continuidade temporal é checada no loader contra `declared_gaps`; gap não declarado bloqueia carregamento.
 - **Custo contra o trader (ADR-0006):** `apply_cost` ajusta o preço de execução, nunca o PnL; entrada e saída pagam atrito independente. `run_backtest` exige `cost_model` explícito.
 - **Métricas obrigatórias (ADR-0007):** `run_backtest` preenche `result.metrics` no fim; `hit_rate` é `None` quando `trade_count == 0` (nunca `0.0` nem `NaN`). Posição aberta no fim entra via `final_equity`, não como `Trade`.
-- **Validação cedo e explícita da estratégia (ADR-0008):** `MovingAverageCrossoverStrategy.__init__` falha com `TypeError` para não-inteiros e `ValueError` para inteiros fora de faixa. Sem corrigir silenciosamente.
-- **Pureza causal da estratégia (ADR-0008):** `decide(window) -> Signal` é função de `window` e parâmetros. Estado interno mínimo; não mantém "em posição ou não" — essa responsabilidade é do engine. Testado por property-based em `tests/property/test_ma_crossover_causal.py`: mutar barra futura nunca altera sinal em `t`.
+- **Validação cedo e explícita da estratégia (ADR-0008/0011):** `MovingAverageCrossoverStrategy.__init__` e `DonchianBreakoutStrategy.__init__` falham com `TypeError` para não-inteiros e `ValueError` para inteiros fora de faixa. Sem corrigir silenciosamente.
+- **Pureza causal da estratégia (ADR-0008/0011):** `decide(window) -> Signal` é função de `window` e parâmetros. Estado interno mínimo; não mantém "em posição ou não" — essa responsabilidade é do engine. Testado por property-based: `tests/property/test_ma_crossover_causal.py` (MA) e `tests/property/test_donchian_causal.py` (Donchian, 80 exemplos, mutação de OHLC completo da barra futura).
+- **Monotonicidade de custo em `final_equity` (ADR-0010/0012):** fixado o cenário (mesmo dataset, estratégia, budget), se `cost_high` domina `cost_low` componente a componente com ≥1 desigualdade estrita e o cenário `low` gerou ao menos um trade, então `final_equity_high <= final_equity_low + 1e-6 * capital`. Coberto por `tests/property/test_cost_monotonicity.py` (MA, 30 exemplos) e `tests/property/test_donchian_cost_monotonicity.py` (Donchian, 30 exemplos).
 
 ## Scripts operacionais (fora de `src/`)
 
@@ -142,6 +148,36 @@ Flags:
 Símbolo canônico único: normaliza (`upper`, sem `/`, `-`, `_`, espaço) na entrada. Manifesto, Parquet path e URL de Binance usam a mesma forma. Gaps detectados mas não declarados rejeitam a ingestão sem deixar Parquet órfão; operador declara via `--declared-gap` e re-roda.
 
 Resumo impresso por símbolo: `symbol`, `timeframe`, `window`, `bars_saved`, `gaps_detected`, `dataset_id`, `sha256`, `status`, `note`.
+
+### `scripts/validate_pilot.py`
+Grid de sensibilidade fees × slippage (4×4 por default: `fee ∈ {0, 5, 10, 20}` bps × `slip ∈ {0, 2, 5, 10}` bps/notional) para qualquer estratégia cadastrada na CLI. Imprime tabela, verifica monotonicidade de `final_equity` ao longo do grid, grava artefato JSON em `results/validation/<timestamp>_<strategy>.json`. `LIVE_TRADING = False` como constante topo-de-arquivo (hook bloqueia override).
+
+Flags: `--strategy`, `--dataset-id`, `--short-window`, `--long-window`, `--entry-window`, `--exit-window`, `--capital`, `--fracao`, `--alavancagem`.
+
+### `scripts/validate_artifacts.py`
+Checa presença e coerência dos artefatos agentic (`SPEC.md|IMPLEMENTATION.md|VALIDATION.md|BACKTEST.md|AUDIT.md|CHECKLIST.md|STATE.md`) contra um dicionário `ARTIFACTS` de seções regex exigidas. Exit 0 se tudo presente; exit 1 com lista de faltantes caso contrário. Usado no CI agentic e pelo hook `check_gates.py`.
+
+## Overlay agentic (`.claude/`)
+
+Detalhes operacionais em [README_AGENTIC_PILOT.md](../README_AGENTIC_PILOT.md). Resumo das superfícies expostas:
+
+### `.claude/settings.json`
+- Registra hooks `PreToolUse` (`block_live_trading.py`), `SessionStart` (`session_reminder.py`), `Stop` (`check_gates.py`).
+- `permissions.deny` — bloqueios adicionais por matcher: `Bash(*LIVE_TRADING=true*)`, `Edit(.env*)`, `Edit(secrets*)`, `Edit(*.pem)`, `Edit(*.key)`, `Edit(credentials*)`.
+
+### `.claude/hooks/` (Python stdlib only, stdin JSON, exit 2 para bloquear)
+- `block_live_trading.py` — PreToolUse. Regex-match de padrões `LIVE_TRADING=true`, paths de secret, imports de venue real (`ccxt`, `binance.client`), chamadas `.create_order/.place_order/.execute_order`, endpoints de trading (`api.binance.com`, `fapi.binance.com`, `api.bybit.com`, `api.okx.com`). Exceção: `data.binance.vision`.
+- `session_reminder.py` — SessionStart. Imprime as 5 regras duras em stdout após compactação.
+- `check_gates.py` — Stop. Exit 2 se `ARTIFACTS` incompletos (a menos que `stop_hook_active` já seja true).
+
+### `.claude/agents/` (frontmatter `name`, `description`, `tools`, `model`)
+- `lead-orchestrator.md` — modelo `sonnet`, effort high.
+- `strategy-researcher.md` — `sonnet`, effort high.
+- `strategy-implementer.md` — `sonnet`, effort high.
+- `backtest-validator.md` — `sonnet`, effort xhigh.
+- `risk-auditor.md` — `claude-opus-4-7`, effort xhigh.
+
+Invocáveis via `Agent(subagent_type="<name>", prompt="...")` dentro do Claude Code. Não são bibliotecas Python; não há import em `src/`.
 
 ## Interfaces deferred (não expostas)
 
