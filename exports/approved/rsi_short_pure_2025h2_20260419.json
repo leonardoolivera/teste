@@ -1,0 +1,155 @@
+{
+  "strategy_name": "rsi_short_pure_2025h2",
+  "manifest_version": "v3",
+  "complementary_to": "rsi_short_width_2025h1_20260419.json",
+  "alpha_forge_commit": "ab7c2ad6891f44a2fd66d0b46a219729da191a1e",
+  "approved_at": "2026-04-19T00:00:00Z",
+  "approval_adr": "decisions/0068-manifest-v4-audit-closeout-split-v4a-v4b.md",
+  "prior_approval_adr": "decisions/0065-manifest-v4-rsi-short-width-promotion.md",
+  "live_status": "deprecated",
+  "live_status_since": "2026-04-19T17:00:00Z",
+  "superseded_by": "rsi_short_pure_2025h2_20260420.json",
+  "superseded_at": "2026-04-20T05:10:00Z",
+  "superseded_reason": "v8 estende com LINK 2025-H2 (CZ.3, Sh=1.76). ADR-0098.",
+  "audit_adr": "decisions/0068-manifest-v4-audit-closeout-split-v4a-v4b.md",
+  "audit_closeout_adr": "decisions/0069-manifest-v4a-v4b-activate.md",
+  "runtime_contract": "faithful",
+  "runtime_invariants": {
+    "entry_fill": "market_at_open_next_bar",
+    "exit_fill": "market_at_open_next_bar",
+    "sizing": "fixed_notional_literal",
+    "stop_loss": "disabled",
+    "signal_arbitration": "exit_wins_on_tie"
+  },
+  "engine": {
+    "family": "rsi",
+    "params": {
+      "period": 14,
+      "oversold": 30,
+      "overbought": 70,
+      "long_only": false,
+      "regime_filter": null
+    }
+  },
+  "approved_combos": [
+    {
+      "symbol": "BTCUSDT",
+      "timeframe": "1h",
+      "validation_window": "2025-07-05..2025-12-31",
+      "window_tag": "2025-H2",
+      "regime": "misto",
+      "oos_trades": 92,
+      "oos_sharpe": 1.640,
+      "oos_mdd_pct": 4.974,
+      "oos_pnl_pct": 5.126,
+      "cost_stress_ratio_min": 0.9556,
+      "mc_p5_final_equity": 9796,
+      "approved_in": "v4",
+      "source_tag": "CH.7",
+      "source_run_id": "audit-v4-b-btc-20250705_20251231-nofilter",
+      "note": "Filter neutral em audit Gate B: Sh com filter=2.63, sem filter=1.64. Ambos PASS; sem filter tem +55 trades. Mantido sem filter para seguir Padrao 12 (filter regime-especifico)."
+    },
+    {
+      "symbol": "SOLUSDT",
+      "timeframe": "1h",
+      "validation_window": "2025-07-05..2025-12-31",
+      "window_tag": "2025-H2",
+      "regime": "misto",
+      "oos_trades": 86,
+      "oos_sharpe": 2.300,
+      "oos_mdd_pct": 5.135,
+      "oos_pnl_pct": 13.812,
+      "cost_stress_ratio_min": 0.9621,
+      "mc_p5_final_equity": 9898,
+      "approved_in": "v4",
+      "source_tag": "CH.9",
+      "source_run_id": "audit-v4-b-sol-20250705_20251231-nofilter",
+      "note": "Filter PREJUDICIAL em audit Gate B: Sh com filter=1.92, sem filter=2.30. Filter reduzia edge. Seed stability PASS 3/3 em {42,1337,2024}."
+    }
+  ],
+  "validation": {
+    "method": "walk-forward-5fold + monte_carlo_1000 + cost_stress",
+    "cost_model_baseline_pct": 0.14,
+    "cost_model_stress_fee_plus_10_pct": 0.34,
+    "cost_stress_ratio_min": 0.95,
+    "seed_monte_carlo": 42,
+    "notes": "Audit v4 Gate B + v4b seed stability confirmaram: RSI puro eh estavel e superior ao filtrado em 2025-H2. Seeds 1337 e 2024 em results/validation/audit-v4b-nofilter-*."
+  },
+  "execution_hints": {
+    "position_sizing": "fixed_notional_per_trade",
+    "notional_per_trade_quote_ccy": 2000,
+    "entry_rule_long": "RSI(14) cruza abaixo de 30 usando close[t-1] (ADR-0027)",
+    "entry_rule_short": "RSI(14) cruza acima de 70 usando close[t-1] (ADR-0027)",
+    "exit_rule": "RSI(14) retorna para zona neutra (long: RSI>=50; short: RSI<=50) usando close[t-1]",
+    "regime_gate": "none (sem filter; manifest escopado a regime 2025-H2 misto)",
+    "causal_invariant": "engine ignora window.iloc[-1]; sinal em t usa apenas closes ate t-1 inclusive (ADR-0002)",
+    "signal_arbitration": "EXIT vence ENTER quando disparam na mesma barra (ADR-0011)",
+    "reverse_on_signal": "permitido; incorre double cost (ADR-0012)"
+  },
+  "disallow_sizing_modes": ["snowball", "kelly_like", "martingale"],
+  "disallow_sizing_reason": "Herdado ADR-0028/0029 + confirmado empiricamente ADR-0064.",
+  "series_source": {
+    "series_tag": "CH + audit v4b",
+    "preregister_adr": "decisions/0061-series-ch-rsi-short-width-300-preregister.md",
+    "closeout_adr": "decisions/0062-series-ch-closeout-rsi-short-width-300-pass.md",
+    "audit_adr": "decisions/0067-manifest-v4-audit-rsi-short-width.md",
+    "audit_closeout_adr": "decisions/0068-manifest-v4-audit-closeout-split-v4a-v4b.md",
+    "v4b_seed_stability": "PASS 6/6 em {42, 1337, 2024} x {CH.7, CH.9}",
+    "raw_data": "exports/diag/manifest_v4_audit_summary.json"
+  },
+  "expansion_policy": {
+    "rule": "Combos fora de approved_combos requerem nova ADR + nova serie. Manifest escopado a regime 2025-H2 misto sem filter; adicionar 2025-H1 chop sem filter requer audit Gate B separado (ja sabemos que falha: CH.4/CH.6 sem filter FAIL).",
+    "regime_dependence_note": "RSI short puro eh estavel-ou-superior em 2025-H2 misto. Em 2025-H1 chop sem filter o edge colapsa (CH.4 Sh=0.23, CH.6 Sh=0.61). Este manifest NAO cobre 2025-H1 — complementar v4a cobre.",
+    "excluded_combos": [
+      {
+        "symbol": "BTCUSDT",
+        "timeframe": "1h",
+        "window_tag": "2025-H1",
+        "source_tag": "CH.4",
+        "reason": "Sem filter Sh=0.23 FAIL. Requer filter — movido pra manifest v4a."
+      },
+      {
+        "symbol": "SOLUSDT",
+        "timeframe": "1h",
+        "window_tag": "2025-H1",
+        "source_tag": "CH.6",
+        "reason": "Sem filter Sh=0.61 FAIL. Requer filter — movido pra manifest v4a."
+      },
+      {
+        "symbol": "BTCUSDT",
+        "timeframe": "1h",
+        "window_tag": "2024-H2",
+        "source_tag": "CH.1",
+        "reason": "Sharpe -0.76, bull hostil, nao testado sem filter mas improvavel recuperar."
+      },
+      {
+        "symbol": "ETHUSDT",
+        "timeframe": "1h",
+        "window_tag": "2024-H2",
+        "source_tag": "CH.2",
+        "reason": "Sharpe -1.52, dupla falha em bull."
+      },
+      {
+        "symbol": "SOLUSDT",
+        "timeframe": "1h",
+        "window_tag": "2024-H2",
+        "source_tag": "CH.3",
+        "reason": "Sharpe -0.39 + MC p5 8734."
+      },
+      {
+        "symbol": "ETHUSDT",
+        "timeframe": "1h",
+        "window_tag": "2025-H1",
+        "source_tag": "CH.5",
+        "reason": "Fora de escopo deste manifest (2025-H1); seria candidato a v4a pero FAIL gate."
+      },
+      {
+        "symbol": "ETHUSDT",
+        "timeframe": "1h",
+        "window_tag": "2025-H2",
+        "source_tag": "CH.8",
+        "reason": "Sharpe 0.81 com filter < 1.0; sem filter nao testado, mas manifest escopado a BTC+SOL 2025-H2."
+      }
+    ]
+  }
+}

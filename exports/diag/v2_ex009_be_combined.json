@@ -1,0 +1,242 @@
+{
+  "results": [
+    {
+      "asset": "ETHUSDT",
+      "variant": "raw",
+      "category": "standalone",
+      "run_id": "v2-ex009-standalone-ethusdt-raw-30m",
+      "ok": true,
+      "elapsed": 109.9,
+      "metrics": {
+        "trades": 175,
+        "sharpe": -0.013,
+        "pnl_pct": -1.0699,
+        "mdd_pct": 10.9682
+      }
+    },
+    {
+      "asset": "SOLUSDT",
+      "variant": "raw",
+      "category": "standalone",
+      "run_id": "v2-ex009-standalone-solusdt-raw-30m",
+      "ok": true,
+      "elapsed": 111.1,
+      "metrics": {
+        "trades": 185,
+        "sharpe": 1.2008,
+        "pnl_pct": 29.1973,
+        "mdd_pct": 9.0388
+      }
+    },
+    {
+      "asset": "BTCUSDT",
+      "variant": "raw",
+      "category": "standalone",
+      "run_id": "v2-ex009-standalone-btcusdt-raw-30m",
+      "ok": true,
+      "elapsed": 111.4,
+      "metrics": {
+        "trades": 171,
+        "sharpe": -0.0204,
+        "pnl_pct": -0.616,
+        "mdd_pct": 8.8922
+      }
+    },
+    {
+      "asset": "SOLUSDT",
+      "variant": "be05",
+      "category": "standalone",
+      "run_id": "v2-ex009-standalone-solusdt-be05-30m",
+      "ok": true,
+      "elapsed": 112.1,
+      "metrics": {
+        "trades": 233,
+        "sharpe": 0.6753,
+        "pnl_pct": 12.6143,
+        "mdd_pct": 10.9652
+      }
+    },
+    {
+      "asset": "ETHUSDT",
+      "variant": "be05",
+      "category": "standalone",
+      "run_id": "v2-ex009-standalone-ethusdt-be05-30m",
+      "ok": true,
+      "elapsed": 112.7,
+      "metrics": {
+        "trades": 215,
+        "sharpe": -0.1924,
+        "pnl_pct": -3.6208,
+        "mdd_pct": 11.289
+      }
+    },
+    {
+      "asset": "BTCUSDT",
+      "variant": "be15",
+      "category": "standalone",
+      "run_id": "v2-ex009-standalone-btcusdt-be15-30m",
+      "ok": true,
+      "elapsed": 113.5,
+      "metrics": {
+        "trades": 197,
+        "sharpe": 0.1474,
+        "pnl_pct": 1.3799,
+        "mdd_pct": 6.1221
+      }
+    },
+    {
+      "asset": "ETHUSDT",
+      "variant": "be15",
+      "category": "standalone",
+      "run_id": "v2-ex009-standalone-ethusdt-be15-30m",
+      "ok": true,
+      "elapsed": 113.7,
+      "metrics": {
+        "trades": 191,
+        "sharpe": -0.0402,
+        "pnl_pct": -1.4663,
+        "mdd_pct": 10.729
+      }
+    },
+    {
+      "asset": "BTCUSDT",
+      "variant": "be05",
+      "category": "standalone",
+      "run_id": "v2-ex009-standalone-btcusdt-be05-30m",
+      "ok": true,
+      "elapsed": 114.4,
+      "metrics": {
+        "trades": 221,
+        "sharpe": -0.1441,
+        "pnl_pct": -1.7582,
+        "mdd_pct": 7.4082
+      }
+    },
+    {
+      "asset": "BTCUSDT",
+      "variant": "be10",
+      "category": "standalone",
+      "run_id": "v2-ex009-standalone-btcusdt-be10-30m",
+      "ok": true,
+      "elapsed": 115.1,
+      "metrics": {
+        "trades": 210,
+        "sharpe": 0.0291,
+        "pnl_pct": 0.0116,
+        "mdd_pct": 6.925
+      }
+    },
+    {
+      "asset": "ETHUSDT",
+      "variant": "be10",
+      "category": "standalone",
+      "run_id": "v2-ex009-standalone-ethusdt-be10-30m",
+      "ok": true,
+      "elapsed": 118.7,
+      "metrics": {
+        "trades": 202,
+        "sharpe": -0.018,
+        "pnl_pct": -1.0246,
+        "mdd_pct": 9.6377
+      }
+    },
+    {
+      "asset": "SOLUSDT",
+      "variant": "cum_raw",
+      "category": "cumulative",
+      "run_id": "v2-ex009-cumulative-solusdt-cum_raw-30m",
+      "ok": true,
+      "elapsed": 92.8,
+      "metrics": {
+        "trades": 185,
+        "sharpe": 1.2008,
+        "pnl_pct": 29.1973,
+        "mdd_pct": 9.0388
+      }
+    },
+    {
+      "asset": "SOLUSDT",
+      "variant": "be10",
+      "category": "standalone",
+      "run_id": "v2-ex009-standalone-solusdt-be10-30m",
+      "ok": true,
+      "elapsed": 98.0,
+      "metrics": {
+        "trades": 218,
+        "sharpe": 0.6389,
+        "pnl_pct": 12.8247,
+        "mdd_pct": 9.031
+      }
+    },
+    {
+      "asset": "SOLUSDT",
+      "variant": "be15",
+      "category": "standalone",
+      "run_id": "v2-ex009-standalone-solusdt-be15-30m",
+      "ok": true,
+      "elapsed": 98.1,
+      "metrics": {
+        "trades": 204,
+        "sharpe": 0.7834,
+        "pnl_pct": 16.8667,
+        "mdd_pct": 8.9959
+      }
+    },
+    {
+      "asset": "SOLUSDT",
+      "variant": "cum_t40",
+      "category": "cumulative",
+      "run_id": "v2-ex009-cumulative-solusdt-cum_t40-30m",
+      "ok": true,
+      "elapsed": 97.8,
+      "metrics": {
+        "trades": 221,
+        "sharpe": 1.3699,
+        "pnl_pct": 31.5559,
+        "mdd_pct": 8.5945
+      }
+    },
+    {
+      "asset": "SOLUSDT",
+      "variant": "cum_t40_be10",
+      "category": "cumulative",
+      "run_id": "v2-ex009-cumulative-solusdt-cum_t40_be10-30m",
+      "ok": true,
+      "elapsed": 100.5,
+      "metrics": {
+        "trades": 236,
+        "sharpe": 0.784,
+        "pnl_pct": 15.2061,
+        "mdd_pct": 8.3006
+      }
+    },
+    {
+      "asset": "SOLUSDT",
+      "variant": "cum_t40_be05",
+      "category": "cumulative",
+      "run_id": "v2-ex009-cumulative-solusdt-cum_t40_be05-30m",
+      "ok": true,
+      "elapsed": 101.4,
+      "metrics": {
+        "trades": 246,
+        "sharpe": 0.813,
+        "pnl_pct": 14.7747,
+        "mdd_pct": 9.9074
+      }
+    },
+    {
+      "asset": "SOLUSDT",
+      "variant": "cum_t40_be15",
+      "category": "cumulative",
+      "run_id": "v2-ex009-cumulative-solusdt-cum_t40_be15-30m",
+      "ok": true,
+      "elapsed": 100.8,
+      "metrics": {
+        "trades": 227,
+        "sharpe": 0.925,
+        "pnl_pct": 19.2335,
+        "mdd_pct": 9.8262
+      }
+    }
+  ]
+}

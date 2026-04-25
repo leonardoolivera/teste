@@ -1,0 +1,190 @@
+{
+  "combos": [
+    "bol_short_BTC",
+    "bol_short_ETH",
+    "bol_short_SOL",
+    "rsi_short_width_BTC",
+    "rsi_short_width_ETH",
+    "rsi_short_width_SOL",
+    "rsi_short_trendhtf_SOL_2575"
+  ],
+  "matrix": {
+    "bol_short_BTC": {
+      "bol_short_BTC": 1.0,
+      "bol_short_ETH": 0.4114,
+      "bol_short_SOL": 0.3442,
+      "rsi_short_width_BTC": 0.6046,
+      "rsi_short_width_ETH": 0.2793,
+      "rsi_short_width_SOL": 0.2435,
+      "rsi_short_trendhtf_SOL_2575": 0.2186
+    },
+    "bol_short_ETH": {
+      "bol_short_BTC": 0.4114,
+      "bol_short_ETH": 1.0,
+      "bol_short_SOL": 0.3972,
+      "rsi_short_width_BTC": 0.3073,
+      "rsi_short_width_ETH": 0.5344,
+      "rsi_short_width_SOL": 0.2985,
+      "rsi_short_trendhtf_SOL_2575": 0.2325
+    },
+    "bol_short_SOL": {
+      "bol_short_BTC": 0.3442,
+      "bol_short_ETH": 0.3972,
+      "bol_short_SOL": 1.0,
+      "rsi_short_width_BTC": 0.36,
+      "rsi_short_width_ETH": 0.4246,
+      "rsi_short_width_SOL": 0.6771,
+      "rsi_short_trendhtf_SOL_2575": 0.3592
+    },
+    "rsi_short_width_BTC": {
+      "bol_short_BTC": 0.6046,
+      "bol_short_ETH": 0.3073,
+      "bol_short_SOL": 0.36,
+      "rsi_short_width_BTC": 1.0,
+      "rsi_short_width_ETH": 0.3791,
+      "rsi_short_width_SOL": 0.3482,
+      "rsi_short_trendhtf_SOL_2575": 0.2273
+    },
+    "rsi_short_width_ETH": {
+      "bol_short_BTC": 0.2793,
+      "bol_short_ETH": 0.5344,
+      "bol_short_SOL": 0.4246,
+      "rsi_short_width_BTC": 0.3791,
+      "rsi_short_width_ETH": 1.0,
+      "rsi_short_width_SOL": 0.4755,
+      "rsi_short_trendhtf_SOL_2575": 0.3945
+    },
+    "rsi_short_width_SOL": {
+      "bol_short_BTC": 0.2435,
+      "bol_short_ETH": 0.2985,
+      "bol_short_SOL": 0.6771,
+      "rsi_short_width_BTC": 0.3482,
+      "rsi_short_width_ETH": 0.4755,
+      "rsi_short_width_SOL": 1.0,
+      "rsi_short_trendhtf_SOL_2575": 0.5305
+    },
+    "rsi_short_trendhtf_SOL_2575": {
+      "bol_short_BTC": 0.2186,
+      "bol_short_ETH": 0.2325,
+      "bol_short_SOL": 0.3592,
+      "rsi_short_width_BTC": 0.2273,
+      "rsi_short_width_ETH": 0.3945,
+      "rsi_short_width_SOL": 0.5305,
+      "rsi_short_trendhtf_SOL_2575": 1.0
+    }
+  },
+  "pairs": [
+    {
+      "a": "bol_short_SOL",
+      "b": "rsi_short_width_SOL",
+      "corr": 0.6771
+    },
+    {
+      "a": "bol_short_BTC",
+      "b": "rsi_short_width_BTC",
+      "corr": 0.6046
+    },
+    {
+      "a": "bol_short_ETH",
+      "b": "rsi_short_width_ETH",
+      "corr": 0.5344
+    },
+    {
+      "a": "rsi_short_width_SOL",
+      "b": "rsi_short_trendhtf_SOL_2575",
+      "corr": 0.5305
+    },
+    {
+      "a": "rsi_short_width_ETH",
+      "b": "rsi_short_width_SOL",
+      "corr": 0.4755
+    },
+    {
+      "a": "bol_short_SOL",
+      "b": "rsi_short_width_ETH",
+      "corr": 0.4246
+    },
+    {
+      "a": "bol_short_BTC",
+      "b": "bol_short_ETH",
+      "corr": 0.4114
+    },
+    {
+      "a": "bol_short_ETH",
+      "b": "bol_short_SOL",
+      "corr": 0.3972
+    },
+    {
+      "a": "rsi_short_width_ETH",
+      "b": "rsi_short_trendhtf_SOL_2575",
+      "corr": 0.3945
+    },
+    {
+      "a": "rsi_short_width_BTC",
+      "b": "rsi_short_width_ETH",
+      "corr": 0.3791
+    },
+    {
+      "a": "bol_short_SOL",
+      "b": "rsi_short_width_BTC",
+      "corr": 0.36
+    },
+    {
+      "a": "bol_short_SOL",
+      "b": "rsi_short_trendhtf_SOL_2575",
+      "corr": 0.3592
+    },
+    {
+      "a": "rsi_short_width_BTC",
+      "b": "rsi_short_width_SOL",
+      "corr": 0.3482
+    },
+    {
+      "a": "bol_short_BTC",
+      "b": "bol_short_SOL",
+      "corr": 0.3442
+    },
+    {
+      "a": "bol_short_ETH",
+      "b": "rsi_short_width_BTC",
+      "corr": 0.3073
+    },
+    {
+      "a": "bol_short_ETH",
+      "b": "rsi_short_width_SOL",
+      "corr": 0.2985
+    },
+    {
+      "a": "bol_short_BTC",
+      "b": "rsi_short_width_ETH",
+      "corr": 0.2793
+    },
+    {
+      "a": "bol_short_BTC",
+      "b": "rsi_short_width_SOL",
+      "corr": 0.2435
+    },
+    {
+      "a": "bol_short_ETH",
+      "b": "rsi_short_trendhtf_SOL_2575",
+      "corr": 0.2325
+    },
+    {
+      "a": "rsi_short_width_BTC",
+      "b": "rsi_short_trendhtf_SOL_2575",
+      "corr": 0.2273
+    },
+    {
+      "a": "bol_short_BTC",
+      "b": "rsi_short_trendhtf_SOL_2575",
+      "corr": 0.2186
+    }
+  ],
+  "summary": {
+    "mean_off_diag": 0.3832,
+    "max_off_diag": 0.6771,
+    "min_off_diag": 0.2186,
+    "n_timestamps_aligned": 3455,
+    "n_combos": 7
+  }
+}

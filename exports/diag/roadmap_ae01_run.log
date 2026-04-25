@@ -1,0 +1,260 @@
+
+======================================================================
+AE01.01 | dotusdt_1h_20250105_20250704_binance_spot | ('bollinger', 20, 2.0)
+======================================================================
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+dataset          : dotusdt_1h_20250105_20250704_binance_spot
+strategy         : bollinger window=20 num_std=2.00 long_only=True
+run_id           : t3bb-20-2-dot-2025h1-bi-1h
+regime_filter    : none
+out_dir          : C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\t3bb-20-2-dot-2025h1-bi-1h
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-22T00:39:22.379890+00:00 -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\t3bb-20-2-dot-2025h1-bi-1h\run.json
+walk_forward     : 4 fold(s), 64 trade(s) -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\t3bb-20-2-dot-2025h1-bi-1h\walk_forward.json
+monte_carlo      : 500 resamples, seed=42, median_final=9751.02 -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\t3bb-20-2-dot-2025h1-bi-1h\monte_carlo.json
+cost_stress      : pulado (sem --stress)
+
+======================================================================
+AE01.02 | dotusdt_1h_20250705_20251231_binance_spot | ('bollinger', 20, 2.0)
+======================================================================
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+dataset          : dotusdt_1h_20250705_20251231_binance_spot
+strategy         : bollinger window=20 num_std=2.00 long_only=True
+run_id           : t3bb-20-2-dot-2025h2-bi-1h
+regime_filter    : none
+out_dir          : C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\t3bb-20-2-dot-2025h2-bi-1h
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-22T00:39:23.388639+00:00 -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\t3bb-20-2-dot-2025h2-bi-1h\run.json
+walk_forward     : 4 fold(s), 69 trade(s) -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\t3bb-20-2-dot-2025h2-bi-1h\walk_forward.json
+monte_carlo      : 500 resamples, seed=42, median_final=10302.30 -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\t3bb-20-2-dot-2025h2-bi-1h\monte_carlo.json
+cost_stress      : pulado (sem --stress)
+
+======================================================================
+AE01.03 | linkusdt_1h_20250105_20250704_binance_spot | ('bollinger', 20, 2.0)
+======================================================================
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+dataset          : linkusdt_1h_20250105_20250704_binance_spot
+strategy         : bollinger window=20 num_std=2.00 long_only=True
+run_id           : t3bb-20-2-link-2025h1-bi-1h
+regime_filter    : none
+out_dir          : C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\t3bb-20-2-link-2025h1-bi-1h
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-22T00:39:24.313997+00:00 -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\t3bb-20-2-link-2025h1-bi-1h\run.json
+walk_forward     : 4 fold(s), 66 trade(s) -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\t3bb-20-2-link-2025h1-bi-1h\walk_forward.json
+monte_carlo      : 500 resamples, seed=42, median_final=9893.45 -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\t3bb-20-2-link-2025h1-bi-1h\monte_carlo.json
+cost_stress      : pulado (sem --stress)
+
+======================================================================
+AE01.04 | linkusdt_1h_20250705_20251231_binance_spot | ('bollinger', 20, 2.0)
+======================================================================
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+dataset          : linkusdt_1h_20250705_20251231_binance_spot
+strategy         : bollinger window=20 num_std=2.00 long_only=True
+run_id           : t3bb-20-2-link-2025h2-bi-1h
+regime_filter    : none
+out_dir          : C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\t3bb-20-2-link-2025h2-bi-1h
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-22T00:39:25.247291+00:00 -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\t3bb-20-2-link-2025h2-bi-1h\run.json
+walk_forward     : 4 fold(s), 72 trade(s) -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\t3bb-20-2-link-2025h2-bi-1h\walk_forward.json
+monte_carlo      : 500 resamples, seed=42, median_final=10127.76 -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\t3bb-20-2-link-2025h2-bi-1h\monte_carlo.json
+cost_stress      : pulado (sem --stress)
+
+======================================================================
+AE01.05 | avaxusdt_1h_20250105_20250704_binance_spot | ('bollinger', 20, 2.0)
+======================================================================
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+dataset          : avaxusdt_1h_20250105_20250704_binance_spot
+strategy         : bollinger window=20 num_std=2.00 long_only=True
+run_id           : t3bb-20-2-avax-2025h1-bi-1h
+regime_filter    : none
+out_dir          : C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\t3bb-20-2-avax-2025h1-bi-1h
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-22T00:39:26.331924+00:00 -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\t3bb-20-2-avax-2025h1-bi-1h\run.json
+walk_forward     : 4 fold(s), 63 trade(s) -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\t3bb-20-2-avax-2025h1-bi-1h\walk_forward.json
+monte_carlo      : 500 resamples, seed=42, median_final=9256.56 -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\t3bb-20-2-avax-2025h1-bi-1h\monte_carlo.json
+cost_stress      : pulado (sem --stress)
+
+======================================================================
+AE01.06 | avaxusdt_1h_20250705_20251231_binance_spot | ('bollinger', 20, 2.0)
+======================================================================
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+dataset          : avaxusdt_1h_20250705_20251231_binance_spot
+strategy         : bollinger window=20 num_std=2.00 long_only=True
+run_id           : t3bb-20-2-avax-2025h2-bi-1h
+regime_filter    : none
+out_dir          : C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\t3bb-20-2-avax-2025h2-bi-1h
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-22T00:39:27.305703+00:00 -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\t3bb-20-2-avax-2025h2-bi-1h\run.json
+walk_forward     : 4 fold(s), 66 trade(s) -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\t3bb-20-2-avax-2025h2-bi-1h\walk_forward.json
+monte_carlo      : 500 resamples, seed=42, median_final=9579.99 -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\t3bb-20-2-avax-2025h2-bi-1h\monte_carlo.json
+cost_stress      : pulado (sem --stress)
+
+======================================================================
+AE01.07 | dotusdt_1h_20250105_20250704_binance_spot | ('ma_crossover', 20, 50)
+======================================================================
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+dataset          : dotusdt_1h_20250105_20250704_binance_spot
+strategy         : ma_crossover short=20 long=50 long_only=True
+run_id           : t3ma-20-50-dot-2025h1-long-1h
+regime_filter    : none
+out_dir          : C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\t3ma-20-50-dot-2025h1-long-1h
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-22T00:39:28.268871+00:00 -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\t3ma-20-50-dot-2025h1-long-1h\run.json
+walk_forward     : 4 fold(s), 36 trade(s) -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\t3ma-20-50-dot-2025h1-long-1h\walk_forward.json
+monte_carlo      : 500 resamples, seed=42, median_final=9186.06 -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\t3ma-20-50-dot-2025h1-long-1h\monte_carlo.json
+cost_stress      : pulado (sem --stress)
+
+======================================================================
+AE01.08 | linkusdt_1h_20250105_20250704_binance_spot | ('ma_crossover', 20, 50)
+======================================================================
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+dataset          : linkusdt_1h_20250105_20250704_binance_spot
+strategy         : ma_crossover short=20 long=50 long_only=True
+run_id           : t3ma-20-50-link-2025h1-long-1h
+regime_filter    : none
+out_dir          : C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\t3ma-20-50-link-2025h1-long-1h
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-22T00:39:29.166309+00:00 -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\t3ma-20-50-link-2025h1-long-1h\run.json
+walk_forward     : 4 fold(s), 36 trade(s) -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\t3ma-20-50-link-2025h1-long-1h\walk_forward.json
+monte_carlo      : 500 resamples, seed=42, median_final=8940.50 -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\t3ma-20-50-link-2025h1-long-1h\monte_carlo.json
+cost_stress      : pulado (sem --stress)
+
+======================================================================
+AE01.09 | avaxusdt_1h_20250105_20250704_binance_spot | ('ma_crossover', 20, 50)
+======================================================================
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+dataset          : avaxusdt_1h_20250105_20250704_binance_spot
+strategy         : ma_crossover short=20 long=50 long_only=True
+run_id           : t3ma-20-50-avax-2025h1-long-1h
+regime_filter    : none
+out_dir          : C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\t3ma-20-50-avax-2025h1-long-1h
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-22T00:39:30.054777+00:00 -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\t3ma-20-50-avax-2025h1-long-1h\run.json
+walk_forward     : 4 fold(s), 36 trade(s) -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\t3ma-20-50-avax-2025h1-long-1h\walk_forward.json
+monte_carlo      : 500 resamples, seed=42, median_final=9730.51 -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\t3ma-20-50-avax-2025h1-long-1h\monte_carlo.json
+cost_stress      : pulado (sem --stress)
+
+======================================================================
+AE01.10 | avaxusdt_1h_20250105_20250704_binance_spot | ('supertrend', 10, 3.0, 'bi')
+======================================================================
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+dataset          : avaxusdt_1h_20250105_20250704_binance_spot
+strategy         : supertrend atr_period=10 atr_mult=3.00 long_only=True
+run_id           : t3st-10-3-avax-2025h1-bi-1h
+regime_filter    : none
+out_dir          : C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\t3st-10-3-avax-2025h1-bi-1h
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-22T00:39:30.951048+00:00 -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\t3st-10-3-avax-2025h1-bi-1h\run.json
+walk_forward     : 4 fold(s), 40 trade(s) -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\t3st-10-3-avax-2025h1-bi-1h\walk_forward.json
+monte_carlo      : 500 resamples, seed=42, median_final=9973.46 -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\t3st-10-3-avax-2025h1-bi-1h\monte_carlo.json
+cost_stress      : pulado (sem --stress)
+
+Batch AE01 completo (10 runs).

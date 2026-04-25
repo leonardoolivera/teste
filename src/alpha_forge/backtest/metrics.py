@@ -46,6 +46,8 @@ def _max_drawdown(equity: list[float]) -> float:
         if running_max <= 0.0:
             continue
         dd = 1.0 - (v / running_max)
+        if dd > 1.0:
+            dd = 1.0
         if dd > worst:
             worst = dd
     return worst

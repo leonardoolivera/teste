@@ -1,0 +1,371 @@
+{
+  "gate_adr": "0052",
+  "g1_passes_of_18": 2,
+  "g2_passes_in_bull_h2": 0,
+  "g3_passes_in_chop_h1": 0,
+  "bol_passes_of_9": 0,
+  "rsi_passes_of_9": 2,
+  "asymmetry_abs": 2,
+  "gate1": "FAIL",
+  "gate2": "PASS",
+  "gate3": "FAIL",
+  "overall": "FAIL",
+  "pilots": [
+    {
+      "tag": "CE.1",
+      "strategy": "bol",
+      "asset": "btc",
+      "period": "20240705_20241231",
+      "regime": "2024-H2",
+      "metrics": {
+        "trades": 115,
+        "sharpe": -0.8715712312243908,
+        "mdd_pct": 12.689073012755687,
+        "final_eq": 9642.847545734574,
+        "cost_r": 0.9385438623670047,
+        "mc_p5": 8924.985544274834
+      },
+      "pass_gate1": false,
+      "fail_reasons": [
+        "Sharpe",
+        "MCp5",
+        "cost_r"
+      ]
+    },
+    {
+      "tag": "CE.1",
+      "strategy": "rsi",
+      "asset": "btc",
+      "period": "20240705_20241231",
+      "regime": "2024-H2",
+      "metrics": {
+        "trades": 62,
+        "sharpe": -2.773013713735254,
+        "mdd_pct": 15.198329071137767,
+        "final_eq": 8919.857560760056,
+        "cost_r": 0.9597181765129299,
+        "mc_p5": 7905.403565640286
+      },
+      "pass_gate1": false,
+      "fail_reasons": [
+        "Sharpe",
+        "MCp5"
+      ]
+    },
+    {
+      "tag": "CE.2",
+      "strategy": "bol",
+      "asset": "eth",
+      "period": "20240705_20241231",
+      "regime": "2024-H2",
+      "metrics": {
+        "trades": 119,
+        "sharpe": -0.436747548454654,
+        "mdd_pct": 12.117559731440366,
+        "final_eq": 9754.973735862211,
+        "cost_r": 0.9353278991718922,
+        "mc_p5": 8401.296627144857
+      },
+      "pass_gate1": false,
+      "fail_reasons": [
+        "Sharpe",
+        "MCp5",
+        "cost_r"
+      ]
+    },
+    {
+      "tag": "CE.2",
+      "strategy": "rsi",
+      "asset": "eth",
+      "period": "20240705_20241231",
+      "regime": "2024-H2",
+      "metrics": {
+        "trades": 73,
+        "sharpe": -1.2496745638950852,
+        "mdd_pct": 14.054178472894959,
+        "final_eq": 9355.602789306966,
+        "cost_r": 0.957598999786637,
+        "mc_p5": 8128.843501890267
+      },
+      "pass_gate1": false,
+      "fail_reasons": [
+        "Sharpe",
+        "MCp5"
+      ]
+    },
+    {
+      "tag": "CE.3",
+      "strategy": "bol",
+      "asset": "sol",
+      "period": "20240705_20241231",
+      "regime": "2024-H2",
+      "metrics": {
+        "trades": 123,
+        "sharpe": 0.8020003828623221,
+        "mdd_pct": 9.338210935891887,
+        "final_eq": 10443.805191779495,
+        "cost_r": 0.9396360440218801,
+        "mc_p5": 9378.39496594335
+      },
+      "pass_gate1": false,
+      "fail_reasons": [
+        "Sharpe",
+        "MCp5",
+        "cost_r"
+      ]
+    },
+    {
+      "tag": "CE.3",
+      "strategy": "rsi",
+      "asset": "sol",
+      "period": "20240705_20241231",
+      "regime": "2024-H2",
+      "metrics": {
+        "trades": 65,
+        "sharpe": -1.0937851008401618,
+        "mdd_pct": 19.33346137708918,
+        "final_eq": 9293.826098099476,
+        "cost_r": 0.9610402526213239,
+        "mc_p5": 8043.393085175631
+      },
+      "pass_gate1": false,
+      "fail_reasons": [
+        "Sharpe",
+        "MCp5"
+      ]
+    },
+    {
+      "tag": "CE.4",
+      "strategy": "bol",
+      "asset": "btc",
+      "period": "20250105_20250704",
+      "regime": "2025-H1",
+      "metrics": {
+        "trades": 112,
+        "sharpe": -0.06964782497266696,
+        "mdd_pct": 3.367682377859482,
+        "final_eq": 9956.886451876491,
+        "cost_r": 0.9402906732644567,
+        "mc_p5": 9408.792883932983
+      },
+      "pass_gate1": false,
+      "fail_reasons": [
+        "Sharpe",
+        "MCp5",
+        "cost_r"
+      ]
+    },
+    {
+      "tag": "CE.4",
+      "strategy": "rsi",
+      "asset": "btc",
+      "period": "20250105_20250704",
+      "regime": "2025-H1",
+      "metrics": {
+        "trades": 82,
+        "sharpe": 0.232894680655545,
+        "mdd_pct": 4.080659863919042,
+        "final_eq": 10069.713544510152,
+        "cost_r": 0.9563996530233912,
+        "mc_p5": 9459.907111553586
+      },
+      "pass_gate1": false,
+      "fail_reasons": [
+        "Sharpe",
+        "MCp5"
+      ]
+    },
+    {
+      "tag": "CE.5",
+      "strategy": "bol",
+      "asset": "eth",
+      "period": "20250105_20250704",
+      "regime": "2025-H1",
+      "metrics": {
+        "trades": 130,
+        "sharpe": 2.450691493931855,
+        "mdd_pct": 7.003405755557074,
+        "final_eq": 11496.43356507457,
+        "cost_r": 0.9413778122768004,
+        "mc_p5": 9978.065138718157
+      },
+      "pass_gate1": false,
+      "fail_reasons": [
+        "cost_r"
+      ]
+    },
+    {
+      "tag": "CE.5",
+      "strategy": "rsi",
+      "asset": "eth",
+      "period": "20250105_20250704",
+      "regime": "2025-H1",
+      "metrics": {
+        "trades": 100,
+        "sharpe": 0.5501451396055386,
+        "mdd_pct": 7.254700205265991,
+        "final_eq": 10290.867758500492,
+        "cost_r": 0.9492373126891831,
+        "mc_p5": 8780.035641456921
+      },
+      "pass_gate1": false,
+      "fail_reasons": [
+        "Sharpe",
+        "MCp5",
+        "cost_r"
+      ]
+    },
+    {
+      "tag": "CE.6",
+      "strategy": "bol",
+      "asset": "sol",
+      "period": "20250105_20250704",
+      "regime": "2025-H1",
+      "metrics": {
+        "trades": 124,
+        "sharpe": 1.9244462341379582,
+        "mdd_pct": 6.28819588439264,
+        "final_eq": 11345.888592021634,
+        "cost_r": 0.9419499648897679,
+        "mc_p5": 9674.851714905752
+      },
+      "pass_gate1": false,
+      "fail_reasons": [
+        "cost_r"
+      ]
+    },
+    {
+      "tag": "CE.6",
+      "strategy": "rsi",
+      "asset": "sol",
+      "period": "20250105_20250704",
+      "regime": "2025-H1",
+      "metrics": {
+        "trades": 90,
+        "sharpe": 0.6146032087464992,
+        "mdd_pct": 7.255090509459324,
+        "final_eq": 10372.089565572034,
+        "cost_r": 0.9550896297065842,
+        "mc_p5": 8946.429402583079
+      },
+      "pass_gate1": false,
+      "fail_reasons": [
+        "Sharpe",
+        "MCp5"
+      ]
+    },
+    {
+      "tag": "CE.7",
+      "strategy": "bol",
+      "asset": "btc",
+      "period": "20250705_20251231",
+      "regime": "2025-H2",
+      "metrics": {
+        "trades": 118,
+        "sharpe": 1.0627561256592644,
+        "mdd_pct": 7.9992096808570485,
+        "final_eq": 10324.6655929001,
+        "cost_r": 0.9407021918280317,
+        "mc_p5": 9653.25969196339
+      },
+      "pass_gate1": false,
+      "fail_reasons": [
+        "cost_r"
+      ]
+    },
+    {
+      "tag": "CE.7",
+      "strategy": "rsi",
+      "asset": "btc",
+      "period": "20250705_20251231",
+      "regime": "2025-H2",
+      "metrics": {
+        "trades": 92,
+        "sharpe": 1.6401712390785785,
+        "mdd_pct": 4.967220180643035,
+        "final_eq": 10513.064634831964,
+        "cost_r": 0.9556179350539563,
+        "mc_p5": 9795.797468625504
+      },
+      "pass_gate1": true,
+      "fail_reasons": []
+    },
+    {
+      "tag": "CE.8",
+      "strategy": "bol",
+      "asset": "eth",
+      "period": "20250705_20251231",
+      "regime": "2025-H2",
+      "metrics": {
+        "trades": 115,
+        "sharpe": 0.3674358116377481,
+        "mdd_pct": 8.591422082955416,
+        "final_eq": 10155.709982727956,
+        "cost_r": 0.9386318145875019,
+        "mc_p5": 9051.099524276804
+      },
+      "pass_gate1": false,
+      "fail_reasons": [
+        "Sharpe",
+        "MCp5",
+        "cost_r"
+      ]
+    },
+    {
+      "tag": "CE.8",
+      "strategy": "rsi",
+      "asset": "eth",
+      "period": "20250705_20251231",
+      "regime": "2025-H2",
+      "metrics": {
+        "trades": 84,
+        "sharpe": 1.1471399066784365,
+        "mdd_pct": 8.570018852986843,
+        "final_eq": 10567.646665014388,
+        "cost_r": 0.9572182700996001,
+        "mc_p5": 9297.637371793382
+      },
+      "pass_gate1": false,
+      "fail_reasons": [
+        "MCp5"
+      ]
+    },
+    {
+      "tag": "CE.9",
+      "strategy": "bol",
+      "asset": "sol",
+      "period": "20250705_20251231",
+      "regime": "2025-H2",
+      "metrics": {
+        "trades": 129,
+        "sharpe": 1.6845445508747892,
+        "mdd_pct": 11.865404652060167,
+        "final_eq": 10995.219802372654,
+        "cost_r": 0.941201805867206,
+        "mc_p5": 9389.636364873126
+      },
+      "pass_gate1": false,
+      "fail_reasons": [
+        "MCp5",
+        "cost_r"
+      ]
+    },
+    {
+      "tag": "CE.9",
+      "strategy": "rsi",
+      "asset": "sol",
+      "period": "20250705_20251231",
+      "regime": "2025-H2",
+      "metrics": {
+        "trades": 86,
+        "sharpe": 2.3000391903740414,
+        "mdd_pct": 5.128598769287521,
+        "final_eq": 11380.532070350757,
+        "cost_r": 0.9621405472590615,
+        "mc_p5": 9897.849361268905
+      },
+      "pass_gate1": true,
+      "fail_reasons": []
+    }
+  ]
+}

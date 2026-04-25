@@ -1,0 +1,32 @@
+[
+  {
+    "tag": "DA.1",
+    "label": "BTC bol+trendhtf",
+    "baseline_sh": 2.33,
+    "lift": -1.2948637450450882,
+    "trades": 51,
+    "pnl_pct": 2.4480530693161473,
+    "sharpe": 1.035136254954912,
+    "mdd_pct": 2.8740885736284345
+  },
+  {
+    "tag": "DA.2",
+    "label": "ETH bol+trendhtf",
+    "baseline_sh": 2.4,
+    "lift": -0.9418408848729856,
+    "trades": 67,
+    "pnl_pct": 6.00229600306621,
+    "sharpe": 1.4581591151270143,
+    "mdd_pct": 4.762172630440395
+  },
+  {
+    "tag": "DA.3",
+    "label": "SOL bol+trendhtf",
+    "baseline_sh": 2.71,
+    "lift": 0.4504533855715134,
+    "trades": 69,
+    "pnl_pct": 16.58323566442952,
+    "sharpe": 3.1604533855715133,
+    "mdd_pct": 4.417740110585286
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "tag": "CZ10.1",
+    "combo": "SOL 2025-H2 short naked",
+    "bounds": "25/75",
+    "baseline_3070": 2.3,
+    "trades": 66,
+    "pnl_pct": 22.376403427650573,
+    "sharpe": 3.610590502108185,
+    "mdd_pct": 7.794203709726141,
+    "final_eq": 12237.640342765057,
+    "verdict": "UPGRADE (+1.31)"
+  },
+  {
+    "tag": "CZ10.2",
+    "combo": "SOL 2025-H2 short naked",
+    "bounds": "35/65",
+    "baseline_3070": 2.3,
+    "trades": 115,
+    "pnl_pct": 7.628611090498305,
+    "sharpe": 1.322253213950465,
+    "mdd_pct": 7.896390693407048,
+    "final_eq": 10762.86110904983,
+    "verdict": "WORSE (-0.98)"
+  },
+  {
+    "tag": "CZ10.3",
+    "combo": "BTC 2025-H1 short width",
+    "bounds": "25/75",
+    "baseline_3070": 1.69,
+    "trades": 44,
+    "pnl_pct": 8.15706746525311,
+    "sharpe": 3.162545986712771,
+    "mdd_pct": 1.912677277815097,
+    "final_eq": 10815.706746525311,
+    "verdict": "UPGRADE (+1.47)"
+  },
+  {
+    "tag": "CZ10.4",
+    "combo": "BTC 2025-H1 short width",
+    "bounds": "35/65",
+    "baseline_3070": 1.69,
+    "trades": 52,
+    "pnl_pct": 1.7197666941979328,
+    "sharpe": 0.7074295789165317,
+    "mdd_pct": 1.9667169667044528,
+    "final_eq": 10171.976669419793,
+    "verdict": "WORSE (-0.98)"
+  },
+  {
+    "tag": "CZ10.5",
+    "combo": "SOL 2025-H1 short trendhtf",
+    "bounds": "25/75",
+    "baseline_3070": 0.89,
+    "trades": 32,
+    "pnl_pct": 9.803472522829626,
+    "sharpe": 1.9949204292248186,
+    "mdd_pct": 5.4941674226289585,
+    "final_eq": 10980.347252282962,
+    "verdict": "UPGRADE (+1.10)"
+  },
+  {
+    "tag": "CZ10.6",
+    "combo": "SOL 2025-H1 short trendhtf",
+    "bounds": "35/65",
+    "baseline_3070": 0.89,
+    "trades": 66,
+    "pnl_pct": 11.242109695080483,
+    "sharpe": 2.204767370769491,
+    "mdd_pct": 4.613752981967779,
+    "final_eq": 11124.210969508049,
+    "verdict": "UPGRADE (+1.31)"
+  }
+]

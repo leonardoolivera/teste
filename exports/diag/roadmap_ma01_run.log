@@ -1,0 +1,292 @@
+
+======================================================================
+MA01.01 | ethusdt_10m_20240705_20241231_binance_spot_resampled | ('ma_crossover', 10, 30)
+======================================================================
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+dataset          : ethusdt_10m_20240705_20241231_binance_spot_resampled
+strategy         : ma_crossover short=10 long=30 long_only=True
+run_id           : t1ma-10-30-eth-2024h2-long-10m
+regime_filter    : none
+out_dir          : C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\t1ma-10-30-eth-2024h2-long-10m
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-21T21:36:08.421328+00:00 -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\t1ma-10-30-eth-2024h2-long-10m\run.json
+walk_forward     : 4 fold(s), 419 trade(s) -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\t1ma-10-30-eth-2024h2-long-10m\walk_forward.json
+monte_carlo      : 500 resamples, seed=42, median_final=9267.84 -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\t1ma-10-30-eth-2024h2-long-10m\monte_carlo.json
+cost_stress      : pulado (sem --stress)
+
+======================================================================
+MA01.02 | ethusdt_10m_20250105_20250704_binance_spot_resampled | ('ma_crossover', 10, 30)
+======================================================================
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+dataset          : ethusdt_10m_20250105_20250704_binance_spot_resampled
+strategy         : ma_crossover short=10 long=30 long_only=True
+run_id           : t1ma-10-30-eth-2025h1-long-10m
+regime_filter    : none
+out_dir          : C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\t1ma-10-30-eth-2025h1-long-10m
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-21T21:36:14.163598+00:00 -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\t1ma-10-30-eth-2025h1-long-10m\run.json
+walk_forward     : 4 fold(s), 420 trade(s) -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\t1ma-10-30-eth-2025h1-long-10m\walk_forward.json
+monte_carlo      : 500 resamples, seed=42, median_final=9507.35 -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\t1ma-10-30-eth-2025h1-long-10m\monte_carlo.json
+cost_stress      : pulado (sem --stress)
+
+======================================================================
+MA01.03 | ethusdt_10m_20250705_20251231_binance_spot_resampled | ('ma_crossover', 10, 30)
+======================================================================
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+dataset          : ethusdt_10m_20250705_20251231_binance_spot_resampled
+strategy         : ma_crossover short=10 long=30 long_only=True
+run_id           : t1ma-10-30-eth-2025h2-long-10m
+regime_filter    : none
+out_dir          : C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\t1ma-10-30-eth-2025h2-long-10m
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-21T21:36:19.766827+00:00 -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\t1ma-10-30-eth-2025h2-long-10m\run.json
+walk_forward     : 4 fold(s), 430 trade(s) -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\t1ma-10-30-eth-2025h2-long-10m\walk_forward.json
+monte_carlo      : 500 resamples, seed=42, median_final=8612.88 -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\t1ma-10-30-eth-2025h2-long-10m\monte_carlo.json
+cost_stress      : pulado (sem --stress)
+
+======================================================================
+MA01.04 | solusdt_10m_20240705_20241231_binance_spot_resampled | ('ma_crossover', 10, 30)
+======================================================================
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+dataset          : solusdt_10m_20240705_20241231_binance_spot_resampled
+strategy         : ma_crossover short=10 long=30 long_only=True
+run_id           : t1ma-10-30-sol-2024h2-long-10m
+regime_filter    : none
+out_dir          : C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\t1ma-10-30-sol-2024h2-long-10m
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-21T21:36:25.391437+00:00 -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\t1ma-10-30-sol-2024h2-long-10m\run.json
+walk_forward     : 4 fold(s), 410 trade(s) -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\t1ma-10-30-sol-2024h2-long-10m\walk_forward.json
+monte_carlo      : 500 resamples, seed=42, median_final=9426.95 -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\t1ma-10-30-sol-2024h2-long-10m\monte_carlo.json
+cost_stress      : pulado (sem --stress)
+
+======================================================================
+MA01.05 | solusdt_10m_20250105_20250704_binance_spot_resampled | ('ma_crossover', 10, 30)
+======================================================================
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+dataset          : solusdt_10m_20250105_20250704_binance_spot_resampled
+strategy         : ma_crossover short=10 long=30 long_only=True
+run_id           : t1ma-10-30-sol-2025h1-long-10m
+regime_filter    : none
+out_dir          : C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\t1ma-10-30-sol-2025h1-long-10m
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-21T21:36:31.068873+00:00 -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\t1ma-10-30-sol-2025h1-long-10m\run.json
+walk_forward     : 4 fold(s), 390 trade(s) -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\t1ma-10-30-sol-2025h1-long-10m\walk_forward.json
+monte_carlo      : 500 resamples, seed=42, median_final=9541.78 -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\t1ma-10-30-sol-2025h1-long-10m\monte_carlo.json
+cost_stress      : pulado (sem --stress)
+
+======================================================================
+MA01.06 | solusdt_10m_20250705_20251231_binance_spot_resampled | ('ma_crossover', 10, 30)
+======================================================================
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+dataset          : solusdt_10m_20250705_20251231_binance_spot_resampled
+strategy         : ma_crossover short=10 long=30 long_only=True
+run_id           : t1ma-10-30-sol-2025h2-long-10m
+regime_filter    : none
+out_dir          : C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\t1ma-10-30-sol-2025h2-long-10m
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-21T21:36:36.878401+00:00 -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\t1ma-10-30-sol-2025h2-long-10m\run.json
+walk_forward     : 4 fold(s), 418 trade(s) -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\t1ma-10-30-sol-2025h2-long-10m\walk_forward.json
+monte_carlo      : 500 resamples, seed=42, median_final=8895.28 -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\t1ma-10-30-sol-2025h2-long-10m\monte_carlo.json
+cost_stress      : pulado (sem --stress)
+
+======================================================================
+MA01.07 | ethusdt_10m_20240705_20241231_binance_spot_resampled | ('ma_crossover', 15, 45)
+======================================================================
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+dataset          : ethusdt_10m_20240705_20241231_binance_spot_resampled
+strategy         : ma_crossover short=15 long=45 long_only=True
+run_id           : t1ma-15-45-eth-2024h2-long-10m
+regime_filter    : none
+out_dir          : C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\t1ma-15-45-eth-2024h2-long-10m
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-21T21:36:42.500552+00:00 -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\t1ma-15-45-eth-2024h2-long-10m\run.json
+walk_forward     : 4 fold(s), 265 trade(s) -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\t1ma-15-45-eth-2024h2-long-10m\walk_forward.json
+monte_carlo      : 500 resamples, seed=42, median_final=9459.66 -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\t1ma-15-45-eth-2024h2-long-10m\monte_carlo.json
+cost_stress      : pulado (sem --stress)
+
+======================================================================
+MA01.08 | ethusdt_10m_20250105_20250704_binance_spot_resampled | ('ma_crossover', 15, 45)
+======================================================================
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+dataset          : ethusdt_10m_20250105_20250704_binance_spot_resampled
+strategy         : ma_crossover short=15 long=45 long_only=True
+run_id           : t1ma-15-45-eth-2025h1-long-10m
+regime_filter    : none
+out_dir          : C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\t1ma-15-45-eth-2025h1-long-10m
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-21T21:36:48.147200+00:00 -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\t1ma-15-45-eth-2025h1-long-10m\run.json
+walk_forward     : 4 fold(s), 264 trade(s) -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\t1ma-15-45-eth-2025h1-long-10m\walk_forward.json
+monte_carlo      : 500 resamples, seed=42, median_final=10345.31 -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\t1ma-15-45-eth-2025h1-long-10m\monte_carlo.json
+cost_stress      : pulado (sem --stress)
+
+======================================================================
+MA01.09 | ethusdt_10m_20250705_20251231_binance_spot_resampled | ('ma_crossover', 15, 45)
+======================================================================
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+dataset          : ethusdt_10m_20250705_20251231_binance_spot_resampled
+strategy         : ma_crossover short=15 long=45 long_only=True
+run_id           : t1ma-15-45-eth-2025h2-long-10m
+regime_filter    : none
+out_dir          : C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\t1ma-15-45-eth-2025h2-long-10m
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-21T21:36:53.984246+00:00 -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\t1ma-15-45-eth-2025h2-long-10m\run.json
+walk_forward     : 4 fold(s), 284 trade(s) -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\t1ma-15-45-eth-2025h2-long-10m\walk_forward.json
+monte_carlo      : 500 resamples, seed=42, median_final=9466.82 -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\t1ma-15-45-eth-2025h2-long-10m\monte_carlo.json
+cost_stress      : pulado (sem --stress)
+
+======================================================================
+MA01.10 | solusdt_10m_20240705_20241231_binance_spot_resampled | ('ma_crossover', 15, 45)
+======================================================================
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+dataset          : solusdt_10m_20240705_20241231_binance_spot_resampled
+strategy         : ma_crossover short=15 long=45 long_only=True
+run_id           : t1ma-15-45-sol-2024h2-long-10m
+regime_filter    : none
+out_dir          : C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\t1ma-15-45-sol-2024h2-long-10m
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-21T21:36:59.723339+00:00 -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\t1ma-15-45-sol-2024h2-long-10m\run.json
+walk_forward     : 4 fold(s), 263 trade(s) -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\t1ma-15-45-sol-2024h2-long-10m\walk_forward.json
+monte_carlo      : 500 resamples, seed=42, median_final=9276.71 -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\t1ma-15-45-sol-2024h2-long-10m\monte_carlo.json
+cost_stress      : pulado (sem --stress)
+
+Batch MA01 completo (10 runs).

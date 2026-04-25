@@ -1,0 +1,62 @@
+[
+  {
+    "tag": "CZ6.1",
+    "combo": "BTC 1h 2024-H2 bull",
+    "trades": 36,
+    "pnl_pct": 6.861686224626062,
+    "sharpe": 2.390789475112774,
+    "mdd_pct": 2.0950750661323867,
+    "final_eq": 10686.168622462606,
+    "verdict": "PASS strict"
+  },
+  {
+    "tag": "CZ6.2",
+    "combo": "ETH 1h 2024-H2 bull",
+    "trades": 34,
+    "pnl_pct": 6.271641309491871,
+    "sharpe": 1.8806652107843822,
+    "mdd_pct": 3.762007342362324,
+    "final_eq": 10627.164130949188,
+    "verdict": "PASS strict"
+  },
+  {
+    "tag": "CZ6.3",
+    "combo": "SOL 1h 2024-H2 bull",
+    "trades": 32,
+    "pnl_pct": 4.79063034076912,
+    "sharpe": 1.2176164122463844,
+    "mdd_pct": 4.252846731730605,
+    "final_eq": 10479.063034076911,
+    "verdict": "PASS strict"
+  },
+  {
+    "tag": "CZ6.4",
+    "combo": "BTC 1h 2025-H2 misto",
+    "trades": 29,
+    "pnl_pct": -4.14288846986719,
+    "sharpe": -2.173030979086742,
+    "mdd_pct": 4.759535936352592,
+    "final_eq": 9585.71115301328,
+    "verdict": "FAIL"
+  },
+  {
+    "tag": "CZ6.5",
+    "combo": "ETH 1h 2025-H2 misto",
+    "trades": 34,
+    "pnl_pct": -4.334321635640137,
+    "sharpe": -1.4672304487897714,
+    "mdd_pct": 5.015202368367593,
+    "final_eq": 9566.567836435986,
+    "verdict": "FAIL"
+  },
+  {
+    "tag": "CZ6.6",
+    "combo": "SOL 1h 2025-H2 misto",
+    "trades": 36,
+    "pnl_pct": -8.940638822018043,
+    "sharpe": -2.436549778280556,
+    "mdd_pct": 11.215101419256076,
+    "final_eq": 9105.936117798195,
+    "verdict": "FAIL"
+  }
+]

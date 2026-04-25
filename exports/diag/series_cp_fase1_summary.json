@@ -1,0 +1,35 @@
+[
+  {
+    "tag": "CP.1",
+    "label": "BTC composite 2025H1",
+    "baseline_sh": null,
+    "baseline_pnl": null,
+    "trades": 20,
+    "seqs": 20,
+    "pnl_pct": 2.8584045710351447,
+    "sharpe": 1.759548939186192,
+    "folds": 2
+  },
+  {
+    "tag": "CP.2",
+    "label": "ETH composite 2025H1",
+    "baseline_sh": 2.4,
+    "baseline_pnl": 12.16,
+    "trades": 52,
+    "seqs": 52,
+    "pnl_pct": 6.804912858113266,
+    "sharpe": 1.7787048993132981,
+    "folds": 2
+  },
+  {
+    "tag": "CP.3",
+    "label": "SOL composite 2025H1",
+    "baseline_sh": 2.71,
+    "baseline_pnl": 17.47,
+    "trades": 60,
+    "seqs": 60,
+    "pnl_pct": 7.3241901877396876,
+    "sharpe": 1.7618104586244276,
+    "folds": 2
+  }
+]

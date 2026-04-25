@@ -1,0 +1,624 @@
+{
+  "adr_prereg": "decisions/0204-snowball-100pct-per-entry-stack13-prereg.md",
+  "capital_inicial": 10000.0,
+  "cost_model": {
+    "taker_fee_bps": 5.0,
+    "slippage_bps_per_unit_notional": 2.0,
+    "spread_bps": 0.0
+  },
+  "bars_per_year": 8760,
+  "sizing_configs": {
+    "baseline_fixed_20pct": {
+      "fracao": 0.1,
+      "alav": 2.0,
+      "mode": "fixed_notional",
+      "effective_notional_per_trade_usd": 2000
+    },
+    "snowball_100": {
+      "fracao": 1.0,
+      "alav": 1.0,
+      "mode": "snowball",
+      "note": "capital_corrente = 10_000 + sum(realized_pnl); cada entry=100%."
+    }
+  },
+  "generated_at": "2026-04-22T16:01:50.700830+00:00",
+  "combos": [
+    {
+      "manifest": "bollinger_width_regime_v2",
+      "symbol": "ETHUSDT",
+      "window_tag": "2024-H1",
+      "dataset_id": "ethusdt_1h_20240105_20240704_binance_spot",
+      "strategy_kind": "bollinger",
+      "long_only": true,
+      "regime": [
+        "bb_width",
+        {
+          "window": 30,
+          "num_std": 1.5,
+          "min_width_bps": 250
+        }
+      ],
+      "baseline_manifest": {
+        "sharpe": 1.834,
+        "pnl_pct": 4.678,
+        "trades": 38
+      },
+      "baseline_fullperiod": {
+        "sizing": "baseline_fixed_20pct",
+        "final_equity": 10412.02,
+        "pnl_pct": 4.12,
+        "max_equity": 10574.63,
+        "min_equity": 9967.85,
+        "max_drawdown_pct": 2.59,
+        "trade_count": 43,
+        "hit_rate_pct": 65.12,
+        "sharpe_annual": 1.385,
+        "sizing_rejections": 0,
+        "blow_up": false
+      },
+      "snowball_100": {
+        "sizing": "snowball_100",
+        "final_equity": 11869.76,
+        "pnl_pct": 18.698,
+        "max_equity": 12922.31,
+        "min_equity": 9805.62,
+        "max_drawdown_pct": 13.306,
+        "trade_count": 43,
+        "hit_rate_pct": 65.12,
+        "sharpe_annual": 1.26,
+        "sizing_rejections": 0,
+        "blow_up": false
+      }
+    },
+    {
+      "manifest": "bollinger_width_regime_v2",
+      "symbol": "ETHUSDT",
+      "window_tag": "2025-H1",
+      "dataset_id": "ethusdt_1h_20250105_20250704_binance_spot",
+      "strategy_kind": "bollinger",
+      "long_only": true,
+      "regime": [
+        "bb_width",
+        {
+          "window": 30,
+          "num_std": 1.5,
+          "min_width_bps": 250
+        }
+      ],
+      "baseline_manifest": {
+        "sharpe": 1.21,
+        "pnl_pct": 3.71,
+        "trades": 36
+      },
+      "baseline_fullperiod": {
+        "sizing": "baseline_fixed_20pct",
+        "final_equity": 10650.86,
+        "pnl_pct": 6.509,
+        "max_equity": 10991.04,
+        "min_equity": 9934.21,
+        "max_drawdown_pct": 4.405,
+        "trade_count": 54,
+        "hit_rate_pct": 75.93,
+        "sharpe_annual": 1.577,
+        "sizing_rejections": 0,
+        "blow_up": false
+      },
+      "snowball_100": {
+        "sizing": "snowball_100",
+        "final_equity": 13037.61,
+        "pnl_pct": 30.376,
+        "max_equity": 15583.53,
+        "min_equity": 9327.04,
+        "max_drawdown_pct": 22.828,
+        "trade_count": 54,
+        "hit_rate_pct": 75.93,
+        "sharpe_annual": 1.431,
+        "sizing_rejections": 0,
+        "blow_up": false
+      }
+    },
+    {
+      "manifest": "bollinger_width_regime_v2",
+      "symbol": "BTCUSDT",
+      "window_tag": "2024-H2",
+      "dataset_id": "btcusdt_1h_20240705_20241231_binance_spot",
+      "strategy_kind": "bollinger",
+      "long_only": true,
+      "regime": [
+        "bb_width",
+        {
+          "window": 30,
+          "num_std": 1.5,
+          "min_width_bps": 250
+        }
+      ],
+      "baseline_manifest": {
+        "sharpe": 1.559,
+        "pnl_pct": 2.24,
+        "trades": 30
+      },
+      "baseline_fullperiod": {
+        "sizing": "baseline_fixed_20pct",
+        "final_equity": 10125.88,
+        "pnl_pct": 1.259,
+        "max_equity": 10245.8,
+        "min_equity": 9688.18,
+        "max_drawdown_pct": 3.955,
+        "trade_count": 29,
+        "hit_rate_pct": 68.97,
+        "sharpe_annual": 0.6,
+        "sizing_rejections": 0,
+        "blow_up": false
+      },
+      "snowball_100": {
+        "sizing": "snowball_100",
+        "final_equity": 10451.0,
+        "pnl_pct": 4.51,
+        "max_equity": 11108.8,
+        "min_equity": 8407.45,
+        "max_drawdown_pct": 19.327,
+        "trade_count": 29,
+        "hit_rate_pct": 68.97,
+        "sharpe_annual": 0.505,
+        "sizing_rejections": 0,
+        "blow_up": false
+      }
+    },
+    {
+      "manifest": "bollinger_width_regime_v2",
+      "symbol": "SOLUSDT",
+      "window_tag": "2024-H2",
+      "dataset_id": "solusdt_1h_20240705_20241231_binance_spot",
+      "strategy_kind": "bollinger",
+      "long_only": true,
+      "regime": [
+        "bb_width",
+        {
+          "window": 30,
+          "num_std": 1.5,
+          "min_width_bps": 250
+        }
+      ],
+      "baseline_manifest": {
+        "sharpe": 2.401,
+        "pnl_pct": 8.011,
+        "trades": 69
+      },
+      "baseline_fullperiod": {
+        "sizing": "baseline_fixed_20pct",
+        "final_equity": 10697.93,
+        "pnl_pct": 6.979,
+        "max_equity": 10738.93,
+        "min_equity": 9402.64,
+        "max_drawdown_pct": 7.237,
+        "trade_count": 66,
+        "hit_rate_pct": 75.76,
+        "sharpe_annual": 1.472,
+        "sizing_rejections": 0,
+        "blow_up": false
+      },
+      "snowball_100": {
+        "sizing": "snowball_100",
+        "final_equity": 13375.1,
+        "pnl_pct": 33.751,
+        "max_equity": 13846.28,
+        "min_equity": 7230.54,
+        "max_drawdown_pct": 32.318,
+        "trade_count": 66,
+        "hit_rate_pct": 75.76,
+        "sharpe_annual": 1.419,
+        "sizing_rejections": 0,
+        "blow_up": false
+      }
+    },
+    {
+      "manifest": "bollinger_short_width",
+      "symbol": "SOLUSDT",
+      "window_tag": "2024-H2",
+      "dataset_id": "solusdt_1h_20240705_20241231_binance_spot",
+      "strategy_kind": "bollinger",
+      "long_only": false,
+      "regime": [
+        "bb_width",
+        {
+          "window": 30,
+          "num_std": 1.5,
+          "min_width_bps": 300
+        }
+      ],
+      "baseline_manifest": {
+        "sharpe": 1.38,
+        "pnl_pct": 6.637,
+        "trades": 102
+      },
+      "baseline_fullperiod": {
+        "sizing": "baseline_fixed_20pct",
+        "final_equity": 10487.7,
+        "pnl_pct": 4.877,
+        "max_equity": 10604.58,
+        "min_equity": 9371.46,
+        "max_drawdown_pct": 7.633,
+        "trade_count": 129,
+        "hit_rate_pct": 60.47,
+        "sharpe_annual": 0.768,
+        "sizing_rejections": 0,
+        "blow_up": false
+      },
+      "snowball_100": {
+        "sizing": "snowball_100",
+        "final_equity": 11362.83,
+        "pnl_pct": 13.628,
+        "max_equity": 12912.79,
+        "min_equity": 6762.22,
+        "max_drawdown_pct": 36.442,
+        "trade_count": 129,
+        "hit_rate_pct": 58.14,
+        "sharpe_annual": 0.719,
+        "sizing_rejections": 0,
+        "blow_up": false
+      }
+    },
+    {
+      "manifest": "bollinger_short_width",
+      "symbol": "BTCUSDT",
+      "window_tag": "2025-H1",
+      "dataset_id": "btcusdt_1h_20250105_20250704_binance_spot",
+      "strategy_kind": "bollinger",
+      "long_only": false,
+      "regime": [
+        "bb_width",
+        {
+          "window": 30,
+          "num_std": 1.5,
+          "min_width_bps": 300
+        }
+      ],
+      "baseline_manifest": {
+        "sharpe": 1.243,
+        "pnl_pct": 2.961,
+        "trades": 37
+      },
+      "baseline_fullperiod": {
+        "sizing": "baseline_fixed_20pct",
+        "final_equity": 10444.27,
+        "pnl_pct": 4.443,
+        "max_equity": 10552.17,
+        "min_equity": 9775.18,
+        "max_drawdown_pct": 2.248,
+        "trade_count": 59,
+        "hit_rate_pct": 59.32,
+        "sharpe_annual": 1.381,
+        "sizing_rejections": 0,
+        "blow_up": false
+      },
+      "snowball_100": {
+        "sizing": "snowball_100",
+        "final_equity": 12086.05,
+        "pnl_pct": 20.86,
+        "max_equity": 12837.46,
+        "min_equity": 8893.96,
+        "max_drawdown_pct": 11.06,
+        "trade_count": 59,
+        "hit_rate_pct": 59.32,
+        "sharpe_annual": 1.314,
+        "sizing_rejections": 0,
+        "blow_up": false
+      }
+    },
+    {
+      "manifest": "bollinger_short_width",
+      "symbol": "ETHUSDT",
+      "window_tag": "2025-H1",
+      "dataset_id": "ethusdt_1h_20250105_20250704_binance_spot",
+      "strategy_kind": "bollinger",
+      "long_only": false,
+      "regime": [
+        "bb_width",
+        {
+          "window": 30,
+          "num_std": 1.5,
+          "min_width_bps": 300
+        }
+      ],
+      "baseline_manifest": {
+        "sharpe": 2.395,
+        "pnl_pct": 12.156,
+        "trades": 85
+      },
+      "baseline_fullperiod": {
+        "sizing": "baseline_fixed_20pct",
+        "final_equity": 11728.31,
+        "pnl_pct": 17.283,
+        "max_equity": 12241.68,
+        "min_equity": 9989.68,
+        "max_drawdown_pct": 6.748,
+        "trade_count": 119,
+        "hit_rate_pct": 69.75,
+        "sharpe_annual": 2.796,
+        "sizing_rejections": 0,
+        "blow_up": false
+      },
+      "snowball_100": {
+        "sizing": "snowball_100",
+        "final_equity": 19065.98,
+        "pnl_pct": 90.66,
+        "max_equity": 27672.75,
+        "min_equity": 9940.49,
+        "max_drawdown_pct": 40.077,
+        "trade_count": 119,
+        "hit_rate_pct": 68.91,
+        "sharpe_annual": 2.246,
+        "sizing_rejections": 0,
+        "blow_up": false
+      }
+    },
+    {
+      "manifest": "bollinger_short_width",
+      "symbol": "SOLUSDT",
+      "window_tag": "2025-H1",
+      "dataset_id": "solusdt_1h_20250105_20250704_binance_spot",
+      "strategy_kind": "bollinger",
+      "long_only": false,
+      "regime": [
+        "bb_width",
+        {
+          "window": 30,
+          "num_std": 1.5,
+          "min_width_bps": 300
+        }
+      ],
+      "baseline_manifest": {
+        "sharpe": 2.713,
+        "pnl_pct": 17.474,
+        "trades": 109
+      },
+      "baseline_fullperiod": {
+        "sizing": "baseline_fixed_20pct",
+        "final_equity": 11450.91,
+        "pnl_pct": 14.509,
+        "max_equity": 11736.27,
+        "min_equity": 9137.84,
+        "max_drawdown_pct": 8.622,
+        "trade_count": 139,
+        "hit_rate_pct": 60.43,
+        "sharpe_annual": 1.643,
+        "sizing_rejections": 0,
+        "blow_up": false
+      },
+      "snowball_100": {
+        "sizing": "snowball_100",
+        "final_equity": 16715.79,
+        "pnl_pct": 67.158,
+        "max_equity": 19772.62,
+        "min_equity": 6026.65,
+        "max_drawdown_pct": 39.734,
+        "trade_count": 139,
+        "hit_rate_pct": 59.71,
+        "sharpe_annual": 1.564,
+        "sizing_rejections": 0,
+        "blow_up": false
+      }
+    },
+    {
+      "manifest": "rsi_long_width_eth_2024h2",
+      "symbol": "ETHUSDT",
+      "window_tag": "2024-H2",
+      "dataset_id": "ethusdt_1h_20240705_20241231_binance_spot",
+      "strategy_kind": "rsi",
+      "long_only": true,
+      "regime": [
+        "bb_width",
+        {
+          "window": 30,
+          "num_std": 1.5,
+          "min_width_bps": 300
+        }
+      ],
+      "baseline_manifest": {
+        "sharpe": 1.774,
+        "pnl_pct": 3.09,
+        "trades": 30
+      },
+      "baseline_fullperiod": {
+        "sizing": "baseline_fixed_20pct",
+        "final_equity": 10262.58,
+        "pnl_pct": 2.626,
+        "max_equity": 10308.82,
+        "min_equity": 9727.98,
+        "max_drawdown_pct": 3.872,
+        "trade_count": 40,
+        "hit_rate_pct": 62.5,
+        "sharpe_annual": 0.933,
+        "sizing_rejections": 0,
+        "blow_up": false
+      },
+      "snowball_100": {
+        "sizing": "snowball_100",
+        "final_equity": 11142.07,
+        "pnl_pct": 11.421,
+        "max_equity": 11420.79,
+        "min_equity": 8553.13,
+        "max_drawdown_pct": 19.196,
+        "trade_count": 40,
+        "hit_rate_pct": 62.5,
+        "sharpe_annual": 0.871,
+        "sizing_rejections": 0,
+        "blow_up": false
+      }
+    },
+    {
+      "manifest": "rsi_short_pure_2025h2",
+      "symbol": "BTCUSDT",
+      "window_tag": "2025-H2",
+      "dataset_id": "btcusdt_1h_20250705_20251231_binance_spot",
+      "strategy_kind": "rsi",
+      "long_only": false,
+      "regime": null,
+      "baseline_manifest": {
+        "sharpe": 1.64,
+        "pnl_pct": 5.126,
+        "trades": 92
+      },
+      "baseline_fullperiod": {
+        "sizing": "baseline_fixed_20pct",
+        "final_equity": 10663.15,
+        "pnl_pct": 6.631,
+        "max_equity": 10726.54,
+        "min_equity": 9821.32,
+        "max_drawdown_pct": 3.714,
+        "trade_count": 118,
+        "hit_rate_pct": 66.1,
+        "sharpe_annual": 1.734,
+        "sizing_rejections": 0,
+        "blow_up": false
+      },
+      "snowball_100": {
+        "sizing": "snowball_100",
+        "final_equity": 13007.37,
+        "pnl_pct": 30.074,
+        "max_equity": 13456.62,
+        "min_equity": 8754.61,
+        "max_drawdown_pct": 19.581,
+        "trade_count": 118,
+        "hit_rate_pct": 65.25,
+        "sharpe_annual": 1.543,
+        "sizing_rejections": 0,
+        "blow_up": false
+      }
+    },
+    {
+      "manifest": "rsi_short_pure_2025h2",
+      "symbol": "SOLUSDT",
+      "window_tag": "2025-H2",
+      "dataset_id": "solusdt_1h_20250705_20251231_binance_spot",
+      "strategy_kind": "rsi",
+      "long_only": false,
+      "regime": null,
+      "baseline_manifest": {
+        "sharpe": 2.3,
+        "pnl_pct": 13.812,
+        "trades": 86
+      },
+      "baseline_fullperiod": {
+        "sizing": "baseline_fixed_20pct",
+        "final_equity": 11454.6,
+        "pnl_pct": 14.546,
+        "max_equity": 11604.26,
+        "min_equity": 9493.75,
+        "max_drawdown_pct": 6.059,
+        "trade_count": 108,
+        "hit_rate_pct": 62.96,
+        "sharpe_annual": 1.944,
+        "sizing_rejections": 0,
+        "blow_up": false
+      },
+      "snowball_100": {
+        "sizing": "snowball_100",
+        "final_equity": 17777.69,
+        "pnl_pct": 77.777,
+        "max_equity": 19172.04,
+        "min_equity": 7349.85,
+        "max_drawdown_pct": 29.778,
+        "trade_count": 108,
+        "hit_rate_pct": 62.96,
+        "sharpe_annual": 1.893,
+        "sizing_rejections": 0,
+        "blow_up": false
+      }
+    },
+    {
+      "manifest": "rsi_short_trendhtf_sol_2025h1",
+      "symbol": "SOLUSDT",
+      "window_tag": "2025-H1",
+      "dataset_id": "solusdt_1h_20250105_20250704_binance_spot",
+      "strategy_kind": "rsi",
+      "long_only": false,
+      "regime": [
+        "trend_htf",
+        {
+          "htf": "4h",
+          "sma_window": 50,
+          "mode": "short_only"
+        }
+      ],
+      "baseline_manifest": {
+        "sharpe": 2.0,
+        "pnl_pct": 9.8,
+        "trades": 32
+      },
+      "baseline_fullperiod": {
+        "sizing": "baseline_fixed_20pct",
+        "final_equity": 11189.68,
+        "pnl_pct": 11.897,
+        "max_equity": 11526.79,
+        "min_equity": 9697.53,
+        "max_drawdown_pct": 7.889,
+        "trade_count": 53,
+        "hit_rate_pct": 67.92,
+        "sharpe_annual": 1.822,
+        "sizing_rejections": 0,
+        "blow_up": false
+      },
+      "snowball_100": {
+        "sizing": "snowball_100",
+        "final_equity": 15984.34,
+        "pnl_pct": 59.843,
+        "max_equity": 19064.7,
+        "min_equity": 7997.51,
+        "max_drawdown_pct": 36.984,
+        "trade_count": 53,
+        "hit_rate_pct": 67.92,
+        "sharpe_annual": 1.687,
+        "sizing_rejections": 0,
+        "blow_up": false
+      }
+    },
+    {
+      "manifest": "rsi_short_width_2025h1",
+      "symbol": "BTCUSDT",
+      "window_tag": "2025-H1",
+      "dataset_id": "btcusdt_1h_20250105_20250704_binance_spot",
+      "strategy_kind": "rsi",
+      "long_only": false,
+      "regime": [
+        "bb_width",
+        {
+          "window": 30,
+          "num_std": 1.5,
+          "min_width_bps": 300
+        }
+      ],
+      "baseline_manifest": {
+        "sharpe": 1.688,
+        "pnl_pct": 4.066,
+        "trades": 37
+      },
+      "baseline_fullperiod": {
+        "sizing": "baseline_fixed_20pct",
+        "final_equity": 10594.86,
+        "pnl_pct": 5.949,
+        "max_equity": 10701.81,
+        "min_equity": 9837.24,
+        "max_drawdown_pct": 1.637,
+        "trade_count": 58,
+        "hit_rate_pct": 53.45,
+        "sharpe_annual": 1.871,
+        "sizing_rejections": 0,
+        "blow_up": false
+      },
+      "snowball_100": {
+        "sizing": "snowball_100",
+        "final_equity": 12943.24,
+        "pnl_pct": 29.432,
+        "max_equity": 13669.47,
+        "min_equity": 9175.22,
+        "max_drawdown_pct": 8.414,
+        "trade_count": 58,
+        "hit_rate_pct": 50.0,
+        "sharpe_annual": 1.75,
+        "sizing_rejections": 0,
+        "blow_up": false
+      }
+    }
+  ]
+}

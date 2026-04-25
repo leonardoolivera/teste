@@ -1,0 +1,182 @@
+{
+  "gate_adr": "0039",
+  "passes": 2,
+  "total": 10,
+  "series_verdict": "FAIL",
+  "pilots": [
+    {
+      "tag": "CA.1",
+      "period": "20230705_20231231",
+      "atr_bps": 100,
+      "trades": 53,
+      "sharpe": 1.9073,
+      "mdd_pct": 5.1229,
+      "pnl_pct": 10.1226,
+      "final_eq": 11012.2629,
+      "cost_r": 0.9757,
+      "mc_p5": 9410.6441,
+      "mc_mdd_p95": 10.5909,
+      "verdict": "PASS",
+      "fail_reasons": []
+    },
+    {
+      "tag": "CA.2",
+      "period": "20240105_20240704",
+      "atr_bps": 100,
+      "trades": 64,
+      "sharpe": -1.2575,
+      "mdd_pct": 7.8674,
+      "pnl_pct": -5.2916,
+      "final_eq": 9470.8361,
+      "cost_r": 0.9657,
+      "mc_p5": 8608.1746,
+      "mc_mdd_p95": 14.6537,
+      "verdict": "FAIL",
+      "fail_reasons": [
+        "Sharpe",
+        "fe"
+      ]
+    },
+    {
+      "tag": "CA.3",
+      "period": "20240705_20241231",
+      "atr_bps": 100,
+      "trades": 68,
+      "sharpe": -1.3519,
+      "mdd_pct": 6.455,
+      "pnl_pct": -4.2642,
+      "final_eq": 9573.5752,
+      "cost_r": 0.9613,
+      "mc_p5": 8761.8163,
+      "mc_mdd_p95": 13.4151,
+      "verdict": "FAIL",
+      "fail_reasons": [
+        "Sharpe"
+      ]
+    },
+    {
+      "tag": "CA.4",
+      "period": "20250105_20250704",
+      "atr_bps": 100,
+      "trades": 70,
+      "sharpe": -1.9617,
+      "mdd_pct": 11.8812,
+      "pnl_pct": -7.1355,
+      "final_eq": 9286.452,
+      "cost_r": 0.9639,
+      "mc_p5": 8335.6861,
+      "mc_mdd_p95": 17.1416,
+      "verdict": "FAIL",
+      "fail_reasons": [
+        "Sharpe",
+        "fe",
+        "MCp5"
+      ]
+    },
+    {
+      "tag": "CA.5",
+      "period": "20250705_20251231",
+      "atr_bps": 100,
+      "trades": 62,
+      "sharpe": -1.4836,
+      "mdd_pct": 7.5949,
+      "pnl_pct": -3.9167,
+      "final_eq": 9608.3317,
+      "cost_r": 0.9647,
+      "mc_p5": 8923.1611,
+      "mc_mdd_p95": 11.71,
+      "verdict": "FAIL",
+      "fail_reasons": [
+        "Sharpe"
+      ]
+    },
+    {
+      "tag": "CA.6",
+      "period": "20230705_20231231",
+      "atr_bps": 80,
+      "trades": 59,
+      "sharpe": 2.1415,
+      "mdd_pct": 5.0871,
+      "pnl_pct": 11.6124,
+      "final_eq": 11161.2408,
+      "cost_r": 0.9713,
+      "mc_p5": 9531.2057,
+      "mc_mdd_p95": 9.9904,
+      "verdict": "PASS",
+      "fail_reasons": []
+    },
+    {
+      "tag": "CA.7",
+      "period": "20240105_20240704",
+      "atr_bps": 80,
+      "trades": 73,
+      "sharpe": -0.9294,
+      "mdd_pct": 7.7549,
+      "pnl_pct": -4.1813,
+      "final_eq": 9581.8689,
+      "cost_r": 0.9631,
+      "mc_p5": 8712.0261,
+      "mc_mdd_p95": 13.8861,
+      "verdict": "FAIL",
+      "fail_reasons": [
+        "Sharpe"
+      ]
+    },
+    {
+      "tag": "CA.8",
+      "period": "20240705_20241231",
+      "atr_bps": 80,
+      "trades": 83,
+      "sharpe": -1.4532,
+      "mdd_pct": 7.2666,
+      "pnl_pct": -5.1704,
+      "final_eq": 9482.9621,
+      "cost_r": 0.9561,
+      "mc_p5": 8598.1931,
+      "mc_mdd_p95": 15.3452,
+      "verdict": "FAIL",
+      "fail_reasons": [
+        "Sharpe",
+        "fe"
+      ]
+    },
+    {
+      "tag": "CA.9",
+      "period": "20250105_20250704",
+      "atr_bps": 80,
+      "trades": 83,
+      "sharpe": -1.8584,
+      "mdd_pct": 9.3303,
+      "pnl_pct": -7.289,
+      "final_eq": 9271.0979,
+      "cost_r": 0.9579,
+      "mc_p5": 8178.4096,
+      "mc_mdd_p95": 19.1139,
+      "verdict": "FAIL",
+      "fail_reasons": [
+        "Sharpe",
+        "fe",
+        "MCp5"
+      ]
+    },
+    {
+      "tag": "CA.10",
+      "period": "20250705_20251231",
+      "atr_bps": 80,
+      "trades": 78,
+      "sharpe": -3.331,
+      "mdd_pct": 11.5248,
+      "pnl_pct": -10.1323,
+      "final_eq": 8986.7686,
+      "cost_r": 0.9566,
+      "mc_p5": 8122.7971,
+      "mc_mdd_p95": 19.6786,
+      "verdict": "FAIL",
+      "fail_reasons": [
+        "Sharpe",
+        "fe",
+        "MCp5"
+      ]
+    }
+  ]
+}

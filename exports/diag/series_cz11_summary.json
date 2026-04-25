@@ -1,0 +1,62 @@
+[
+  {
+    "tag": "CZ11.1",
+    "combo": "SOL naked",
+    "regime": "2024-H2 bull",
+    "trades": 37,
+    "pnl_pct": -11.135655654812403,
+    "sharpe": -1.7099298214516536,
+    "mdd_pct": 17.848412552517388,
+    "final_eq": 8886.43443451876
+  },
+  {
+    "tag": "CZ11.2",
+    "combo": "SOL naked",
+    "regime": "2025-H1 chop",
+    "trades": 60,
+    "pnl_pct": 10.225913356013262,
+    "sharpe": 1.5171507469927437,
+    "mdd_pct": 7.117955908834407,
+    "final_eq": 11022.591335601326
+  },
+  {
+    "tag": "CZ11.3",
+    "combo": "BTC width",
+    "regime": "2024-H2 bull",
+    "trades": 41,
+    "pnl_pct": -3.5142215943562594,
+    "sharpe": -1.3695896849263367,
+    "mdd_pct": 7.208089122728871,
+    "final_eq": 9648.577840564374
+  },
+  {
+    "tag": "CZ11.4",
+    "combo": "BTC width",
+    "regime": "2025-H2 misto",
+    "trades": 47,
+    "pnl_pct": 0.7917778284876054,
+    "sharpe": 0.4504285245101637,
+    "mdd_pct": 3.0761169194740963,
+    "final_eq": 10079.177782848761
+  },
+  {
+    "tag": "CZ11.5",
+    "combo": "SOL trendhtf",
+    "regime": "2024-H2 bull",
+    "trades": 24,
+    "pnl_pct": -0.8490415485840619,
+    "sharpe": -0.193793539230344,
+    "mdd_pct": 9.173324323178784,
+    "final_eq": 9915.095845141594
+  },
+  {
+    "tag": "CZ11.6",
+    "combo": "SOL trendhtf",
+    "regime": "2025-H2 misto",
+    "trades": 45,
+    "pnl_pct": 14.291721173074734,
+    "sharpe": 3.3628158277021707,
+    "mdd_pct": 2.9672858624538727,
+    "final_eq": 11429.172117307473
+  }
+]

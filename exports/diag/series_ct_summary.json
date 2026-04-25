@@ -1,0 +1,35 @@
+[
+  {
+    "tag": "CT.1",
+    "combo": "v4a BTC short+width 4h",
+    "baseline_1h_sh": 1.688,
+    "trades": 17,
+    "pnl_pct": 2.4056872929074213,
+    "sharpe": 0.7695195535828202,
+    "mdd_pct": 3.9627374345344366,
+    "final_eq": 10240.568729290742,
+    "verdict": "replicacao fraca"
+  },
+  {
+    "tag": "CT.2",
+    "combo": "v8.1 BTC short naked 4h",
+    "baseline_1h_sh": 1.64,
+    "trades": 16,
+    "pnl_pct": -1.3444740912866515,
+    "sharpe": -0.42955121312714545,
+    "mdd_pct": 5.802420601032274,
+    "final_eq": 9865.552590871335,
+    "verdict": "refutacao"
+  },
+  {
+    "tag": "CT.3",
+    "combo": "v8.1 SOL short naked 4h",
+    "baseline_1h_sh": 2.3,
+    "trades": 23,
+    "pnl_pct": 16.31283693193113,
+    "sharpe": 2.807349276394291,
+    "mdd_pct": 6.718555487552344,
+    "final_eq": 11631.283693193112,
+    "verdict": "replicacao forte"
+  }
+]

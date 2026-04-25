@@ -1,0 +1,212 @@
+{
+  "strategy_name": "bollinger_width_regime",
+  "manifest_version": "v2",
+  "supersedes": "bollinger_width_regime_20260418.json",
+  "alpha_forge_commit": "ab7c2ad6891f44a2fd66d0b46a219729da191a1e",
+  "approved_at": "2026-04-18T00:00:00Z",
+  "approval_adr": "decisions/0029-eth-2025h1-deploy-approval.md",
+  "prior_approval_adr": "decisions/0028-bollinger-width-regime-deploy-approval.md",
+  "live_status": "active",
+  "live_status_since": "2026-04-18T00:00:00Z",
+  "runtime_contract": "faithful",
+  "runtime_invariants": {
+    "entry_fill": "market_at_open_next_bar",
+    "exit_fill": "market_at_open_next_bar",
+    "sizing": "fixed_notional_literal",
+    "stop_loss": "disabled",
+    "signal_arbitration": "exit_wins_on_tie"
+  },
+  "schema_normalization_adr": "decisions/0111-schema-normalization-v2-cross-window-status.md",
+  "schema_normalization_at": "2026-04-20T06:45:00Z",
+  "grandfather_replication_adr": "decisions/0113-series-cs-closeout-v2-long-grandfather-upgrade.md",
+  "grandfather_replication_at": "2026-04-20T13:10:00Z",
+  "cross_window_status_summary": {
+    "validated_windows_per_symbol": {
+      "ETHUSDT_1h": ["2024-H1", "2025-H1"],
+      "BTCUSDT_1h": ["2024-H2", "2024-H1 (CS.1 Sh=0.50 ctx)", "2025-H1 (CS.2 Sh=2.09 strict)"],
+      "SOLUSDT_1h": ["2024-H2"]
+    },
+    "status_per_combo": {
+      "ETHUSDT_2024-H1": "cross_window_via_companion (ETH 2025-H1 companion)",
+      "ETHUSDT_2025-H1": "cross_window_via_companion (ETH 2024-H1 companion)",
+      "BTCUSDT_2024-H2": "strict (CS.2 2025-H1 Sh=2.09, 20t, ADR-0113) + contextual (CS.1 2024-H1 Sh=0.50, 27t)",
+      "SOLUSDT_2024-H2": "single_window (CS.3 2024-H1 Sh=0.18 status quo; CS.4 2025-H1 Sh=-0.14 ROLLBACK_FLAG - candidato a remocao se novas falhas)"
+    },
+    "note": "Padrao 25 refinado (ADR-0109). Replicacao CS (ADR-0113): BTC 2024-H2 upgrade para strict (CS.2 2025-H1 PASS Sh=2.09). SOL 2024-H2 fica grandfather mas com flag de risco (CS.4 2025-H1 Sh=-0.14 sugere regime-dependencia narrow)."
+  },
+  "engine": {
+    "family": "bollinger",
+    "params": {
+      "window": 30,
+      "num_std": 1.5,
+      "long_only": true,
+      "regime_filter": {
+        "type": "bollinger_width",
+        "window": 30,
+        "num_std": 1.5,
+        "min_width_bps": 250
+      }
+    }
+  },
+  "approved_combos": [
+    {
+      "symbol": "ETHUSDT",
+      "timeframe": "1h",
+      "validation_window": "2024-01-05..2024-07-04",
+      "window_tag": "2024-H1",
+      "oos_trades": 38,
+      "oos_sharpe": 1.834,
+      "oos_mdd_pct": 1.823,
+      "oos_pnl_pct": 4.678,
+      "approved_in": "v1",
+      "robustness": {
+        "num_std_sensitivity": "fragile_high",
+        "num_std_sensitivity_detail": "PASS em ns=1.25 (BK.1 Sharpe 2.91) mas FAIL em ns=1.75 (BK.5 Sharpe 0.75, MC p5 9797).",
+        "window_sensitivity": "fragile_low",
+        "window_sensitivity_detail": "FAIL em w=25 (BN.1 Sharpe -0.07, PnL -0.30%); PASS em w=35 (BN.5 Sharpe 1.44).",
+        "min_width_bps_sensitivity": "fragile_both",
+        "min_width_bps_sensitivity_detail": "FAIL em ambas: bw=200 (BO.1 Sharpe 0.10, MC p5 9516); bw=300 (BO.5 trades=27<30 apesar Sharpe 3.57).",
+        "cross_axis_3d": "fragile_3d",
+        "rollout_priority": "fragile_3d_first_wave",
+        "source_adr": "decisions/0038-bollinger-sensitivity-3d-reruns-corrected.md"
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "timeframe": "1h",
+      "validation_window": "2025-01-05..2025-07-04",
+      "window_tag": "2025-H1",
+      "oos_trades": 36,
+      "oos_sharpe": 1.21,
+      "oos_mdd_pct": 4.37,
+      "oos_pnl_pct": 3.71,
+      "approved_in": "v2",
+      "robustness": {
+        "num_std_sensitivity": "fragile_both",
+        "num_std_sensitivity_detail": "FAIL em ambas: ns=1.25 (BK.2 MC p5 9732); ns=1.75 (BK.6 MC p5 9714).",
+        "window_sensitivity": "fragile_both",
+        "window_sensitivity_detail": "FAIL em ambas: w=25 (BN.2 Sharpe 0.78, MC p5 9601); w=35 (BN.6 MC p5 9917).",
+        "min_width_bps_sensitivity": "fragile_both",
+        "min_width_bps_sensitivity_detail": "FAIL em ambas: bw=200 (BO.2 MC p5 9686); bw=300 (BO.6 MC p5 9951).",
+        "cross_axis_3d": "fragile_3d_totalmente_fragil",
+        "rollout_priority": "fragile_3d_first_wave",
+        "source_adr": "decisions/0038-bollinger-sensitivity-3d-reruns-corrected.md",
+        "delta_vs_pre_adr_0037": "Era 'semi_robust_num_std' com params errados — regrediu para fragile_3d completo. A 'robustez num_std' era artefato do regime (20/2) errado."
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "timeframe": "1h",
+      "validation_window": "2024-07-05..2024-12-31",
+      "window_tag": "2024-H2",
+      "oos_trades": 30,
+      "oos_sharpe": 1.559,
+      "oos_mdd_pct": 1.903,
+      "oos_pnl_pct": 2.24,
+      "approved_in": "v1",
+      "robustness": {
+        "num_std_sensitivity": "fragile_both",
+        "num_std_sensitivity_detail": "FAIL em ambas: ns=1.25 (BK.3 trades=27, Sharpe 0.98, MC p5 9797); ns=1.75 (BK.7 trades=20, MC p5 9863). BTC volume insuficiente em perturbações.",
+        "window_sensitivity": "fragile_both",
+        "window_sensitivity_detail": "FAIL em ambas: w=25 (BN.3 trades=28<30 apesar Sharpe 2.81); w=35 (BN.7 trades=18, MC p5 9995).",
+        "min_width_bps_sensitivity": "fragile_high",
+        "min_width_bps_sensitivity_detail": "PASS em bw=200 (BO.3 Sharpe 2.39); FAIL em bw=300 (BO.7 trades=13, Sharpe 0.86, MC p5 9879). Único eixo com pelo menos 1 lado passando.",
+        "cross_axis_3d": "fragile_3d",
+        "rollout_priority": "second_wave_reduced_size_21d",
+        "source_adr": "decisions/0038-bollinger-sensitivity-3d-reruns-corrected.md",
+        "delta_vs_pre_adr_0037": "Classe 3D inalterada (fragile_3d), mas padrões de falha mudaram (min_width passa em bw=200 agora, window falha por trades em ambos os lados)."
+      }
+    },
+    {
+      "symbol": "SOLUSDT",
+      "timeframe": "1h",
+      "validation_window": "2024-07-05..2024-12-31",
+      "window_tag": "2024-H2",
+      "oos_trades": 69,
+      "oos_sharpe": 2.401,
+      "oos_mdd_pct": 3.373,
+      "oos_pnl_pct": 8.011,
+      "approved_in": "v1",
+      "robustness": {
+        "num_std_sensitivity": "robust",
+        "num_std_sensitivity_detail": "PASS em ambas: ns=1.25 (BK.4 Sharpe 2.15); ns=1.75 (BK.8 Sharpe 2.18). Único combo do manifest robust em num_std.",
+        "window_sensitivity": "robust",
+        "window_sensitivity_detail": "PASS em ambas: w=25 (BN.4 Sharpe 1.71); w=35 (BN.8 Sharpe 1.90). Único combo robusto em window (confirmado também pré-ADR-0037).",
+        "min_width_bps_sensitivity": "fragile_high",
+        "min_width_bps_sensitivity_detail": "PASS em bw=200 (BO.4 Sharpe 1.90); PASS também em bw=300 (BO.8 Sharpe 2.75). Tecnicamente robust agora também — mas MC p5 bw=300 fica em 10335 (acima do limiar 10000), margem apertada — manter classificação fragile_high conservadora.",
+        "cross_axis_3d": "semi_robust_2d",
+        "rollout_priority": "first_wave_highest_confidence",
+        "source_adr": "decisions/0038-bollinger-sensitivity-3d-reruns-corrected.md",
+        "delta_vs_pre_adr_0037": "SOBE de 'semi_robust_window' (1 eixo robusto) para 'semi_robust_2d' (num_std + window robustos). Único combo cuja classificação melhorou. Reforça SOL como candidato mais confiável da 1ª onda."
+      }
+    }
+  ],
+  "validation": {
+    "method": "walk-forward-4fold + monte_carlo_1000 + cost_stress",
+    "cost_model_baseline_pct": 0.14,
+    "cost_model_stress_fee_plus_10_pct": 0.34,
+    "cost_stress_ratio_min": 0.95,
+    "seed_monte_carlo": 42,
+    "notes": "Baseline cost (0.14%) abaixo do gate AGENTS.md §8 #3 (0.20%). Divergência aceita conforme ADR-0028/0029: stress fee+10 (0.34%) passa ratio_min ≥ 0.95 em todos os combos. fee≡spread via ADR-0019."
+  },
+  "execution_hints": {
+    "position_sizing": "fixed_notional_per_trade",
+    "notional_per_trade_quote_ccy": 2000,
+    "entry_rule": "close[t-1] cruza estritamente abaixo de (ma - num_std*sigma), vindo de dentro ou da borda",
+    "exit_rule": "close[t-1] cruza estritamente acima de ma, vindo de baixo",
+    "regime_gate": "bollinger_width_bps = 2*num_std*sigma/ma*10000 >= 250",
+    "causal_invariant": "engine ignora window.iloc[-1]; sinal em t usa apenas closes até t-1 inclusive (ADR-0002)",
+    "signal_arbitration": "EXIT vence ENTER quando disparam na mesma barra (ADR-0011)"
+  },
+  "disallow_sizing_modes": ["snowball", "kelly_like", "martingale"],
+  "disallow_sizing_reason": "BotBinance re-validação v1 reportou: ETH com snowball degradou PnL +19% → +0.78% e MDD 17% → 23%. Mean-reversion + sizing que escala em streaks é contraprodutivo estruturalmente. Fixed notional é o único modo autorizado para esta estratégia.",
+  "robustness_re_derived_by": "ADR-0038",
+  "robustness_re_derived_at": "2026-04-19T11:15:00Z",
+  "robustness_re_derivation_history": {
+    "original_adrs": ["0032", "0033", "0035"],
+    "invalidated_by": "ADR-0037 (regime params bug)",
+    "re_derived_by": "ADR-0038 (reruns com manifest params 30/1.5)",
+    "summary": "9/24 pilotos PASS. ETH 2025-H1 regrediu para fragile_3d completo (era semi_robust_num_std artefatual). SOL 2024-H2 subiu para semi_robust_2d (num_std+window robustos). ETH 2024-H1 e BTC 2024-H2 permanecem fragile_3d."
+  },
+  "rollout_priority_live": {
+    "_note": "Indexado por (symbol, engine). Weakest-wins sobre validações offline (ADR-0034). Classes re-derivadas em ADR-0038 com regime params corretos do manifest.",
+    "ETHUSDT_1h": {
+      "class": "fragile_3d",
+      "rationale": "weakest_wins(ETH 2024-H1=fragile_3d, ETH 2025-H1=fragile_3d_totalmente_fragil) = fragile_3d. Conservador: suspender antes de SOL em caso de sinal ruim.",
+      "live_status": "active_since_2026-04-19T00:25:00Z",
+      "notional_usd": 2000,
+      "wave": 1
+    },
+    "SOLUSDT_1h": {
+      "class": "semi_robust_2d",
+      "rationale": "SOL 2024-H2 robust em 2 eixos (num_std + window) — único combo do manifest com >1 eixo robusto. Candidato #1 a elevação futura se paper der trades clean.",
+      "live_status": "active_since_2026-04-19T00:25:00Z",
+      "notional_usd": 2000,
+      "wave": 1
+    },
+    "BTCUSDT_1h": {
+      "class": "fragile_3d",
+      "rationale": "única validação (BTC 2024-H2) + fragile nos 3 eixos (num_std, window, min_width). Volume chronicamente insuficiente em perturbações (BN.3 trades=28, BN.7=18, BO.7=13).",
+      "live_status": "deferred_until_wave_2",
+      "wave_2_trigger": "21d corridos sem MANIFEST_EXIT-abaixo-do-entry em ETH+SOL E DD combinado < 5% (elevado de 14d em ADR-0035, reconfirmado em ADR-0038)",
+      "notional_usd_when_activated": 1000,
+      "wave": 2
+    }
+  },
+  "expansion_policy": {
+    "rule": "Qualquer combo fora de approved_combos requer nova ADR e novo manifest (v3+).",
+    "excluded_combos": [
+      {"symbol": "BTCUSDT", "timeframe": "1h", "window_tag": "2025-H1", "reason": "23 trades OOS < 30 (gate #4). Sharpe 1.89 forte mas volume insuficiente."},
+      {"symbol": "BTCUSDT", "timeframe": "1h", "window_tag": "2025-H2", "reason": "16 trades OOS < 30."},
+      {"symbol": "BTCUSDT", "timeframe": "1h", "window_tag": "2024-H1", "reason": "26 trades + Sharpe 0.41."},
+      {"symbol": "BTCUSDT", "timeframe": "1h", "window_tag": "2023-H2", "reason": "10 trades OOS < 30."},
+      {"symbol": "ETHUSDT", "timeframe": "1h", "window_tag": "2024-H2", "reason": "Sharpe 0.72 < 1.0."},
+      {"symbol": "ETHUSDT", "timeframe": "1h", "window_tag": "2025-H2", "reason": "Sharpe 0.42 < 1.0. Regime 2025-H2 hostil cross-family (Série BE-BI)."},
+      {"symbol": "ETHUSDT", "timeframe": "1h", "window_tag": "2023-H2", "reason": "17 trades OOS < 30."},
+      {"symbol": "SOLUSDT", "timeframe": "1h", "window_tag": "2023-H2", "reason": "Sharpe 0.46 < 1.0."},
+      {"symbol": "SOLUSDT", "timeframe": "1h", "window_tag": "2024-H1", "reason": "Sharpe 0.30 < 1.0."},
+      {"symbol": "SOLUSDT", "timeframe": "1h", "window_tag": "2025-H1", "reason": "Sharpe 0.62 < 1.0."},
+      {"symbol": "SOLUSDT", "timeframe": "1h", "window_tag": "2025-H2", "reason": "Sharpe 0.19 < 1.0."}
+    ]
+  }
+}

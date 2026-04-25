@@ -1,0 +1,12 @@
+{
+  "summary": {
+    "n_runs_audited": 658,
+    "n_clean": 658,
+    "n_dirty": 0,
+    "aggregate_violations": {},
+    "dirty_runs_sample": [],
+    "expected_notional": 2000.0
+  },
+  "sample_violations": [],
+  "per_run": []
+}

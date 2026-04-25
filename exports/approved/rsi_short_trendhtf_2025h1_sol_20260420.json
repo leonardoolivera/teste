@@ -1,0 +1,115 @@
+{
+  "strategy_name": "rsi_short_trendhtf_2025h1_sol",
+  "manifest_version": "v6.1",
+  "param_upgrade_adr": "decisions/0140-manifest-v61-rsi-trendhtf-sol-2575-promote.md",
+  "param_upgrade_note": "Bounds 25/75 substituem 30/70 em 2026-04-20 pós CZ10+CZ11+CZ12 (3/3 PASS strict cross-era, Padrão 40). Sharpe esperado ~2.45 vs 0.89 canônico.",
+  "supersedes": "partial: SOLUSDT 2025-H1 combo de rsi_short_width_2025h1_20260419.json (CH.6). v4a retem BTCUSDT 2025-H1. Justificativa: Sh 1.96 > 1.32 (+0.64); filter direcional alinhado ao payoff (Padrao 13); load-bearing vs naked confirmado (Padrao 19, ADR-0083). Ver decisions/0084-manifest-v6-rsi-short-trendhtf-sol-2025h1-activate.md.",
+  "complementary_to": "rsi_short_width_2025h1_20260419.json",
+  "alpha_forge_commit": "ab7c2ad6891f44a2fd66d0b46a219729da191a1e",
+  "approved_at": "2026-04-20T00:00:00Z",
+  "approval_adr": "decisions/0084-manifest-v6-rsi-short-trendhtf-sol-2025h1-activate.md",
+  "prior_approval_adr": "decisions/0083-series-cp-closeout-trend-promotes-v4a-2025h1.md",
+  "live_status": "active",
+  "live_status_since": "2026-04-20T00:00:00Z",
+  "audit_adr": "decisions/0083-series-cp-closeout-trend-promotes-v4a-2025h1.md",
+  "audit_closeout_adr": "decisions/0084-manifest-v6-rsi-short-trendhtf-sol-2025h1-activate.md",
+  "runtime_contract": "faithful",
+  "runtime_invariants": {
+    "entry_fill": "market_at_open_next_bar",
+    "exit_fill": "market_at_open_next_bar",
+    "sizing": "fixed_notional_literal",
+    "stop_loss": "disabled",
+    "signal_arbitration": "exit_wins_on_tie"
+  },
+  "engine": {
+    "family": "rsi",
+    "params": {
+      "period": 14,
+      "oversold": 25,
+      "overbought": 75,
+      "long_only": false,
+      "regime_filter": {
+        "type": "trend_htf",
+        "htf": "4h",
+        "sma_window": 50,
+        "mode": "short_only"
+      }
+    }
+  },
+  "approved_combos": [
+    {
+      "symbol": "SOLUSDT",
+      "timeframe": "1h",
+      "validation_window": "2025-01-05..2025-07-04",
+      "window_tag": "2025-H1",
+      "regime": "chop",
+      "oos_trades": 32,
+      "oos_sharpe": 2.00,
+      "oos_mdd_pct": 4.75,
+      "oos_pnl_pct": 9.80,
+      "cost_stress_ratio_min": 0.9705,
+      "mc_p5_final_equity": 9712,
+      "approved_in": "v6.1",
+      "source_tag": "CZ10.5 (25/75 baseline 2025-H1)",
+      "source_run_id": "cz10-sol-rsi-2575-trendhtf-1h-2025h1",
+      "cross_window_status": "strict",
+      "cross_window_evidence": [
+        {"window": "2025-H1", "sharpe": 2.00, "source": "CZ10.5 25/75 (ADR-0135)"},
+        {"window": "2025-H2", "sharpe": 3.36, "source": "CZ11.6 25/75 (ADR-0137)"},
+        {"window": "2024-H1", "sharpe": 1.99, "source": "CZ12.2 25/75 (ADR-0139)"}
+      ],
+      "cross_window_note": "PROMOÇÃO bounds 25/75 pós CZ10+CZ11+CZ12: 3/3 regime-compatível PASS strict (Sh ≥ 1.99 em 3 eras diferentes 2024-H1/2025-H1/2025-H2). Padrão 40 cross-era confirmado. Filter trend_htf short_only contém bull 2024-H2 (Sh=-0.19, não destrutivo). Sharpe agregado esperado ~2.45 (vs 0.89 em 30/70 canônico). Promoção autorizada pelo usuário em 2026-04-20.",
+      "note": "Filter load-bearing confirmado Gate B vs naked: RSI puro SOL 2025-H1 Sh=0.615 FAIL (MC p5 8946). Lift +1.34 Sh vs naked; lift +0.64 Sh vs v4a width (1.32). Padrao 19 (ADR-0083): filter-vs-naked baseline correta para promocao de filter alternativo."
+    }
+  ],
+  "validation": {
+    "method": "walk-forward-5fold + monte_carlo_1000 + cost_stress",
+    "cost_model_baseline_pct": 0.14,
+    "cost_model_stress_fee_plus_10_pct": 0.34,
+    "cost_stress_ratio_min": 0.95,
+    "seed_monte_carlo": 42,
+    "notes": "Run original eh co-audit-noWidth-sol-20250105_20250704-short (parte do Gate 4 audit da Serie CO, ADR-0079). Re-lido sistematicamente em Serie CP (ADR-0082/0083) com Gate B vs naked (audit-v4-b-sol-20250105_20250704-nofilter, Sh=0.615 FAIL). Padrao 13 (ADR-0071): filter alinhado a direcao do payoff (trend_htf short_only + RSI short)."
+  },
+  "execution_hints": {
+    "position_sizing": "fixed_notional_per_trade",
+    "notional_per_trade_quote_ccy": 2000,
+    "entry_rule_long": "N/A (long_only=false mas manifest eh short_only via filter)",
+    "entry_rule_short": "RSI(14) cruza acima de 70 usando close[t-1] (ADR-0027)",
+    "exit_rule": "RSI(14) retorna para zona neutra (short: RSI<=50) usando close[t-1]",
+    "regime_gate": "TrendHTF(4h, SMA_window=50, mode=short_only): permite entrada short apenas quando close_4h[t-1] < sma_4h(50)[t-1]",
+    "causal_invariant": "engine ignora window.iloc[-1]; HTF SMA computada com closes ate barra 4h anterior (ADR-0002)",
+    "signal_arbitration": "EXIT vence ENTER quando disparam na mesma barra (ADR-0011)",
+    "reverse_on_signal": "permitido; incorre double cost (ADR-0012); filtro trend serve de gate direcional alinhado ao payoff short"
+  },
+  "disallow_sizing_modes": ["snowball", "kelly_like", "martingale"],
+  "disallow_sizing_reason": "Herdado ADR-0028/0029 + confirmado empiricamente ADR-0064.",
+  "series_source": {
+    "series_tag": "CP",
+    "preregister_adr": "decisions/0082-series-cp-trendhtf-primary-sol-vs-width-preregister.md",
+    "closeout_adr": "decisions/0083-series-cp-closeout-trend-promotes-v4a-2025h1.md",
+    "audit_adr": "decisions/0083-series-cp-closeout-trend-promotes-v4a-2025h1.md",
+    "audit_closeout_adr": "decisions/0084-manifest-v6-rsi-short-trendhtf-sol-2025h1-activate.md",
+    "gate_b_verdict": "1/1 load-bearing vs naked (RSI puro Sh=0.615 FAIL sem trend). CP.3 SOL 2025-H2 NAO-promovida (naked ja PASS Sh=2.30, trend nao load-bearing - v4b cobre).",
+    "raw_data": "results/validation/co-audit-noWidth-sol-20250105_20250704-short + results/validation/audit-v4-b-sol-20250105_20250704-nofilter"
+  },
+  "expansion_policy": {
+    "rule": "Combos fora de approved_combos requerem nova ADR + nova serie cross-period. Este manifest eh scope-restrito a SOL 2025-H1 chop: adicionar outros assets/janelas requer audit Gate B filter-vs-naked separado.",
+    "regime_dependence_note": "TrendHTF short_only eh load-bearing em SOL 2025-H1 chop. Em SOL 2025-H2 misto trend eh neutro (RSI naked ja PASS - v4b cobre). Em SOL 2024-H2 bull trend nao salva (CP.1 FAIL Sh=-1.02). Este manifest NAO cobre 2024-H2 nem 2025-H2 por design. Cross-asset BTC/ETH: nao testado ainda; hipotese futura Serie CR.",
+    "excluded_combos": [
+      {
+        "symbol": "SOLUSDT",
+        "timeframe": "1h",
+        "window_tag": "2024-H2",
+        "source_tag": "CP.1",
+        "reason": "Sharpe -1.02 + MC p5 8938. Bull mkt destrutivo para RSI short com ou sem filter (Padrao 14: TrendHTF nao cria edge onde nao existe)."
+      },
+      {
+        "symbol": "SOLUSDT",
+        "timeframe": "1h",
+        "window_tag": "2025-H2",
+        "source_tag": "CP.3",
+        "reason": "CP.3 PASS Sh=2.71 mas NAO load-bearing: RSI naked ja Sh=2.30 PASS (v4b cobre). Padrao 15 bloqueia promocao quando filter nao carrega edge. Trend amplifica marginal (+0.41 Sh) mas v4b ja ativo preserva simplicidade."
+      }
+    ]
+  }
+}

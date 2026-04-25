@@ -24,6 +24,12 @@ import pytest
 from hypothesis import HealthCheck, assume, given, settings
 from hypothesis import strategies as st
 
+# Ranges dos parâmetros de custo em bps. Mantidos amplos o bastante para
+# exercitar faixa plausível de mercado e mais além (stress), estreitos o
+# bastante para manter o teste rápido.
+FEE_BPS_MAX = 50.0
+SLIP_BPS_MAX = 100.0
+
 from alpha_forge.backtest.cost import CostModel
 from alpha_forge.backtest.engine import run_backtest
 from alpha_forge.backtest.schemas import BacktestResult
@@ -76,33 +82,50 @@ def _run(prices: pd.DataFrame, cost_model: CostModel) -> BacktestResult:
     )
 
 
-def _dominates(high: CostModel, low: CostModel) -> bool:
-    """`high` domina `low` componente a componente, com ≥1 desigualdade estrita."""
-    ge_fee = high.taker_fee_bps >= low.taker_fee_bps
-    ge_slip = (
-        high.slippage_bps_per_unit_notional >= low.slippage_bps_per_unit_notional
+@st.composite
+def dominated_cost_pair(draw: st.DrawFn) -> tuple[CostModel, CostModel]:
+    """Gera ``(cost_low, cost_high)`` com dominância componente a componente garantida.
+
+    Constrói `cost_high` a partir de `cost_low + deltas` com pelo menos uma
+    desigualdade estrita, eliminando a necessidade de ``assume(...)`` para
+    descartar exemplos não-dominantes. Isso evita `HealthCheck.filter_too_much`
+    — causa raiz da flakiness intermitente observada em rodadas prévias,
+    quando o acaso sorteava muitos pares ordem-reversa em sequência.
+    """
+    fee_low = draw(
+        st.floats(min_value=0.0, max_value=FEE_BPS_MAX, allow_nan=False, allow_infinity=False)
     )
-    strict = (
-        high.taker_fee_bps > low.taker_fee_bps
-        or high.slippage_bps_per_unit_notional > low.slippage_bps_per_unit_notional
+    slip_low = draw(
+        st.floats(min_value=0.0, max_value=SLIP_BPS_MAX, allow_nan=False, allow_infinity=False)
     )
-    return ge_fee and ge_slip and strict
+    fee_delta = draw(
+        st.floats(min_value=0.0, max_value=FEE_BPS_MAX - fee_low, allow_nan=False, allow_infinity=False)
+    )
+    slip_delta = draw(
+        st.floats(min_value=0.0, max_value=SLIP_BPS_MAX - slip_low, allow_nan=False, allow_infinity=False)
+    )
+    # Pelo menos uma desigualdade estrita (ADR-0010): se ambos deltas vierem zero,
+    # promove o componente com mais folga até a menor diferença representável.
+    if fee_delta == 0.0 and slip_delta == 0.0:
+        slip_delta = draw(
+            st.floats(
+                min_value=1e-9,
+                max_value=max(1e-9, SLIP_BPS_MAX - slip_low),
+                allow_nan=False,
+                allow_infinity=False,
+            )
+        )
+    cost_low = CostModel(
+        taker_fee_bps=fee_low, slippage_bps_per_unit_notional=slip_low
+    )
+    cost_high = CostModel(
+        taker_fee_bps=fee_low + fee_delta,
+        slippage_bps_per_unit_notional=slip_low + slip_delta,
+    )
+    return cost_low, cost_high
 
 
-@given(
-    fee_low=st.floats(
-        min_value=0.0, max_value=50.0, allow_nan=False, allow_infinity=False
-    ),
-    fee_high=st.floats(
-        min_value=0.0, max_value=50.0, allow_nan=False, allow_infinity=False
-    ),
-    slip_low=st.floats(
-        min_value=0.0, max_value=100.0, allow_nan=False, allow_infinity=False
-    ),
-    slip_high=st.floats(
-        min_value=0.0, max_value=100.0, allow_nan=False, allow_infinity=False
-    ),
-)
+@given(cost_pair=dominated_cost_pair())
 @settings(
     max_examples=30,
     deadline=None,
@@ -110,21 +133,9 @@ def _dominates(high: CostModel, low: CostModel) -> bool:
 )
 def test_cost_monotonicity_in_final_equity(
     reference_prices: pd.DataFrame,
-    fee_low: float,
-    fee_high: float,
-    slip_low: float,
-    slip_high: float,
+    cost_pair: tuple[CostModel, CostModel],
 ) -> None:
-    cost_low = CostModel(
-        taker_fee_bps=fee_low, slippage_bps_per_unit_notional=slip_low
-    )
-    cost_high = CostModel(
-        taker_fee_bps=fee_high, slippage_bps_per_unit_notional=slip_high
-    )
-
-    # ADR-0010: invariante só é definida quando cost_high domina cost_low
-    # componente a componente, com ao menos uma desigualdade estrita.
-    assume(_dominates(cost_high, cost_low))
+    cost_low, cost_high = cost_pair
 
     result_low = _run(reference_prices, cost_low)
     result_high = _run(reference_prices, cost_high)

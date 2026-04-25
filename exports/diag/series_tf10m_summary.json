@@ -1,0 +1,83 @@
+[
+  {
+    "tag": "TF10.1",
+    "label": "BTC 2024-H2",
+    "run_id": "tf10-btc-bol-width-20-2-short-10m-2024h2",
+    "trades": 36,
+    "pnl_pct": 0.8644094617814124,
+    "sharpe": 0.7596662482533412,
+    "final_eq": 10086.440946178142
+  },
+  {
+    "tag": "TF10.2",
+    "label": "ETH 2024-H2",
+    "run_id": "tf10-eth-bol-width-20-2-short-10m-2024h2",
+    "trades": 60,
+    "pnl_pct": 2.1233590696976723,
+    "sharpe": 1.2762320918413161,
+    "final_eq": 10212.335906969767
+  },
+  {
+    "tag": "TF10.3",
+    "label": "SOL 2024-H2",
+    "run_id": "tf10-sol-bol-width-20-2-short-10m-2024h2",
+    "trades": 98,
+    "pnl_pct": 4.98981027446157,
+    "sharpe": 1.7741988745379704,
+    "final_eq": 10498.981027446156
+  },
+  {
+    "tag": "TF10.4",
+    "label": "BTC 2025-H1",
+    "run_id": "tf10-btc-bol-width-20-2-short-10m-2025h1",
+    "trades": 23,
+    "pnl_pct": -0.3472336644776086,
+    "sharpe": -0.33324883877800127,
+    "final_eq": 9965.27663355224
+  },
+  {
+    "tag": "TF10.5",
+    "label": "ETH 2025-H1",
+    "run_id": "tf10-eth-bol-width-20-2-short-10m-2025h1",
+    "trades": 85,
+    "pnl_pct": -5.6738670601459535,
+    "sharpe": -1.9739727854771467,
+    "final_eq": 9432.613293985405
+  },
+  {
+    "tag": "TF10.6",
+    "label": "SOL 2025-H1",
+    "run_id": "tf10-sol-bol-width-20-2-short-10m-2025h1",
+    "trades": 140,
+    "pnl_pct": -4.3718058491937555,
+    "sharpe": -1.0247720655676273,
+    "final_eq": 9562.819415080625
+  },
+  {
+    "tag": "TF10.7",
+    "label": "BTC 2025-H2",
+    "run_id": "tf10-btc-bol-width-20-2-short-10m-2025h2",
+    "trades": 15,
+    "pnl_pct": 0.18602779446261763,
+    "sharpe": 0.14538588078147066,
+    "final_eq": 10018.602779446263
+  },
+  {
+    "tag": "TF10.8",
+    "label": "ETH 2025-H2",
+    "run_id": "tf10-eth-bol-width-20-2-short-10m-2025h2",
+    "trades": 76,
+    "pnl_pct": -4.069540503138757,
+    "sharpe": -1.6666157703115878,
+    "final_eq": 9593.045949686124
+  },
+  {
+    "tag": "TF10.9",
+    "label": "SOL 2025-H2",
+    "run_id": "tf10-sol-bol-width-20-2-short-10m-2025h2",
+    "trades": 114,
+    "pnl_pct": -4.794904662369648,
+    "sharpe": -1.5295468783905768,
+    "final_eq": 9520.509533763036
+  }
+]

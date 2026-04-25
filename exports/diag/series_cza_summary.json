@@ -1,0 +1,34 @@
+[
+  {
+    "tag": "CZA.1",
+    "asset": "DOT",
+    "window": "2025-H2",
+    "run_id": "cza-dot-rsi-short-width300-2025h2",
+    "naked_sh": 0.498,
+    "delta_sh": 0.4026944423025042,
+    "trades": 96,
+    "pnl_pct": 5.215132860353688,
+    "sharpe": 0.9006944423025042,
+    "mdd_pct": 6.466397442314056,
+    "final_eq": 10521.51328603537,
+    "cost_r": 0.9540147460743328,
+    "mc_p5": 9071.027435759093,
+    "verdict": "FAIL (Sh<1.0, MCp5<9500)"
+  },
+  {
+    "tag": "CZA.2",
+    "asset": "AVAX",
+    "window": "2025-H2",
+    "run_id": "cza-avax-rsi-short-width300-2025h2",
+    "naked_sh": -0.054,
+    "delta_sh": 0.430577752931765,
+    "trades": 90,
+    "pnl_pct": 1.757170229515026,
+    "sharpe": 0.376577752931765,
+    "mdd_pct": 8.184322853680788,
+    "final_eq": 10175.717022951503,
+    "cost_r": 0.9555514368549919,
+    "mc_p5": 8851.230080373445,
+    "verdict": "FAIL (Sh<1.0, MCp5<9500, PnL<3%)"
+  }
+]

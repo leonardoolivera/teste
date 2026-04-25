@@ -1,0 +1,90 @@
+[
+  {
+    "tag": "BO.1",
+    "pass": false,
+    "trades": 47,
+    "sharpe": 0.7422,
+    "mdd_pct": 3.6272,
+    "pnl_pct": 2.0836,
+    "cost_ratio_min": 0.9762,
+    "mc_p5_final_equity": 9632.42,
+    "mc_mdd95_pct": 6.1463
+  },
+  {
+    "tag": "BO.2",
+    "pass": false,
+    "trades": 51,
+    "sharpe": 1.1389,
+    "mdd_pct": 4.5223,
+    "pnl_pct": 3.9107,
+    "cost_ratio_min": 0.9724,
+    "mc_p5_final_equity": 9586.08,
+    "mc_mdd95_pct": 7.6432
+  },
+  {
+    "tag": "BO.3",
+    "pass": false,
+    "trades": 40,
+    "sharpe": 0.8609,
+    "mdd_pct": 2.6632,
+    "pnl_pct": 1.425,
+    "cost_ratio_min": 0.9782,
+    "mc_p5_final_equity": 9830.89,
+    "mc_mdd95_pct": 3.7569
+  },
+  {
+    "tag": "BO.4",
+    "pass": true,
+    "trades": 68,
+    "sharpe": 2.0479,
+    "mdd_pct": 3.5102,
+    "pnl_pct": 7.3084,
+    "cost_ratio_min": 0.9697,
+    "mc_p5_final_equity": 10151.8,
+    "mc_mdd95_pct": 4.6557
+  },
+  {
+    "tag": "BO.5",
+    "pass": false,
+    "trades": 37,
+    "sharpe": 1.6834,
+    "mdd_pct": 1.9691,
+    "pnl_pct": 4.1022,
+    "cost_ratio_min": 0.9831,
+    "mc_p5_final_equity": 9949.88,
+    "mc_mdd95_pct": 3.4032
+  },
+  {
+    "tag": "BO.6",
+    "pass": true,
+    "trades": 40,
+    "sharpe": 2.0726,
+    "mdd_pct": 3.79,
+    "pnl_pct": 6.0745,
+    "cost_ratio_min": 0.9783,
+    "mc_p5_final_equity": 10075.03,
+    "mc_mdd95_pct": 3.3937
+  },
+  {
+    "tag": "BO.7",
+    "pass": false,
+    "trades": 21,
+    "sharpe": 0.4453,
+    "mdd_pct": 1.2541,
+    "pnl_pct": 0.5362,
+    "cost_ratio_min": 0.9856,
+    "mc_p5_final_equity": 9923.83,
+    "mc_mdd95_pct": 1.5773
+  },
+  {
+    "tag": "BO.8",
+    "pass": false,
+    "trades": 54,
+    "sharpe": 1.5246,
+    "mdd_pct": 3.6438,
+    "pnl_pct": 4.6296,
+    "cost_ratio_min": 0.9738,
+    "mc_p5_final_equity": 9915.36,
+    "mc_mdd95_pct": 5.2931
+  }
+]

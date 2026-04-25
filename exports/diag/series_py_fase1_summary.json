@@ -1,0 +1,38 @@
+[
+  {
+    "tag": "PY.1",
+    "label": "SOL+tHTF 2025H1",
+    "baseline_sh": 2.0,
+    "baseline_pnl": 9.8,
+    "lift_sh": -0.393366227709391,
+    "lift_pnl": 25.445958228784715,
+    "trades": 26,
+    "seqs": 11,
+    "pnl_pct": 35.245958228784716,
+    "sharpe": 1.606633772290609
+  },
+  {
+    "tag": "PY.2",
+    "label": "SOL naked 2025H2",
+    "baseline_sh": 2.3,
+    "baseline_pnl": 13.81,
+    "lift_sh": -4.3818174585645,
+    "lift_pnl": -102.66445627015288,
+    "trades": 0,
+    "seqs": 0,
+    "pnl_pct": -88.85445627015288,
+    "sharpe": -2.0818174585644997
+  },
+  {
+    "tag": "PY.3",
+    "label": "BTC naked 2025H2",
+    "baseline_sh": 1.64,
+    "baseline_pnl": 5.13,
+    "lift_sh": 0.7401360652242166,
+    "lift_pnl": 62.819108803422345,
+    "trades": 0,
+    "seqs": 0,
+    "pnl_pct": 67.94910880342235,
+    "sharpe": 2.3801360652242165
+  }
+]

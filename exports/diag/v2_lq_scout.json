@@ -1,0 +1,257 @@
+{
+  "results": [
+    {
+      "asset": "BTCUSDT",
+      "lookback": 20,
+      "variant": "raw",
+      "run_id": "v2-lq-btcusdt-lb20-raw-30m",
+      "ok": true,
+      "elapsed": 9.9,
+      "metrics": {
+        "trades": 906,
+        "sharpe": -2.0987,
+        "pnl_pct": -26.8098,
+        "mdd_pct": 29.6308
+      }
+    },
+    {
+      "asset": "BTCUSDT",
+      "lookback": 30,
+      "variant": "raw",
+      "run_id": "v2-lq-btcusdt-lb30-raw-30m",
+      "ok": true,
+      "elapsed": 10.0,
+      "metrics": {
+        "trades": 666,
+        "sharpe": -1.4237,
+        "pnl_pct": -17.1312,
+        "mdd_pct": 21.6255
+      }
+    },
+    {
+      "asset": "BTCUSDT",
+      "lookback": 15,
+      "variant": "raw",
+      "run_id": "v2-lq-btcusdt-lb15-raw-30m",
+      "ok": true,
+      "elapsed": 10.5,
+      "metrics": {
+        "trades": 1083,
+        "sharpe": -3.105,
+        "pnl_pct": -39.1963,
+        "mdd_pct": 41.1321
+      }
+    },
+    {
+      "asset": "ETHUSDT",
+      "lookback": 20,
+      "variant": "raw",
+      "run_id": "v2-lq-ethusdt-lb20-raw-30m",
+      "ok": true,
+      "elapsed": 10.7,
+      "metrics": {
+        "trades": 844,
+        "sharpe": -1.5654,
+        "pnl_pct": -29.2223,
+        "mdd_pct": 35.3246
+      }
+    },
+    {
+      "asset": "ETHUSDT",
+      "lookback": 15,
+      "variant": "raw",
+      "run_id": "v2-lq-ethusdt-lb15-raw-30m",
+      "ok": true,
+      "elapsed": 11.2,
+      "metrics": {
+        "trades": 1005,
+        "sharpe": -2.2248,
+        "pnl_pct": -40.7433,
+        "mdd_pct": 45.0866
+      }
+    },
+    {
+      "asset": "BTCUSDT",
+      "lookback": 30,
+      "variant": "trail40",
+      "run_id": "v2-lq-btcusdt-lb30-trail40-30m",
+      "ok": true,
+      "elapsed": 14.3,
+      "metrics": {
+        "trades": 703,
+        "sharpe": -1.6866,
+        "pnl_pct": -19.5653,
+        "mdd_pct": 24.174
+      }
+    },
+    {
+      "asset": "ETHUSDT",
+      "lookback": 20,
+      "variant": "trail40",
+      "run_id": "v2-lq-ethusdt-lb20-trail40-30m",
+      "ok": true,
+      "elapsed": 14.5,
+      "metrics": {
+        "trades": 895,
+        "sharpe": -1.6944,
+        "pnl_pct": -30.2752,
+        "mdd_pct": 36.2827
+      }
+    },
+    {
+      "asset": "BTCUSDT",
+      "lookback": 15,
+      "variant": "trail40",
+      "run_id": "v2-lq-btcusdt-lb15-trail40-30m",
+      "ok": true,
+      "elapsed": 14.6,
+      "metrics": {
+        "trades": 1128,
+        "sharpe": -3.4718,
+        "pnl_pct": -42.1826,
+        "mdd_pct": 44.107
+      }
+    },
+    {
+      "asset": "BTCUSDT",
+      "lookback": 20,
+      "variant": "trail40",
+      "run_id": "v2-lq-btcusdt-lb20-trail40-30m",
+      "ok": true,
+      "elapsed": 14.6,
+      "metrics": {
+        "trades": 950,
+        "sharpe": -2.375,
+        "pnl_pct": -29.3576,
+        "mdd_pct": 32.1746
+      }
+    },
+    {
+      "asset": "ETHUSDT",
+      "lookback": 15,
+      "variant": "trail40",
+      "run_id": "v2-lq-ethusdt-lb15-trail40-30m",
+      "ok": true,
+      "elapsed": 15.3,
+      "metrics": {
+        "trades": 1064,
+        "sharpe": -2.494,
+        "pnl_pct": -43.6782,
+        "mdd_pct": 47.7096
+      }
+    },
+    {
+      "asset": "ETHUSDT",
+      "lookback": 30,
+      "variant": "raw",
+      "run_id": "v2-lq-ethusdt-lb30-raw-30m",
+      "ok": true,
+      "elapsed": 10.2,
+      "metrics": {
+        "trades": 625,
+        "sharpe": -1.4028,
+        "pnl_pct": -24.5979,
+        "mdd_pct": 30.3417
+      }
+    },
+    {
+      "asset": "SOLUSDT",
+      "lookback": 15,
+      "variant": "raw",
+      "run_id": "v2-lq-solusdt-lb15-raw-30m",
+      "ok": true,
+      "elapsed": 10.1,
+      "metrics": {
+        "trades": 977,
+        "sharpe": -0.3966,
+        "pnl_pct": -13.6111,
+        "mdd_pct": 25.8747
+      }
+    },
+    {
+      "asset": "SOLUSDT",
+      "lookback": 20,
+      "variant": "raw",
+      "run_id": "v2-lq-solusdt-lb20-raw-30m",
+      "ok": true,
+      "elapsed": 9.9,
+      "metrics": {
+        "trades": 828,
+        "sharpe": 0.1707,
+        "pnl_pct": 2.8502,
+        "mdd_pct": 22.028
+      }
+    },
+    {
+      "asset": "ETHUSDT",
+      "lookback": 30,
+      "variant": "trail40",
+      "run_id": "v2-lq-ethusdt-lb30-trail40-30m",
+      "ok": true,
+      "elapsed": 13.2,
+      "metrics": {
+        "trades": 667,
+        "sharpe": -1.4302,
+        "pnl_pct": -24.1619,
+        "mdd_pct": 29.5859
+      }
+    },
+    {
+      "asset": "SOLUSDT",
+      "lookback": 30,
+      "variant": "raw",
+      "run_id": "v2-lq-solusdt-lb30-raw-30m",
+      "ok": true,
+      "elapsed": 8.8,
+      "metrics": {
+        "trades": 641,
+        "sharpe": 0.045,
+        "pnl_pct": -0.6166,
+        "mdd_pct": 14.4801
+      }
+    },
+    {
+      "asset": "SOLUSDT",
+      "lookback": 15,
+      "variant": "trail40",
+      "run_id": "v2-lq-solusdt-lb15-trail40-30m",
+      "ok": true,
+      "elapsed": 13.3,
+      "metrics": {
+        "trades": 1023,
+        "sharpe": -0.4067,
+        "pnl_pct": -13.6307,
+        "mdd_pct": 25.6324
+      }
+    },
+    {
+      "asset": "SOLUSDT",
+      "lookback": 30,
+      "variant": "trail40",
+      "run_id": "v2-lq-solusdt-lb30-trail40-30m",
+      "ok": true,
+      "elapsed": 11.4,
+      "metrics": {
+        "trades": 675,
+        "sharpe": 0.0405,
+        "pnl_pct": -0.6856,
+        "mdd_pct": 14.9289
+      }
+    },
+    {
+      "asset": "SOLUSDT",
+      "lookback": 20,
+      "variant": "trail40",
+      "run_id": "v2-lq-solusdt-lb20-trail40-30m",
+      "ok": true,
+      "elapsed": 11.8,
+      "metrics": {
+        "trades": 866,
+        "sharpe": 0.134,
+        "pnl_pct": 1.7881,
+        "mdd_pct": 21.9919
+      }
+    }
+  ],
+  "n_pass": 0
+}

@@ -1,0 +1,58 @@
+[
+  {
+    "tag": "CZB.1",
+    "run_id": "czb-dot-bollinger-short-naked-2025h2",
+    "config": "seed=42 mc=1000",
+    "trades": 127,
+    "pnl_pct": 9.1048123492659,
+    "sharpe": 1.3301229919054194,
+    "mdd_pct": 12.522199572928727,
+    "final_eq": 10910.48123492659,
+    "cost_r": 0.9421409723339164,
+    "mc_p5": 9295.4342999351,
+    "mc_median": 11002.06747452078,
+    "verdict": "FAIL (MCp5<9500, costr<0.95)"
+  },
+  {
+    "tag": "CZC.1",
+    "run_id": "czc-dot-bollinger-short-naked-seed1337",
+    "config": "seed=1337 mc=1000",
+    "trades": 127,
+    "pnl_pct": 9.1048123492659,
+    "sharpe": 1.3301229919054194,
+    "mdd_pct": 12.522199572928727,
+    "final_eq": 10910.48123492659,
+    "cost_r": 0.9421409723339164,
+    "mc_p5": 9178.047894476736,
+    "mc_median": 10986.249649606372,
+    "verdict": "FAIL (MCp5<9500, costr<0.95)"
+  },
+  {
+    "tag": "CZC.2",
+    "run_id": "czc-dot-bollinger-short-naked-seed2024",
+    "config": "seed=2024 mc=1000",
+    "trades": 127,
+    "pnl_pct": 9.1048123492659,
+    "sharpe": 1.3301229919054194,
+    "mdd_pct": 12.522199572928727,
+    "final_eq": 10910.48123492659,
+    "cost_r": 0.9421409723339164,
+    "mc_p5": 9220.125187810603,
+    "mc_median": 10975.007172022957,
+    "verdict": "FAIL (MCp5<9500, costr<0.95)"
+  },
+  {
+    "tag": "CZC.3",
+    "run_id": "czc-dot-bollinger-short-naked-mc2000",
+    "config": "seed=42 mc=2000",
+    "trades": 127,
+    "pnl_pct": 9.1048123492659,
+    "sharpe": 1.3301229919054194,
+    "mdd_pct": 12.522199572928727,
+    "final_eq": 10910.48123492659,
+    "cost_r": 0.9421409723339164,
+    "mc_p5": 9282.239842901068,
+    "mc_median": 11008.073906616462,
+    "verdict": "FAIL (MCp5<9500, costr<0.95)"
+  }
+]

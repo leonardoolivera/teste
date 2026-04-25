@@ -1,11 +1,13 @@
-"""Modelo mínimo de custos de execução (ADR-0006).
+"""Modelo mínimo de custos de execução (ADR-0006 + ADR-0019).
 
-Dois componentes, aplicados diretamente no preço de execução:
+Três componentes, aplicados diretamente no preço de execução:
   - `taker_fee_bps` — fee base em basis points, cobrada em toda entrada e saída.
   - `slippage_bps_per_unit_notional` — bps de slippage por unidade de
     ``notional / capital_inicial`` (linear).
+  - `spread_bps` — half-spread efetivo em basis points, estrutural e
+    independente de notional (ADR-0019).
 
-Nenhum maker, funding, spread sofisticado ou modelo dependente de ativo.
+Nenhum maker, funding ou modelo dependente de ativo.
 """
 
 from __future__ import annotations
@@ -22,6 +24,7 @@ class CostModel(BaseModel):
 
     taker_fee_bps: float = Field(ge=0.0)
     slippage_bps_per_unit_notional: float = Field(ge=0.0)
+    spread_bps: float = Field(ge=0.0, default=0.0)
 
 
 def zero_cost() -> CostModel:
@@ -59,6 +62,7 @@ def apply_cost(
     total_bps = (
         cost_model.taker_fee_bps
         + cost_model.slippage_bps_per_unit_notional * exposure_ratio
+        + cost_model.spread_bps
     )
     factor = total_bps / 10_000.0
 

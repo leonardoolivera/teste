@@ -49,3 +49,13 @@ def results_dir() -> Path:
 
 def results_runs_dir() -> Path:
     return results_dir() / "runs"
+
+
+def validation_run_dir(run_id: str) -> Path:
+    """Caminho canônico para artefatos de `validation/` de uma corrida (ADR-0015).
+
+    Estrutura: ``results/validation/<run_id>/``. Não cria o diretório; apenas
+    devolve o Path. `run_id` é string opaca — convenção de formato é do
+    chamador.
+    """
+    return results_dir() / "validation" / run_id

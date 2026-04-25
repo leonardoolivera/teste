@@ -1,0 +1,38 @@
+[
+  {
+    "tag": "PY.4",
+    "label": "SOL BB+w 2025H1",
+    "baseline_sh": 2.71,
+    "baseline_pnl": 17.47,
+    "lift_sh": -0.8385836279452981,
+    "lift_pnl": 60.82798152904324,
+    "trades": 97,
+    "seqs": 37,
+    "pnl_pct": 78.29798152904324,
+    "sharpe": 1.871416372054702
+  },
+  {
+    "tag": "PY.5",
+    "label": "ETH BB+w 2025H1",
+    "baseline_sh": 2.4,
+    "baseline_pnl": 12.16,
+    "lift_sh": -3.863915831581002,
+    "lift_pnl": -62.54875500187097,
+    "trades": 69,
+    "seqs": 32,
+    "pnl_pct": -50.38875500187097,
+    "sharpe": -1.4639158315810021
+  },
+  {
+    "tag": "PY.6",
+    "label": "SOL BB+w 2024H2",
+    "baseline_sh": 1.38,
+    "baseline_pnl": 6.64,
+    "lift_sh": -1.4308865233059114,
+    "lift_pnl": -20.935125591483647,
+    "trades": 114,
+    "seqs": 46,
+    "pnl_pct": -14.295125591483648,
+    "sharpe": -0.05088652330591147
+  }
+]

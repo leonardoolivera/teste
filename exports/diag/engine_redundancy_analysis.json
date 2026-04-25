@@ -1,0 +1,215 @@
+{
+  "rows": [
+    {
+      "triplet": "BTC short width",
+      "window": "H1",
+      "engine": "bol",
+      "trades": 37,
+      "pnl_pct": 2.961268410168927,
+      "sharpe": 1.2427499169630776,
+      "mdd_pct": 2.168025163388596
+    },
+    {
+      "triplet": "BTC short width",
+      "window": "H1",
+      "engine": "rsi",
+      "trades": 37,
+      "pnl_pct": 4.0658426410089765,
+      "sharpe": 1.6878345964859356,
+      "mdd_pct": 1.6690512345348487
+    },
+    {
+      "triplet": "BTC short width",
+      "window": "H2",
+      "engine": "bol",
+      "trades": 41,
+      "pnl_pct": 1.1910570772615703,
+      "sharpe": 0.7686909236924369,
+      "mdd_pct": 2.46569097499826
+    },
+    {
+      "triplet": "BTC short width",
+      "window": "H2",
+      "engine": "rsi",
+      "trades": 49,
+      "pnl_pct": 4.058915067747937,
+      "sharpe": 2.631419125020381,
+      "mdd_pct": 1.392408245074338
+    },
+    {
+      "triplet": "ETH short width",
+      "window": "H1",
+      "engine": "bol",
+      "trades": 85,
+      "pnl_pct": 12.155853387554515,
+      "sharpe": 2.394580617080756,
+      "mdd_pct": 8.330003867421059
+    },
+    {
+      "triplet": "ETH short width",
+      "window": "H1",
+      "engine": "rsi",
+      "trades": 77,
+      "pnl_pct": 2.173573487709457,
+      "sharpe": 0.49689392590955406,
+      "mdd_pct": 8.305172182382883
+    },
+    {
+      "triplet": "ETH short width",
+      "window": "H2",
+      "engine": "bol",
+      "trades": 76,
+      "pnl_pct": 3.2330822817202787,
+      "sharpe": 0.9360773000489045,
+      "mdd_pct": 4.952055896575621
+    },
+    {
+      "triplet": "ETH short width",
+      "window": "H2",
+      "engine": "rsi",
+      "trades": 77,
+      "pnl_pct": 2.960028422680794,
+      "sharpe": 0.8093431335310273,
+      "mdd_pct": 5.967569810201114
+    },
+    {
+      "triplet": "SOL short width",
+      "window": "H1",
+      "engine": "bol",
+      "trades": 109,
+      "pnl_pct": 17.474074853400936,
+      "sharpe": 2.713362472880258,
+      "mdd_pct": 4.920267798091555
+    },
+    {
+      "triplet": "SOL short width",
+      "window": "H1",
+      "engine": "rsi",
+      "trades": 94,
+      "pnl_pct": 7.935624236281669,
+      "sharpe": 1.3189110094683494,
+      "mdd_pct": 5.740522888092476
+    },
+    {
+      "triplet": "SOL short width",
+      "window": "H2",
+      "engine": "bol",
+      "trades": 101,
+      "pnl_pct": 3.348683097676375,
+      "sharpe": 0.7216377163729106,
+      "mdd_pct": 6.458656316839159
+    },
+    {
+      "triplet": "SOL short width",
+      "window": "H2",
+      "engine": "rsi",
+      "trades": 80,
+      "pnl_pct": 9.510225540146799,
+      "sharpe": 1.9184174648554488,
+      "mdd_pct": 4.565911451818832
+    },
+    {
+      "triplet": "BTC short width",
+      "window": "2024H2",
+      "engine": "bol",
+      "trades": 47,
+      "pnl_pct": 1.0110477313438837,
+      "sharpe": 0.5219683475026814,
+      "mdd_pct": 4.6740929927286965
+    },
+    {
+      "triplet": "BTC short width",
+      "window": "2024H2",
+      "engine": "rsi",
+      "trades": 43,
+      "pnl_pct": -1.631900115534135,
+      "sharpe": -0.7592271464306704,
+      "mdd_pct": 4.585986329656742
+    },
+    {
+      "triplet": "ETH short width",
+      "window": "2024H2",
+      "engine": "bol",
+      "trades": 63,
+      "pnl_pct": -0.8830428050430994,
+      "sharpe": -0.2250384867752788,
+      "mdd_pct": 4.786883059982176
+    },
+    {
+      "triplet": "ETH short width",
+      "window": "2024H2",
+      "engine": "rsi",
+      "trades": 52,
+      "pnl_pct": -5.030618761893935,
+      "sharpe": -1.523907324166006,
+      "mdd_pct": 8.363601740274937
+    }
+  ],
+  "aggregated": [
+    {
+      "triplet": "BTC short width",
+      "engine": "bol",
+      "mean_sharpe": 0.8444697293860653,
+      "min_sharpe": 0.5219683475026814,
+      "n": 3
+    },
+    {
+      "triplet": "BTC short width",
+      "engine": "rsi",
+      "mean_sharpe": 1.1866755250252154,
+      "min_sharpe": -0.7592271464306704,
+      "n": 3
+    },
+    {
+      "triplet": "ETH short width",
+      "engine": "bol",
+      "mean_sharpe": 1.035206476784794,
+      "min_sharpe": -0.2250384867752788,
+      "n": 3
+    },
+    {
+      "triplet": "ETH short width",
+      "engine": "rsi",
+      "mean_sharpe": -0.07255675490847487,
+      "min_sharpe": -1.523907324166006,
+      "n": 3
+    },
+    {
+      "triplet": "SOL short width",
+      "engine": "bol",
+      "mean_sharpe": 1.7175000946265844,
+      "min_sharpe": 0.7216377163729106,
+      "n": 2
+    },
+    {
+      "triplet": "SOL short width",
+      "engine": "rsi",
+      "mean_sharpe": 1.618664237161899,
+      "min_sharpe": 1.3189110094683494,
+      "n": 2
+    }
+  ],
+  "winners": {
+    "BTC short width": {
+      "winner": "rsi",
+      "loser": "bol",
+      "gap_mean_sh": 0.3422057956391501,
+      "winner_mean_sh": 1.1866755250252154,
+      "loser_mean_sh": 0.8444697293860653
+    },
+    "ETH short width": {
+      "winner": "bol",
+      "loser": "rsi",
+      "gap_mean_sh": 1.1077632316932688,
+      "winner_mean_sh": 1.035206476784794,
+      "loser_mean_sh": -0.07255675490847487
+    },
+    "SOL short width": {
+      "winner": "bol",
+      "loser": "rsi",
+      "gap_mean_sh": 0.09883585746468526,
+      "winner_mean_sh": 1.7175000946265844,
+      "loser_mean_sh": 1.618664237161899
+    }
+  }
+}

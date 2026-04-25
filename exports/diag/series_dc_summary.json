@@ -1,0 +1,74 @@
+[
+  {
+    "tag": "DC.DOT.1",
+    "label": "DOT bol+width",
+    "trades": 97,
+    "pnl_pct": -2.5478770437480147,
+    "sharpe": -0.42174818367977296,
+    "mdd_pct": 8.796675426341336
+  },
+  {
+    "tag": "DC.DOT.2",
+    "label": "DOT rsi+width",
+    "trades": 78,
+    "pnl_pct": 3.257275199377574,
+    "sharpe": 0.6906276794973537,
+    "mdd_pct": 6.745185427315198
+  },
+  {
+    "tag": "DC.DOT.3",
+    "label": "DOT rsi+trendhtf",
+    "trades": 54,
+    "pnl_pct": 5.291570798393197,
+    "sharpe": 1.1832619070084205,
+    "mdd_pct": 5.19232784933479
+  },
+  {
+    "tag": "DC.AVAX.1",
+    "label": "AVAX bol+width",
+    "trades": 107,
+    "pnl_pct": -3.870396493885253,
+    "sharpe": -0.506958464714984,
+    "mdd_pct": 10.088735175890038
+  },
+  {
+    "tag": "DC.AVAX.2",
+    "label": "AVAX rsi+width",
+    "trades": 93,
+    "pnl_pct": 10.904012124890139,
+    "sharpe": 1.6355317231687225,
+    "mdd_pct": 6.9038837022204
+  },
+  {
+    "tag": "DC.AVAX.3",
+    "label": "AVAX rsi+trendhtf",
+    "trades": 58,
+    "pnl_pct": 9.24058245225896,
+    "sharpe": 1.7676120140824596,
+    "mdd_pct": 4.471980692419609
+  },
+  {
+    "tag": "DC.LINK.1",
+    "label": "LINK bol+width",
+    "trades": 106,
+    "pnl_pct": 2.047716967182178,
+    "sharpe": 0.39620872927145295,
+    "mdd_pct": 7.237675371114725
+  },
+  {
+    "tag": "DC.LINK.2",
+    "label": "LINK rsi+width",
+    "trades": 90,
+    "pnl_pct": 2.1325086067544907,
+    "sharpe": 0.4066782964672236,
+    "mdd_pct": 10.82377148809323
+  },
+  {
+    "tag": "DC.LINK.3",
+    "label": "LINK rsi+trendhtf",
+    "trades": 44,
+    "pnl_pct": 1.3223859964379692,
+    "sharpe": 0.3266295008116535,
+    "mdd_pct": 10.52903555976676
+  }
+]

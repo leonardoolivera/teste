@@ -1,0 +1,156 @@
+{
+  "results": [
+    {
+      "config": "P50-MA-20-50",
+      "asset": "BTCUSDT",
+      "run_id": "v2-p50-10m-p50-ma-20-50-btcusdt-18m",
+      "ok": true,
+      "elapsed": 28.3,
+      "metrics": {
+        "trades": 708,
+        "sharpe": -2.2667,
+        "pnl_pct": -16.7181,
+        "mdd_pct": 19.7626
+      }
+    },
+    {
+      "config": "P50-MA-20-50",
+      "asset": "ETHUSDT",
+      "run_id": "v2-p50-10m-p50-ma-20-50-ethusdt-18m",
+      "ok": true,
+      "elapsed": 28.6,
+      "metrics": {
+        "trades": 703,
+        "sharpe": -0.8541,
+        "pnl_pct": -10.2661,
+        "mdd_pct": 14.0568
+      }
+    },
+    {
+      "config": "P50-MA-20-50",
+      "asset": "SOLUSDT",
+      "run_id": "v2-p50-10m-p50-ma-20-50-solusdt-18m",
+      "ok": true,
+      "elapsed": 28.4,
+      "metrics": {
+        "trades": 699,
+        "sharpe": -1.435,
+        "pnl_pct": -19.9728,
+        "mdd_pct": 20.6038
+      }
+    },
+    {
+      "config": "P50-MA-25-75",
+      "asset": "BTCUSDT",
+      "run_id": "v2-p50-10m-p50-ma-25-75-btcusdt-18m",
+      "ok": true,
+      "elapsed": 29.6,
+      "metrics": {
+        "trades": 496,
+        "sharpe": -2.1595,
+        "pnl_pct": -15.7889,
+        "mdd_pct": 19.3973
+      }
+    },
+    {
+      "config": "P50-MA-25-75",
+      "asset": "ETHUSDT",
+      "run_id": "v2-p50-10m-p50-ma-25-75-ethusdt-18m",
+      "ok": true,
+      "elapsed": 29.0,
+      "metrics": {
+        "trades": 486,
+        "sharpe": -0.4048,
+        "pnl_pct": -5.1954,
+        "mdd_pct": 13.0024
+      }
+    },
+    {
+      "config": "P50-MA-25-75",
+      "asset": "SOLUSDT",
+      "run_id": "v2-p50-10m-p50-ma-25-75-solusdt-18m",
+      "ok": true,
+      "elapsed": 28.9,
+      "metrics": {
+        "trades": 473,
+        "sharpe": -1.0738,
+        "pnl_pct": -15.4227,
+        "mdd_pct": 18.1429
+      }
+    },
+    {
+      "config": "P50-ST-14-3.0",
+      "asset": "BTCUSDT",
+      "run_id": "v2-p50-10m-p50-st-14-3.0-btcusdt-18m",
+      "ok": false,
+      "elapsed": 1200.0,
+      "metrics": {}
+    },
+    {
+      "config": "P50-ST-14-3.0",
+      "asset": "ETHUSDT",
+      "run_id": "v2-p50-10m-p50-st-14-3.0-ethusdt-18m",
+      "ok": false,
+      "elapsed": 1200.0,
+      "metrics": {}
+    },
+    {
+      "config": "P50-ST-14-3.0",
+      "asset": "SOLUSDT",
+      "run_id": "v2-p50-10m-p50-st-14-3.0-solusdt-18m",
+      "ok": false,
+      "elapsed": 1200.0,
+      "metrics": {}
+    },
+    {
+      "config": "P50-ST-14-3.5",
+      "asset": "BTCUSDT",
+      "run_id": "v2-p50-10m-p50-st-14-3.5-btcusdt-18m",
+      "ok": false,
+      "elapsed": 1200.0,
+      "metrics": {}
+    },
+    {
+      "config": "P50-ST-14-3.5",
+      "asset": "SOLUSDT",
+      "run_id": "v2-p50-10m-p50-st-14-3.5-solusdt-18m",
+      "ok": false,
+      "elapsed": 1200.0,
+      "metrics": {}
+    },
+    {
+      "config": "P50-ST-14-3.5",
+      "asset": "ETHUSDT",
+      "run_id": "v2-p50-10m-p50-st-14-3.5-ethusdt-18m",
+      "ok": false,
+      "elapsed": 1200.1,
+      "metrics": {}
+    },
+    {
+      "config": "P50-ST-20-3.5",
+      "asset": "BTCUSDT",
+      "run_id": "v2-p50-10m-p50-st-20-3.5-btcusdt-18m",
+      "ok": false,
+      "elapsed": 1200.0,
+      "metrics": {}
+    },
+    {
+      "config": "P50-ST-20-3.5",
+      "asset": "ETHUSDT",
+      "run_id": "v2-p50-10m-p50-st-20-3.5-ethusdt-18m",
+      "ok": false,
+      "elapsed": 1200.0,
+      "metrics": {}
+    },
+    {
+      "config": "P50-ST-20-3.5",
+      "asset": "SOLUSDT",
+      "run_id": "v2-p50-10m-p50-st-20-3.5-solusdt-18m",
+      "ok": false,
+      "elapsed": 1200.0,
+      "metrics": {}
+    }
+  ],
+  "n_pass": 0,
+  "n_total": 15
+}

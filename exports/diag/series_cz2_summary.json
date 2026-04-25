@@ -1,0 +1,22 @@
+[
+  {
+    "tag": "CZ2.1",
+    "combo": "SOL 4h 2024-H2 bull",
+    "trades": 13,
+    "pnl_pct": -7.4190667048500085,
+    "sharpe": -1.3070887712770385,
+    "mdd_pct": 10.476269437746922,
+    "final_eq": 9258.093329514999,
+    "verdict": "FAIL"
+  },
+  {
+    "tag": "CZ2.2",
+    "combo": "SOL 4h 2025-H1 chop",
+    "trades": 17,
+    "pnl_pct": 3.6309549089552196,
+    "sharpe": 0.6377768667807968,
+    "mdd_pct": 8.546756028134658,
+    "final_eq": 10363.095490895523,
+    "verdict": "PASS contextual"
+  }
+]

@@ -1,0 +1,23 @@
+[
+  {
+    "tag": "ZS.10",
+    "label": "BTC zscore+width",
+    "trades": 21,
+    "pnl_pct": -0.4806698772421236,
+    "sharpe": -0.1686288500344768
+  },
+  {
+    "tag": "ZS.11",
+    "label": "ETH zscore+width",
+    "trades": 57,
+    "pnl_pct": 2.806407714679593,
+    "sharpe": 0.6186145429609198
+  },
+  {
+    "tag": "ZS.12",
+    "label": "SOL zscore+width",
+    "trades": 82,
+    "pnl_pct": 33.83681763474809,
+    "sharpe": 4.936784591287268
+  }
+]

@@ -1,0 +1,151 @@
+{
+  "strategy_name": "rsi_short_pure_2025h2",
+  "manifest_version": "v8.1",
+  "supersedes": "rsi_short_pure_2025h2_20260420.json",
+  "supersedes_reason": "LINK cross-window FAIL (ADR-0106). LINK 2025-H2 Sh=1.76 nao replica: 2025-H1 Sh=0.51, 2024-H2 Sh=-1.34. Window-specific, nao edge estrutural. Padrao 25 exige >=2 janelas OOS PASS para stack ativo.",
+  "complementary_to": "rsi_short_width_2025h1_20260419.json",
+  "alpha_forge_commit": "ab7c2ad6891f44a2fd66d0b46a219729da191a1e",
+  "approved_at": "2026-04-20T06:00:00Z",
+  "approval_adr": "decisions/0106-series-czd-closeout-link-window-specific-rollback-v8.md",
+  "prior_approval_adr": "decisions/0098-series-cz-closeout-link-promotes-v8-padrao-20-seletivo.md",
+  "live_status": "active",
+  "live_status_since": "2026-04-20T06:00:00Z",
+  "audit_adr": "decisions/0106-series-czd-closeout-link-window-specific-rollback-v8.md",
+  "audit_closeout_adr": "decisions/0106-series-czd-closeout-link-window-specific-rollback-v8.md",
+  "runtime_contract": "faithful",
+  "runtime_invariants": {
+    "entry_fill": "market_at_open_next_bar",
+    "exit_fill": "market_at_open_next_bar",
+    "sizing": "fixed_notional_literal",
+    "stop_loss": "disabled",
+    "signal_arbitration": "exit_wins_on_tie"
+  },
+  "engine": {
+    "family": "rsi",
+    "params": {
+      "period": 14,
+      "oversold": 30,
+      "overbought": 70,
+      "long_only": false,
+      "regime_filter": null
+    }
+  },
+  "approved_combos": [
+    {
+      "symbol": "BTCUSDT",
+      "timeframe": "1h",
+      "validation_window": "2025-07-05..2025-12-31",
+      "window_tag": "2025-H2",
+      "regime": "misto",
+      "oos_trades": 92,
+      "oos_sharpe": 1.640,
+      "oos_mdd_pct": 4.974,
+      "oos_pnl_pct": 5.126,
+      "cost_stress_ratio_min": 0.9556,
+      "mc_p5_final_equity": 9796,
+      "approved_in": "v4",
+      "source_tag": "CH.7",
+      "source_run_id": "audit-v4-b-btc-20250705_20251231-nofilter",
+      "cross_window_status": "strict",
+      "cross_window_evidence": [
+        {"window": "2025-H2", "sharpe": 1.640, "source": "CH.7 baseline"},
+        {"window": "seed_stability_3x", "sharpe_min": 1.55, "source": "v4b ADR-0068"}
+      ],
+      "note": "Herdado de v3 via v8. Strict cross-window via audit v4 + v4b seed stability 3/3."
+    },
+    {
+      "symbol": "SOLUSDT",
+      "timeframe": "1h",
+      "validation_window": "2025-07-05..2025-12-31",
+      "window_tag": "2025-H2",
+      "regime": "misto",
+      "oos_trades": 86,
+      "oos_sharpe": 2.300,
+      "oos_mdd_pct": 5.135,
+      "oos_pnl_pct": 13.812,
+      "cost_stress_ratio_min": 0.9621,
+      "mc_p5_final_equity": 9898,
+      "approved_in": "v4",
+      "source_tag": "CH.9",
+      "source_run_id": "audit-v4-b-sol-20250705_20251231-nofilter",
+      "cross_window_status": "strict",
+      "cross_window_evidence": [
+        {"window": "2025-H2", "sharpe": 2.300, "source": "CH.9 baseline"},
+        {"window": "seed_stability_3x", "sharpe_min": 2.15, "source": "v4b ADR-0068"}
+      ],
+      "note": "Herdado de v3 via v8. Strict cross-window via audit v4 + v4b seed stability 3/3."
+    }
+  ],
+  "meta_stats": {
+    "cross_combo_corr_returns": 0.584,
+    "cross_combo_corr_adr": "decisions/0110-meta-correlacao-v81-btc-sol-2025h2.md",
+    "diversification_verdict": "OK_at_limit",
+    "notes": "BTC+SOL retornos bar-a-bar OOS 2025-H2, correlacao Pearson 0.584. Diversificacao util mas no limite (threshold 0.6)."
+  },
+  "validation": {
+    "method": "walk-forward-5fold + monte_carlo_1000 + cost_stress",
+    "cost_model_baseline_pct": 0.14,
+    "cost_model_stress_fee_plus_10_pct": 0.34,
+    "cost_stress_ratio_min": 0.95,
+    "seed_monte_carlo": 42,
+    "notes": "BTC+SOL: audit v4 Gate B + v4b seed stability (3/3 seeds). LINK removido em v8.1 (CZD cross-window FAIL, ADR-0106)."
+  },
+  "execution_hints": {
+    "position_sizing": "fixed_notional_per_trade",
+    "notional_per_trade_quote_ccy": 2000,
+    "entry_rule_long": "RSI(14) cruza abaixo de 30 usando close[t-1] (ADR-0027)",
+    "entry_rule_short": "RSI(14) cruza acima de 70 usando close[t-1] (ADR-0027)",
+    "exit_rule": "RSI(14) retorna para zona neutra (long: RSI>=50; short: RSI<=50) usando close[t-1]",
+    "regime_gate": "none (sem filter; manifest escopado a regime 2025-H2 misto)",
+    "causal_invariant": "engine ignora window.iloc[-1]; sinal em t usa apenas closes ate t-1 inclusive (ADR-0002)",
+    "signal_arbitration": "EXIT vence ENTER quando disparam na mesma barra (ADR-0011)",
+    "reverse_on_signal": "permitido; incorre double cost (ADR-0012)"
+  },
+  "disallow_sizing_modes": ["snowball", "kelly_like", "martingale"],
+  "disallow_sizing_reason": "Herdado ADR-0028/0029 + confirmado empiricamente ADR-0064.",
+  "series_source": {
+    "series_tag": "CH + audit v4b (rollback de v8 CZ.3)",
+    "preregister_adr": "decisions/0061-series-ch-rsi-short-width-300-preregister.md",
+    "closeout_adr": "decisions/0062-series-ch-closeout-rsi-short-width-300-pass.md",
+    "audit_adr": "decisions/0067-manifest-v4-audit-rsi-short-width.md",
+    "audit_closeout_adr": "decisions/0068-manifest-v4-audit-closeout-split-v4a-v4b.md",
+    "rollback_preregister_adr": "decisions/0105-series-czd-link-replicacao-cross-window-preregister.md",
+    "rollback_closeout_adr": "decisions/0106-series-czd-closeout-link-window-specific-rollback-v8.md",
+    "v4b_seed_stability": "PASS 6/6 em {42, 1337, 2024} x {CH.7, CH.9}",
+    "raw_data": "exports/diag/series_czd_summary.json"
+  },
+  "expansion_policy": {
+    "rule": "Padrao 25 (ADR-0106): promocao ao stack ativo exige >=2 janelas OOS PASS. Combos com 1 janela unica validada = staging, nao stack ativo.",
+    "regime_dependence_note": "RSI short puro eh seletivo por ativo E por janela em crypto 1h. BTC/SOL cross-window validados. LINK 2025-H2 passou isoladamente mas falhou cross-window (2025-H1 Sh=0.51, 2024-H2 Sh=-1.34); excluido do stack ativo.",
+    "excluded_combos": [
+      {
+        "symbol": "LINKUSDT",
+        "timeframe": "1h",
+        "window_tag": "2025-H2",
+        "source_tag": "CZ.3",
+        "reason": "Window-specific (ADR-0106). Sh=1.76 em 2025-H2 mas Sh=0.51 em 2025-H1 e Sh=-1.34 em 2024-H2. Falha Padrao 25 (requer >=2 janelas PASS)."
+      },
+      {
+        "symbol": "DOTUSDT",
+        "timeframe": "1h",
+        "window_tag": "2025-H2",
+        "source_tag": "CZ.1",
+        "reason": "Sh=0.498 FAIL (naked). CZA filter rescue 0/2 FAIL (ADR-0100). CZB Bollinger naked Sh=1.33 quase PASS (ADR-0102). CZC rescue: Gate 2+4 FAIL estruturais (ADR-0104)."
+      },
+      {
+        "symbol": "AVAXUSDT",
+        "timeframe": "1h",
+        "window_tag": "2025-H2",
+        "source_tag": "CZ.2",
+        "reason": "Sh=-0.054 FAIL (naked). Refutado cross-engine (RSI+width FAIL ADR-0100; Bollinger naked+filter FAIL ADR-0102)."
+      },
+      {
+        "symbol": "ETHUSDT",
+        "timeframe": "1h",
+        "window_tag": "2025-H2",
+        "source_tag": "CH.8",
+        "reason": "Herdado de v3: Sh 0.81 com filter < 1.0."
+      }
+    ]
+  }
+}

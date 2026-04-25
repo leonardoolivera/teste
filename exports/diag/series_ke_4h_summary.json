@@ -1,0 +1,23 @@
+[
+  {
+    "tag": "KE.13",
+    "label": "BTC Keltner 4h",
+    "trades": 10,
+    "pnl_pct": 6.45698386030209,
+    "sharpe": 1.859989317343544
+  },
+  {
+    "tag": "KE.14",
+    "label": "ETH Keltner 4h",
+    "trades": 7,
+    "pnl_pct": -3.5668833300138925,
+    "sharpe": -0.553679407567626
+  },
+  {
+    "tag": "KE.15",
+    "label": "SOL Keltner 4h",
+    "trades": 9,
+    "pnl_pct": 8.692532267074693,
+    "sharpe": 1.4308910298549329
+  }
+]

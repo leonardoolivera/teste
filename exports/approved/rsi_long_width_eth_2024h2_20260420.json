@@ -1,0 +1,104 @@
+{
+  "strategy_name": "rsi_long_width_eth_2024h2",
+  "manifest_version": "v7",
+  "alpha_forge_commit": "ab7c2ad6891f44a2fd66d0b46a219729da191a1e",
+  "approved_at": "2026-04-20T04:50:00Z",
+  "approval_adr": "decisions/0092-series-cw-closeout-eth-2024h2-promotes-v7.md",
+  "prior_approval_adr": "decisions/0091-series-cw-rsi-long-filter-cross-period-preregister.md",
+  "live_status": "active",
+  "live_status_since": "2026-04-20T04:50:00Z",
+  "audit_adr": "decisions/0092-series-cw-closeout-eth-2024h2-promotes-v7.md",
+  "audit_closeout_adr": "decisions/0092-series-cw-closeout-eth-2024h2-promotes-v7.md",
+  "runtime_contract": "faithful",
+  "runtime_invariants": {
+    "entry_fill": "market_at_open_next_bar",
+    "exit_fill": "market_at_open_next_bar",
+    "sizing": "fixed_notional_literal",
+    "stop_loss": "disabled",
+    "signal_arbitration": "exit_wins_on_tie"
+  },
+  "engine": {
+    "family": "rsi",
+    "params": {
+      "period": 14,
+      "oversold": 30,
+      "overbought": 70,
+      "long_only": true,
+      "regime_filter": {
+        "type": "bollinger_width",
+        "window": 30,
+        "num_std": 1.5,
+        "min_width_bps": 300
+      }
+    }
+  },
+  "approved_combos": [
+    {
+      "symbol": "ETHUSDT",
+      "timeframe": "1h",
+      "validation_window": "2024-07-05..2024-12-31",
+      "window_tag": "2024-H2",
+      "regime": "bull-to-chop",
+      "oos_trades": 30,
+      "oos_sharpe": 1.774,
+      "oos_mdd_pct": 3.21,
+      "oos_pnl_pct": 3.09,
+      "cost_stress_ratio_min": 0.9843,
+      "mc_p5_final_equity": 10045,
+      "approved_in": "v7",
+      "source_tag": "CW.2",
+      "source_run_id": "cw-eth-rsi-long-width300-2024h2",
+      "cross_window_status": "contextual",
+      "cross_window_evidence": [
+        {"window": "2024-H2", "sharpe": 1.774, "source": "CW.2 baseline"},
+        {"window": "2024-H1", "sharpe": 0.574, "source": "CZF.1 ADR-0109 regime-matched"}
+      ],
+      "cross_window_note": "PASS contextual em regime-matched (Sh 0.57 em 2024-H1, trades=28). Combo mais sensivel do stack: long raro (Padrao 20) + trade count baseline 30 no floor exato + contextual only cross-window. Watch list prioridade alta em paper.",
+      "note": "Filter load-bearing confirmado (Padrao 19): CV.2 naked ETH 2024-H2 Sh=0.651 FAIL, CW.2 com width Sh=1.774 PASS (delta +1.12). Primeiro long RSI-based promovido; quebra Padrao 20 raro (1/15 long-FAIL cross-janela)."
+    }
+  ],
+  "validation": {
+    "method": "walk-forward-5fold + monte_carlo_1000 + cost_stress",
+    "cost_model_baseline_pct": 0.14,
+    "cost_model_stress_fee_plus_10_pct": 0.34,
+    "cost_stress_ratio_min": 0.95,
+    "seed_monte_carlo": 42,
+    "notes": "Run cw-eth-rsi-long-width300-2024h2. Gate B vs naked CV.2 (cv-eth-rsi-long-2024h2, Sh=0.651 FAIL). Trade count exato 30 (gate floor); monitorar em paper se cai para <30 em live equivalente."
+  },
+  "execution_hints": {
+    "position_sizing": "fixed_notional_per_trade",
+    "notional_per_trade_quote_ccy": 2000,
+    "entry_rule_long": "RSI(14) cruza abaixo de 30 usando close[t-1] (ADR-0027)",
+    "entry_rule_short": "N/A (long_only=true)",
+    "exit_rule": "RSI(14) retorna para zona neutra (long: RSI>=50) usando close[t-1]",
+    "regime_gate": "bollinger_width_bps = 2*num_std*sigma/ma*10000 >= 300 (filter composicional ADR-0023)",
+    "causal_invariant": "engine ignora window.iloc[-1]; sinal em t usa apenas closes ate t-1 inclusive (ADR-0002)",
+    "signal_arbitration": "EXIT vence ENTER quando disparam na mesma barra (ADR-0011)",
+    "reverse_on_signal": "N/A (long_only=true, sem lado oposto)"
+  },
+  "disallow_sizing_modes": ["snowball", "kelly_like", "martingale"],
+  "disallow_sizing_reason": "Herdado ADR-0028/0029 + confirmado empiricamente ADR-0064.",
+  "series_source": {
+    "series_tag": "CW",
+    "preregister_adr": "decisions/0091-series-cw-rsi-long-filter-cross-period-preregister.md",
+    "closeout_adr": "decisions/0092-series-cw-closeout-eth-2024h2-promotes-v7.md",
+    "audit_adr": "decisions/0092-series-cw-closeout-eth-2024h2-promotes-v7.md",
+    "audit_closeout_adr": "decisions/0092-series-cw-closeout-eth-2024h2-promotes-v7.md",
+    "gate_b_verdict": "1/1 load-bearing vs naked (CV.2 ETH 2024-H2 Sh=0.651 FAIL sem filter). Taxa long-filter PASS = 1/9 CW.",
+    "raw_data": "results/validation/cw-eth-rsi-long-width300-2024h2 + results/validation/cv-eth-rsi-long-2024h2"
+  },
+  "expansion_policy": {
+    "rule": "Combos fora de approved_combos requerem nova ADR + nova serie cross-period. Este manifest eh scope-restrito a ETH 2024-H2: adicionar outros assets/janelas requer Gate B load-bearing vs naked separado.",
+    "regime_dependence_note": "ETH 2024-H2 PASS; demais 8 combos CW FAIL (BTC 2024-H2 subamostra 17t, SOL 2024-H2 Sh=-0.29, 2025-H1 todos FAIL, 2025-H2 todos FAIL). Filter eh rescue-conditional-janela/ativo. Long-side permanece exceção rara (Padrao 20).",
+    "excluded_combos": [
+      {"symbol": "BTCUSDT", "timeframe": "1h", "window_tag": "2024-H2", "source_tag": "CW.1", "reason": "trades=17 < 30 (filter cortou sample)."},
+      {"symbol": "SOLUSDT", "timeframe": "1h", "window_tag": "2024-H2", "source_tag": "CW.3", "reason": "Sh=-0.29 FAIL."},
+      {"symbol": "BTCUSDT", "timeframe": "1h", "window_tag": "2025-H1", "source_tag": "CW.4", "reason": "Sh=1.41 mas trades=16 FAIL."},
+      {"symbol": "ETHUSDT", "timeframe": "1h", "window_tag": "2025-H1", "source_tag": "CW.5", "reason": "Sh=-0.22 FAIL."},
+      {"symbol": "SOLUSDT", "timeframe": "1h", "window_tag": "2025-H1", "source_tag": "CW.6", "reason": "Sh=-0.01 FAIL."},
+      {"symbol": "BTCUSDT", "timeframe": "1h", "window_tag": "2025-H2", "source_tag": "CW.7", "reason": "trades=28 < 30; Sh=-0.48."},
+      {"symbol": "ETHUSDT", "timeframe": "1h", "window_tag": "2025-H2", "source_tag": "CW.8", "reason": "Sh=0.48 FAIL."},
+      {"symbol": "SOLUSDT", "timeframe": "1h", "window_tag": "2025-H2", "source_tag": "CW.9", "reason": "Sh=0.32 FAIL."}
+    ]
+  }
+}

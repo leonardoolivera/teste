@@ -1,0 +1,41 @@
+[
+  {
+    "tag": "CZ4.1",
+    "combo": "SOL 4h 2024-H2 bull",
+    "trades": 6,
+    "pnl_pct": 0.16395108837568007,
+    "sharpe": 0.09262901543803535,
+    "mdd_pct": 3.4099428158987486,
+    "final_eq": 10016.395108837569,
+    "verdict": "ambiguo",
+    "naked_base": "CZ2.1 naked",
+    "naked_trades": 13,
+    "naked_sharpe": -1.31
+  },
+  {
+    "tag": "CZ4.2",
+    "combo": "SOL 4h 2025-H1 chop",
+    "trades": 6,
+    "pnl_pct": 1.663717839813872,
+    "sharpe": 0.6609778576292668,
+    "mdd_pct": 3.615420191068133,
+    "final_eq": 10166.371783981387,
+    "verdict": "PASS contextual",
+    "naked_base": "CZ2.2 naked",
+    "naked_trades": 17,
+    "naked_sharpe": 0.64
+  },
+  {
+    "tag": "CZ4.3",
+    "combo": "SOL 4h 2025-H2 misto",
+    "trades": 7,
+    "pnl_pct": 1.173818969968532,
+    "sharpe": 0.458546811407611,
+    "mdd_pct": 5.415148905868558,
+    "final_eq": 10117.381896996852,
+    "verdict": "PASS contextual",
+    "naked_base": "CT.3 naked",
+    "naked_trades": 23,
+    "naked_sharpe": 2.81
+  }
+]

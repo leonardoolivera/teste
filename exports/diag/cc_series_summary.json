@@ -1,0 +1,234 @@
+{
+  "gate_adr": "0044",
+  "passes_filtered": 0,
+  "lift_count": 7,
+  "verdict_principal": "FAIL",
+  "verdict_lift": "PASS",
+  "pilots": [
+    {
+      "tag": "CC.1",
+      "asset": "eth",
+      "period": "20230705_20231231",
+      "atr_bps": 105,
+      "filtered": {
+        "trades": 5,
+        "sharpe": 0.824611508351596,
+        "mdd_pct": 0.39830309048863044,
+        "final_eq": 10019.16984836945,
+        "cost_r": 0.997205924536443,
+        "mc_p5": 9966.4592377544
+      },
+      "baseline": {
+        "trades": 10,
+        "sharpe": 0.9497691770950746,
+        "mdd_pct": 0.5521405860391704,
+        "final_eq": 10042.110481077927,
+        "cost_r": 0.996012508749785,
+        "mc_p5": 9904.445742616615
+      },
+      "lift_fe": false,
+      "lift_mdd": true,
+      "has_lift": true
+    },
+    {
+      "tag": "CC.2",
+      "asset": "btc",
+      "period": "20230705_20231231",
+      "atr_bps": 55,
+      "filtered": {
+        "trades": 14,
+        "sharpe": -1.4872393022598092,
+        "mdd_pct": 1.7194299169395713,
+        "final_eq": 9901.046253135428,
+        "cost_r": 0.9915286422956601,
+        "mc_p5": 9742.668930253132
+      },
+      "baseline": {
+        "trades": 29,
+        "sharpe": -0.11173960205238488,
+        "mdd_pct": 1.8746199963811379,
+        "final_eq": 9988.695721941047,
+        "cost_r": 0.9864451536658849,
+        "mc_p5": 9842.907965394157
+      },
+      "lift_fe": false,
+      "lift_mdd": true,
+      "has_lift": true
+    },
+    {
+      "tag": "CC.3",
+      "asset": "sol",
+      "period": "20230705_20231231",
+      "atr_bps": 100,
+      "filtered": {
+        "trades": 26,
+        "sharpe": -0.6108841511965426,
+        "mdd_pct": 4.100176956582658,
+        "final_eq": 9833.457584282258,
+        "cost_r": 0.9835074369208208,
+        "mc_p5": 9384.239573131616
+      },
+      "baseline": {
+        "trades": 51,
+        "sharpe": 0.3864664205336024,
+        "mdd_pct": 4.032605750602813,
+        "final_eq": 10117.404153426078,
+        "cost_r": 0.9747105694026447,
+        "mc_p5": 9565.684375743973
+      },
+      "lift_fe": false,
+      "lift_mdd": false,
+      "has_lift": false
+    },
+    {
+      "tag": "CC.4",
+      "asset": "eth",
+      "period": "20250105_20250704",
+      "atr_bps": 105,
+      "filtered": {
+        "trades": 18,
+        "sharpe": -0.7526402085372155,
+        "mdd_pct": 1.59796158296128,
+        "final_eq": 9909.465402025817,
+        "cost_r": 0.9890603238396701,
+        "mc_p5": 9641.51449823488
+      },
+      "baseline": {
+        "trades": 47,
+        "sharpe": 1.1133700518870915,
+        "mdd_pct": 3.0613277952040567,
+        "final_eq": 10308.905237201963,
+        "cost_r": 0.976051178835605,
+        "mc_p5": 9788.951724822566
+      },
+      "lift_fe": false,
+      "lift_mdd": true,
+      "has_lift": true
+    },
+    {
+      "tag": "CC.5",
+      "asset": "btc",
+      "period": "20250105_20250704",
+      "atr_bps": 55,
+      "filtered": {
+        "trades": 21,
+        "sharpe": -1.10200176153034,
+        "mdd_pct": 1.9054224102129775,
+        "final_eq": 9867.886589157322,
+        "cost_r": 0.9866815669743755,
+        "mc_p5": 9658.691945562981
+      },
+      "baseline": {
+        "trades": 44,
+        "sharpe": 0.7063291828730196,
+        "mdd_pct": 2.6425804274364135,
+        "final_eq": 10141.695368327122,
+        "cost_r": 0.9740892524518281,
+        "mc_p5": 9784.764928482111
+      },
+      "lift_fe": false,
+      "lift_mdd": true,
+      "has_lift": true
+    },
+    {
+      "tag": "CC.6",
+      "asset": "sol",
+      "period": "20250105_20250704",
+      "atr_bps": 100,
+      "filtered": {
+        "trades": 27,
+        "sharpe": 0.23782160897266771,
+        "mdd_pct": 2.3313331139295226,
+        "final_eq": 10033.995751686627,
+        "cost_r": 0.9843253949601112,
+        "mc_p5": 9562.35750554093
+      },
+      "baseline": {
+        "trades": 66,
+        "sharpe": -0.45403155250193566,
+        "mdd_pct": 6.804381972872561,
+        "final_eq": 9814.454956159487,
+        "cost_r": 0.9648753469046568,
+        "mc_p5": 8908.239111786923
+      },
+      "lift_fe": true,
+      "lift_mdd": true,
+      "has_lift": true
+    },
+    {
+      "tag": "CC.7",
+      "asset": "eth",
+      "period": "20250705_20251231",
+      "atr_bps": 105,
+      "filtered": {
+        "trades": 7,
+        "sharpe": -3.5003190874271186,
+        "mdd_pct": 2.7987920630067324,
+        "final_eq": 9732.317454670025,
+        "cost_r": 0.9931636323303563,
+        "mc_p5": 9476.662244856236
+      },
+      "baseline": {
+        "trades": 41,
+        "sharpe": 1.3426505822892612,
+        "mdd_pct": 2.5679359749391706,
+        "final_eq": 10311.963205483407,
+        "cost_r": 0.9796750389589665,
+        "mc_p5": 9728.183545663323
+      },
+      "lift_fe": false,
+      "lift_mdd": false,
+      "has_lift": false
+    },
+    {
+      "tag": "CC.8",
+      "asset": "btc",
+      "period": "20250705_20251231",
+      "atr_bps": 55,
+      "filtered": {
+        "trades": 13,
+        "sharpe": -1.9228730720299536,
+        "mdd_pct": 1.1002499547958475,
+        "final_eq": 9907.971882971577,
+        "cost_r": 0.9914643882688219,
+        "mc_p5": 9834.272663185939
+      },
+      "baseline": {
+        "trades": 46,
+        "sharpe": -0.8317498965054153,
+        "mdd_pct": 2.62899673308594,
+        "final_eq": 9865.869467432294,
+        "cost_r": 0.9783936226715761,
+        "mc_p5": 9558.471864623907
+      },
+      "lift_fe": true,
+      "lift_mdd": true,
+      "has_lift": true
+    },
+    {
+      "tag": "CC.9",
+      "asset": "sol",
+      "period": "20250705_20251231",
+      "atr_bps": 100,
+      "filtered": {
+        "trades": 16,
+        "sharpe": -2.4921901572799072,
+        "mdd_pct": 3.6052882842313276,
+        "final_eq": 9742.763645789952,
+        "cost_r": 0.9859209587570039,
+        "mc_p5": 9446.98811938081
+      },
+      "baseline": {
+        "trades": 57,
+        "sharpe": -1.8316713330824446,
+        "mdd_pct": 7.266304348773211,
+        "final_eq": 9428.742147773419,
+        "cost_r": 0.9678107431880502,
+        "mc_p5": 8559.281205795343
+      },
+      "lift_fe": true,
+      "lift_mdd": true,
+      "has_lift": true
+    }
+  ]
+}

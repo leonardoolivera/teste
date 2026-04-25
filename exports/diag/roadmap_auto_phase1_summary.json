@@ -1,0 +1,573 @@
+{
+  "n_total": 594,
+  "n_ok": 594,
+  "n_fail": 0,
+  "engines": {
+    "ma_crossover": {
+      "n": 108,
+      "pass_sh": 9,
+      "pass_alfa": 43
+    },
+    "supertrend": {
+      "n": 72,
+      "pass_sh": 4,
+      "pass_alfa": 28
+    },
+    "bollinger": {
+      "n": 156,
+      "pass_sh": 34,
+      "pass_alfa": 67
+    },
+    "rsi": {
+      "n": 138,
+      "pass_sh": 13,
+      "pass_alfa": 60
+    },
+    "composite_bb_rsi": {
+      "n": 60,
+      "pass_sh": 6,
+      "pass_alfa": 26
+    },
+    "keltner": {
+      "n": 36,
+      "pass_sh": 1,
+      "pass_alfa": 12
+    },
+    "zscore": {
+      "n": 24,
+      "pass_sh": 1,
+      "pass_alfa": 10
+    }
+  },
+  "passed_probes": [
+    {
+      "id": "T3-TF-ma_crossover-15m-ETH-2024-H2",
+      "run_id": "r1k-t3-tf-ma-crossover-15m-eth-2024-h2",
+      "ok": true,
+      "elapsed_s": 3.1,
+      "engine": "ma_crossover",
+      "asset": "ETH",
+      "window": "2024-H2",
+      "tier": 3,
+      "params": "canonical",
+      "metrics": {
+        "trades": 34,
+        "sharpe": 3.7613,
+        "pnl_pct": 6.2716,
+        "mdd_pct": 3.762,
+        "final_eq": 10627.16
+      },
+      "error": null,
+      "alfa": 6.2716,
+      "gate_sh": true,
+      "gate_alfa": true,
+      "bh_pct": 0.0
+    },
+    {
+      "id": "T1-PS-v2_bol_long-win_down-ETH",
+      "run_id": "r1k-t1-ps-v2-bol-long-win-down-eth",
+      "ok": true,
+      "elapsed_s": 4.5,
+      "engine": "bollinger",
+      "asset": "ETH",
+      "window": "2024-H2",
+      "tier": 1,
+      "params": "window *= 0.83",
+      "metrics": {
+        "trades": 48,
+        "sharpe": 3.0428,
+        "pnl_pct": 6.9156,
+        "mdd_pct": 2.8701,
+        "final_eq": 10691.56
+      },
+      "error": null,
+      "alfa": 6.9156,
+      "gate_sh": true,
+      "gate_alfa": true,
+      "bh_pct": 0.0
+    },
+    {
+      "id": "T1-PS-v2_bol_long-period_down-ETH",
+      "run_id": "r1k-t1-ps-v2-bol-long-period-down-eth",
+      "ok": true,
+      "elapsed_s": 4.3,
+      "engine": "bollinger",
+      "asset": "ETH",
+      "window": "2024-H2",
+      "tier": 1,
+      "params": "period *= 0.83",
+      "metrics": {
+        "trades": 48,
+        "sharpe": 3.0428,
+        "pnl_pct": 6.9156,
+        "mdd_pct": 2.8701,
+        "final_eq": 10691.56
+      },
+      "error": null,
+      "alfa": 6.9156,
+      "gate_sh": true,
+      "gate_alfa": true,
+      "bh_pct": 0.0
+    },
+    {
+      "id": "T3-KELT-20-14-2.5-BTC-2025-H1",
+      "run_id": "r1k-t3-kelt-20-14-2.5-btc-2025-h1",
+      "ok": true,
+      "elapsed_s": 4.4,
+      "engine": "keltner",
+      "asset": "BTC",
+      "window": "2025-H1",
+      "tier": 3,
+      "params": "window=20,atr_p=14,mult=2.5",
+      "metrics": {
+        "trades": 31,
+        "sharpe": 2.8554,
+        "pnl_pct": 4.2769,
+        "mdd_pct": 1.4782,
+        "final_eq": 10427.69
+      },
+      "error": null,
+      "alfa": 8.276900000000001,
+      "gate_sh": true,
+      "gate_alfa": true,
+      "bh_pct": -8.0
+    },
+    {
+      "id": "T1-ST-20-3.5-ETH-2025-H1",
+      "run_id": "r1k-t1-st-20-3.5-eth-2025-h1",
+      "ok": true,
+      "elapsed_s": 457.1,
+      "engine": "supertrend",
+      "asset": "ETH",
+      "window": "2025-H1",
+      "tier": 1,
+      "params": "atr_period=20,atr_mult=3.5",
+      "metrics": {
+        "trades": 190,
+        "sharpe": 2.7099,
+        "pnl_pct": 11.8426,
+        "mdd_pct": 3.2234,
+        "final_eq": 11184.26
+      },
+      "error": null,
+      "alfa": 35.3426,
+      "gate_sh": true,
+      "gate_alfa": true,
+      "bh_pct": -47.0
+    },
+    {
+      "id": "T2-COMP-15-1.5-35-65-ETH-2024-H2",
+      "run_id": "r1k-t2-comp-15-1.5-35-65-eth-2024-h2",
+      "ok": true,
+      "elapsed_s": 7.4,
+      "engine": "composite_bb_rsi",
+      "asset": "ETH",
+      "window": "2024-H2",
+      "tier": 2,
+      "params": "bb_w=15,bb_ns=1.5,rsi_os=35,rsi_ob=65",
+      "metrics": {
+        "trades": 53,
+        "sharpe": 2.5419,
+        "pnl_pct": 5.138,
+        "mdd_pct": 2.3078,
+        "final_eq": 10513.8
+      },
+      "error": null,
+      "alfa": 5.138,
+      "gate_sh": true,
+      "gate_alfa": true,
+      "bh_pct": 0.0
+    },
+    {
+      "id": "T2-BB-15-2.0-long-ETH-2024-H2",
+      "run_id": "r1k-t2-bb-15-2.0-long-eth-2024-h2",
+      "ok": true,
+      "elapsed_s": 4.1,
+      "engine": "bollinger",
+      "asset": "ETH",
+      "window": "2024-H2",
+      "tier": 2,
+      "params": "window=15,num_std=2.0",
+      "metrics": {
+        "trades": 48,
+        "sharpe": 2.0662,
+        "pnl_pct": 4.6641,
+        "mdd_pct": 2.7852,
+        "final_eq": 10466.41
+      },
+      "error": null,
+      "alfa": 4.6641,
+      "gate_sh": true,
+      "gate_alfa": true,
+      "bh_pct": 0.0
+    },
+    {
+      "id": "T2-BB-15-2.0-short-ETH-2024-H2",
+      "run_id": "r1k-t2-bb-15-2.0-short-eth-2024-h2",
+      "ok": true,
+      "elapsed_s": 4.4,
+      "engine": "bollinger",
+      "asset": "ETH",
+      "window": "2024-H2",
+      "tier": 2,
+      "params": "window=15,num_std=2.0",
+      "metrics": {
+        "trades": 48,
+        "sharpe": 2.0662,
+        "pnl_pct": 4.6641,
+        "mdd_pct": 2.7852,
+        "final_eq": 10466.41
+      },
+      "error": null,
+      "alfa": 4.6641,
+      "gate_sh": true,
+      "gate_alfa": true,
+      "bh_pct": 0.0
+    },
+    {
+      "id": "T1-ST-14-3.5-ETH-2025-H1",
+      "run_id": "r1k-t1-st-14-3.5-eth-2025-h1",
+      "ok": true,
+      "elapsed_s": 478.5,
+      "engine": "supertrend",
+      "asset": "ETH",
+      "window": "2025-H1",
+      "tier": 1,
+      "params": "atr_period=14,atr_mult=3.5",
+      "metrics": {
+        "trades": 193,
+        "sharpe": 2.0309,
+        "pnl_pct": 8.6998,
+        "mdd_pct": 4.4583,
+        "final_eq": 10869.98
+      },
+      "error": null,
+      "alfa": 32.199799999999996,
+      "gate_sh": true,
+      "gate_alfa": true,
+      "bh_pct": -47.0
+    },
+    {
+      "id": "T1-MA-25-75-ETH-2025-H1",
+      "run_id": "r1k-t1-ma-25-75-eth-2025-h1",
+      "ok": true,
+      "elapsed_s": 9.2,
+      "engine": "ma_crossover",
+      "asset": "ETH",
+      "window": "2025-H1",
+      "tier": 1,
+      "params": "short=25,long=75",
+      "metrics": {
+        "trades": 154,
+        "sharpe": 1.9084,
+        "pnl_pct": 7.982,
+        "mdd_pct": 5.5053,
+        "final_eq": 10798.2
+      },
+      "error": null,
+      "alfa": 31.482,
+      "gate_sh": true,
+      "gate_alfa": true,
+      "bh_pct": -47.0
+    },
+    {
+      "id": "T3-SHORT-ma_crossover-1h-ETH-2024-H2",
+      "run_id": "r1k-t3-short-ma-crossover-1h-eth-2024-h2",
+      "ok": true,
+      "elapsed_s": 3.3,
+      "engine": "ma_crossover",
+      "asset": "ETH",
+      "window": "2024-H2",
+      "tier": 3,
+      "params": "canonical",
+      "metrics": {
+        "trades": 34,
+        "sharpe": 1.8807,
+        "pnl_pct": 6.2716,
+        "mdd_pct": 3.762,
+        "final_eq": 10627.16
+      },
+      "error": null,
+      "alfa": 6.2716,
+      "gate_sh": true,
+      "gate_alfa": true,
+      "bh_pct": 0.0
+    },
+    {
+      "id": "T1-MA-50-200-ETH-2024-H2",
+      "run_id": "r1k-t1-ma-50-200-eth-2024-h2",
+      "ok": true,
+      "elapsed_s": 8.2,
+      "engine": "ma_crossover",
+      "asset": "ETH",
+      "window": "2024-H2",
+      "tier": 1,
+      "params": "short=50,long=200",
+      "metrics": {
+        "trades": 60,
+        "sharpe": 1.7684,
+        "pnl_pct": 6.0064,
+        "mdd_pct": 3.0974,
+        "final_eq": 10600.64
+      },
+      "error": null,
+      "alfa": 6.0064,
+      "gate_sh": true,
+      "gate_alfa": true,
+      "bh_pct": 0.0
+    },
+    {
+      "id": "T3-ZS-30-2.5-BTC-2025-H1",
+      "run_id": "r1k-t3-zs-30-2.5-btc-2025-h1",
+      "ok": true,
+      "elapsed_s": 2.8,
+      "engine": "zscore",
+      "asset": "BTC",
+      "window": "2025-H1",
+      "tier": 3,
+      "params": "window=30,threshold=2.5",
+      "metrics": {
+        "trades": 32,
+        "sharpe": 1.6635,
+        "pnl_pct": 2.7762,
+        "mdd_pct": 2.0366,
+        "final_eq": 10277.62
+      },
+      "error": null,
+      "alfa": 6.776199999999999,
+      "gate_sh": true,
+      "gate_alfa": true,
+      "bh_pct": -8.0
+    },
+    {
+      "id": "T2-F-rsi-long-3887-BTC-2025-H1",
+      "run_id": "r1k-t2-f-rsi-long-3887-btc-2025-h1",
+      "ok": true,
+      "elapsed_s": 6.1,
+      "engine": "rsi",
+      "asset": "BTC",
+      "window": "2025-H1",
+      "tier": 2,
+      "params": "canonical",
+      "metrics": {
+        "trades": 39,
+        "sharpe": 1.6143,
+        "pnl_pct": 2.8382,
+        "mdd_pct": 2.1485,
+        "final_eq": 10283.82
+      },
+      "error": null,
+      "alfa": 6.8382000000000005,
+      "gate_sh": true,
+      "gate_alfa": true,
+      "bh_pct": -8.0
+    },
+    {
+      "id": "T1-MA-20-50-ETH-2025-H1",
+      "run_id": "r1k-t1-ma-20-50-eth-2025-h1",
+      "ok": true,
+      "elapsed_s": 9.4,
+      "engine": "ma_crossover",
+      "asset": "ETH",
+      "window": "2025-H1",
+      "tier": 1,
+      "params": "short=20,long=50",
+      "metrics": {
+        "trades": 228,
+        "sharpe": 1.6131,
+        "pnl_pct": 6.7501,
+        "mdd_pct": 3.6368,
+        "final_eq": 10675.01
+      },
+      "error": null,
+      "alfa": 30.2501,
+      "gate_sh": true,
+      "gate_alfa": true,
+      "bh_pct": -47.0
+    },
+    {
+      "id": "T3-SHORT-ma_crossover-10m-ETH-2025-H1",
+      "run_id": "r1k-t3-short-ma-crossover-10m-eth-2025-h1",
+      "ok": true,
+      "elapsed_s": 10.0,
+      "engine": "ma_crossover",
+      "asset": "ETH",
+      "window": "2025-H1",
+      "tier": 3,
+      "params": "canonical",
+      "metrics": {
+        "trades": 228,
+        "sharpe": 1.6131,
+        "pnl_pct": 6.7501,
+        "mdd_pct": 3.6368,
+        "final_eq": 10675.01
+      },
+      "error": null,
+      "alfa": 30.2501,
+      "gate_sh": true,
+      "gate_alfa": true,
+      "bh_pct": -47.0
+    },
+    {
+      "id": "T2-BB-15-1.75-long-ETH-2024-H2",
+      "run_id": "r1k-t2-bb-15-1.75-long-eth-2024-h2",
+      "ok": true,
+      "elapsed_s": 4.1,
+      "engine": "bollinger",
+      "asset": "ETH",
+      "window": "2024-H2",
+      "tier": 2,
+      "params": "window=15,num_std=1.75",
+      "metrics": {
+        "trades": 57,
+        "sharpe": 1.5732,
+        "pnl_pct": 3.7511,
+        "mdd_pct": 3.2819,
+        "final_eq": 10375.11
+      },
+      "error": null,
+      "alfa": 3.7511,
+      "gate_sh": true,
+      "gate_alfa": true,
+      "bh_pct": 0.0
+    },
+    {
+      "id": "T2-BB-15-1.75-short-ETH-2024-H2",
+      "run_id": "r1k-t2-bb-15-1.75-short-eth-2024-h2",
+      "ok": true,
+      "elapsed_s": 4.3,
+      "engine": "bollinger",
+      "asset": "ETH",
+      "window": "2024-H2",
+      "tier": 2,
+      "params": "window=15,num_std=1.75",
+      "metrics": {
+        "trades": 57,
+        "sharpe": 1.5732,
+        "pnl_pct": 3.7511,
+        "mdd_pct": 3.2819,
+        "final_eq": 10375.11
+      },
+      "error": null,
+      "alfa": 3.7511,
+      "gate_sh": true,
+      "gate_alfa": true,
+      "bh_pct": 0.0
+    },
+    {
+      "id": "T2-COMP-15-1.5-30-70-ETH-2024-H2",
+      "run_id": "r1k-t2-comp-15-1.5-30-70-eth-2024-h2",
+      "ok": true,
+      "elapsed_s": 6.0,
+      "engine": "composite_bb_rsi",
+      "asset": "ETH",
+      "window": "2024-H2",
+      "tier": 2,
+      "params": "bb_w=15,bb_ns=1.5,rsi_os=30,rsi_ob=70",
+      "metrics": {
+        "trades": 35,
+        "sharpe": 1.5634,
+        "pnl_pct": 2.2248,
+        "mdd_pct": 2.4188,
+        "final_eq": 10222.48
+      },
+      "error": null,
+      "alfa": 2.2248,
+      "gate_sh": true,
+      "gate_alfa": true,
+      "bh_pct": 0.0
+    },
+    {
+      "id": "T1-ST-14-3.0-ETH-2025-H1",
+      "run_id": "r1k-t1-st-14-3.0-eth-2025-h1",
+      "ok": true,
+      "elapsed_s": 505.1,
+      "engine": "supertrend",
+      "asset": "ETH",
+      "window": "2025-H1",
+      "tier": 1,
+      "params": "atr_period=14,atr_mult=3.0",
+      "metrics": {
+        "trades": 245,
+        "sharpe": 1.5492,
+        "pnl_pct": 6.485,
+        "mdd_pct": 4.3042,
+        "final_eq": 10648.5
+      },
+      "error": null,
+      "alfa": 29.985,
+      "gate_sh": true,
+      "gate_alfa": true,
+      "bh_pct": -47.0
+    },
+    {
+      "id": "T1-PS-v2_bol_long-ns_up-ETH",
+      "run_id": "r1k-t1-ps-v2-bol-long-ns-up-eth",
+      "ok": true,
+      "elapsed_s": 4.2,
+      "engine": "bollinger",
+      "asset": "ETH",
+      "window": "2024-H2",
+      "tier": 1,
+      "params": "num_std += 0.25",
+      "metrics": {
+        "trades": 32,
+        "sharpe": 1.5383,
+        "pnl_pct": 3.3833,
+        "mdd_pct": 3.6958,
+        "final_eq": 10338.33
+      },
+      "error": null,
+      "alfa": 3.3833,
+      "gate_sh": true,
+      "gate_alfa": true,
+      "bh_pct": 0.0
+    },
+    {
+      "id": "T2-BB-15-2.25-long-ETH-2024-H2",
+      "run_id": "r1k-t2-bb-15-2.25-long-eth-2024-h2",
+      "ok": true,
+      "elapsed_s": 4.1,
+      "engine": "bollinger",
+      "asset": "ETH",
+      "window": "2024-H2",
+      "tier": 2,
+      "params": "window=15,num_std=2.25",
+      "metrics": {
+        "trades": 36,
+        "sharpe": 1.5214,
+        "pnl_pct": 3.3205,
+        "mdd_pct": 2.7666,
+        "final_eq": 10332.05
+      },
+      "error": null,
+      "alfa": 3.3205,
+      "gate_sh": true,
+      "gate_alfa": true,
+      "bh_pct": 0.0
+    },
+    {
+      "id": "T2-BB-15-2.25-short-ETH-2024-H2",
+      "run_id": "r1k-t2-bb-15-2.25-short-eth-2024-h2",
+      "ok": true,
+      "elapsed_s": 4.3,
+      "engine": "bollinger",
+      "asset": "ETH",
+      "window": "2024-H2",
+      "tier": 2,
+      "params": "window=15,num_std=2.25",
+      "metrics": {
+        "trades": 36,
+        "sharpe": 1.5214,
+        "pnl_pct": 3.3205,
+        "mdd_pct": 2.7666,
+        "final_eq": 10332.05
+      },
+      "error": null,
+      "alfa": 3.3205,
+      "gate_sh": true,
+      "gate_alfa": true,
+      "bh_pct": 0.0
+    }
+  ]
+}

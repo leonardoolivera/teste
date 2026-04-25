@@ -1,0 +1,101 @@
+[
+  {
+    "run": "ci-donchian-20-10-btc-20240705_20241231-width30-300-short",
+    "tag": "CI.1 BTC 2024-H2",
+    "trades": 80,
+    "pnl_pct": -5.528,
+    "mdd_pct": 4.827,
+    "sharpe": -2.21,
+    "mc_p5": 8901.8,
+    "cost_r": 0.9514,
+    "gate": "FAIL(sh>=1.0,mcp5>9500)"
+  },
+  {
+    "run": "ci-donchian-20-10-btc-20250105_20250704-width30-300-short",
+    "tag": "CI.4 BTC 2025-H1",
+    "trades": 62,
+    "pnl_pct": 0.51,
+    "mdd_pct": 3.33,
+    "sharpe": 0.209,
+    "mc_p5": 9550.8,
+    "cost_r": 0.961,
+    "gate": "FAIL(sh>=1.0)"
+  },
+  {
+    "run": "ci-donchian-20-10-btc-20250705_20251231-width30-300-short",
+    "tag": "CI.7 BTC 2025-H2",
+    "trades": 68,
+    "pnl_pct": -4.74,
+    "mdd_pct": 4.061,
+    "sharpe": -2.474,
+    "mc_p5": 9080.2,
+    "cost_r": 0.9667,
+    "gate": "FAIL(sh>=1.0,mcp5>9500)"
+  },
+  {
+    "run": "ci-donchian-20-10-eth-20240705_20241231-width30-300-short",
+    "tag": "CI.2 ETH 2024-H2",
+    "trades": 105,
+    "pnl_pct": -2.653,
+    "mdd_pct": 5.42,
+    "sharpe": -0.72,
+    "mc_p5": 8950.8,
+    "cost_r": 0.9462,
+    "gate": "FAIL(sh>=1.0,mcp5>9500,costr>=0.95)"
+  },
+  {
+    "run": "ci-donchian-20-10-eth-20250105_20250704-width30-300-short",
+    "tag": "CI.5 ETH 2025-H1",
+    "trades": 114,
+    "pnl_pct": 0.076,
+    "mdd_pct": 6.253,
+    "sharpe": 0.055,
+    "mc_p5": 8365.8,
+    "cost_r": 0.9361,
+    "gate": "FAIL(sh>=1.0,mcp5>9500,costr>=0.95)"
+  },
+  {
+    "run": "ci-donchian-20-10-eth-20250705_20251231-width30-300-short",
+    "tag": "CI.8 ETH 2025-H2",
+    "trades": 103,
+    "pnl_pct": -1.261,
+    "mdd_pct": 5.407,
+    "sharpe": -0.288,
+    "mc_p5": 8874.2,
+    "cost_r": 0.9458,
+    "gate": "FAIL(sh>=1.0,mcp5>9500,costr>=0.95)"
+  },
+  {
+    "run": "ci-donchian-20-10-sol-20240705_20241231-width30-300-short",
+    "tag": "CI.3 SOL 2024-H2",
+    "trades": 149,
+    "pnl_pct": -14.597,
+    "mdd_pct": 8.316,
+    "sharpe": -2.77,
+    "mc_p5": 7289.4,
+    "cost_r": 0.9099,
+    "gate": "FAIL(sh>=1.0,mcp5>9500,costr>=0.95)"
+  },
+  {
+    "run": "ci-donchian-20-10-sol-20250105_20250704-width30-300-short",
+    "tag": "CI.6 SOL 2025-H1",
+    "trades": 152,
+    "pnl_pct": -16.979,
+    "mdd_pct": 11.181,
+    "sharpe": -2.546,
+    "mc_p5": 6443.6,
+    "cost_r": 0.9154,
+    "gate": "FAIL(sh>=1.0,mcp5>9500,costr>=0.95)"
+  },
+  {
+    "run": "ci-donchian-20-10-sol-20250705_20251231-width30-300-short",
+    "tag": "CI.9 SOL 2025-H2",
+    "trades": 135,
+    "pnl_pct": -8.238,
+    "mdd_pct": 6.948,
+    "sharpe": -1.58,
+    "mc_p5": 7898.6,
+    "cost_r": 0.918,
+    "gate": "FAIL(sh>=1.0,mcp5>9500,costr>=0.95)"
+  }
+]

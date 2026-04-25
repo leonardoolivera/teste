@@ -1,0 +1,44 @@
+[
+  {
+    "tag": "CZ.1",
+    "asset": "DOT",
+    "window": "2025-H2",
+    "run_id": "cz-dot-rsi-short-naked-2025h2",
+    "trades": 86,
+    "pnl_pct": 2.8977930052938694,
+    "sharpe": 0.4976421935621236,
+    "mdd_pct": 9.979499562333377,
+    "final_eq": 10289.779300529386,
+    "cost_r": 0.9583853941731189,
+    "mc_p5": 8939.972723649254,
+    "verdict": "FAIL (Sh<1.0, MCp5<9500, PnL<3%)"
+  },
+  {
+    "tag": "CZ.2",
+    "asset": "AVAX",
+    "window": "2025-H2",
+    "run_id": "cz-avax-rsi-short-naked-2025h2",
+    "trades": 95,
+    "pnl_pct": -0.8996130592259344,
+    "sharpe": -0.05437214834527065,
+    "mdd_pct": 11.50476004875621,
+    "final_eq": 9910.038694077406,
+    "cost_r": 0.9523784274752831,
+    "mc_p5": 8483.761794760108,
+    "verdict": "FAIL (Sh<1.0, MCp5<9500, PnL<3%)"
+  },
+  {
+    "tag": "CZ.3",
+    "asset": "LINK",
+    "window": "2025-H2",
+    "run_id": "cz-link-rsi-short-naked-2025h2",
+    "trades": 84,
+    "pnl_pct": 11.73458619348915,
+    "sharpe": 1.7603169623278914,
+    "mdd_pct": 5.8037709961544985,
+    "final_eq": 11173.458619348914,
+    "cost_r": 0.9590107384184458,
+    "mc_p5": 10150.45597117136,
+    "verdict": "PASS"
+  }
+]

@@ -1,0 +1,507 @@
+{
+  "adr": "0063",
+  "cg": {
+    "series": "CG (Bollinger short + width 300)",
+    "snow_candidates": 2,
+    "pilots": [
+      {
+        "tag": "CG.1",
+        "asset": "btc",
+        "period": "20240705_20241231",
+        "fixed": {
+          "trades": 47,
+          "sharpe": 0.5219683475026814,
+          "mdd_pct": 4.6740929927286965,
+          "final_eq": 10101.104773134388,
+          "cost_r": 0.9733151475742466,
+          "mc_p5": 9517.00655829877,
+          "pnl_usd": 20.220954626877674
+        },
+        "snowball": {
+          "trades": 47,
+          "sharpe": 0.5304516607370854,
+          "mdd_pct": 4.685925396540983,
+          "final_eq": 10103.142355333855,
+          "cost_r": 0.9740582870024274,
+          "mc_p5": 9518.387562228227,
+          "pnl_usd": 20.628471066771237
+        },
+        "fixed_pass": false,
+        "snow_pass": false,
+        "snow_mdd_ok": true,
+        "snow_candidate": false
+      },
+      {
+        "tag": "CG.2",
+        "asset": "eth",
+        "period": "20240705_20241231",
+        "fixed": {
+          "trades": 63,
+          "sharpe": -0.2250384867752788,
+          "mdd_pct": 4.786883059982176,
+          "final_eq": 9911.69571949569,
+          "cost_r": 0.966120832468273,
+          "mc_p5": 9246.18073728196,
+          "pnl_usd": -17.660856100861988
+        },
+        "snowball": {
+          "trades": 63,
+          "sharpe": -0.23300246256442317,
+          "mdd_pct": 4.763615761120511,
+          "final_eq": 9909.639420617923,
+          "cost_r": 0.9673673528089745,
+          "mc_p5": 9240.812978703578,
+          "pnl_usd": -18.072115876415438
+        },
+        "fixed_pass": false,
+        "snow_pass": false,
+        "snow_mdd_ok": true,
+        "snow_candidate": false
+      },
+      {
+        "tag": "CG.3",
+        "asset": "sol",
+        "period": "20240705_20241231",
+        "fixed": {
+          "trades": 102,
+          "sharpe": 1.3795268496579314,
+          "mdd_pct": 6.328487665170655,
+          "final_eq": 10663.656490752828,
+          "cost_r": 0.9504708267754755,
+          "mc_p5": 9728.721050036145,
+          "pnl_usd": 132.73129815056572
+        },
+        "snowball": {
+          "trades": 102,
+          "sharpe": 1.3960846975788614,
+          "mdd_pct": 6.338558286595471,
+          "final_eq": 10679.726557076196,
+          "cost_r": 0.9494375742757754,
+          "mc_p5": 9729.855259297274,
+          "pnl_usd": 135.9453114152389
+        },
+        "fixed_pass": true,
+        "snow_pass": false,
+        "snow_mdd_ok": true,
+        "snow_candidate": false
+      },
+      {
+        "tag": "CG.4",
+        "asset": "btc",
+        "period": "20250105_20250704",
+        "fixed": {
+          "trades": 37,
+          "sharpe": 1.2427499169630776,
+          "mdd_pct": 2.168025163388596,
+          "final_eq": 10296.126841016892,
+          "cost_r": 0.9773633376045574,
+          "mc_p5": 9952.758893724958,
+          "pnl_usd": 59.22536820337854
+        },
+        "snowball": {
+          "trades": 37,
+          "sharpe": 1.2389413921986132,
+          "mdd_pct": 2.165890391885951,
+          "final_eq": 10296.630406727318,
+          "cost_r": 0.9766584425274687,
+          "mc_p5": 9951.42756137687,
+          "pnl_usd": 59.32608134546369
+        },
+        "fixed_pass": true,
+        "snow_pass": true,
+        "snow_mdd_ok": true,
+        "snow_candidate": true
+      },
+      {
+        "tag": "CG.5",
+        "asset": "eth",
+        "period": "20250105_20250704",
+        "fixed": {
+          "trades": 85,
+          "sharpe": 2.394580617080756,
+          "mdd_pct": 8.330003867421059,
+          "final_eq": 11215.58533875545,
+          "cost_r": 0.9593809314810542,
+          "mc_p5": 9923.50986890245,
+          "pnl_usd": 243.11706775109033
+        },
+        "snowball": {
+          "trades": 85,
+          "sharpe": 2.382427488393236,
+          "mdd_pct": 8.525056110589258,
+          "final_eq": 11228.15426850134,
+          "cost_r": 0.9535740637107518,
+          "mc_p5": 9939.934538119163,
+          "pnl_usd": 245.63085370026806
+        },
+        "fixed_pass": true,
+        "snow_pass": true,
+        "snow_mdd_ok": true,
+        "snow_candidate": true
+      },
+      {
+        "tag": "CG.6",
+        "asset": "sol",
+        "period": "20250105_20250704",
+        "fixed": {
+          "trades": 109,
+          "sharpe": 2.713362472880258,
+          "mdd_pct": 4.920267798091555,
+          "final_eq": 11747.407485340094,
+          "cost_r": 0.9512409046069875,
+          "mc_p5": 10459.948693571576,
+          "pnl_usd": 349.48149706801865
+        },
+        "snowball": {
+          "trades": 109,
+          "sharpe": 2.6803914121215766,
+          "mdd_pct": 4.876769513681775,
+          "final_eq": 11767.890711555227,
+          "cost_r": 0.9458020690686991,
+          "mc_p5": 10457.542157261441,
+          "pnl_usd": 353.5781423110453
+        },
+        "fixed_pass": true,
+        "snow_pass": false,
+        "snow_mdd_ok": true,
+        "snow_candidate": false
+      },
+      {
+        "tag": "CG.7",
+        "asset": "btc",
+        "period": "20250705_20251231",
+        "fixed": {
+          "trades": 41,
+          "sharpe": 0.7686909236924369,
+          "mdd_pct": 2.46569097499826,
+          "final_eq": 10119.105707726158,
+          "cost_r": 0.9816244520062922,
+          "mc_p5": 9726.527383966773,
+          "pnl_usd": 23.821141545231406
+        },
+        "snowball": {
+          "trades": 41,
+          "sharpe": 0.7640893841203191,
+          "mdd_pct": 2.463627759139208,
+          "final_eq": 10118.710590062938,
+          "cost_r": 0.981485097224842,
+          "mc_p5": 9726.267691578896,
+          "pnl_usd": 23.742118012587632
+        },
+        "fixed_pass": false,
+        "snow_pass": false,
+        "snow_mdd_ok": true,
+        "snow_candidate": false
+      },
+      {
+        "tag": "CG.8",
+        "asset": "eth",
+        "period": "20250705_20251231",
+        "fixed": {
+          "trades": 76,
+          "sharpe": 0.9360773000489045,
+          "mdd_pct": 4.952055896575621,
+          "final_eq": 10323.308228172027,
+          "cost_r": 0.9602256649041263,
+          "mc_p5": 9442.023874863167,
+          "pnl_usd": 64.66164563440557
+        },
+        "snowball": {
+          "trades": 76,
+          "sharpe": 0.9727192893881976,
+          "mdd_pct": 4.853953463119251,
+          "final_eq": 10337.290218004433,
+          "cost_r": 0.9606821369489211,
+          "mc_p5": 9452.672075073018,
+          "pnl_usd": 67.4580436008867
+        },
+        "fixed_pass": false,
+        "snow_pass": false,
+        "snow_mdd_ok": true,
+        "snow_candidate": false
+      },
+      {
+        "tag": "CG.9",
+        "asset": "sol",
+        "period": "20250705_20251231",
+        "fixed": {
+          "trades": 101,
+          "sharpe": 0.7216377163729106,
+          "mdd_pct": 6.458656316839159,
+          "final_eq": 10334.868309767638,
+          "cost_r": 0.9496826968963591,
+          "mc_p5": 9150.441232594201,
+          "pnl_usd": 66.9736619535275
+        },
+        "snowball": {
+          "trades": 101,
+          "sharpe": 0.6911301149184772,
+          "mdd_pct": 6.470791571279692,
+          "final_eq": 10318.113202540397,
+          "cost_r": 0.9494336698788328,
+          "mc_p5": 9139.800280017162,
+          "pnl_usd": 63.62264050807953
+        },
+        "fixed_pass": false,
+        "snow_pass": false,
+        "snow_mdd_ok": true,
+        "snow_candidate": false
+      }
+    ]
+  },
+  "ch": {
+    "series": "CH (RSI short + width 300)",
+    "snow_candidates": 2,
+    "pilots": [
+      {
+        "tag": "CH.1",
+        "asset": "btc",
+        "period": "20240705_20241231",
+        "fixed": {
+          "trades": 43,
+          "sharpe": -0.7592271464306704,
+          "mdd_pct": 4.585986329656742,
+          "final_eq": 9836.809988446586,
+          "cost_r": 0.9753201497302671,
+          "mc_p5": 9386.818197731469,
+          "pnl_usd": -32.6380023106827
+        },
+        "snowball": {
+          "trades": 43,
+          "sharpe": -0.7604051746075524,
+          "mdd_pct": 4.6016343440522345,
+          "final_eq": 9836.604634120058,
+          "cost_r": 0.9766133426658408,
+          "mc_p5": 9388.912413865659,
+          "pnl_usd": -32.67907317598828
+        },
+        "fixed_pass": false,
+        "snow_pass": false,
+        "snow_mdd_ok": true,
+        "snow_candidate": false
+      },
+      {
+        "tag": "CH.2",
+        "asset": "eth",
+        "period": "20240705_20241231",
+        "fixed": {
+          "trades": 52,
+          "sharpe": -1.523907324166006,
+          "mdd_pct": 8.363601740274937,
+          "final_eq": 9496.938123810607,
+          "cost_r": 0.9711405962325235,
+          "mc_p5": 8690.50032296701,
+          "pnl_usd": -100.6123752378787
+        },
+        "snowball": {
+          "trades": 52,
+          "sharpe": -1.5563614053088475,
+          "mdd_pct": 8.370992733442172,
+          "final_eq": 9492.906108031939,
+          "cost_r": 0.9731479374167278,
+          "mc_p5": 8686.296782192832,
+          "pnl_usd": -101.41877839361224
+        },
+        "fixed_pass": false,
+        "snow_pass": false,
+        "snow_mdd_ok": true,
+        "snow_candidate": false
+      },
+      {
+        "tag": "CH.3",
+        "asset": "sol",
+        "period": "20240705_20241231",
+        "fixed": {
+          "trades": 73,
+          "sharpe": -0.38505017070095143,
+          "mdd_pct": 9.22199409600608,
+          "final_eq": 9783.120029854288,
+          "cost_r": 0.958765137562883,
+          "mc_p5": 8733.749480414193,
+          "pnl_usd": -43.3759940291425
+        },
+        "snowball": {
+          "trades": 73,
+          "sharpe": -0.3751856427894739,
+          "mdd_pct": 9.077665862995369,
+          "final_eq": 9788.790299726164,
+          "cost_r": 0.962081609992758,
+          "mc_p5": 8735.604806741781,
+          "pnl_usd": -42.24194005476711
+        },
+        "fixed_pass": false,
+        "snow_pass": false,
+        "snow_mdd_ok": true,
+        "snow_candidate": false
+      },
+      {
+        "tag": "CH.4",
+        "asset": "btc",
+        "period": "20250105_20250704",
+        "fixed": {
+          "trades": 37,
+          "sharpe": 1.6878345964859356,
+          "mdd_pct": 1.6690512345348487,
+          "final_eq": 10406.584264100899,
+          "cost_r": 0.9780625725441316,
+          "mc_p5": 9912.946428228644,
+          "pnl_usd": 81.31685282017953
+        },
+        "snowball": {
+          "trades": 37,
+          "sharpe": 1.6645860963776167,
+          "mdd_pct": 1.6990085747660242,
+          "final_eq": 10405.328155926793,
+          "cost_r": 0.9770541107884779,
+          "mc_p5": 9907.178631894689,
+          "pnl_usd": 81.06563118535837
+        },
+        "fixed_pass": true,
+        "snow_pass": true,
+        "snow_mdd_ok": true,
+        "snow_candidate": false
+      },
+      {
+        "tag": "CH.5",
+        "asset": "eth",
+        "period": "20250105_20250704",
+        "fixed": {
+          "trades": 77,
+          "sharpe": 0.49689392590955406,
+          "mdd_pct": 8.305172182382883,
+          "final_eq": 10217.357348770945,
+          "cost_r": 0.9609418590223264,
+          "mc_p5": 8907.330155542006,
+          "pnl_usd": 43.471469754189144
+        },
+        "snowball": {
+          "trades": 77,
+          "sharpe": 0.44624928631424504,
+          "mdd_pct": 8.589058287474383,
+          "final_eq": 10192.67173995795,
+          "cost_r": 0.9608489670120436,
+          "mc_p5": 8877.97333946227,
+          "pnl_usd": 38.53434799159005
+        },
+        "fixed_pass": false,
+        "snow_pass": false,
+        "snow_mdd_ok": true,
+        "snow_candidate": false
+      },
+      {
+        "tag": "CH.6",
+        "asset": "sol",
+        "period": "20250105_20250704",
+        "fixed": {
+          "trades": 94,
+          "sharpe": 1.3189110094683494,
+          "mdd_pct": 5.740522888092476,
+          "final_eq": 10793.562423628167,
+          "cost_r": 0.9554721073989673,
+          "mc_p5": 9557.653533948702,
+          "pnl_usd": 158.71248472563337
+        },
+        "snowball": {
+          "trades": 94,
+          "sharpe": 1.2760509833802613,
+          "mdd_pct": 5.749742148522928,
+          "final_eq": 10779.02643504122,
+          "cost_r": 0.9521489325702964,
+          "mc_p5": 9551.906093659933,
+          "pnl_usd": 155.8052870082438
+        },
+        "fixed_pass": true,
+        "snow_pass": true,
+        "snow_mdd_ok": true,
+        "snow_candidate": false
+      },
+      {
+        "tag": "CH.7",
+        "asset": "btc",
+        "period": "20250705_20251231",
+        "fixed": {
+          "trades": 49,
+          "sharpe": 2.631419125020381,
+          "mdd_pct": 1.392408245074338,
+          "final_eq": 10405.891506774793,
+          "cost_r": 0.9790509526928565,
+          "mc_p5": 10029.951831468086,
+          "pnl_usd": 81.17830135495873
+        },
+        "snowball": {
+          "trades": 49,
+          "sharpe": 2.60678276983692,
+          "mdd_pct": 1.4181462410903822,
+          "final_eq": 10405.904269971143,
+          "cost_r": 0.978333287286265,
+          "mc_p5": 10025.997379311983,
+          "pnl_usd": 81.18085399422847
+        },
+        "fixed_pass": true,
+        "snow_pass": true,
+        "snow_mdd_ok": true,
+        "snow_candidate": true
+      },
+      {
+        "tag": "CH.8",
+        "asset": "eth",
+        "period": "20250705_20251231",
+        "fixed": {
+          "trades": 77,
+          "sharpe": 0.8093431335310273,
+          "mdd_pct": 5.967569810201114,
+          "final_eq": 10296.002842268079,
+          "cost_r": 0.9608405349293117,
+          "mc_p5": 9376.41284969111,
+          "pnl_usd": 59.20056845361587
+        },
+        "snowball": {
+          "trades": 77,
+          "sharpe": 0.847258727204691,
+          "mdd_pct": 5.987890303379961,
+          "final_eq": 10313.014484958318,
+          "cost_r": 0.9622292521278186,
+          "mc_p5": 9390.185941611757,
+          "pnl_usd": 62.602896991663656
+        },
+        "fixed_pass": false,
+        "snow_pass": false,
+        "snow_mdd_ok": true,
+        "snow_candidate": false
+      },
+      {
+        "tag": "CH.9",
+        "asset": "sol",
+        "period": "20250705_20251231",
+        "fixed": {
+          "trades": 80,
+          "sharpe": 1.9184174648554488,
+          "mdd_pct": 4.565911451818832,
+          "final_eq": 10951.02255401468,
+          "cost_r": 0.9619690955858128,
+          "mc_p5": 9776.647663962693,
+          "pnl_usd": 190.204510802936
+        },
+        "snowball": {
+          "trades": 80,
+          "sharpe": 1.9364141316362482,
+          "mdd_pct": 4.615009423510717,
+          "final_eq": 10973.615494381986,
+          "cost_r": 0.9578606871566696,
+          "mc_p5": 9786.881205182684,
+          "pnl_usd": 194.72309887639705
+        },
+        "fixed_pass": true,
+        "snow_pass": true,
+        "snow_mdd_ok": true,
+        "snow_candidate": true
+      }
+    ]
+  },
+  "totals_usd": {
+    "cg_fixed": 784.5552311730532,
+    "cg_snowball": 794.480388772016,
+    "ch_fixed": 511.41214970370766,
+    "ch_snowball": 512.7748710642277
+  }
+}

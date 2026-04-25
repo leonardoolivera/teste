@@ -116,12 +116,13 @@ alpha-forge/
 
 ## Non-functional requirements
 
-Números, não adjetivos. Valores marcados `TBD` serão calibrados na fase `building` e estão registrados como bloqueios em `STATE.md`.
+Números, não adjetivos. Valores em itálico são calibrações empíricas com data — serão revistos quando houver mudança estrutural (ex: entrada de `vectorbt` como engine via ADR-0001, entrada de `validation/` via ADR-0003).
 
 ### Performance
 
-- **Pipeline end-to-end** (backtest + walk-forward + Monte Carlo + stress de custos, 1 estratégia × 1 ativo × 1 timeframe × 2 anos em dev local padrão): **TBD — calibrar na fase `building`**; meta inicial de referência ≈ **10 min**.
-- **Grid search** (varredura de ≥ 1.000 combinações para uma estratégia, dev local padrão): **TBD — calibrar na fase `building`**; meta inicial de referência ≈ **2 h**.
+- **Backtest isolado** (1 estratégia × 1 ativo × 1 timeframe × 180 dias 1h = 4320 barras, dev local padrão): **≈ 0.9 s** com o engine Python atual. _(Medido 2026-04-17 no host de referência Windows 11 + Python 3.13, com MA crossover e Donchian breakout sobre BTC/ETH/SOL — tempos convergem em ~0.82–0.92 s por run; throughput ~4800 barras/s limitado pelo loop causal do engine.)_
+- **Pipeline end-to-end** (backtest + walk-forward + Monte Carlo + stress de custos, 1 estratégia × 1 ativo × 1 timeframe × 2 anos em dev local padrão): meta **< 10 min**. _(Calibração 2026-04-17: extrapolação linear do backtest isolado para 2 anos dá ~3.5 s; walk-forward com ~30 folds ~= ~105 s; Monte Carlo de 1000 resamples opera sobre curva de equity pós-fato, não re-executa backtest, ~10–20 s; stress de 5 pontos de custo ~18 s — total plausível < 3 min mesmo com o engine Python atual. Meta de 10 min fica folgada mesmo antes de vectorbt (ADR-0001). Calibração definitiva depende de ADR-0003 entregar `validation/` e o script do pipeline completo existir.)_
+- **Grid search** (varredura de ≥ 1.000 combinações para uma estratégia, dev local padrão): meta **< 2 h**. _(Calibração 2026-04-17: 1000 backtests × ~0.9 s = ~15 min em sequencial single-thread, folga de 8× sobre a meta. Com paralelismo trivial (processos ou vectorbt batch), margem cresce proporcionalmente. Meta permanece plausível mesmo sem vectorbt.)_
 - **Uso de memória:** uma execução padrão (1 estratégia × 1 ativo × 1 timeframe × 2 anos) deve caber em **≤ 8 GB de RAM** no baseline. Acima disso é degradação ou bloqueio — precisa justificativa ou otimização.
 
 ### Correção e reprodutibilidade

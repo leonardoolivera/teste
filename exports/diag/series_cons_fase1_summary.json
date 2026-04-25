@@ -1,0 +1,26 @@
+[
+  {
+    "tag": "CONS.1",
+    "label": "BTC 2025-H1",
+    "trades": 84,
+    "sequences": 38,
+    "pnl_pct": -46.97503228010057,
+    "sharpe": -3.1748921772925667
+  },
+  {
+    "tag": "CONS.2",
+    "label": "ETH 2025-H1",
+    "trades": 36,
+    "sequences": 25,
+    "pnl_pct": 30.472483029182442,
+    "sharpe": 3.3493244115356857
+  },
+  {
+    "tag": "CONS.3",
+    "label": "SOL 2025-H1",
+    "trades": 11,
+    "sequences": 11,
+    "pnl_pct": -2.5007863819636267,
+    "sharpe": -0.6237145577429395
+  }
+]

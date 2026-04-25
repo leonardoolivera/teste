@@ -1,0 +1,29 @@
+[
+  {
+    "tag": "DE.1b",
+    "label": "BTC RSI+trendhtf1d",
+    "baseline": 1.69,
+    "lift": -1.6480431169325889,
+    "trades": 20,
+    "pnl_pct": 0.03160578235699152,
+    "sharpe": 0.04195688306741097
+  },
+  {
+    "tag": "DE.2b",
+    "label": "ETH RSI+trendhtf1d",
+    "baseline": 0.5,
+    "lift": 1.0511986278089207,
+    "trades": 35,
+    "pnl_pct": 5.364443219339599,
+    "sharpe": 1.5511986278089207
+  },
+  {
+    "tag": "DE.3b",
+    "label": "SOL RSI+trendhtf1d",
+    "baseline": 2.0,
+    "lift": -1.668839974818032,
+    "trades": 14,
+    "pnl_pct": 0.9710607992370113,
+    "sharpe": 0.33116002518196797
+  }
+]

@@ -1,0 +1,41 @@
+{
+  "results": [
+    {
+      "asset": "ETHUSDT",
+      "run_id": "v2-s12-cross-ethusdt-30m",
+      "ok": true,
+      "elapsed": 73.9,
+      "metrics": {
+        "trades": 175,
+        "sharpe": -0.013,
+        "pnl_pct": -1.0699,
+        "mdd_pct": 10.9682
+      }
+    },
+    {
+      "asset": "BTCUSDT",
+      "run_id": "v2-s12-cross-btcusdt-30m",
+      "ok": true,
+      "elapsed": 74.0,
+      "metrics": {
+        "trades": 171,
+        "sharpe": -0.0204,
+        "pnl_pct": -0.616,
+        "mdd_pct": 8.8922
+      }
+    },
+    {
+      "asset": "SOLUSDT",
+      "run_id": "v2-s12-cross-solusdt-30m",
+      "ok": true,
+      "elapsed": 74.1,
+      "metrics": {
+        "trades": 185,
+        "sharpe": 1.2008,
+        "pnl_pct": 29.1973,
+        "mdd_pct": 9.0388
+      }
+    }
+  ],
+  "n_pass": 1
+}

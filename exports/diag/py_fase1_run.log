@@ -1,0 +1,77 @@
+INFO alpha_forge.backtest backtest.start dataset_id=solusdt_1h_20250105_20250704_binance_spot#fold1 bars=1086 strategy=RSIMeanReversionStrategy capital=10000.00 fee_bps=5.0000 slip_bps=2.0000 sizing=pyramid_equity
+INFO alpha_forge.backtest backtest.end dataset_id=solusdt_1h_20250105_20250704_binance_spot#fold1 bars=1086 fills=26 rejections=0 trades=11 final_equity=13340.94
+INFO alpha_forge.backtest backtest.start dataset_id=solusdt_1h_20250105_20250704_binance_spot#fold2 bars=1086 strategy=RSIMeanReversionStrategy capital=10000.00 fee_bps=5.0000 slip_bps=2.0000 sizing=pyramid_equity
+INFO alpha_forge.backtest backtest.end dataset_id=solusdt_1h_20250105_20250704_binance_spot#fold2 bars=1086 fills=10 rejections=0 trades=4 final_equity=10358.67
+INFO alpha_forge.backtest backtest.start dataset_id=solusdt_1h_20250105_20250704_binance_spot#fold3 bars=1086 strategy=RSIMeanReversionStrategy capital=10000.00 fee_bps=5.0000 slip_bps=2.0000 sizing=pyramid_equity
+INFO alpha_forge.backtest backtest.end dataset_id=solusdt_1h_20250105_20250704_binance_spot#fold3 bars=1086 fills=23 rejections=0 trades=11 final_equity=9786.64
+INFO alpha_forge.backtest backtest.start dataset_id=solusdt_1h_20250105_20250704_binance_spot bars=4344 strategy=RSIMeanReversionStrategy capital=10000.00 fee_bps=5.0000 slip_bps=2.0000 sizing=pyramid_equity
+INFO alpha_forge.backtest backtest.end dataset_id=solusdt_1h_20250105_20250704_binance_spot bars=4344 fills=97 rejections=0 trades=48 final_equity=8302.16
+INFO alpha_forge.backtest backtest.start dataset_id=solusdt_1h_20250105_20250704_binance_spot#stress1 bars=4344 strategy=RSIMeanReversionStrategy capital=10000.00 fee_bps=15.0000 slip_bps=2.0000 sizing=pyramid_equity
+INFO alpha_forge.backtest backtest.end dataset_id=solusdt_1h_20250105_20250704_binance_spot#stress1 bars=4344 fills=97 rejections=0 trades=48 final_equity=7983.59
+INFO alpha_forge.backtest backtest.start dataset_id=solusdt_1h_20250105_20250704_binance_spot#stress2 bars=4344 strategy=RSIMeanReversionStrategy capital=10000.00 fee_bps=5.0000 slip_bps=2.0000 sizing=pyramid_equity
+INFO alpha_forge.backtest backtest.end dataset_id=solusdt_1h_20250105_20250704_binance_spot#stress2 bars=4344 fills=97 rejections=0 trades=48 final_equity=7983.59
+INFO alpha_forge.backtest backtest.start dataset_id=solusdt_1h_20250705_20251231_binance_spot#fold1 bars=1080 strategy=RSIMeanReversionStrategy capital=10000.00 fee_bps=5.0000 slip_bps=2.0000 sizing=pyramid_equity
+INFO alpha_forge.backtest backtest.end dataset_id=solusdt_1h_20250705_20251231_binance_spot#fold1 bars=1080 fills=5 rejections=0 trades=0 final_equity=5565.94
+INFO alpha_forge.backtest backtest.start dataset_id=solusdt_1h_20250705_20251231_binance_spot#fold2 bars=1080 strategy=RSIMeanReversionStrategy capital=10000.00 fee_bps=5.0000 slip_bps=2.0000 sizing=pyramid_equity
+INFO alpha_forge.backtest backtest.end dataset_id=solusdt_1h_20250705_20251231_binance_spot#fold2 bars=1080 fills=5 rejections=0 trades=0 final_equity=2202.13
+INFO alpha_forge.backtest backtest.start dataset_id=solusdt_1h_20250705_20251231_binance_spot#fold3 bars=1080 strategy=RSIMeanReversionStrategy capital=10000.00 fee_bps=5.0000 slip_bps=2.0000 sizing=pyramid_equity
+INFO alpha_forge.backtest backtest.end dataset_id=solusdt_1h_20250705_20251231_binance_spot#fold3 bars=1080 fills=5 rejections=0 trades=0 final_equity=9093.25
+monte_carlo      : pulado (nenhum trade agregado nos folds)
+INFO alpha_forge.backtest backtest.start dataset_id=solusdt_1h_20250705_20251231_binance_spot bars=4320 strategy=RSIMeanReversionStrategy capital=10000.00 fee_bps=5.0000 slip_bps=2.0000 sizing=pyramid_equity
+INFO alpha_forge.backtest backtest.end dataset_id=solusdt_1h_20250705_20251231_binance_spot bars=4320 fills=5 rejections=0 trades=0 final_equity=13589.12
+INFO alpha_forge.backtest backtest.start dataset_id=solusdt_1h_20250705_20251231_binance_spot#stress1 bars=4320 strategy=RSIMeanReversionStrategy capital=10000.00 fee_bps=15.0000 slip_bps=2.0000 sizing=pyramid_equity
+INFO alpha_forge.backtest backtest.end dataset_id=solusdt_1h_20250705_20251231_binance_spot#stress1 bars=4320 fills=5 rejections=0 trades=0 final_equity=13569.85
+INFO alpha_forge.backtest backtest.start dataset_id=solusdt_1h_20250705_20251231_binance_spot#stress2 bars=4320 strategy=RSIMeanReversionStrategy capital=10000.00 fee_bps=5.0000 slip_bps=2.0000 sizing=pyramid_equity
+INFO alpha_forge.backtest backtest.end dataset_id=solusdt_1h_20250705_20251231_binance_spot#stress2 bars=4320 fills=5 rejections=0 trades=0 final_equity=13569.85
+INFO alpha_forge.backtest backtest.start dataset_id=btcusdt_1h_20250705_20251231_binance_spot#fold1 bars=1080 strategy=RSIMeanReversionStrategy capital=10000.00 fee_bps=5.0000 slip_bps=2.0000 sizing=pyramid_equity
+INFO alpha_forge.backtest backtest.end dataset_id=btcusdt_1h_20250705_20251231_binance_spot#fold1 bars=1080 fills=5 rejections=0 trades=0 final_equity=11341.64
+INFO alpha_forge.backtest backtest.start dataset_id=btcusdt_1h_20250705_20251231_binance_spot#fold2 bars=1080 strategy=RSIMeanReversionStrategy capital=10000.00 fee_bps=5.0000 slip_bps=2.0000 sizing=pyramid_equity
+INFO alpha_forge.backtest backtest.end dataset_id=btcusdt_1h_20250705_20251231_binance_spot#fold2 bars=1080 fills=5 rejections=0 trades=0 final_equity=14769.61
+INFO alpha_forge.backtest backtest.start dataset_id=btcusdt_1h_20250705_20251231_binance_spot#fold3 bars=1080 strategy=RSIMeanReversionStrategy capital=10000.00 fee_bps=5.0000 slip_bps=2.0000 sizing=pyramid_equity
+INFO alpha_forge.backtest backtest.end dataset_id=btcusdt_1h_20250705_20251231_binance_spot#fold3 bars=1080 fills=5 rejections=0 trades=0 final_equity=10026.12
+monte_carlo      : pulado (nenhum trade agregado nos folds)
+INFO alpha_forge.backtest backtest.start dataset_id=btcusdt_1h_20250705_20251231_binance_spot bars=4320 strategy=RSIMeanReversionStrategy capital=10000.00 fee_bps=5.0000 slip_bps=2.0000 sizing=pyramid_equity
+INFO alpha_forge.backtest backtest.end dataset_id=btcusdt_1h_20250705_20251231_binance_spot bars=4320 fills=5 rejections=0 trades=0 final_equity=13983.00
+INFO alpha_forge.backtest backtest.start dataset_id=btcusdt_1h_20250705_20251231_binance_spot#stress1 bars=4320 strategy=RSIMeanReversionStrategy capital=10000.00 fee_bps=15.0000 slip_bps=2.0000 sizing=pyramid_equity
+INFO alpha_forge.backtest backtest.end dataset_id=btcusdt_1h_20250705_20251231_binance_spot#stress1 bars=4320 fills=5 rejections=0 trades=0 final_equity=13963.85
+INFO alpha_forge.backtest backtest.start dataset_id=btcusdt_1h_20250705_20251231_binance_spot#stress2 bars=4320 strategy=RSIMeanReversionStrategy capital=10000.00 fee_bps=5.0000 slip_bps=2.0000 sizing=pyramid_equity
+INFO alpha_forge.backtest backtest.end dataset_id=btcusdt_1h_20250705_20251231_binance_spot#stress2 bars=4320 fills=5 rejections=0 trades=0 final_equity=13963.85
+
+======================================================================
+PY.1 | solusdt_1h_20250105_20250704_binance_spot | py-sol-rsi-2575-trendhtf-pyr-2025h1
+======================================================================
+dataset          : solusdt_1h_20250105_20250704_binance_spot
+strategy         : rsi period=14 oversold=25.00 overbought=75.00 long_only=False
+run_id           : py-sol-rsi-2575-trendhtf-pyr-2025h1
+regime_filter    : trend_htf:htf=4h:mode=short_only:sma_window=50
+out_dir          : C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\py-sol-rsi-2575-trendhtf-pyr-2025h1
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-21T01:55:16.592508+00:00 -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\py-sol-rsi-2575-trendhtf-pyr-2025h1\run.json
+walk_forward     : 3 fold(s), 26 trade(s) -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\py-sol-rsi-2575-trendhtf-pyr-2025h1\walk_forward.json
+monte_carlo      : 1000 resamples, seed=42, median_final=13462.47 -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\py-sol-rsi-2575-trendhtf-pyr-2025h1\monte_carlo.json
+cost_stress      : baseline + 2 cenario(s) -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\py-sol-rsi-2575-trendhtf-pyr-2025h1\cost_stress.json
+
+======================================================================
+PY.2 | solusdt_1h_20250705_20251231_binance_spot | py-sol-rsi-3070-naked-pyr-2025h2
+======================================================================
+dataset          : solusdt_1h_20250705_20251231_binance_spot
+strategy         : rsi period=14 oversold=30.00 overbought=70.00 long_only=False
+run_id           : py-sol-rsi-3070-naked-pyr-2025h2
+regime_filter    : none
+out_dir          : C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\py-sol-rsi-3070-naked-pyr-2025h2
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-21T01:56:38.701723+00:00 -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\py-sol-rsi-3070-naked-pyr-2025h2\run.json
+walk_forward     : 3 fold(s), 0 trade(s) -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\py-sol-rsi-3070-naked-pyr-2025h2\walk_forward.json
+cost_stress      : baseline + 2 cenario(s) -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\py-sol-rsi-3070-naked-pyr-2025h2\cost_stress.json
+
+======================================================================
+PY.3 | btcusdt_1h_20250705_20251231_binance_spot | py-btc-rsi-3070-naked-pyr-2025h2
+======================================================================
+dataset          : btcusdt_1h_20250705_20251231_binance_spot
+strategy         : rsi period=14 oversold=30.00 overbought=70.00 long_only=False
+run_id           : py-btc-rsi-3070-naked-pyr-2025h2
+regime_filter    : none
+out_dir          : C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\py-btc-rsi-3070-naked-pyr-2025h2
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-21T01:56:56.389764+00:00 -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\py-btc-rsi-3070-naked-pyr-2025h2\run.json
+walk_forward     : 3 fold(s), 0 trade(s) -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\py-btc-rsi-3070-naked-pyr-2025h2\walk_forward.json
+cost_stress      : baseline + 2 cenario(s) -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\py-btc-rsi-3070-naked-pyr-2025h2\cost_stress.json
+
+Serie PY Fase 1 completa (3 runs).

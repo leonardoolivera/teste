@@ -1,0 +1,302 @@
+[
+  {
+    "block": "B (RSI+width short)",
+    "tag": "TF10B.1",
+    "label": "BTC 2024-H2",
+    "run_id": "tf10b-rsi-30-70-width-btc-2024h2-short-10m",
+    "trades": 46,
+    "pnl_pct": -0.9478305754641814,
+    "sharpe": -0.7143432530562072,
+    "final_eq": 9905.216942453582
+  },
+  {
+    "block": "B (RSI+width short)",
+    "tag": "TF10B.2",
+    "label": "ETH 2024-H2",
+    "run_id": "tf10b-rsi-30-70-width-eth-2024h2-short-10m",
+    "trades": 91,
+    "pnl_pct": -1.42107748297724,
+    "sharpe": -0.8333023901752943,
+    "final_eq": 9857.892251702277
+  },
+  {
+    "block": "B (RSI+width short)",
+    "tag": "TF10B.3",
+    "label": "SOL 2024-H2",
+    "run_id": "tf10b-rsi-30-70-width-sol-2024h2-short-10m",
+    "trades": 161,
+    "pnl_pct": 7.916578490626236,
+    "sharpe": 2.633613550553179,
+    "final_eq": 10791.657849062623
+  },
+  {
+    "block": "B (RSI+width short)",
+    "tag": "TF10B.4",
+    "label": "BTC 2025-H1",
+    "run_id": "tf10b-rsi-30-70-width-btc-2025h1-short-10m",
+    "trades": 40,
+    "pnl_pct": -2.4310591165354167,
+    "sharpe": -2.006853952088705,
+    "final_eq": 9756.894088346458
+  },
+  {
+    "block": "B (RSI+width short)",
+    "tag": "TF10B.5",
+    "label": "ETH 2025-H1",
+    "run_id": "tf10b-rsi-30-70-width-eth-2025h1-short-10m",
+    "trades": 129,
+    "pnl_pct": -5.998451749050437,
+    "sharpe": -2.079053448994319,
+    "final_eq": 9400.154825094956
+  },
+  {
+    "block": "B (RSI+width short)",
+    "tag": "TF10B.6",
+    "label": "SOL 2025-H1",
+    "run_id": "tf10b-rsi-30-70-width-sol-2025h1-short-10m",
+    "trades": 168,
+    "pnl_pct": -2.9687341841180936,
+    "sharpe": -0.6504274836760942,
+    "final_eq": 9703.12658158819
+  },
+  {
+    "block": "B (RSI+width short)",
+    "tag": "TF10B.7",
+    "label": "BTC 2025-H2",
+    "run_id": "tf10b-rsi-30-70-width-btc-2025h2-short-10m",
+    "trades": 29,
+    "pnl_pct": -0.8835018557090013,
+    "sharpe": -0.5697159877455092,
+    "final_eq": 9911.6498144291
+  },
+  {
+    "block": "B (RSI+width short)",
+    "tag": "TF10B.8",
+    "label": "ETH 2025-H2",
+    "run_id": "tf10b-rsi-30-70-width-eth-2025h2-short-10m",
+    "trades": 98,
+    "pnl_pct": -4.05594052743099,
+    "sharpe": -1.6137350517794289,
+    "final_eq": 9594.4059472569
+  },
+  {
+    "block": "B (RSI+width short)",
+    "tag": "TF10B.9",
+    "label": "SOL 2025-H2",
+    "run_id": "tf10b-rsi-30-70-width-sol-2025h2-short-10m",
+    "trades": 140,
+    "pnl_pct": -8.97371335947781,
+    "sharpe": -2.978617546755376,
+    "final_eq": 9102.62866405222
+  },
+  {
+    "block": "C (BB+width long)",
+    "tag": "TF10C.1",
+    "label": "BTC 2024-H2",
+    "run_id": "tf10c-bol-30-15-width-btc-2024h2-long-10m",
+    "trades": 25,
+    "pnl_pct": 1.16236919824515,
+    "sharpe": 1.4358693955597284,
+    "final_eq": 10116.236919824516
+  },
+  {
+    "block": "C (BB+width long)",
+    "tag": "TF10C.2",
+    "label": "ETH 2024-H2",
+    "run_id": "tf10c-bol-30-15-width-eth-2024h2-long-10m",
+    "trades": 28,
+    "pnl_pct": 1.1197890496900786,
+    "sharpe": 0.9534714312365613,
+    "final_eq": 10111.978904969008
+  },
+  {
+    "block": "C (BB+width long)",
+    "tag": "TF10C.3",
+    "label": "SOL 2024-H2",
+    "run_id": "tf10c-bol-30-15-width-sol-2024h2-long-10m",
+    "trades": 61,
+    "pnl_pct": 2.042450023841491,
+    "sharpe": 0.9560039059976682,
+    "final_eq": 10204.24500238415
+  },
+  {
+    "block": "C (BB+width long)",
+    "tag": "TF10C.4",
+    "label": "BTC 2025-H1",
+    "run_id": "tf10c-bol-30-15-width-btc-2025h1-long-10m",
+    "trades": 16,
+    "pnl_pct": -0.7113728447751266,
+    "sharpe": -0.8717518713677525,
+    "final_eq": 9928.862715522488
+  },
+  {
+    "block": "C (BB+width long)",
+    "tag": "TF10C.5",
+    "label": "ETH 2025-H1",
+    "run_id": "tf10c-bol-30-15-width-eth-2025h1-long-10m",
+    "trades": 36,
+    "pnl_pct": -2.9316867863899643,
+    "sharpe": -1.5417986313755776,
+    "final_eq": 9706.831321361004
+  },
+  {
+    "block": "C (BB+width long)",
+    "tag": "TF10C.6",
+    "label": "SOL 2025-H1",
+    "run_id": "tf10c-bol-30-15-width-sol-2025h1-long-10m",
+    "trades": 75,
+    "pnl_pct": -4.708638742023652,
+    "sharpe": -1.8879921658500993,
+    "final_eq": 9529.136125797635
+  },
+  {
+    "block": "C (BB+width long)",
+    "tag": "TF10C.7",
+    "label": "BTC 2025-H2",
+    "run_id": "tf10c-bol-30-15-width-btc-2025h2-long-10m",
+    "trades": 13,
+    "pnl_pct": -0.6954914979719118,
+    "sharpe": -0.4764533185948779,
+    "final_eq": 9930.45085020281
+  },
+  {
+    "block": "C (BB+width long)",
+    "tag": "TF10C.8",
+    "label": "ETH 2025-H2",
+    "run_id": "tf10c-bol-30-15-width-eth-2025h2-long-10m",
+    "trades": 40,
+    "pnl_pct": -4.587082337286064,
+    "sharpe": -2.2759042772638556,
+    "final_eq": 9541.291766271393
+  },
+  {
+    "block": "C (BB+width long)",
+    "tag": "TF10C.9",
+    "label": "SOL 2025-H2",
+    "run_id": "tf10c-bol-30-15-width-sol-2025h2-long-10m",
+    "trades": 62,
+    "pnl_pct": -4.073185071957508,
+    "sharpe": -1.5944621651605393,
+    "final_eq": 9592.68149280425
+  },
+  {
+    "block": "D (RSI+width long)",
+    "tag": "TF10D.1",
+    "label": "BTC 2024-H2",
+    "run_id": "tf10d-rsi-30-70-width-btc-2024h2-long-10m",
+    "trades": 31,
+    "pnl_pct": 0.6456697828082447,
+    "sharpe": 0.6591290273331462,
+    "final_eq": 10064.566978280824
+  },
+  {
+    "block": "D (RSI+width long)",
+    "tag": "TF10D.2",
+    "label": "ETH 2024-H2",
+    "run_id": "tf10d-rsi-30-70-width-eth-2024h2-long-10m",
+    "trades": 48,
+    "pnl_pct": -1.0516125403455812,
+    "sharpe": -0.9028944361024285,
+    "final_eq": 9894.838745965442
+  },
+  {
+    "block": "D (RSI+width long)",
+    "tag": "TF10D.3",
+    "label": "SOL 2024-H2",
+    "run_id": "tf10d-rsi-30-70-width-sol-2024h2-long-10m",
+    "trades": 91,
+    "pnl_pct": 5.324977072849002,
+    "sharpe": 2.5515918662258303,
+    "final_eq": 10532.4977072849
+  },
+  {
+    "block": "D (RSI+width long)",
+    "tag": "TF10D.4",
+    "label": "BTC 2025-H1",
+    "run_id": "tf10d-rsi-30-70-width-btc-2025h1-long-10m",
+    "trades": 17,
+    "pnl_pct": 0.44529283261416364,
+    "sharpe": 0.562168938930452,
+    "final_eq": 10044.529283261416
+  },
+  {
+    "block": "D (RSI+width long)",
+    "tag": "TF10D.5",
+    "label": "ETH 2025-H1",
+    "run_id": "tf10d-rsi-30-70-width-eth-2025h1-long-10m",
+    "trades": 61,
+    "pnl_pct": -2.7244790002511454,
+    "sharpe": -1.4193884851999192,
+    "final_eq": 9727.552099974886
+  },
+  {
+    "block": "D (RSI+width long)",
+    "tag": "TF10D.6",
+    "label": "SOL 2025-H1",
+    "run_id": "tf10d-rsi-30-70-width-sol-2025h1-long-10m",
+    "trades": 91,
+    "pnl_pct": 2.516612788702033,
+    "sharpe": 0.996188529997219,
+    "final_eq": 10251.661278870204
+  },
+  {
+    "block": "D (RSI+width long)",
+    "tag": "TF10D.7",
+    "label": "BTC 2025-H2",
+    "run_id": "tf10d-rsi-30-70-width-btc-2025h2-long-10m",
+    "trades": 20,
+    "pnl_pct": -0.8217831848803536,
+    "sharpe": -0.5740512555781682,
+    "final_eq": 9917.821681511965
+  },
+  {
+    "block": "D (RSI+width long)",
+    "tag": "TF10D.8",
+    "label": "ETH 2025-H2",
+    "run_id": "tf10d-rsi-30-70-width-eth-2025h2-long-10m",
+    "trades": 49,
+    "pnl_pct": -2.9906311651426765,
+    "sharpe": -1.4526966142813504,
+    "final_eq": 9700.936883485732
+  },
+  {
+    "block": "D (RSI+width long)",
+    "tag": "TF10D.9",
+    "label": "SOL 2025-H2",
+    "run_id": "tf10d-rsi-30-70-width-sol-2025h2-long-10m",
+    "trades": 68,
+    "pnl_pct": -4.511541895954174,
+    "sharpe": -1.9815581976596666,
+    "final_eq": 9548.845810404582
+  },
+  {
+    "block": "E (RSI+trendhtf short SOL)",
+    "tag": "TF10E.1",
+    "label": "SOL 2024-H2",
+    "run_id": "tf10e-rsi-25-75-trendhtf-sol-2024h2-short-10m",
+    "trades": 118,
+    "pnl_pct": 2.9321563456447874,
+    "sharpe": 0.808779240895885,
+    "final_eq": 10293.21563456448
+  },
+  {
+    "block": "E (RSI+trendhtf short SOL)",
+    "tag": "TF10E.2",
+    "label": "SOL 2025-H1",
+    "run_id": "tf10e-rsi-25-75-trendhtf-sol-2025h1-short-10m",
+    "trades": 143,
+    "pnl_pct": 4.392150074244916,
+    "sharpe": 0.9329658233483022,
+    "final_eq": 10439.215007424491
+  },
+  {
+    "block": "E (RSI+trendhtf short SOL)",
+    "tag": "TF10E.3",
+    "label": "SOL 2025-H2",
+    "run_id": "tf10e-rsi-25-75-trendhtf-sol-2025h2-short-10m",
+    "trades": 169,
+    "pnl_pct": -0.8815201941473783,
+    "sharpe": -0.12609666251729848,
+    "final_eq": 9911.847980585262
+  }
+]

@@ -1,0 +1,128 @@
+[
+  {
+    "tag": "BK.1",
+    "combo": "ETH 2024-H1",
+    "perturbation": 1.25,
+    "trades": 41,
+    "sharpe": 2.9118,
+    "mdd_pct": 1.7659,
+    "pnl_pct": 7.5271,
+    "cost_r": 0.981,
+    "mc_p5": 10320.5739,
+    "mc_mdd_p95": 2.6999,
+    "verdict": "PASS",
+    "fail_reasons": []
+  },
+  {
+    "tag": "BK.2",
+    "combo": "ETH 2025-H1",
+    "perturbation": 1.25,
+    "trades": 41,
+    "sharpe": 1.1888,
+    "mdd_pct": 4.2487,
+    "pnl_pct": 3.8775,
+    "cost_r": 0.9758,
+    "mc_p5": 9731.6105,
+    "mc_mdd_p95": 6.0251,
+    "verdict": "FAIL",
+    "fail_reasons": [
+      "MCp5"
+    ]
+  },
+  {
+    "tag": "BK.3",
+    "combo": "BTC 2024-H2",
+    "perturbation": 1.25,
+    "trades": 27,
+    "sharpe": 0.9787,
+    "mdd_pct": 2.455,
+    "pnl_pct": 1.3721,
+    "cost_r": 0.9857,
+    "mc_p5": 9797.1304,
+    "mc_mdd_p95": 3.6587,
+    "verdict": "FAIL",
+    "fail_reasons": [
+      "trades",
+      "Sharpe",
+      "MCp5"
+    ]
+  },
+  {
+    "tag": "BK.4",
+    "combo": "SOL 2024-H2",
+    "perturbation": 1.25,
+    "trades": 56,
+    "sharpe": 2.1497,
+    "mdd_pct": 4.5442,
+    "pnl_pct": 7.0001,
+    "cost_r": 0.9736,
+    "mc_p5": 10105.5907,
+    "mc_mdd_p95": 4.833,
+    "verdict": "PASS",
+    "fail_reasons": []
+  },
+  {
+    "tag": "BK.5",
+    "combo": "ETH 2024-H1",
+    "perturbation": 1.75,
+    "trades": 32,
+    "sharpe": 0.7466,
+    "mdd_pct": 3.5769,
+    "pnl_pct": 1.9226,
+    "cost_r": 0.9847,
+    "mc_p5": 9796.5955,
+    "mc_mdd_p95": 4.5592,
+    "verdict": "FAIL",
+    "fail_reasons": [
+      "Sharpe",
+      "MCp5"
+    ]
+  },
+  {
+    "tag": "BK.6",
+    "combo": "ETH 2025-H1",
+    "perturbation": 1.75,
+    "trades": 33,
+    "sharpe": 1.169,
+    "mdd_pct": 4.6097,
+    "pnl_pct": 3.8321,
+    "cost_r": 0.9817,
+    "mc_p5": 9714.3852,
+    "mc_mdd_p95": 6.5063,
+    "verdict": "FAIL",
+    "fail_reasons": [
+      "MCp5"
+    ]
+  },
+  {
+    "tag": "BK.7",
+    "combo": "BTC 2024-H2",
+    "perturbation": 1.75,
+    "trades": 20,
+    "sharpe": 1.1267,
+    "mdd_pct": 2.4321,
+    "pnl_pct": 1.5166,
+    "cost_r": 0.9881,
+    "mc_p5": 9862.5777,
+    "mc_mdd_p95": 3.1299,
+    "verdict": "FAIL",
+    "fail_reasons": [
+      "trades",
+      "MCp5"
+    ]
+  },
+  {
+    "tag": "BK.8",
+    "combo": "SOL 2024-H2",
+    "perturbation": 1.75,
+    "trades": 51,
+    "sharpe": 2.1803,
+    "mdd_pct": 3.601,
+    "pnl_pct": 6.951,
+    "cost_r": 0.9766,
+    "mc_p5": 10107.917,
+    "mc_mdd_p95": 4.9675,
+    "verdict": "PASS",
+    "fail_reasons": []
+  }
+]

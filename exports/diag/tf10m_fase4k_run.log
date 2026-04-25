@@ -1,0 +1,119 @@
+
+======================================================================
+TF10K.1 | btcusdt_10m_20240705_20241231_binance_spot_resampled | Supertrend 10/3.0 bi 10m (no stress)
+======================================================================
+dataset          : btcusdt_10m_20240705_20241231_binance_spot_resampled
+strategy         : supertrend atr_period=10 atr_mult=3.00 long_only=False
+run_id           : tf10k-st-10-3-btc-2024h2-bi-10m
+regime_filter    : none
+out_dir          : C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\tf10k-st-10-3-btc-2024h2-bi-10m
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-21T20:12:07.051585+00:00 -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\tf10k-st-10-3-btc-2024h2-bi-10m\run.json
+walk_forward     : 4 fold(s), 556 trade(s) -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\tf10k-st-10-3-btc-2024h2-bi-10m\walk_forward.json
+monte_carlo      : 500 resamples, seed=42, median_final=8267.18 -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\tf10k-st-10-3-btc-2024h2-bi-10m\monte_carlo.json
+cost_stress      : pulado (sem --stress)
+
+======================================================================
+TF10K.2 | ethusdt_10m_20240705_20241231_binance_spot_resampled | Supertrend 10/3.0 bi 10m (no stress)
+======================================================================
+dataset          : ethusdt_10m_20240705_20241231_binance_spot_resampled
+strategy         : supertrend atr_period=10 atr_mult=3.00 long_only=False
+run_id           : tf10k-st-10-3-eth-2024h2-bi-10m
+regime_filter    : none
+out_dir          : C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\tf10k-st-10-3-eth-2024h2-bi-10m
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-21T20:17:21.820088+00:00 -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\tf10k-st-10-3-eth-2024h2-bi-10m\run.json
+walk_forward     : 4 fold(s), 508 trade(s) -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\tf10k-st-10-3-eth-2024h2-bi-10m\walk_forward.json
+monte_carlo      : 500 resamples, seed=42, median_final=8780.11 -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\tf10k-st-10-3-eth-2024h2-bi-10m\monte_carlo.json
+cost_stress      : pulado (sem --stress)
+
+======================================================================
+TF10K.3 | solusdt_10m_20240705_20241231_binance_spot_resampled | Supertrend 10/3.0 bi 10m (no stress)
+======================================================================
+dataset          : solusdt_10m_20240705_20241231_binance_spot_resampled
+strategy         : supertrend atr_period=10 atr_mult=3.00 long_only=False
+run_id           : tf10k-st-10-3-sol-2024h2-bi-10m
+regime_filter    : none
+out_dir          : C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\tf10k-st-10-3-sol-2024h2-bi-10m
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-21T20:22:39.373802+00:00 -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\tf10k-st-10-3-sol-2024h2-bi-10m\run.json
+walk_forward     : 4 fold(s), 551 trade(s) -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\tf10k-st-10-3-sol-2024h2-bi-10m\walk_forward.json
+monte_carlo      : 500 resamples, seed=42, median_final=6914.89 -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\tf10k-st-10-3-sol-2024h2-bi-10m\monte_carlo.json
+cost_stress      : pulado (sem --stress)
+
+======================================================================
+TF10K.4 | btcusdt_10m_20250105_20250704_binance_spot_resampled | Supertrend 10/3.0 bi 10m (no stress)
+======================================================================
+dataset          : btcusdt_10m_20250105_20250704_binance_spot_resampled
+strategy         : supertrend atr_period=10 atr_mult=3.00 long_only=False
+run_id           : tf10k-st-10-3-btc-2025h1-bi-10m
+regime_filter    : none
+out_dir          : C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\tf10k-st-10-3-btc-2025h1-bi-10m
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-21T20:28:47.633609+00:00 -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\tf10k-st-10-3-btc-2025h1-bi-10m\run.json
+walk_forward     : 4 fold(s), 583 trade(s) -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\tf10k-st-10-3-btc-2025h1-bi-10m\walk_forward.json
+monte_carlo      : 500 resamples, seed=42, median_final=8957.90 -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\tf10k-st-10-3-btc-2025h1-bi-10m\monte_carlo.json
+cost_stress      : pulado (sem --stress)
+
+======================================================================
+TF10K.5 | ethusdt_10m_20250105_20250704_binance_spot_resampled | Supertrend 10/3.0 bi 10m (no stress)
+======================================================================
+dataset          : ethusdt_10m_20250105_20250704_binance_spot_resampled
+strategy         : supertrend atr_period=10 atr_mult=3.00 long_only=False
+run_id           : tf10k-st-10-3-eth-2025h1-bi-10m
+regime_filter    : none
+out_dir          : C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\tf10k-st-10-3-eth-2025h1-bi-10m
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-21T20:35:09.184033+00:00 -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\tf10k-st-10-3-eth-2025h1-bi-10m\run.json
+walk_forward     : 4 fold(s), 508 trade(s) -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\tf10k-st-10-3-eth-2025h1-bi-10m\walk_forward.json
+monte_carlo      : 500 resamples, seed=42, median_final=10571.37 -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\tf10k-st-10-3-eth-2025h1-bi-10m\monte_carlo.json
+cost_stress      : pulado (sem --stress)
+
+======================================================================
+TF10K.6 | solusdt_10m_20250105_20250704_binance_spot_resampled | Supertrend 10/3.0 bi 10m (no stress)
+======================================================================
+dataset          : solusdt_10m_20250105_20250704_binance_spot_resampled
+strategy         : supertrend atr_period=10 atr_mult=3.00 long_only=False
+run_id           : tf10k-st-10-3-sol-2025h1-bi-10m
+regime_filter    : none
+out_dir          : C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\tf10k-st-10-3-sol-2025h1-bi-10m
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-21T20:41:32.808281+00:00 -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\tf10k-st-10-3-sol-2025h1-bi-10m\run.json
+walk_forward     : 4 fold(s), 515 trade(s) -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\tf10k-st-10-3-sol-2025h1-bi-10m\walk_forward.json
+monte_carlo      : 500 resamples, seed=42, median_final=10429.53 -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\tf10k-st-10-3-sol-2025h1-bi-10m\monte_carlo.json
+cost_stress      : pulado (sem --stress)
+
+======================================================================
+TF10K.7 | btcusdt_10m_20250705_20251231_binance_spot_resampled | Supertrend 10/3.0 bi 10m (no stress)
+======================================================================
+dataset          : btcusdt_10m_20250705_20251231_binance_spot_resampled
+strategy         : supertrend atr_period=10 atr_mult=3.00 long_only=False
+run_id           : tf10k-st-10-3-btc-2025h2-bi-10m
+regime_filter    : none
+out_dir          : C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\tf10k-st-10-3-btc-2025h2-bi-10m
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-21T20:47:57.004720+00:00 -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\tf10k-st-10-3-btc-2025h2-bi-10m\run.json
+walk_forward     : 4 fold(s), 633 trade(s) -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\tf10k-st-10-3-btc-2025h2-bi-10m\walk_forward.json
+monte_carlo      : 500 resamples, seed=42, median_final=8861.23 -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\tf10k-st-10-3-btc-2025h2-bi-10m\monte_carlo.json
+cost_stress      : pulado (sem --stress)
+
+======================================================================
+TF10K.8 | ethusdt_10m_20250705_20251231_binance_spot_resampled | Supertrend 10/3.0 bi 10m (no stress)
+======================================================================
+dataset          : ethusdt_10m_20250705_20251231_binance_spot_resampled
+strategy         : supertrend atr_period=10 atr_mult=3.00 long_only=False
+run_id           : tf10k-st-10-3-eth-2025h2-bi-10m
+regime_filter    : none
+out_dir          : C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\tf10k-st-10-3-eth-2025h2-bi-10m
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-21T20:54:16.761315+00:00 -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\tf10k-st-10-3-eth-2025h2-bi-10m\run.json
+walk_forward     : 4 fold(s), 557 trade(s) -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\tf10k-st-10-3-eth-2025h2-bi-10m\walk_forward.json
+monte_carlo      : 500 resamples, seed=42, median_final=9409.65 -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\tf10k-st-10-3-eth-2025h2-bi-10m\monte_carlo.json
+cost_stress      : pulado (sem --stress)
+
+======================================================================
+TF10K.9 | solusdt_10m_20250705_20251231_binance_spot_resampled | Supertrend 10/3.0 bi 10m (no stress)
+======================================================================
+dataset          : solusdt_10m_20250705_20251231_binance_spot_resampled
+strategy         : supertrend atr_period=10 atr_mult=3.00 long_only=False
+run_id           : tf10k-st-10-3-sol-2025h2-bi-10m
+regime_filter    : none
+out_dir          : C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\tf10k-st-10-3-sol-2025h2-bi-10m
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-21T21:00:41.618694+00:00 -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\tf10k-st-10-3-sol-2025h2-bi-10m\run.json
+walk_forward     : 4 fold(s), 567 trade(s) -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\tf10k-st-10-3-sol-2025h2-bi-10m\walk_forward.json
+monte_carlo      : 500 resamples, seed=42, median_final=9335.99 -> C:\Users\leo-a\OneDrive\햞ea de Trabalho\Testador de Estrategias\teste\results\validation\tf10k-st-10-3-sol-2025h2-bi-10m\monte_carlo.json
+cost_stress      : pulado (sem --stress)
+
+Fase 4 Bloco K completo (9 runs).

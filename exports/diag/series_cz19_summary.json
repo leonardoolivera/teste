@@ -1,0 +1,62 @@
+[
+  {
+    "tag": "CZ19.1",
+    "label": "SOL short filter ns=1.0",
+    "baseline_sh": 2.71,
+    "lift": 0.13693592333710702,
+    "trades": 77,
+    "pnl_pct": 14.471992602896178,
+    "sharpe": 2.846935923337107,
+    "mdd_pct": 4.703389660300564
+  },
+  {
+    "tag": "CZ19.2",
+    "label": "SOL short filter ns=2.0",
+    "baseline_sh": 2.71,
+    "lift": 0.17271894543631605,
+    "trades": 125,
+    "pnl_pct": 19.780213107837817,
+    "sharpe": 2.882718945436316,
+    "mdd_pct": 4.972230012615462
+  },
+  {
+    "tag": "CZ19.3",
+    "label": "ETH short filter ns=1.0",
+    "baseline_sh": 2.4,
+    "lift": -0.7510161169529215,
+    "trades": 53,
+    "pnl_pct": 6.281246541790364,
+    "sharpe": 1.6489838830470784,
+    "mdd_pct": 6.957435534937378
+  },
+  {
+    "tag": "CZ19.4",
+    "label": "ETH short filter ns=2.0",
+    "baseline_sh": 2.4,
+    "lift": -0.1852657314030277,
+    "trades": 101,
+    "pnl_pct": 12.007088286043333,
+    "sharpe": 2.214734268596972,
+    "mdd_pct": 7.155794230763697
+  },
+  {
+    "tag": "CZ19.5",
+    "label": "SOL long filter ns=1.0",
+    "baseline_sh": 2.4,
+    "lift": -1.0549062027139007,
+    "trades": 27,
+    "pnl_pct": 3.3994813656302636,
+    "sharpe": 1.3450937972860992,
+    "mdd_pct": 3.3889746791956195
+  },
+  {
+    "tag": "CZ19.6",
+    "label": "SOL long filter ns=2.0",
+    "baseline_sh": 2.4,
+    "lift": -0.7230895408286055,
+    "trades": 63,
+    "pnl_pct": 5.9025402107790725,
+    "sharpe": 1.6769104591713944,
+    "mdd_pct": 3.631836245318244
+  }
+]

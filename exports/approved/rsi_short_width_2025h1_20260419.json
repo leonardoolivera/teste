@@ -1,0 +1,146 @@
+{
+  "strategy_name": "rsi_short_width_regime_2025h1",
+  "manifest_version": "v3",
+  "supersedes": "partial-by: rsi_short_trendhtf_2025h1_sol_20260420.json assumiu SOLUSDT 2025-H1 (CH.6) em 2026-04-20 via ADR-0084. v4a retem apenas BTCUSDT 2025-H1 (CH.4).",
+  "complementary_to": "rsi_short_pure_2025h2_20260419.json",
+  "alpha_forge_commit": "ab7c2ad6891f44a2fd66d0b46a219729da191a1e",
+  "approved_at": "2026-04-19T00:00:00Z",
+  "approval_adr": "decisions/0068-manifest-v4-audit-closeout-split-v4a-v4b.md",
+  "prior_approval_adr": "decisions/0065-manifest-v4-rsi-short-width-promotion.md",
+  "live_status": "active",
+  "live_status_since": "2026-04-19T17:00:00Z",
+  "audit_adr": "decisions/0067-manifest-v4-audit-rsi-short-width.md",
+  "audit_closeout_adr": "decisions/0069-manifest-v4a-v4b-activate.md",
+  "runtime_contract": "faithful",
+  "runtime_invariants": {
+    "entry_fill": "market_at_open_next_bar",
+    "exit_fill": "market_at_open_next_bar",
+    "sizing": "fixed_notional_literal",
+    "stop_loss": "disabled",
+    "signal_arbitration": "exit_wins_on_tie"
+  },
+  "engine": {
+    "family": "rsi",
+    "params": {
+      "period": 14,
+      "oversold": 30,
+      "overbought": 70,
+      "long_only": false,
+      "regime_filter": {
+        "type": "bollinger_width",
+        "window": 30,
+        "num_std": 1.5,
+        "min_width_bps": 300
+      }
+    }
+  },
+  "approved_combos": [
+    {
+      "symbol": "BTCUSDT",
+      "timeframe": "1h",
+      "validation_window": "2025-01-05..2025-07-04",
+      "window_tag": "2025-H1",
+      "regime": "chop",
+      "oos_trades": 37,
+      "oos_sharpe": 1.688,
+      "oos_mdd_pct": 1.669,
+      "oos_pnl_pct": 4.066,
+      "cost_stress_ratio_min": 0.9781,
+      "mc_p5_final_equity": 9913,
+      "approved_in": "v4",
+      "source_tag": "CH.4",
+      "source_run_id": "ch-rsi-14-30-70-btc-20250105_20250704-width30-300-short",
+      "cross_window_status": "strict",
+      "cross_window_evidence": [
+        {"window": "2025-H1", "sharpe": 1.688, "source": "CH.4 baseline"},
+        {"window": "2024-H1", "sharpe": 1.340, "source": "CZE.3 ADR-0109 regime-matched"}
+      ],
+      "note": "Filter load-bearing confirmado em audit v4 Gate B: sem filter Sh=0.23 FAIL. Strict cross-window validation via CZF em 2024-H1 (ADR-0109)."
+    }
+  ],
+  "validation": {
+    "method": "walk-forward-5fold + monte_carlo_1000 + cost_stress",
+    "cost_model_baseline_pct": 0.14,
+    "cost_model_stress_fee_plus_10_pct": 0.34,
+    "cost_stress_ratio_min": 0.95,
+    "seed_monte_carlo": 42,
+    "notes": "Audit v4 Gate B confirmou filter load-bearing para este subset (CH.4, CH.6 em 2025-H1 chop). Seeds 1337 e 2024 arquivados em results/validation/audit-v4-a-*."
+  },
+  "execution_hints": {
+    "position_sizing": "fixed_notional_per_trade",
+    "notional_per_trade_quote_ccy": 2000,
+    "entry_rule_long": "RSI(14) cruza abaixo de 30 usando close[t-1] (ADR-0027)",
+    "entry_rule_short": "RSI(14) cruza acima de 70 usando close[t-1] (ADR-0027)",
+    "exit_rule": "RSI(14) retorna para zona neutra (long: RSI>=50; short: RSI<=50) usando close[t-1]",
+    "regime_gate": "bollinger_width_bps = 2*num_std*sigma/ma*10000 >= 300 (filter composicional ADR-0023)",
+    "causal_invariant": "engine ignora window.iloc[-1]; sinal em t usa apenas closes ate t-1 inclusive (ADR-0002)",
+    "signal_arbitration": "EXIT vence ENTER quando disparam na mesma barra (ADR-0011)",
+    "reverse_on_signal": "permitido; incorre double cost (ADR-0012); filtro width serve de gate anti-whipsaw"
+  },
+  "disallow_sizing_modes": ["snowball", "kelly_like", "martingale"],
+  "disallow_sizing_reason": "Herdado ADR-0028/0029 + confirmado empiricamente ADR-0064.",
+  "series_source": {
+    "series_tag": "CH",
+    "preregister_adr": "decisions/0061-series-ch-rsi-short-width-300-preregister.md",
+    "closeout_adr": "decisions/0062-series-ch-closeout-rsi-short-width-300-pass.md",
+    "audit_adr": "decisions/0067-manifest-v4-audit-rsi-short-width.md",
+    "audit_closeout_adr": "decisions/0068-manifest-v4-audit-closeout-split-v4a-v4b.md",
+    "gate_b_verdict": "2/4 load-bearing globally; 2/2 load-bearing em 2025-H1 (este subset)",
+    "raw_data": "exports/diag/manifest_v4_audit_summary.json"
+  },
+  "expansion_policy": {
+    "rule": "Combos fora de approved_combos requerem nova ADR + nova serie cross-period. Este manifest eh scope-restrito ao regime 2025-H1 chop: adicionar outros regimes requer audit Gate B separado.",
+    "regime_dependence_note": "Filter width 300 eh load-bearing em chop (2025-H1). Em 2025-H2 (misto) filter eh neutro-a-prejudicial (ADR-0068 Padrao 12). Este manifest NAO cobre 2025-H2 por design — complementar v4b cobre.",
+    "excluded_combos": [
+      {
+        "symbol": "BTCUSDT",
+        "timeframe": "1h",
+        "window_tag": "2025-H2",
+        "source_tag": "CH.7",
+        "reason": "Filter neutro (Sh=2.63 com, 1.64 sem — ambos PASS). Movido pra manifest v4b RSI puro."
+      },
+      {
+        "symbol": "SOLUSDT",
+        "timeframe": "1h",
+        "window_tag": "2025-H2",
+        "source_tag": "CH.9",
+        "reason": "Filter prejudicial (Sh=1.92 com, 2.30 sem — filter reduz edge). Movido pra manifest v4b RSI puro."
+      },
+      {
+        "symbol": "BTCUSDT",
+        "timeframe": "1h",
+        "window_tag": "2024-H2",
+        "source_tag": "CH.1",
+        "reason": "Sharpe -0.76 + MC p5 9387. Bull hostil, Gate C confirma em seed 1337."
+      },
+      {
+        "symbol": "ETHUSDT",
+        "timeframe": "1h",
+        "window_tag": "2024-H2",
+        "source_tag": "CH.2",
+        "reason": "Sharpe -1.52, dupla falha em bull."
+      },
+      {
+        "symbol": "SOLUSDT",
+        "timeframe": "1h",
+        "window_tag": "2024-H2",
+        "source_tag": "CH.3",
+        "reason": "Sharpe -0.39 + MC p5 8734 + cost_r degradado vs CE."
+      },
+      {
+        "symbol": "ETHUSDT",
+        "timeframe": "1h",
+        "window_tag": "2025-H1",
+        "source_tag": "CH.5",
+        "reason": "Sharpe 0.50 < 1.0, MC p5 8907. Gate C confirma em seed 1337."
+      },
+      {
+        "symbol": "ETHUSDT",
+        "timeframe": "1h",
+        "window_tag": "2025-H2",
+        "source_tag": "CH.8",
+        "reason": "Sharpe 0.81 < 1.0 + MC p5 9376. Duplo FAIL, fora do manifest."
+      }
+    ]
+  }
+}

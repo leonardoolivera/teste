@@ -1,0 +1,23 @@
+[
+  {
+    "tag": "TF.1",
+    "label": "BTC BB+width 15m",
+    "trades": 39,
+    "pnl_pct": 1.4922302152432732,
+    "sharpe": 1.191835394862022
+  },
+  {
+    "tag": "TF.2",
+    "label": "ETH BB+width 15m",
+    "trades": 61,
+    "pnl_pct": 3.030874612496981,
+    "sharpe": 1.6144461689825773
+  },
+  {
+    "tag": "TF.3",
+    "label": "SOL BB+width 15m",
+    "trades": 111,
+    "pnl_pct": 6.826921978378375,
+    "sharpe": 2.0247986180894917
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "tag": "DB.0",
+    "label": "BTC RSI+trendhtf (perna)",
+    "baseline_sh": 0.0,
+    "lift": 0.0,
+    "trades": 46,
+    "pnl_pct": -0.9575309200684612,
+    "sharpe": -0.3476562375118196,
+    "mdd_pct": 5.6138874131743375
+  },
+  {
+    "tag": "DB.1",
+    "label": "BTC RSI+AND",
+    "baseline_sh": 1.69,
+    "lift": -0.508322090702128,
+    "trades": 26,
+    "pnl_pct": 2.0980013073234716,
+    "sharpe": 1.181677909297872,
+    "mdd_pct": 1.6850942278130043
+  },
+  {
+    "tag": "DB.2",
+    "label": "ETH RSI+AND",
+    "baseline_sh": 1.96,
+    "lift": -0.6984183942210405,
+    "trades": 47,
+    "pnl_pct": 4.553000042544109,
+    "sharpe": 1.2615816057789595,
+    "mdd_pct": 4.885444682261115
+  },
+  {
+    "tag": "DB.3",
+    "label": "SOL RSI+AND",
+    "baseline_sh": 2.02,
+    "lift": -0.36704464408590187,
+    "trades": 50,
+    "pnl_pct": 7.753692459730166,
+    "sharpe": 1.6529553559140981,
+    "mdd_pct": 4.3007351164811105
+  }
+]

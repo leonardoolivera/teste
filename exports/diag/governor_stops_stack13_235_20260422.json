@@ -1,0 +1,482 @@
+{
+  "adr_prereg": "decisions/0204-snowball-100pct-per-entry-stack13-prereg.md",
+  "adr_closeout": "decisions/0207-governor-stops-stack13-closeout.md",
+  "capital_inicial": 10000.0,
+  "cost_model": {
+    "taker_fee_bps": 5.0,
+    "slippage_bps_per_unit_notional": 2.0,
+    "spread_bps": 0.0
+  },
+  "sizing_baseline": {
+    "fracao": 1.0,
+    "alav": 1.0,
+    "mode": "fixed_notional",
+    "effective_notional_per_trade_usd": 10000
+  },
+  "governor_rules": {
+    "half_at_losses_day": 2,
+    "stop_at_losses_day": 3,
+    "stop_at_consecutive_losses_week": 5,
+    "day_boundary": "UTC midnight",
+    "week_boundary": "ISO week (Monday 00:00 UTC)",
+    "skipped_trade_counts": false,
+    "half_trade_counts_if_loss": true
+  },
+  "generated_at": "2026-04-22T17:02:32.491423+00:00",
+  "combos": [
+    {
+      "manifest": "bollinger_width_regime_v2",
+      "symbol": "ETHUSDT",
+      "window_tag": "2024-H1",
+      "dataset_id": "ethusdt_1h_20240105_20240704_binance_spot",
+      "strategy_kind": "bollinger",
+      "long_only": true,
+      "regime": [
+        "bb_width",
+        {
+          "window": 30,
+          "num_std": 1.5,
+          "min_width_bps": 250
+        }
+      ],
+      "baseline_fixed_100": {
+        "final_equity": 12537.99,
+        "pnl_pct": 25.38,
+        "trade_count": 43,
+        "wins": 28,
+        "losses": 15,
+        "sharpe_annual_pertrade": 2.085
+      },
+      "governor": {
+        "final_equity": 12537.99,
+        "pnl_pct": 25.38,
+        "min_equity": 10000.0,
+        "max_drawdown_pct": 8.106,
+        "trade_count_executed": 43,
+        "full_size": 43,
+        "halved": 0,
+        "skipped_day": 0,
+        "skipped_week": 0,
+        "sharpe_annual_pertrade": 2.085
+      }
+    },
+    {
+      "manifest": "bollinger_width_regime_v2",
+      "symbol": "ETHUSDT",
+      "window_tag": "2025-H1",
+      "dataset_id": "ethusdt_1h_20250105_20250704_binance_spot",
+      "strategy_kind": "bollinger",
+      "long_only": true,
+      "regime": [
+        "bb_width",
+        {
+          "window": 30,
+          "num_std": 1.5,
+          "min_width_bps": 250
+        }
+      ],
+      "baseline_fixed_100": {
+        "final_equity": 13079.82,
+        "pnl_pct": 30.798,
+        "trade_count": 54,
+        "wins": 41,
+        "losses": 13,
+        "sharpe_annual_pertrade": 1.82
+      },
+      "governor": {
+        "final_equity": 13079.82,
+        "pnl_pct": 30.798,
+        "min_equity": 9946.13,
+        "max_drawdown_pct": 14.241,
+        "trade_count_executed": 54,
+        "full_size": 54,
+        "halved": 0,
+        "skipped_day": 0,
+        "skipped_week": 0,
+        "sharpe_annual_pertrade": 1.82
+      }
+    },
+    {
+      "manifest": "bollinger_width_regime_v2",
+      "symbol": "BTCUSDT",
+      "window_tag": "2024-H2",
+      "dataset_id": "btcusdt_1h_20240705_20241231_binance_spot",
+      "strategy_kind": "bollinger",
+      "long_only": true,
+      "regime": [
+        "bb_width",
+        {
+          "window": 30,
+          "num_std": 1.5,
+          "min_width_bps": 250
+        }
+      ],
+      "baseline_fixed_100": {
+        "final_equity": 10536.25,
+        "pnl_pct": 5.362,
+        "trade_count": 29,
+        "wins": 20,
+        "losses": 9,
+        "sharpe_annual_pertrade": 0.646
+      },
+      "governor": {
+        "final_equity": 10536.25,
+        "pnl_pct": 5.363,
+        "min_equity": 9126.93,
+        "max_drawdown_pct": 12.406,
+        "trade_count_executed": 29,
+        "full_size": 29,
+        "halved": 0,
+        "skipped_day": 0,
+        "skipped_week": 0,
+        "sharpe_annual_pertrade": 0.646
+      }
+    },
+    {
+      "manifest": "bollinger_width_regime_v2",
+      "symbol": "SOLUSDT",
+      "window_tag": "2024-H2",
+      "dataset_id": "solusdt_1h_20240705_20241231_binance_spot",
+      "strategy_kind": "bollinger",
+      "long_only": true,
+      "regime": [
+        "bb_width",
+        {
+          "window": 30,
+          "num_std": 1.5,
+          "min_width_bps": 250
+        }
+      ],
+      "baseline_fixed_100": {
+        "final_equity": 13276.66,
+        "pnl_pct": 32.767,
+        "trade_count": 66,
+        "wins": 50,
+        "losses": 16,
+        "sharpe_annual_pertrade": 1.887
+      },
+      "governor": {
+        "final_equity": 13276.66,
+        "pnl_pct": 32.767,
+        "min_equity": 8464.68,
+        "max_drawdown_pct": 20.148,
+        "trade_count_executed": 66,
+        "full_size": 66,
+        "halved": 0,
+        "skipped_day": 0,
+        "skipped_week": 0,
+        "sharpe_annual_pertrade": 1.887
+      }
+    },
+    {
+      "manifest": "bollinger_short_width",
+      "symbol": "SOLUSDT",
+      "window_tag": "2024-H2",
+      "dataset_id": "solusdt_1h_20240705_20241231_binance_spot",
+      "strategy_kind": "bollinger",
+      "long_only": false,
+      "regime": [
+        "bb_width",
+        {
+          "window": 30,
+          "num_std": 1.5,
+          "min_width_bps": 300
+        }
+      ],
+      "baseline_fixed_100": {
+        "final_equity": 11744.61,
+        "pnl_pct": 17.446,
+        "trade_count": 129,
+        "wins": 76,
+        "losses": 53,
+        "sharpe_annual_pertrade": 0.921
+      },
+      "governor": {
+        "final_equity": 11690.71,
+        "pnl_pct": 16.907,
+        "min_equity": 8086.02,
+        "max_drawdown_pct": 24.009,
+        "trade_count_executed": 129,
+        "full_size": 128,
+        "halved": 1,
+        "skipped_day": 0,
+        "skipped_week": 0,
+        "sharpe_annual_pertrade": 0.901
+      }
+    },
+    {
+      "manifest": "bollinger_short_width",
+      "symbol": "BTCUSDT",
+      "window_tag": "2025-H1",
+      "dataset_id": "btcusdt_1h_20250105_20250704_binance_spot",
+      "strategy_kind": "bollinger",
+      "long_only": false,
+      "regime": [
+        "bb_width",
+        {
+          "window": 30,
+          "num_std": 1.5,
+          "min_width_bps": 300
+        }
+      ],
+      "baseline_fixed_100": {
+        "final_equity": 12031.99,
+        "pnl_pct": 20.32,
+        "trade_count": 59,
+        "wins": 35,
+        "losses": 24,
+        "sharpe_annual_pertrade": 1.914
+      },
+      "governor": {
+        "final_equity": 12031.99,
+        "pnl_pct": 20.32,
+        "min_equity": 8991.87,
+        "max_drawdown_pct": 10.081,
+        "trade_count_executed": 59,
+        "full_size": 59,
+        "halved": 0,
+        "skipped_day": 0,
+        "skipped_week": 0,
+        "sharpe_annual_pertrade": 1.914
+      }
+    },
+    {
+      "manifest": "bollinger_short_width",
+      "symbol": "ETHUSDT",
+      "window_tag": "2025-H1",
+      "dataset_id": "ethusdt_1h_20250105_20250704_binance_spot",
+      "strategy_kind": "bollinger",
+      "long_only": false,
+      "regime": [
+        "bb_width",
+        {
+          "window": 30,
+          "num_std": 1.5,
+          "min_width_bps": 300
+        }
+      ],
+      "baseline_fixed_100": {
+        "final_equity": 18259.87,
+        "pnl_pct": 82.599,
+        "trade_count": 119,
+        "wins": 83,
+        "losses": 36,
+        "sharpe_annual_pertrade": 3.009
+      },
+      "governor": {
+        "final_equity": 18259.87,
+        "pnl_pct": 82.599,
+        "min_equity": 10000.0,
+        "max_drawdown_pct": 17.514,
+        "trade_count_executed": 119,
+        "full_size": 119,
+        "halved": 0,
+        "skipped_day": 0,
+        "skipped_week": 0,
+        "sharpe_annual_pertrade": 3.009
+      }
+    },
+    {
+      "manifest": "bollinger_short_width",
+      "symbol": "SOLUSDT",
+      "window_tag": "2025-H1",
+      "dataset_id": "solusdt_1h_20250105_20250704_binance_spot",
+      "strategy_kind": "bollinger",
+      "long_only": false,
+      "regime": [
+        "bb_width",
+        {
+          "window": 30,
+          "num_std": 1.5,
+          "min_width_bps": 300
+        }
+      ],
+      "baseline_fixed_100": {
+        "final_equity": 16967.5,
+        "pnl_pct": 69.675,
+        "trade_count": 139,
+        "wins": 84,
+        "losses": 55,
+        "sharpe_annual_pertrade": 1.931
+      },
+      "governor": {
+        "final_equity": 11626.56,
+        "pnl_pct": 16.266,
+        "min_equity": 6446.95,
+        "max_drawdown_pct": 35.531,
+        "trade_count_executed": 119,
+        "full_size": 119,
+        "halved": 0,
+        "skipped_day": 0,
+        "skipped_week": 20,
+        "sharpe_annual_pertrade": 0.784
+      }
+    },
+    {
+      "manifest": "rsi_long_width_eth_2024h2",
+      "symbol": "ETHUSDT",
+      "window_tag": "2024-H2",
+      "dataset_id": "ethusdt_1h_20240705_20241231_binance_spot",
+      "strategy_kind": "rsi",
+      "long_only": true,
+      "regime": [
+        "bb_width",
+        {
+          "window": 30,
+          "num_std": 1.5,
+          "min_width_bps": 300
+        }
+      ],
+      "baseline_fixed_100": {
+        "final_equity": 11184.24,
+        "pnl_pct": 11.842,
+        "trade_count": 40,
+        "wins": 25,
+        "losses": 15,
+        "sharpe_annual_pertrade": 1.293
+      },
+      "governor": {
+        "final_equity": 11184.24,
+        "pnl_pct": 11.842,
+        "min_equity": 9450.66,
+        "max_drawdown_pct": 10.492,
+        "trade_count_executed": 40,
+        "full_size": 40,
+        "halved": 0,
+        "skipped_day": 0,
+        "skipped_week": 0,
+        "sharpe_annual_pertrade": 1.293
+      }
+    },
+    {
+      "manifest": "rsi_short_pure_2025h2",
+      "symbol": "BTCUSDT",
+      "window_tag": "2025-H2",
+      "dataset_id": "btcusdt_1h_20250705_20251231_binance_spot",
+      "strategy_kind": "rsi",
+      "long_only": false,
+      "regime": null,
+      "baseline_fixed_100": {
+        "final_equity": 12915.25,
+        "pnl_pct": 29.153,
+        "trade_count": 118,
+        "wins": 77,
+        "losses": 41,
+        "sharpe_annual_pertrade": 1.782
+      },
+      "governor": {
+        "final_equity": 12606.6,
+        "pnl_pct": 26.066,
+        "min_equity": 8881.8,
+        "max_drawdown_pct": 18.555,
+        "trade_count_executed": 114,
+        "full_size": 114,
+        "halved": 0,
+        "skipped_day": 0,
+        "skipped_week": 4,
+        "sharpe_annual_pertrade": 1.604
+      }
+    },
+    {
+      "manifest": "rsi_short_pure_2025h2",
+      "symbol": "SOLUSDT",
+      "window_tag": "2025-H2",
+      "dataset_id": "solusdt_1h_20250705_20251231_binance_spot",
+      "strategy_kind": "rsi",
+      "long_only": false,
+      "regime": null,
+      "baseline_fixed_100": {
+        "final_equity": 16917.64,
+        "pnl_pct": 69.176,
+        "trade_count": 108,
+        "wins": 68,
+        "losses": 40,
+        "sharpe_annual_pertrade": 2.003
+      },
+      "governor": {
+        "final_equity": 16917.64,
+        "pnl_pct": 69.176,
+        "min_equity": 7596.6,
+        "max_drawdown_pct": 27.562,
+        "trade_count_executed": 108,
+        "full_size": 108,
+        "halved": 0,
+        "skipped_day": 0,
+        "skipped_week": 0,
+        "sharpe_annual_pertrade": 2.003
+      }
+    },
+    {
+      "manifest": "rsi_short_trendhtf_sol_2025h1",
+      "symbol": "SOLUSDT",
+      "window_tag": "2025-H1",
+      "dataset_id": "solusdt_1h_20250105_20250704_binance_spot",
+      "strategy_kind": "rsi",
+      "long_only": false,
+      "regime": [
+        "trend_htf",
+        {
+          "htf": "4h",
+          "sma_window": 50,
+          "mode": "short_only"
+        }
+      ],
+      "baseline_fixed_100": {
+        "final_equity": 15726.44,
+        "pnl_pct": 57.264,
+        "trade_count": 53,
+        "wins": 36,
+        "losses": 17,
+        "sharpe_annual_pertrade": 1.914
+      },
+      "governor": {
+        "final_equity": 15726.44,
+        "pnl_pct": 57.264,
+        "min_equity": 9456.77,
+        "max_drawdown_pct": 21.335,
+        "trade_count_executed": 53,
+        "full_size": 53,
+        "halved": 0,
+        "skipped_day": 0,
+        "skipped_week": 0,
+        "sharpe_annual_pertrade": 1.914
+      }
+    },
+    {
+      "manifest": "rsi_short_width_2025h1",
+      "symbol": "BTCUSDT",
+      "window_tag": "2025-H1",
+      "dataset_id": "btcusdt_1h_20250105_20250704_binance_spot",
+      "strategy_kind": "rsi",
+      "long_only": false,
+      "regime": [
+        "bb_width",
+        {
+          "window": 30,
+          "num_std": 1.5,
+          "min_width_bps": 300
+        }
+      ],
+      "baseline_fixed_100": {
+        "final_equity": 12788.16,
+        "pnl_pct": 27.882,
+        "trade_count": 58,
+        "wins": 29,
+        "losses": 29,
+        "sharpe_annual_pertrade": 2.197
+      },
+      "governor": {
+        "final_equity": 12788.16,
+        "pnl_pct": 27.882,
+        "min_equity": 9419.67,
+        "max_drawdown_pct": 5.803,
+        "trade_count_executed": 58,
+        "full_size": 58,
+        "halved": 0,
+        "skipped_day": 0,
+        "skipped_week": 0,
+        "sharpe_annual_pertrade": 2.197
+      }
+    }
+  ]
+}

@@ -1,0 +1,743 @@
+{
+  "S02-5bps": {
+    "combo_id": "S02",
+    "manifest": "bollinger_width_regime_v2",
+    "symbol": "ETHUSDT",
+    "window": "2025-H1",
+    "fee_bps": 5.0,
+    "fee_label": "5bps",
+    "run_id": "v2-rb007-s02-ethusdt-2025-h1-5bps",
+    "ok": true,
+    "elapsed_s": 3.6,
+    "metrics": {
+      "trades": 37,
+      "sharpe": 1.492,
+      "pnl_pct": 4.5964,
+      "mdd_pct": 3.8117,
+      "final_eq": 10459.64
+    },
+    "error": null
+  },
+  "S02-10bps": {
+    "combo_id": "S02",
+    "manifest": "bollinger_width_regime_v2",
+    "symbol": "ETHUSDT",
+    "window": "2025-H1",
+    "fee_bps": 10.0,
+    "fee_label": "10bps",
+    "run_id": "v2-rb007-s02-ethusdt-2025-h1-10bps",
+    "ok": true,
+    "elapsed_s": 3.6,
+    "metrics": {
+      "trades": 37,
+      "sharpe": 1.2546,
+      "pnl_pct": 3.8313,
+      "mdd_pct": 3.8315,
+      "final_eq": 10383.13
+    },
+    "error": null
+  },
+  "S03-15bps": {
+    "combo_id": "S03",
+    "manifest": "bollinger_width_regime_v2",
+    "symbol": "BTCUSDT",
+    "window": "2024-H2",
+    "fee_bps": 15.0,
+    "fee_label": "15bps",
+    "run_id": "v2-rb007-s03-btcusdt-2024-h2-15bps",
+    "ok": true,
+    "elapsed_s": 3.6,
+    "metrics": {
+      "trades": 20,
+      "sharpe": 0.9106,
+      "pnl_pct": 1.1582,
+      "mdd_pct": 1.9135,
+      "final_eq": 10115.82
+    },
+    "error": null
+  },
+  "S01-10bps": {
+    "combo_id": "S01",
+    "manifest": "bollinger_width_regime_v2",
+    "symbol": "ETHUSDT",
+    "window": "2024-H1",
+    "fee_bps": 10.0,
+    "fee_label": "10bps",
+    "run_id": "v2-rb007-s01-ethusdt-2024-h1-10bps",
+    "ok": true,
+    "elapsed_s": 3.7,
+    "metrics": {
+      "trades": 35,
+      "sharpe": 1.452,
+      "pnl_pct": 3.6736,
+      "mdd_pct": 1.7805,
+      "final_eq": 10367.36
+    },
+    "error": null
+  },
+  "S02-15bps": {
+    "combo_id": "S02",
+    "manifest": "bollinger_width_regime_v2",
+    "symbol": "ETHUSDT",
+    "window": "2025-H1",
+    "fee_bps": 15.0,
+    "fee_label": "15bps",
+    "run_id": "v2-rb007-s02-ethusdt-2025-h1-15bps",
+    "ok": true,
+    "elapsed_s": 3.7,
+    "metrics": {
+      "trades": 37,
+      "sharpe": 1.0166,
+      "pnl_pct": 3.0711,
+      "mdd_pct": 3.8514,
+      "final_eq": 10307.11
+    },
+    "error": null
+  },
+  "S03-5bps": {
+    "combo_id": "S03",
+    "manifest": "bollinger_width_regime_v2",
+    "symbol": "BTCUSDT",
+    "window": "2024-H2",
+    "fee_bps": 5.0,
+    "fee_label": "5bps",
+    "run_id": "v2-rb007-s03-btcusdt-2024-h2-5bps",
+    "ok": true,
+    "elapsed_s": 3.7,
+    "metrics": {
+      "trades": 20,
+      "sharpe": 1.5354,
+      "pnl_pct": 1.9692,
+      "mdd_pct": 1.912,
+      "final_eq": 10196.92
+    },
+    "error": null
+  },
+  "S01-5bps": {
+    "combo_id": "S01",
+    "manifest": "bollinger_width_regime_v2",
+    "symbol": "ETHUSDT",
+    "window": "2024-H1",
+    "fee_bps": 5.0,
+    "fee_label": "5bps",
+    "run_id": "v2-rb007-s01-ethusdt-2024-h1-5bps",
+    "ok": true,
+    "elapsed_s": 3.8,
+    "metrics": {
+      "trades": 35,
+      "sharpe": 1.7321,
+      "pnl_pct": 4.4088,
+      "mdd_pct": 1.7798,
+      "final_eq": 10440.88
+    },
+    "error": null
+  },
+  "S03-10bps": {
+    "combo_id": "S03",
+    "manifest": "bollinger_width_regime_v2",
+    "symbol": "BTCUSDT",
+    "window": "2024-H2",
+    "fee_bps": 10.0,
+    "fee_label": "10bps",
+    "run_id": "v2-rb007-s03-btcusdt-2024-h2-10bps",
+    "ok": true,
+    "elapsed_s": 3.7,
+    "metrics": {
+      "trades": 20,
+      "sharpe": 1.2231,
+      "pnl_pct": 1.5629,
+      "mdd_pct": 1.9127,
+      "final_eq": 10156.29
+    },
+    "error": null
+  },
+  "S01-15bps": {
+    "combo_id": "S01",
+    "manifest": "bollinger_width_regime_v2",
+    "symbol": "ETHUSDT",
+    "window": "2024-H1",
+    "fee_bps": 15.0,
+    "fee_label": "15bps",
+    "run_id": "v2-rb007-s01-ethusdt-2024-h1-15bps",
+    "ok": true,
+    "elapsed_s": 3.8,
+    "metrics": {
+      "trades": 35,
+      "sharpe": 1.1718,
+      "pnl_pct": 2.9429,
+      "mdd_pct": 1.7812,
+      "final_eq": 10294.29
+    },
+    "error": null
+  },
+  "S04-5bps": {
+    "combo_id": "S04",
+    "manifest": "bollinger_width_regime_v2",
+    "symbol": "SOLUSDT",
+    "window": "2024-H2",
+    "fee_bps": 5.0,
+    "fee_label": "5bps",
+    "run_id": "v2-rb007-s04-solusdt-2024-h2-5bps",
+    "ok": true,
+    "elapsed_s": 3.9,
+    "metrics": {
+      "trades": 55,
+      "sharpe": 2.5029,
+      "pnl_pct": 8.228,
+      "mdd_pct": 3.83,
+      "final_eq": 10822.8
+    },
+    "error": null
+  },
+  "S05-5bps": {
+    "combo_id": "S05",
+    "manifest": "bollinger_short_width",
+    "symbol": "SOLUSDT",
+    "window": "2024-H2",
+    "fee_bps": 5.0,
+    "fee_label": "5bps",
+    "run_id": "v2-rb007-s05-solusdt-2024-h2-5bps",
+    "ok": true,
+    "elapsed_s": 3.9,
+    "metrics": {
+      "trades": 102,
+      "sharpe": 1.3795,
+      "pnl_pct": 6.6366,
+      "mdd_pct": 6.3285,
+      "final_eq": 10663.66
+    },
+    "error": null
+  },
+  "S06-5bps": {
+    "combo_id": "S06",
+    "manifest": "bollinger_short_width",
+    "symbol": "BTCUSDT",
+    "window": "2025-H1",
+    "fee_bps": 5.0,
+    "fee_label": "5bps",
+    "run_id": "v2-rb007-s06-btcusdt-2025-h1-5bps",
+    "ok": true,
+    "elapsed_s": 3.9,
+    "metrics": {
+      "trades": 37,
+      "sharpe": 1.2427,
+      "pnl_pct": 2.9613,
+      "mdd_pct": 2.168,
+      "final_eq": 10296.13
+    },
+    "error": null
+  },
+  "S04-10bps": {
+    "combo_id": "S04",
+    "manifest": "bollinger_width_regime_v2",
+    "symbol": "SOLUSDT",
+    "window": "2024-H2",
+    "fee_bps": 10.0,
+    "fee_label": "10bps",
+    "run_id": "v2-rb007-s04-solusdt-2024-h2-10bps",
+    "ok": true,
+    "elapsed_s": 4.1,
+    "metrics": {
+      "trades": 55,
+      "sharpe": 2.1565,
+      "pnl_pct": 7.0487,
+      "mdd_pct": 3.93,
+      "final_eq": 10704.87
+    },
+    "error": null
+  },
+  "S06-10bps": {
+    "combo_id": "S06",
+    "manifest": "bollinger_short_width",
+    "symbol": "BTCUSDT",
+    "window": "2025-H1",
+    "fee_bps": 10.0,
+    "fee_label": "10bps",
+    "run_id": "v2-rb007-s06-btcusdt-2025-h1-10bps",
+    "ok": true,
+    "elapsed_s": 4.0,
+    "metrics": {
+      "trades": 37,
+      "sharpe": 0.9327,
+      "pnl_pct": 2.1981,
+      "mdd_pct": 2.229,
+      "final_eq": 10219.81
+    },
+    "error": null
+  },
+  "S05-10bps": {
+    "combo_id": "S05",
+    "manifest": "bollinger_short_width",
+    "symbol": "SOLUSDT",
+    "window": "2024-H2",
+    "fee_bps": 10.0,
+    "fee_label": "10bps",
+    "run_id": "v2-rb007-s05-solusdt-2024-h2-10bps",
+    "ok": true,
+    "elapsed_s": 4.2,
+    "metrics": {
+      "trades": 102,
+      "sharpe": 0.957,
+      "pnl_pct": 4.4801,
+      "mdd_pct": 7.0886,
+      "final_eq": 10448.01
+    },
+    "error": null
+  },
+  "S06-15bps": {
+    "combo_id": "S06",
+    "manifest": "bollinger_short_width",
+    "symbol": "BTCUSDT",
+    "window": "2025-H1",
+    "fee_bps": 15.0,
+    "fee_label": "15bps",
+    "run_id": "v2-rb007-s06-btcusdt-2025-h1-15bps",
+    "ok": true,
+    "elapsed_s": 4.2,
+    "metrics": {
+      "trades": 37,
+      "sharpe": 0.6221,
+      "pnl_pct": 1.4388,
+      "mdd_pct": 2.29,
+      "final_eq": 10143.88
+    },
+    "error": null
+  },
+  "S04-15bps": {
+    "combo_id": "S04",
+    "manifest": "bollinger_width_regime_v2",
+    "symbol": "SOLUSDT",
+    "window": "2024-H2",
+    "fee_bps": 15.0,
+    "fee_label": "15bps",
+    "run_id": "v2-rb007-s04-solusdt-2024-h2-15bps",
+    "ok": true,
+    "elapsed_s": 4.3,
+    "metrics": {
+      "trades": 55,
+      "sharpe": 1.8104,
+      "pnl_pct": 5.8801,
+      "mdd_pct": 4.0301,
+      "final_eq": 10588.01
+    },
+    "error": null
+  },
+  "S05-15bps": {
+    "combo_id": "S05",
+    "manifest": "bollinger_short_width",
+    "symbol": "SOLUSDT",
+    "window": "2024-H2",
+    "fee_bps": 15.0,
+    "fee_label": "15bps",
+    "run_id": "v2-rb007-s05-solusdt-2024-h2-15bps",
+    "ok": true,
+    "elapsed_s": 4.3,
+    "metrics": {
+      "trades": 102,
+      "sharpe": 0.5357,
+      "pnl_pct": 2.3563,
+      "mdd_pct": 7.846,
+      "final_eq": 10235.63
+    },
+    "error": null
+  },
+  "S07-5bps": {
+    "combo_id": "S07",
+    "manifest": "bollinger_short_width",
+    "symbol": "ETHUSDT",
+    "window": "2025-H1",
+    "fee_bps": 5.0,
+    "fee_label": "5bps",
+    "run_id": "v2-rb007-s07-ethusdt-2025-h1-5bps",
+    "ok": true,
+    "elapsed_s": 4.4,
+    "metrics": {
+      "trades": 85,
+      "sharpe": 2.3946,
+      "pnl_pct": 12.1559,
+      "mdd_pct": 8.33,
+      "final_eq": 11215.59
+    },
+    "error": null
+  },
+  "S07-10bps": {
+    "combo_id": "S07",
+    "manifest": "bollinger_short_width",
+    "symbol": "ETHUSDT",
+    "window": "2025-H1",
+    "fee_bps": 10.0,
+    "fee_label": "10bps",
+    "run_id": "v2-rb007-s07-ethusdt-2025-h1-10bps",
+    "ok": true,
+    "elapsed_s": 4.6,
+    "metrics": {
+      "trades": 85,
+      "sharpe": 2.0533,
+      "pnl_pct": 10.3056,
+      "mdd_pct": 8.4273,
+      "final_eq": 11030.56
+    },
+    "error": null
+  },
+  "S08-10bps": {
+    "combo_id": "S08",
+    "manifest": "bollinger_short_width",
+    "symbol": "SOLUSDT",
+    "window": "2025-H1",
+    "fee_bps": 10.0,
+    "fee_label": "10bps",
+    "run_id": "v2-rb007-s08-solusdt-2025-h1-10bps",
+    "ok": true,
+    "elapsed_s": 4.0,
+    "metrics": {
+      "trades": 109,
+      "sharpe": 2.3602,
+      "pnl_pct": 15.0092,
+      "mdd_pct": 5.0859,
+      "final_eq": 11500.92
+    },
+    "error": null
+  },
+  "S07-15bps": {
+    "combo_id": "S07",
+    "manifest": "bollinger_short_width",
+    "symbol": "ETHUSDT",
+    "window": "2025-H1",
+    "fee_bps": 15.0,
+    "fee_label": "15bps",
+    "run_id": "v2-rb007-s07-ethusdt-2025-h1-15bps",
+    "ok": true,
+    "elapsed_s": 4.3,
+    "metrics": {
+      "trades": 85,
+      "sharpe": 1.711,
+      "pnl_pct": 8.4783,
+      "mdd_pct": 8.5247,
+      "final_eq": 10847.83
+    },
+    "error": null
+  },
+  "S08-5bps": {
+    "combo_id": "S08",
+    "manifest": "bollinger_short_width",
+    "symbol": "SOLUSDT",
+    "window": "2025-H1",
+    "fee_bps": 5.0,
+    "fee_label": "5bps",
+    "run_id": "v2-rb007-s08-solusdt-2025-h1-5bps",
+    "ok": true,
+    "elapsed_s": 4.3,
+    "metrics": {
+      "trades": 109,
+      "sharpe": 2.7134,
+      "pnl_pct": 17.4741,
+      "mdd_pct": 4.9203,
+      "final_eq": 11747.41
+    },
+    "error": null
+  },
+  "S08-15bps": {
+    "combo_id": "S08",
+    "manifest": "bollinger_short_width",
+    "symbol": "SOLUSDT",
+    "window": "2025-H1",
+    "fee_bps": 15.0,
+    "fee_label": "15bps",
+    "run_id": "v2-rb007-s08-solusdt-2025-h1-15bps",
+    "ok": true,
+    "elapsed_s": 4.6,
+    "metrics": {
+      "trades": 109,
+      "sharpe": 2.0064,
+      "pnl_pct": 12.5832,
+      "mdd_pct": 5.2516,
+      "final_eq": 11258.32
+    },
+    "error": null
+  },
+  "S09-15bps": {
+    "combo_id": "S09",
+    "manifest": "rsi_long_width_eth_2024h2",
+    "symbol": "ETHUSDT",
+    "window": "2024-H2",
+    "fee_bps": 15.0,
+    "fee_label": "15bps",
+    "run_id": "v2-rb007-s09-ethusdt-2024-h2-15bps",
+    "ok": true,
+    "elapsed_s": 6.7,
+    "metrics": {
+      "trades": 30,
+      "sharpe": 1.0831,
+      "pnl_pct": 1.8634,
+      "mdd_pct": 2.4662,
+      "final_eq": 10186.34
+    },
+    "error": null
+  },
+  "S09-5bps": {
+    "combo_id": "S09",
+    "manifest": "rsi_long_width_eth_2024h2",
+    "symbol": "ETHUSDT",
+    "window": "2024-H2",
+    "fee_bps": 5.0,
+    "fee_label": "5bps",
+    "run_id": "v2-rb007-s09-ethusdt-2024-h2-5bps",
+    "ok": true,
+    "elapsed_s": 6.9,
+    "metrics": {
+      "trades": 30,
+      "sharpe": 1.7745,
+      "pnl_pct": 3.089,
+      "mdd_pct": 2.3697,
+      "final_eq": 10308.9
+    },
+    "error": null
+  },
+  "S10-5bps": {
+    "combo_id": "S10",
+    "manifest": "rsi_short_pure_2025h2",
+    "symbol": "BTCUSDT",
+    "window": "2025-H2",
+    "fee_bps": 5.0,
+    "fee_label": "5bps",
+    "run_id": "v2-rb007-s10-btcusdt-2025-h2-5bps",
+    "ok": true,
+    "elapsed_s": 6.9,
+    "metrics": {
+      "trades": 92,
+      "sharpe": 1.6402,
+      "pnl_pct": 5.1306,
+      "mdd_pct": 4.9672,
+      "final_eq": 10513.06
+    },
+    "error": null
+  },
+  "S09-10bps": {
+    "combo_id": "S09",
+    "manifest": "rsi_long_width_eth_2024h2",
+    "symbol": "ETHUSDT",
+    "window": "2024-H2",
+    "fee_bps": 10.0,
+    "fee_label": "10bps",
+    "run_id": "v2-rb007-s09-ethusdt-2024-h2-10bps",
+    "ok": true,
+    "elapsed_s": 7.0,
+    "metrics": {
+      "trades": 30,
+      "sharpe": 1.429,
+      "pnl_pct": 2.4746,
+      "mdd_pct": 2.4149,
+      "final_eq": 10247.46
+    },
+    "error": null
+  },
+  "S10-10bps": {
+    "combo_id": "S10",
+    "manifest": "rsi_short_pure_2025h2",
+    "symbol": "BTCUSDT",
+    "window": "2025-H2",
+    "fee_bps": 10.0,
+    "fee_label": "10bps",
+    "run_id": "v2-rb007-s10-btcusdt-2025-h2-10bps",
+    "ok": true,
+    "elapsed_s": 7.1,
+    "metrics": {
+      "trades": 92,
+      "sharpe": 1.0425,
+      "pnl_pct": 3.2008,
+      "mdd_pct": 5.7322,
+      "final_eq": 10320.08
+    },
+    "error": null
+  },
+  "S10-15bps": {
+    "combo_id": "S10",
+    "manifest": "rsi_short_pure_2025h2",
+    "symbol": "BTCUSDT",
+    "window": "2025-H2",
+    "fee_bps": 15.0,
+    "fee_label": "15bps",
+    "run_id": "v2-rb007-s10-btcusdt-2025-h2-15bps",
+    "ok": true,
+    "elapsed_s": 7.6,
+    "metrics": {
+      "trades": 92,
+      "sharpe": 0.4477,
+      "pnl_pct": 1.2976,
+      "mdd_pct": 6.4945,
+      "final_eq": 10129.76
+    },
+    "error": null
+  },
+  "S11-5bps": {
+    "combo_id": "S11",
+    "manifest": "rsi_short_pure_2025h2",
+    "symbol": "SOLUSDT",
+    "window": "2025-H2",
+    "fee_bps": 5.0,
+    "fee_label": "5bps",
+    "run_id": "v2-rb007-s11-solusdt-2025-h2-5bps",
+    "ok": true,
+    "elapsed_s": 7.0,
+    "metrics": {
+      "trades": 86,
+      "sharpe": 2.3,
+      "pnl_pct": 13.8053,
+      "mdd_pct": 5.1286,
+      "final_eq": 11380.53
+    },
+    "error": null
+  },
+  "S11-15bps": {
+    "combo_id": "S11",
+    "manifest": "rsi_short_pure_2025h2",
+    "symbol": "SOLUSDT",
+    "window": "2025-H2",
+    "fee_bps": 15.0,
+    "fee_label": "15bps",
+    "run_id": "v2-rb007-s11-solusdt-2025-h2-15bps",
+    "ok": true,
+    "elapsed_s": 6.9,
+    "metrics": {
+      "trades": 86,
+      "sharpe": 1.7038,
+      "pnl_pct": 9.9968,
+      "mdd_pct": 6.1396,
+      "final_eq": 10999.68
+    },
+    "error": null
+  },
+  "S11-10bps": {
+    "combo_id": "S11",
+    "manifest": "rsi_short_pure_2025h2",
+    "symbol": "SOLUSDT",
+    "window": "2025-H2",
+    "fee_bps": 10.0,
+    "fee_label": "10bps",
+    "run_id": "v2-rb007-s11-solusdt-2025-h2-10bps",
+    "ok": true,
+    "elapsed_s": 7.2,
+    "metrics": {
+      "trades": 86,
+      "sharpe": 2.0019,
+      "pnl_pct": 11.8889,
+      "mdd_pct": 5.5368,
+      "final_eq": 11188.89
+    },
+    "error": null
+  },
+  "S13-5bps": {
+    "combo_id": "S13",
+    "manifest": "rsi_short_width_2025h1",
+    "symbol": "BTCUSDT",
+    "window": "2025-H1",
+    "fee_bps": 5.0,
+    "fee_label": "5bps",
+    "run_id": "v2-rb007-s13-btcusdt-2025-h1-5bps",
+    "ok": true,
+    "elapsed_s": 6.7,
+    "metrics": {
+      "trades": 37,
+      "sharpe": 1.6878,
+      "pnl_pct": 4.0658,
+      "mdd_pct": 1.6691,
+      "final_eq": 10406.58
+    },
+    "error": null
+  },
+  "S13-10bps": {
+    "combo_id": "S13",
+    "manifest": "rsi_short_width_2025h1",
+    "symbol": "BTCUSDT",
+    "window": "2025-H1",
+    "fee_bps": 10.0,
+    "fee_label": "10bps",
+    "run_id": "v2-rb007-s13-btcusdt-2025-h1-10bps",
+    "ok": true,
+    "elapsed_s": 6.6,
+    "metrics": {
+      "trades": 37,
+      "sharpe": 1.3763,
+      "pnl_pct": 3.3048,
+      "mdd_pct": 1.6917,
+      "final_eq": 10330.48
+    },
+    "error": null
+  },
+  "S13-15bps": {
+    "combo_id": "S13",
+    "manifest": "rsi_short_width_2025h1",
+    "symbol": "BTCUSDT",
+    "window": "2025-H1",
+    "fee_bps": 15.0,
+    "fee_label": "15bps",
+    "run_id": "v2-rb007-s13-btcusdt-2025-h1-15bps",
+    "ok": true,
+    "elapsed_s": 6.9,
+    "metrics": {
+      "trades": 37,
+      "sharpe": 1.0663,
+      "pnl_pct": 2.5477,
+      "mdd_pct": 1.7144,
+      "final_eq": 10254.77
+    },
+    "error": null
+  },
+  "S12-5bps": {
+    "combo_id": "S12",
+    "manifest": "rsi_short_trendhtf_sol_2025h1",
+    "symbol": "SOLUSDT",
+    "window": "2025-H1",
+    "fee_bps": 5.0,
+    "fee_label": "5bps",
+    "run_id": "v2-rb007-s12-solusdt-2025-h1-5bps",
+    "ok": true,
+    "elapsed_s": 19.2,
+    "metrics": {
+      "trades": 32,
+      "sharpe": 1.9949,
+      "pnl_pct": 9.8035,
+      "mdd_pct": 5.4942,
+      "final_eq": 10980.35
+    },
+    "error": null
+  },
+  "S12-15bps": {
+    "combo_id": "S12",
+    "manifest": "rsi_short_trendhtf_sol_2025h1",
+    "symbol": "SOLUSDT",
+    "window": "2025-H1",
+    "fee_bps": 15.0,
+    "fee_label": "15bps",
+    "run_id": "v2-rb007-s12-solusdt-2025-h1-15bps",
+    "ok": true,
+    "elapsed_s": 18.0,
+    "metrics": {
+      "trades": 32,
+      "sharpe": 1.7236,
+      "pnl_pct": 8.3939,
+      "mdd_pct": 5.53,
+      "final_eq": 10839.39
+    },
+    "error": null
+  },
+  "S12-10bps": {
+    "combo_id": "S12",
+    "manifest": "rsi_short_trendhtf_sol_2025h1",
+    "symbol": "SOLUSDT",
+    "window": "2025-H1",
+    "fee_bps": 10.0,
+    "fee_label": "10bps",
+    "run_id": "v2-rb007-s12-solusdt-2025-h1-10bps",
+    "ok": true,
+    "elapsed_s": 18.3,
+    "metrics": {
+      "trades": 32,
+      "sharpe": 1.8593,
+      "pnl_pct": 9.097,
+      "mdd_pct": 5.5121,
+      "final_eq": 10909.7
+    },
+    "error": null
+  }
+}

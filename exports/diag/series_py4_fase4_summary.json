@@ -1,0 +1,38 @@
+[
+  {
+    "tag": "PY.8",
+    "label": "BTC BB long+w 2024H2",
+    "baseline_sh": 1.559,
+    "baseline_pnl": 2.24,
+    "lift_sh": -0.4610504015502279,
+    "lift_pnl": 2.662166452152956,
+    "trades": 27,
+    "seqs": 15,
+    "pnl_pct": 4.902166452152956,
+    "sharpe": 1.097949598449772
+  },
+  {
+    "tag": "PY.9",
+    "label": "ETH BB long+w 2024H2",
+    "baseline_sh": 1.834,
+    "baseline_pnl": 4.68,
+    "lift_sh": -1.1582749293119814,
+    "lift_pnl": 1.3129119765239405,
+    "trades": 62,
+    "seqs": 31,
+    "pnl_pct": 5.99291197652394,
+    "sharpe": 0.6757250706880187
+  },
+  {
+    "tag": "PY.10",
+    "label": "SOL BB long+w 2024H2",
+    "baseline_sh": 2.401,
+    "baseline_pnl": 8.01,
+    "lift_sh": -1.078207135969609,
+    "lift_pnl": 11.988608814110597,
+    "trades": 81,
+    "seqs": 44,
+    "pnl_pct": 19.998608814110597,
+    "sharpe": 1.3227928640303908
+  }
+]

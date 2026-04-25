@@ -1,0 +1,54 @@
+[
+  {
+    "tag": "CS.1",
+    "combo": "v2 BTC long+width250",
+    "baseline_window": "2024-H2",
+    "baseline_sh": 1.559,
+    "test_window": "2024-H1",
+    "trades": 27,
+    "pnl_pct": 1.0468439383189754,
+    "sharpe": 0.5004499513349823,
+    "mdd_pct": 1.6538335156612363,
+    "final_eq": 10104.684393831898,
+    "verdict": "contextual upgrade"
+  },
+  {
+    "tag": "CS.2",
+    "combo": "v2 BTC long+width250",
+    "baseline_window": "2024-H2",
+    "baseline_sh": 1.559,
+    "test_window": "2025-H1",
+    "trades": 20,
+    "pnl_pct": 3.6757377866413643,
+    "sharpe": 2.0865838298362025,
+    "mdd_pct": 1.375843759778789,
+    "final_eq": 10367.573778664137,
+    "verdict": "strict upgrade"
+  },
+  {
+    "tag": "CS.3",
+    "combo": "v2 SOL long+width250",
+    "baseline_window": "2024-H2",
+    "baseline_sh": 2.401,
+    "test_window": "2024-H1",
+    "trades": 41,
+    "pnl_pct": 0.5578215864519231,
+    "sharpe": 0.18326993301297825,
+    "mdd_pct": 4.1431551415839785,
+    "final_eq": 10055.782158645192,
+    "verdict": "status quo (fica single_window)"
+  },
+  {
+    "tag": "CS.4",
+    "combo": "v2 SOL long+width250",
+    "baseline_window": "2024-H2",
+    "baseline_sh": 2.401,
+    "test_window": "2025-H1",
+    "trades": 46,
+    "pnl_pct": -0.6987989192107524,
+    "sharpe": -0.14515047511308815,
+    "mdd_pct": 5.165467797187976,
+    "final_eq": 9930.120108078925,
+    "verdict": "rollback flag (Sh<0)"
+  }
+]

@@ -1,0 +1,68 @@
+[
+  {
+    "tag": "CY.1",
+    "combo": "BTC 2024-H2 bull",
+    "trades": 79,
+    "pnl_pct": 1.7401637896593547,
+    "sharpe": 0.710412662728329,
+    "mdd_pct": 3.0231178688221236,
+    "final_eq": 10174.016378965936,
+    "mc_p5": null,
+    "verdict": "hit probe"
+  },
+  {
+    "tag": "CY.2",
+    "combo": "ETH 2024-H2 bull",
+    "trades": 80,
+    "pnl_pct": 0.20203176211233131,
+    "sharpe": 0.10492477355260466,
+    "mdd_pct": 3.330896833577831,
+    "final_eq": 10020.203176211233,
+    "mc_p5": null,
+    "verdict": "miss"
+  },
+  {
+    "tag": "CY.3",
+    "combo": "SOL 2024-H2 bull",
+    "trades": 84,
+    "pnl_pct": -3.4765391391218703,
+    "sharpe": -0.9088110992052226,
+    "mdd_pct": 6.591404010416109,
+    "final_eq": 9652.346086087813,
+    "mc_p5": null,
+    "verdict": "miss"
+  },
+  {
+    "tag": "CY.4",
+    "combo": "BTC 2025-H2 misto",
+    "trades": 85,
+    "pnl_pct": -7.0461282811708825,
+    "sharpe": -4.169279810870964,
+    "mdd_pct": 7.610190556824224,
+    "final_eq": 9295.387171882912,
+    "mc_p5": null,
+    "verdict": "miss"
+  },
+  {
+    "tag": "CY.5",
+    "combo": "ETH 2025-H2 misto",
+    "trades": 77,
+    "pnl_pct": -5.5134239638806815,
+    "sharpe": -2.0058066069346037,
+    "mdd_pct": 8.434961437949923,
+    "final_eq": 9448.657603611931,
+    "mc_p5": null,
+    "verdict": "miss"
+  },
+  {
+    "tag": "CY.6",
+    "combo": "SOL 2025-H2 misto",
+    "trades": 81,
+    "pnl_pct": -9.884081640853214,
+    "sharpe": -3.046760389384589,
+    "mdd_pct": 13.309320328303947,
+    "final_eq": 9011.591835914678,
+    "mc_p5": null,
+    "verdict": "miss"
+  }
+]

@@ -1,0 +1,353 @@
+
+======================================================================
+TF10F.1 | btcusdt_10m_20240705_20241231_binance_spot_resampled | zscore 20/2.0 10m
+======================================================================
+dataset          : btcusdt_10m_20240705_20241231_binance_spot_resampled
+strategy         : zscore window=20 threshold=2.00 long_only=False
+run_id           : tf10f-zscore-20-2-btc-2024h2-10m
+regime_filter    : none
+out_dir          : C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10f-zscore-20-2-btc-2024h2-10m
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-21T17:42:45.649817+00:00 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10f-zscore-20-2-btc-2024h2-10m\run.json
+walk_forward     : 4 fold(s), 488 trade(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10f-zscore-20-2-btc-2024h2-10m\walk_forward.json
+monte_carlo      : 1000 resamples, seed=42, median_final=9692.06 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10f-zscore-20-2-btc-2024h2-10m\monte_carlo.json
+cost_stress      : baseline + 2 cenario(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10f-zscore-20-2-btc-2024h2-10m\cost_stress.json
+
+======================================================================
+TF10F.2 | ethusdt_10m_20240705_20241231_binance_spot_resampled | zscore 20/2.0 10m
+======================================================================
+dataset          : ethusdt_10m_20240705_20241231_binance_spot_resampled
+strategy         : zscore window=20 threshold=2.00 long_only=False
+run_id           : tf10f-zscore-20-2-eth-2024h2-10m
+regime_filter    : none
+out_dir          : C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10f-zscore-20-2-eth-2024h2-10m
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-21T17:43:18.385656+00:00 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10f-zscore-20-2-eth-2024h2-10m\run.json
+walk_forward     : 4 fold(s), 463 trade(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10f-zscore-20-2-eth-2024h2-10m\walk_forward.json
+monte_carlo      : 1000 resamples, seed=42, median_final=10185.53 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10f-zscore-20-2-eth-2024h2-10m\monte_carlo.json
+cost_stress      : baseline + 2 cenario(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10f-zscore-20-2-eth-2024h2-10m\cost_stress.json
+
+======================================================================
+TF10F.3 | solusdt_10m_20240705_20241231_binance_spot_resampled | zscore 20/2.0 10m
+======================================================================
+dataset          : solusdt_10m_20240705_20241231_binance_spot_resampled
+strategy         : zscore window=20 threshold=2.00 long_only=False
+run_id           : tf10f-zscore-20-2-sol-2024h2-10m
+regime_filter    : none
+out_dir          : C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10f-zscore-20-2-sol-2024h2-10m
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-21T17:43:50.114444+00:00 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10f-zscore-20-2-sol-2024h2-10m\run.json
+walk_forward     : 4 fold(s), 448 trade(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10f-zscore-20-2-sol-2024h2-10m\walk_forward.json
+monte_carlo      : 1000 resamples, seed=42, median_final=10159.44 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10f-zscore-20-2-sol-2024h2-10m\monte_carlo.json
+cost_stress      : baseline + 2 cenario(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10f-zscore-20-2-sol-2024h2-10m\cost_stress.json
+
+======================================================================
+TF10F.4 | btcusdt_10m_20250105_20250704_binance_spot_resampled | zscore 20/2.0 10m
+======================================================================
+dataset          : btcusdt_10m_20250105_20250704_binance_spot_resampled
+strategy         : zscore window=20 threshold=2.00 long_only=False
+run_id           : tf10f-zscore-20-2-btc-2025h1-10m
+regime_filter    : none
+out_dir          : C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10f-zscore-20-2-btc-2025h1-10m
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-21T17:44:20.577862+00:00 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10f-zscore-20-2-btc-2025h1-10m\run.json
+walk_forward     : 4 fold(s), 460 trade(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10f-zscore-20-2-btc-2025h1-10m\walk_forward.json
+monte_carlo      : 1000 resamples, seed=42, median_final=9136.32 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10f-zscore-20-2-btc-2025h1-10m\monte_carlo.json
+cost_stress      : baseline + 2 cenario(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10f-zscore-20-2-btc-2025h1-10m\cost_stress.json
+
+======================================================================
+TF10F.5 | ethusdt_10m_20250105_20250704_binance_spot_resampled | zscore 20/2.0 10m
+======================================================================
+dataset          : ethusdt_10m_20250105_20250704_binance_spot_resampled
+strategy         : zscore window=20 threshold=2.00 long_only=False
+run_id           : tf10f-zscore-20-2-eth-2025h1-10m
+regime_filter    : none
+out_dir          : C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10f-zscore-20-2-eth-2025h1-10m
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-21T17:44:50.982602+00:00 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10f-zscore-20-2-eth-2025h1-10m\run.json
+walk_forward     : 4 fold(s), 468 trade(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10f-zscore-20-2-eth-2025h1-10m\walk_forward.json
+monte_carlo      : 1000 resamples, seed=42, median_final=7670.76 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10f-zscore-20-2-eth-2025h1-10m\monte_carlo.json
+cost_stress      : baseline + 2 cenario(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10f-zscore-20-2-eth-2025h1-10m\cost_stress.json
+
+======================================================================
+TF10F.6 | solusdt_10m_20250105_20250704_binance_spot_resampled | zscore 20/2.0 10m
+======================================================================
+dataset          : solusdt_10m_20250105_20250704_binance_spot_resampled
+strategy         : zscore window=20 threshold=2.00 long_only=False
+run_id           : tf10f-zscore-20-2-sol-2025h1-10m
+regime_filter    : none
+out_dir          : C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10f-zscore-20-2-sol-2025h1-10m
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-21T17:45:21.370941+00:00 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10f-zscore-20-2-sol-2025h1-10m\run.json
+walk_forward     : 4 fold(s), 482 trade(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10f-zscore-20-2-sol-2025h1-10m\walk_forward.json
+monte_carlo      : 1000 resamples, seed=42, median_final=8804.38 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10f-zscore-20-2-sol-2025h1-10m\monte_carlo.json
+cost_stress      : baseline + 2 cenario(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10f-zscore-20-2-sol-2025h1-10m\cost_stress.json
+
+======================================================================
+TF10F.7 | btcusdt_10m_20250705_20251231_binance_spot_resampled | zscore 20/2.0 10m
+======================================================================
+dataset          : btcusdt_10m_20250705_20251231_binance_spot_resampled
+strategy         : zscore window=20 threshold=2.00 long_only=False
+run_id           : tf10f-zscore-20-2-btc-2025h2-10m
+regime_filter    : none
+out_dir          : C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10f-zscore-20-2-btc-2025h2-10m
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-21T17:46:00.103396+00:00 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10f-zscore-20-2-btc-2025h2-10m\run.json
+walk_forward     : 4 fold(s), 469 trade(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10f-zscore-20-2-btc-2025h2-10m\walk_forward.json
+monte_carlo      : 1000 resamples, seed=42, median_final=8535.26 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10f-zscore-20-2-btc-2025h2-10m\monte_carlo.json
+cost_stress      : baseline + 2 cenario(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10f-zscore-20-2-btc-2025h2-10m\cost_stress.json
+
+======================================================================
+TF10F.8 | ethusdt_10m_20250705_20251231_binance_spot_resampled | zscore 20/2.0 10m
+======================================================================
+dataset          : ethusdt_10m_20250705_20251231_binance_spot_resampled
+strategy         : zscore window=20 threshold=2.00 long_only=False
+run_id           : tf10f-zscore-20-2-eth-2025h2-10m
+regime_filter    : none
+out_dir          : C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10f-zscore-20-2-eth-2025h2-10m
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-21T17:46:38.303175+00:00 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10f-zscore-20-2-eth-2025h2-10m\run.json
+walk_forward     : 4 fold(s), 482 trade(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10f-zscore-20-2-eth-2025h2-10m\walk_forward.json
+monte_carlo      : 1000 resamples, seed=42, median_final=8738.31 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10f-zscore-20-2-eth-2025h2-10m\monte_carlo.json
+cost_stress      : baseline + 2 cenario(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10f-zscore-20-2-eth-2025h2-10m\cost_stress.json
+
+======================================================================
+TF10F.9 | solusdt_10m_20250705_20251231_binance_spot_resampled | zscore 20/2.0 10m
+======================================================================
+dataset          : solusdt_10m_20250705_20251231_binance_spot_resampled
+strategy         : zscore window=20 threshold=2.00 long_only=False
+run_id           : tf10f-zscore-20-2-sol-2025h2-10m
+regime_filter    : none
+out_dir          : C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10f-zscore-20-2-sol-2025h2-10m
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-21T17:47:10.958392+00:00 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10f-zscore-20-2-sol-2025h2-10m\run.json
+walk_forward     : 4 fold(s), 484 trade(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10f-zscore-20-2-sol-2025h2-10m\walk_forward.json
+monte_carlo      : 1000 resamples, seed=42, median_final=8732.40 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10f-zscore-20-2-sol-2025h2-10m\monte_carlo.json
+cost_stress      : baseline + 2 cenario(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10f-zscore-20-2-sol-2025h2-10m\cost_stress.json
+
+======================================================================
+TF10G.1 | btcusdt_10m_20240705_20241231_binance_spot_resampled | Keltner 20/14/2.0 10m
+======================================================================
+dataset          : btcusdt_10m_20240705_20241231_binance_spot_resampled
+strategy         : keltner window=20 atr_period=14 atr_mult=2.00 long_only=False
+run_id           : tf10g-keltner-20-14-2-btc-2024h2-10m
+regime_filter    : none
+out_dir          : C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10g-keltner-20-14-2-btc-2024h2-10m
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-21T17:47:44.714397+00:00 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10g-keltner-20-14-2-btc-2024h2-10m\run.json
+walk_forward     : 4 fold(s), 276 trade(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10g-keltner-20-14-2-btc-2024h2-10m\walk_forward.json
+monte_carlo      : 1000 resamples, seed=42, median_final=10072.87 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10g-keltner-20-14-2-btc-2024h2-10m\monte_carlo.json
+cost_stress      : baseline + 2 cenario(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10g-keltner-20-14-2-btc-2024h2-10m\cost_stress.json
+
+======================================================================
+TF10G.2 | ethusdt_10m_20240705_20241231_binance_spot_resampled | Keltner 20/14/2.0 10m
+======================================================================
+dataset          : ethusdt_10m_20240705_20241231_binance_spot_resampled
+strategy         : keltner window=20 atr_period=14 atr_mult=2.00 long_only=False
+run_id           : tf10g-keltner-20-14-2-eth-2024h2-10m
+regime_filter    : none
+out_dir          : C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10g-keltner-20-14-2-eth-2024h2-10m
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-21T17:48:48.555943+00:00 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10g-keltner-20-14-2-eth-2024h2-10m\run.json
+walk_forward     : 4 fold(s), 264 trade(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10g-keltner-20-14-2-eth-2024h2-10m\walk_forward.json
+monte_carlo      : 1000 resamples, seed=42, median_final=10053.26 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10g-keltner-20-14-2-eth-2024h2-10m\monte_carlo.json
+cost_stress      : baseline + 2 cenario(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10g-keltner-20-14-2-eth-2024h2-10m\cost_stress.json
+
+======================================================================
+TF10G.3 | solusdt_10m_20240705_20241231_binance_spot_resampled | Keltner 20/14/2.0 10m
+======================================================================
+dataset          : solusdt_10m_20240705_20241231_binance_spot_resampled
+strategy         : keltner window=20 atr_period=14 atr_mult=2.00 long_only=False
+run_id           : tf10g-keltner-20-14-2-sol-2024h2-10m
+regime_filter    : none
+out_dir          : C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10g-keltner-20-14-2-sol-2024h2-10m
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-21T17:49:45.576819+00:00 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10g-keltner-20-14-2-sol-2024h2-10m\run.json
+walk_forward     : 4 fold(s), 269 trade(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10g-keltner-20-14-2-sol-2024h2-10m\walk_forward.json
+monte_carlo      : 1000 resamples, seed=42, median_final=10722.12 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10g-keltner-20-14-2-sol-2024h2-10m\monte_carlo.json
+cost_stress      : baseline + 2 cenario(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10g-keltner-20-14-2-sol-2024h2-10m\cost_stress.json
+
+======================================================================
+TF10G.4 | btcusdt_10m_20250105_20250704_binance_spot_resampled | Keltner 20/14/2.0 10m
+======================================================================
+dataset          : btcusdt_10m_20250105_20250704_binance_spot_resampled
+strategy         : keltner window=20 atr_period=14 atr_mult=2.00 long_only=False
+run_id           : tf10g-keltner-20-14-2-btc-2025h1-10m
+regime_filter    : none
+out_dir          : C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10g-keltner-20-14-2-btc-2025h1-10m
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-21T17:50:47.638895+00:00 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10g-keltner-20-14-2-btc-2025h1-10m\run.json
+walk_forward     : 4 fold(s), 315 trade(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10g-keltner-20-14-2-btc-2025h1-10m\walk_forward.json
+monte_carlo      : 1000 resamples, seed=42, median_final=9910.01 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10g-keltner-20-14-2-btc-2025h1-10m\monte_carlo.json
+cost_stress      : baseline + 2 cenario(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10g-keltner-20-14-2-btc-2025h1-10m\cost_stress.json
+
+======================================================================
+TF10G.5 | ethusdt_10m_20250105_20250704_binance_spot_resampled | Keltner 20/14/2.0 10m
+======================================================================
+dataset          : ethusdt_10m_20250105_20250704_binance_spot_resampled
+strategy         : keltner window=20 atr_period=14 atr_mult=2.00 long_only=False
+run_id           : tf10g-keltner-20-14-2-eth-2025h1-10m
+regime_filter    : none
+out_dir          : C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10g-keltner-20-14-2-eth-2025h1-10m
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-21T17:51:53.323484+00:00 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10g-keltner-20-14-2-eth-2025h1-10m\run.json
+walk_forward     : 4 fold(s), 251 trade(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10g-keltner-20-14-2-eth-2025h1-10m\walk_forward.json
+monte_carlo      : 1000 resamples, seed=42, median_final=7836.26 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10g-keltner-20-14-2-eth-2025h1-10m\monte_carlo.json
+cost_stress      : baseline + 2 cenario(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10g-keltner-20-14-2-eth-2025h1-10m\cost_stress.json
+
+======================================================================
+TF10G.6 | solusdt_10m_20250105_20250704_binance_spot_resampled | Keltner 20/14/2.0 10m
+======================================================================
+dataset          : solusdt_10m_20250105_20250704_binance_spot_resampled
+strategy         : keltner window=20 atr_period=14 atr_mult=2.00 long_only=False
+run_id           : tf10g-keltner-20-14-2-sol-2025h1-10m
+regime_filter    : none
+out_dir          : C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10g-keltner-20-14-2-sol-2025h1-10m
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-21T17:52:59.998546+00:00 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10g-keltner-20-14-2-sol-2025h1-10m\run.json
+walk_forward     : 4 fold(s), 273 trade(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10g-keltner-20-14-2-sol-2025h1-10m\walk_forward.json
+monte_carlo      : 1000 resamples, seed=42, median_final=9617.06 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10g-keltner-20-14-2-sol-2025h1-10m\monte_carlo.json
+cost_stress      : baseline + 2 cenario(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10g-keltner-20-14-2-sol-2025h1-10m\cost_stress.json
+
+======================================================================
+TF10G.7 | btcusdt_10m_20250705_20251231_binance_spot_resampled | Keltner 20/14/2.0 10m
+======================================================================
+dataset          : btcusdt_10m_20250705_20251231_binance_spot_resampled
+strategy         : keltner window=20 atr_period=14 atr_mult=2.00 long_only=False
+run_id           : tf10g-keltner-20-14-2-btc-2025h2-10m
+regime_filter    : none
+out_dir          : C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10g-keltner-20-14-2-btc-2025h2-10m
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-21T17:54:10.600598+00:00 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10g-keltner-20-14-2-btc-2025h2-10m\run.json
+walk_forward     : 4 fold(s), 307 trade(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10g-keltner-20-14-2-btc-2025h2-10m\walk_forward.json
+monte_carlo      : 1000 resamples, seed=42, median_final=8828.61 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10g-keltner-20-14-2-btc-2025h2-10m\monte_carlo.json
+cost_stress      : baseline + 2 cenario(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10g-keltner-20-14-2-btc-2025h2-10m\cost_stress.json
+
+======================================================================
+TF10G.8 | ethusdt_10m_20250705_20251231_binance_spot_resampled | Keltner 20/14/2.0 10m
+======================================================================
+dataset          : ethusdt_10m_20250705_20251231_binance_spot_resampled
+strategy         : keltner window=20 atr_period=14 atr_mult=2.00 long_only=False
+run_id           : tf10g-keltner-20-14-2-eth-2025h2-10m
+regime_filter    : none
+out_dir          : C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10g-keltner-20-14-2-eth-2025h2-10m
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-21T17:55:32.736706+00:00 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10g-keltner-20-14-2-eth-2025h2-10m\run.json
+walk_forward     : 4 fold(s), 288 trade(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10g-keltner-20-14-2-eth-2025h2-10m\walk_forward.json
+monte_carlo      : 1000 resamples, seed=42, median_final=9970.81 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10g-keltner-20-14-2-eth-2025h2-10m\monte_carlo.json
+cost_stress      : baseline + 2 cenario(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10g-keltner-20-14-2-eth-2025h2-10m\cost_stress.json
+
+======================================================================
+TF10G.9 | solusdt_10m_20250705_20251231_binance_spot_resampled | Keltner 20/14/2.0 10m
+======================================================================
+dataset          : solusdt_10m_20250705_20251231_binance_spot_resampled
+strategy         : keltner window=20 atr_period=14 atr_mult=2.00 long_only=False
+run_id           : tf10g-keltner-20-14-2-sol-2025h2-10m
+regime_filter    : none
+out_dir          : C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10g-keltner-20-14-2-sol-2025h2-10m
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-21T17:56:54.623400+00:00 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10g-keltner-20-14-2-sol-2025h2-10m\run.json
+walk_forward     : 4 fold(s), 274 trade(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10g-keltner-20-14-2-sol-2025h2-10m\walk_forward.json
+monte_carlo      : 1000 resamples, seed=42, median_final=9794.89 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10g-keltner-20-14-2-sol-2025h2-10m\monte_carlo.json
+cost_stress      : baseline + 2 cenario(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10g-keltner-20-14-2-sol-2025h2-10m\cost_stress.json
+
+======================================================================
+TF10H.1 | btcusdt_10m_20240705_20241231_binance_spot_resampled | composite BB 20/2 + RSI 30/70 10m
+======================================================================
+dataset          : btcusdt_10m_20240705_20241231_binance_spot_resampled
+strategy         : composite_bb_rsi bb_w=20 bb_ns=2.00 rsi_p=14 os=30.0 ob=70.0 long_only=False
+run_id           : tf10h-composite-20-2-14-30-70-btc-2024h2-10m
+regime_filter    : none
+out_dir          : C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10h-composite-20-2-14-30-70-btc-2024h2-10m
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-21T17:58:18.711536+00:00 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10h-composite-20-2-14-30-70-btc-2024h2-10m\run.json
+walk_forward     : 4 fold(s), 178 trade(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10h-composite-20-2-14-30-70-btc-2024h2-10m\walk_forward.json
+monte_carlo      : 1000 resamples, seed=42, median_final=9443.14 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10h-composite-20-2-14-30-70-btc-2024h2-10m\monte_carlo.json
+cost_stress      : baseline + 2 cenario(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10h-composite-20-2-14-30-70-btc-2024h2-10m\cost_stress.json
+
+======================================================================
+TF10H.2 | ethusdt_10m_20240705_20241231_binance_spot_resampled | composite BB 20/2 + RSI 30/70 10m
+======================================================================
+dataset          : ethusdt_10m_20240705_20241231_binance_spot_resampled
+strategy         : composite_bb_rsi bb_w=20 bb_ns=2.00 rsi_p=14 os=30.0 ob=70.0 long_only=False
+run_id           : tf10h-composite-20-2-14-30-70-eth-2024h2-10m
+regime_filter    : none
+out_dir          : C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10h-composite-20-2-14-30-70-eth-2024h2-10m
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-21T18:00:36.923175+00:00 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10h-composite-20-2-14-30-70-eth-2024h2-10m\run.json
+walk_forward     : 4 fold(s), 176 trade(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10h-composite-20-2-14-30-70-eth-2024h2-10m\walk_forward.json
+monte_carlo      : 1000 resamples, seed=42, median_final=10058.64 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10h-composite-20-2-14-30-70-eth-2024h2-10m\monte_carlo.json
+cost_stress      : baseline + 2 cenario(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10h-composite-20-2-14-30-70-eth-2024h2-10m\cost_stress.json
+
+======================================================================
+TF10H.3 | solusdt_10m_20240705_20241231_binance_spot_resampled | composite BB 20/2 + RSI 30/70 10m
+======================================================================
+dataset          : solusdt_10m_20240705_20241231_binance_spot_resampled
+strategy         : composite_bb_rsi bb_w=20 bb_ns=2.00 rsi_p=14 os=30.0 ob=70.0 long_only=False
+run_id           : tf10h-composite-20-2-14-30-70-sol-2024h2-10m
+regime_filter    : none
+out_dir          : C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10h-composite-20-2-14-30-70-sol-2024h2-10m
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-21T18:02:40.856729+00:00 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10h-composite-20-2-14-30-70-sol-2024h2-10m\run.json
+walk_forward     : 4 fold(s), 181 trade(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10h-composite-20-2-14-30-70-sol-2024h2-10m\walk_forward.json
+monte_carlo      : 1000 resamples, seed=42, median_final=11397.71 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10h-composite-20-2-14-30-70-sol-2024h2-10m\monte_carlo.json
+cost_stress      : baseline + 2 cenario(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10h-composite-20-2-14-30-70-sol-2024h2-10m\cost_stress.json
+
+======================================================================
+TF10H.4 | btcusdt_10m_20250105_20250704_binance_spot_resampled | composite BB 20/2 + RSI 30/70 10m
+======================================================================
+dataset          : btcusdt_10m_20250105_20250704_binance_spot_resampled
+strategy         : composite_bb_rsi bb_w=20 bb_ns=2.00 rsi_p=14 os=30.0 ob=70.0 long_only=False
+run_id           : tf10h-composite-20-2-14-30-70-btc-2025h1-10m
+regime_filter    : none
+out_dir          : C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10h-composite-20-2-14-30-70-btc-2025h1-10m
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-21T18:04:46.612106+00:00 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10h-composite-20-2-14-30-70-btc-2025h1-10m\run.json
+walk_forward     : 4 fold(s), 178 trade(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10h-composite-20-2-14-30-70-btc-2025h1-10m\walk_forward.json
+monte_carlo      : 1000 resamples, seed=42, median_final=10318.31 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10h-composite-20-2-14-30-70-btc-2025h1-10m\monte_carlo.json
+cost_stress      : baseline + 2 cenario(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10h-composite-20-2-14-30-70-btc-2025h1-10m\cost_stress.json
+
+======================================================================
+TF10H.5 | ethusdt_10m_20250105_20250704_binance_spot_resampled | composite BB 20/2 + RSI 30/70 10m
+======================================================================
+dataset          : ethusdt_10m_20250105_20250704_binance_spot_resampled
+strategy         : composite_bb_rsi bb_w=20 bb_ns=2.00 rsi_p=14 os=30.0 ob=70.0 long_only=False
+run_id           : tf10h-composite-20-2-14-30-70-eth-2025h1-10m
+regime_filter    : none
+out_dir          : C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10h-composite-20-2-14-30-70-eth-2025h1-10m
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-21T18:06:54.665328+00:00 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10h-composite-20-2-14-30-70-eth-2025h1-10m\run.json
+walk_forward     : 4 fold(s), 202 trade(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10h-composite-20-2-14-30-70-eth-2025h1-10m\walk_forward.json
+monte_carlo      : 1000 resamples, seed=42, median_final=10337.94 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10h-composite-20-2-14-30-70-eth-2025h1-10m\monte_carlo.json
+cost_stress      : baseline + 2 cenario(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10h-composite-20-2-14-30-70-eth-2025h1-10m\cost_stress.json
+
+======================================================================
+TF10H.6 | solusdt_10m_20250105_20250704_binance_spot_resampled | composite BB 20/2 + RSI 30/70 10m
+======================================================================
+dataset          : solusdt_10m_20250105_20250704_binance_spot_resampled
+strategy         : composite_bb_rsi bb_w=20 bb_ns=2.00 rsi_p=14 os=30.0 ob=70.0 long_only=False
+run_id           : tf10h-composite-20-2-14-30-70-sol-2025h1-10m
+regime_filter    : none
+out_dir          : C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10h-composite-20-2-14-30-70-sol-2025h1-10m
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-21T18:09:04.306333+00:00 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10h-composite-20-2-14-30-70-sol-2025h1-10m\run.json
+walk_forward     : 4 fold(s), 187 trade(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10h-composite-20-2-14-30-70-sol-2025h1-10m\walk_forward.json
+monte_carlo      : 1000 resamples, seed=42, median_final=9920.15 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10h-composite-20-2-14-30-70-sol-2025h1-10m\monte_carlo.json
+cost_stress      : baseline + 2 cenario(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10h-composite-20-2-14-30-70-sol-2025h1-10m\cost_stress.json
+
+======================================================================
+TF10H.7 | btcusdt_10m_20250705_20251231_binance_spot_resampled | composite BB 20/2 + RSI 30/70 10m
+======================================================================
+dataset          : btcusdt_10m_20250705_20251231_binance_spot_resampled
+strategy         : composite_bb_rsi bb_w=20 bb_ns=2.00 rsi_p=14 os=30.0 ob=70.0 long_only=False
+run_id           : tf10h-composite-20-2-14-30-70-btc-2025h2-10m
+regime_filter    : none
+out_dir          : C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10h-composite-20-2-14-30-70-btc-2025h2-10m
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-21T18:11:12.454074+00:00 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10h-composite-20-2-14-30-70-btc-2025h2-10m\run.json
+walk_forward     : 4 fold(s), 186 trade(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10h-composite-20-2-14-30-70-btc-2025h2-10m\walk_forward.json
+monte_carlo      : 1000 resamples, seed=42, median_final=9618.33 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10h-composite-20-2-14-30-70-btc-2025h2-10m\monte_carlo.json
+cost_stress      : baseline + 2 cenario(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10h-composite-20-2-14-30-70-btc-2025h2-10m\cost_stress.json
+
+======================================================================
+TF10H.8 | ethusdt_10m_20250705_20251231_binance_spot_resampled | composite BB 20/2 + RSI 30/70 10m
+======================================================================
+dataset          : ethusdt_10m_20250705_20251231_binance_spot_resampled
+strategy         : composite_bb_rsi bb_w=20 bb_ns=2.00 rsi_p=14 os=30.0 ob=70.0 long_only=False
+run_id           : tf10h-composite-20-2-14-30-70-eth-2025h2-10m
+regime_filter    : none
+out_dir          : C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10h-composite-20-2-14-30-70-eth-2025h2-10m
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-21T18:13:15.864932+00:00 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10h-composite-20-2-14-30-70-eth-2025h2-10m\run.json
+walk_forward     : 4 fold(s), 190 trade(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10h-composite-20-2-14-30-70-eth-2025h2-10m\walk_forward.json
+monte_carlo      : 1000 resamples, seed=42, median_final=10130.87 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10h-composite-20-2-14-30-70-eth-2025h2-10m\monte_carlo.json
+cost_stress      : baseline + 2 cenario(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10h-composite-20-2-14-30-70-eth-2025h2-10m\cost_stress.json
+
+======================================================================
+TF10H.9 | solusdt_10m_20250705_20251231_binance_spot_resampled | composite BB 20/2 + RSI 30/70 10m
+======================================================================
+dataset          : solusdt_10m_20250705_20251231_binance_spot_resampled
+strategy         : composite_bb_rsi bb_w=20 bb_ns=2.00 rsi_p=14 os=30.0 ob=70.0 long_only=False
+run_id           : tf10h-composite-20-2-14-30-70-sol-2025h2-10m
+regime_filter    : none
+out_dir          : C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10h-composite-20-2-14-30-70-sol-2025h2-10m
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-21T18:15:22.533492+00:00 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10h-composite-20-2-14-30-70-sol-2025h2-10m\run.json
+walk_forward     : 4 fold(s), 180 trade(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10h-composite-20-2-14-30-70-sol-2025h2-10m\walk_forward.json
+monte_carlo      : 1000 resamples, seed=42, median_final=9987.29 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10h-composite-20-2-14-30-70-sol-2025h2-10m\monte_carlo.json
+cost_stress      : baseline + 2 cenario(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10h-composite-20-2-14-30-70-sol-2025h2-10m\cost_stress.json
+
+Série TF10m Fase 3 completa (27 runs).

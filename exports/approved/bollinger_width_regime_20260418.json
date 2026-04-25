@@ -1,0 +1,76 @@
+{
+  "strategy_name": "bollinger_width_regime",
+  "alpha_forge_commit": "ab7c2ad6891f44a2fd66d0b46a219729da191a1e",
+  "approved_at": "2026-04-18T00:00:00Z",
+  "approval_adr": "decisions/0028-bollinger-width-regime-deploy-approval.md",
+  "engine": {
+    "family": "bollinger",
+    "params": {
+      "window": 30,
+      "num_std": 1.5,
+      "long_only": true,
+      "regime_filter": {
+        "type": "bollinger_width",
+        "window": 30,
+        "num_std": 1.5,
+        "min_width_bps": 250
+      }
+    }
+  },
+  "approved_combos": [
+    {
+      "symbol": "ETHUSDT",
+      "timeframe": "1h",
+      "validation_window": "2024-07-05..2024-12-31",
+      "window_tag": "2024-H1",
+      "oos_trades": 38,
+      "oos_sharpe": 1.834,
+      "oos_mdd_pct": 1.823,
+      "oos_pnl_pct": 4.678
+    },
+    {
+      "symbol": "BTCUSDT",
+      "timeframe": "1h",
+      "validation_window": "2024-07-05..2024-12-31",
+      "window_tag": "2024-H2",
+      "oos_trades": 30,
+      "oos_sharpe": 1.559,
+      "oos_mdd_pct": 1.903,
+      "oos_pnl_pct": 2.24
+    },
+    {
+      "symbol": "SOLUSDT",
+      "timeframe": "1h",
+      "validation_window": "2024-07-05..2024-12-31",
+      "window_tag": "2024-H2",
+      "oos_trades": 69,
+      "oos_sharpe": 2.401,
+      "oos_mdd_pct": 3.373,
+      "oos_pnl_pct": 8.011
+    }
+  ],
+  "validation": {
+    "method": "walk-forward-4fold + monte_carlo_1000 + cost_stress",
+    "cost_model_baseline_pct": 0.14,
+    "cost_model_stress_fee_plus_10_pct": 0.34,
+    "cost_stress_ratio_min": 0.95,
+    "seed_monte_carlo": 42,
+    "notes": "Baseline cost (0.14%) abaixo do gate AGENTS.md §8 #3 (0.20%). Divergência aceita conforme ADR-0028: stress fee+10 (0.34%) passa ratio_min ≥ 0.95 em todos os combos. fee≡spread via ADR-0019."
+  },
+  "execution_hints": {
+    "position_sizing": "fixed_notional_per_trade",
+    "notional_per_trade_quote_ccy": 2000,
+    "entry_rule": "close[t-1] cruza estritamente abaixo de (ma - num_std*sigma), vindo de dentro ou da borda",
+    "exit_rule": "close[t-1] cruza estritamente acima de ma, vindo de baixo",
+    "regime_gate": "bollinger_width_bps = 2*num_std*sigma/ma*10000 >= 250",
+    "causal_invariant": "engine ignora window.iloc[-1]; sinal em t usa apenas closes até t-1 inclusive (ADR-0002)",
+    "signal_arbitration": "EXIT vence ENTER quando disparam na mesma barra (ADR-0011)"
+  },
+  "expansion_policy": {
+    "rule": "Qualquer combo fora de approved_combos requer nova ADR e novo manifest.",
+    "excluded_combos": [
+      {"symbol": "SOLUSDT", "timeframe": "1h", "window_tag": "2025-H2", "reason": "MDD 12.80% na janela"},
+      {"symbol": "BTCUSDT", "timeframe": "1h", "window_tag": "2025-H1", "reason": "23 trades OOS < 30 (gate AGENTS.md §8 #4)"}
+    ]
+  }
+}

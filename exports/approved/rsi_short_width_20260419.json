@@ -1,0 +1,178 @@
+{
+  "strategy_name": "rsi_short_width_regime",
+  "manifest_version": "v3",
+  "complementary_to": "bollinger_short_width_20260419.json",
+  "alpha_forge_commit": "ab7c2ad6891f44a2fd66d0b46a219729da191a1e",
+  "approved_at": "2026-04-19T00:00:00Z",
+  "approval_adr": "decisions/0065-manifest-v4-rsi-short-width-promotion.md",
+  "live_status": "deprecated",
+  "audit_adr": "decisions/0067-manifest-v4-audit-rsi-short-width.md",
+  "audit_closeout_adr": "decisions/0068-manifest-v4-audit-closeout-split-v4a-v4b.md",
+  "runtime_contract": "faithful",
+  "runtime_invariants": {
+    "entry_fill": "market_at_open_next_bar",
+    "exit_fill": "market_at_open_next_bar",
+    "sizing": "fixed_notional_literal",
+    "stop_loss": "disabled",
+    "signal_arbitration": "exit_wins_on_tie"
+  },
+  "engine": {
+    "family": "rsi",
+    "params": {
+      "period": 14,
+      "oversold": 30,
+      "overbought": 70,
+      "long_only": false,
+      "regime_filter": {
+        "type": "bollinger_width",
+        "window": 30,
+        "num_std": 1.5,
+        "min_width_bps": 300
+      }
+    }
+  },
+  "approved_combos": [
+    {
+      "symbol": "BTCUSDT",
+      "timeframe": "1h",
+      "validation_window": "2025-01-05..2025-07-04",
+      "window_tag": "2025-H1",
+      "regime": "chop",
+      "oos_trades": 37,
+      "oos_sharpe": 1.688,
+      "oos_mdd_pct": 1.669,
+      "oos_pnl_pct": 4.066,
+      "cost_stress_ratio_min": 0.9781,
+      "mc_p5_final_equity": 9913,
+      "approved_in": "v4",
+      "source_tag": "CH.4",
+      "source_run_id": "ch-rsi-14-30-70-btc-20250105_20250704-width30-300-short",
+      "note": "Borderline no trade count (37) mas Sharpe e cost_r folgados. Primeiro piloto BTC PASS em RSI short."
+    },
+    {
+      "symbol": "SOLUSDT",
+      "timeframe": "1h",
+      "validation_window": "2025-01-05..2025-07-04",
+      "window_tag": "2025-H1",
+      "regime": "chop",
+      "oos_trades": 94,
+      "oos_sharpe": 1.319,
+      "oos_mdd_pct": 5.741,
+      "oos_pnl_pct": 7.936,
+      "cost_stress_ratio_min": 0.9555,
+      "mc_p5_final_equity": 9558,
+      "approved_in": "v4",
+      "source_tag": "CH.6",
+      "source_run_id": "ch-rsi-14-30-70-sol-20250105_20250704-width30-300-short",
+      "note": "cost_r mais apertado dos 4 (0.9555) mas Sharpe folgado. SOL 2025-H1 confirma padrão chop regime."
+    },
+    {
+      "symbol": "BTCUSDT",
+      "timeframe": "1h",
+      "validation_window": "2025-07-05..2025-12-31",
+      "window_tag": "2025-H2",
+      "regime": "misto",
+      "oos_trades": 49,
+      "oos_sharpe": 2.631,
+      "oos_mdd_pct": 1.392,
+      "oos_pnl_pct": 4.059,
+      "cost_stress_ratio_min": 0.9791,
+      "mc_p5_final_equity": 10030,
+      "approved_in": "v4",
+      "source_tag": "CH.7",
+      "source_run_id": "ch-rsi-14-30-70-btc-20250705_20251231-width30-300-short",
+      "note": "Maior Sharpe BTC short do projeto (2.63). Único combo de CH com MC p5 > 10000. CG.7 (Bollinger) falhou aqui (Sh=0.77); complementaridade empírica (Padrão 11)."
+    },
+    {
+      "symbol": "SOLUSDT",
+      "timeframe": "1h",
+      "validation_window": "2025-07-05..2025-12-31",
+      "window_tag": "2025-H2",
+      "regime": "misto",
+      "oos_trades": 80,
+      "oos_sharpe": 1.918,
+      "oos_mdd_pct": 4.566,
+      "oos_pnl_pct": 9.510,
+      "cost_stress_ratio_min": 0.9620,
+      "mc_p5_final_equity": 9777,
+      "approved_in": "v4",
+      "source_tag": "CH.9",
+      "source_run_id": "ch-rsi-14-30-70-sol-20250705_20251231-width30-300-short",
+      "note": "Sharpe e PnL altos em 2025-H2, regime onde Bollinger short (CG.9) falhou triplo. RSI short captura dinâmica diferente."
+    }
+  ],
+  "validation": {
+    "method": "walk-forward-5fold + monte_carlo_1000 + cost_stress",
+    "cost_model_baseline_pct": 0.14,
+    "cost_model_stress_fee_plus_10_pct": 0.34,
+    "cost_stress_ratio_min": 0.95,
+    "seed_monte_carlo": 42,
+    "notes": "Gate idêntico a v3 (ADR-0014/0058). fee≡spread via ADR-0019. 5 folds rolling train_fraction=0.5 min_test_bars=50 (ADR-0003). Same seed and slicing policy used for CG v3 — manifests cross-validatable."
+  },
+  "execution_hints": {
+    "position_sizing": "fixed_notional_per_trade",
+    "notional_per_trade_quote_ccy": 2000,
+    "entry_rule_long": "RSI(14) cruza abaixo de 30 usando close[t-1] (ADR-0027)",
+    "entry_rule_short": "RSI(14) cruza acima de 70 usando close[t-1] (ADR-0027)",
+    "exit_rule": "RSI(14) retorna para zona neutra (long: RSI>=50; short: RSI<=50) usando close[t-1]",
+    "regime_gate": "bollinger_width_bps = 2*num_std*sigma/ma*10000 >= 300 (filter composicional ADR-0023)",
+    "causal_invariant": "engine ignora window.iloc[-1]; sinal em t usa apenas closes até t-1 inclusive (ADR-0002)",
+    "signal_arbitration": "EXIT vence ENTER quando disparam na mesma barra (ADR-0011)",
+    "reverse_on_signal": "permitido; incorre double cost (ADR-0012); filtro width serve de gate anti-whipsaw"
+  },
+  "disallow_sizing_modes": ["snowball", "kelly_like", "martingale"],
+  "disallow_sizing_reason": "Herdado de v2/v3 (ADR-0028/0029) + confirmado empiricamente por ADR-0064 (snowball sweep CG/CH delta +$11.29/8 combos com regressão 2 combos CG).",
+  "series_source": {
+    "series_tag": "CH",
+    "preregister_adr": "decisions/0061-series-ch-rsi-short-width-300-preregister.md",
+    "closeout_adr": "decisions/0062-series-ch-closeout-rsi-short-width-300-pass.md",
+    "gates_preregistered": {
+      "gate_1_principal_ge_3_of_9": "PASS 4/9",
+      "gate_2_lift_cost_r_vs_ce_ge_6_of_9": "PASS 7/9",
+      "gate_3_edge_preserved_ge_6_of_9": "PASS 6/9 (exato no limiar)",
+      "gate_4_falsificationist_le_1_of_3_in_bull": "PASS 0/3 (mais limpo que CG 1/3)"
+    },
+    "raw_data": "exports/diag/ch_series_summary.json"
+  },
+  "expansion_policy": {
+    "rule": "Combos fora de approved_combos requerem nova ADR + nova série cross-period. Mudar período RSI, thresholds (30/70), ou params do regime_filter requer bump de schema e ADR acompanhando.",
+    "regime_dependence_note": "Todos os 4 combos aprovados estão em regimes chop/misto (2025-H1 e 2025-H2). Edge é regime-dependente — gate 4 falsificacionista zero-em-três 2024-H2 confirma que RSI short em bull é estrutural errado (Padrão 8 + 10).",
+    "excluded_combos": [
+      {
+        "symbol": "BTCUSDT",
+        "timeframe": "1h",
+        "window_tag": "2024-H2",
+        "source_tag": "CH.1",
+        "reason": "Sharpe -0.76 + MC p5 9387 < 9500. Bull regime hostil a short; coerente com Gate 4."
+      },
+      {
+        "symbol": "ETHUSDT",
+        "timeframe": "1h",
+        "window_tag": "2024-H2",
+        "source_tag": "CH.2",
+        "reason": "Sharpe -1.52 (pior do CH) + MC p5 8691. Dupla falha estrutural em bull."
+      },
+      {
+        "symbol": "SOLUSDT",
+        "timeframe": "1h",
+        "window_tag": "2024-H2",
+        "source_tag": "CH.3",
+        "reason": "Sharpe -0.39 + MC p5 8734 + cost_r degradado vs CE (-cr no lift). SOL width alto genericamente pode reduzir valor do filter."
+      },
+      {
+        "symbol": "ETHUSDT",
+        "timeframe": "1h",
+        "window_tag": "2025-H1",
+        "source_tag": "CH.5",
+        "reason": "Sharpe 0.50 < 1.0 + MC p5 8907 < 9500. Borderline mas duplo FAIL."
+      },
+      {
+        "symbol": "ETHUSDT",
+        "timeframe": "1h",
+        "window_tag": "2025-H2",
+        "source_tag": "CH.8",
+        "reason": "Sharpe 0.81 < 1.0 + MC p5 9376 < 9500. Borderline mas duplo FAIL."
+      }
+    ]
+  }
+}

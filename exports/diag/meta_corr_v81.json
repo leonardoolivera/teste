@@ -1,0 +1,13 @@
+{
+  "manifest": "v8.1 (BTC + SOL RSI short naked 2025-H2)",
+  "common_bars": 3455,
+  "corr_all_bars": 0.5831,
+  "corr_both_exposed": 0.5837,
+  "exposure_regime": {
+    "both_exposed": 3343,
+    "only_btc": 23,
+    "only_sol": 20,
+    "neither": 69
+  },
+  "interpretation": "corr_all_bars inclui barras sem exposicao (0,0) que inflam correlacao para 0. corr_both_exposed e o numero relevante: correlacao real quando ambos combos posicionados. Alvo: |corr| < 0.6 indica diversificacao razoavel; > 0.8 sugere que combos sao redundantes."
+}

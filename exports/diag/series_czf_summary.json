@@ -1,0 +1,67 @@
+[
+  {
+    "tag": "CZF.1",
+    "combo": "v7 ETH long+width",
+    "baseline_window": "2024-H2",
+    "baseline_sh": 1.774,
+    "test_window": "2024-H1",
+    "trades": 28,
+    "pnl_pct": 1.2282460475385282,
+    "sharpe": 0.5742428236971415,
+    "mdd_pct": 2.220257298431556,
+    "final_eq": 10122.824604753852,
+    "verdict": "PASS contextual (0.5-1.0)"
+  },
+  {
+    "tag": "CZF.2",
+    "combo": "v6 SOL short+trend",
+    "baseline_window": "2025-H1",
+    "baseline_sh": 1.958,
+    "test_window": "2024-H1",
+    "trades": 37,
+    "pnl_pct": 3.8166644754482615,
+    "sharpe": 0.8867769435782122,
+    "mdd_pct": 6.194601120705012,
+    "final_eq": 10381.666447544827,
+    "verdict": "PASS contextual (0.5-1.0)"
+  },
+  {
+    "tag": "CZF.3",
+    "combo": "v4a BTC short+width",
+    "baseline_window": "2025-H1",
+    "baseline_sh": 1.688,
+    "test_window": "2024-H1",
+    "trades": 43,
+    "pnl_pct": 3.7567442498702697,
+    "sharpe": 1.3402659629773053,
+    "mdd_pct": 3.0925353334622936,
+    "final_eq": 10375.674424987028,
+    "verdict": "PASS"
+  },
+  {
+    "tag": "CZF.4",
+    "combo": "v3 BTC boll+width",
+    "baseline_window": "2025-H1",
+    "baseline_sh": 1.243,
+    "test_window": "2024-H1",
+    "trades": 58,
+    "pnl_pct": 1.335247762733749,
+    "sharpe": 0.5129484769317241,
+    "mdd_pct": 3.4607268991398854,
+    "final_eq": 10133.524776273374,
+    "verdict": "PASS contextual (0.5-1.0)"
+  },
+  {
+    "tag": "CZF.5",
+    "combo": "v3 ETH boll+width",
+    "baseline_window": "2025-H1",
+    "baseline_sh": 2.395,
+    "test_window": "2024-H1",
+    "trades": 73,
+    "pnl_pct": 2.755860879781258,
+    "sharpe": 0.8002493341585984,
+    "mdd_pct": 4.71165711697688,
+    "final_eq": 10275.586087978125,
+    "verdict": "PASS contextual (0.5-1.0)"
+  }
+]

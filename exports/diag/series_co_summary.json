@@ -1,0 +1,44 @@
+[
+  {
+    "tag": "CO.1",
+    "asset": "SOL",
+    "window": "2024-H2",
+    "run_id": "co-rsi-width300-trendhtf-sol-20240705_20241231-short",
+    "trades": 29,
+    "pnl_pct": -2.8917958264170873,
+    "sharpe": -0.8797541427117879,
+    "mdd_pct": 7.078906784789378,
+    "final_eq": 9710.82041735829,
+    "cost_r": 0.9816539172642995,
+    "mc_p5": 9132.25870191131,
+    "verdict": "FAIL (trades<30, Sh<1.0, MCp5<9500)"
+  },
+  {
+    "tag": "CO.2",
+    "asset": "SOL",
+    "window": "2025-H1",
+    "run_id": "co-rsi-width300-trendhtf-sol-20250105_20250704-short",
+    "trades": 50,
+    "pnl_pct": 7.753692459730166,
+    "sharpe": 1.6529553559140981,
+    "mdd_pct": 4.3007351164811105,
+    "final_eq": 10775.369245973015,
+    "cost_r": 0.9703270894235096,
+    "mc_p5": 9683.454288873405,
+    "verdict": "PASS"
+  },
+  {
+    "tag": "CO.3",
+    "asset": "SOL",
+    "window": "2025-H2",
+    "run_id": "co-rsi-width300-trendhtf-sol-20250705_20251231-short-v2",
+    "trades": 46,
+    "pnl_pct": 10.981684833961536,
+    "sharpe": 2.9200035743035437,
+    "mdd_pct": 4.869474224986074,
+    "final_eq": 11098.168483396154,
+    "cost_r": 0.9775592110103468,
+    "mc_p5": 10179.136023271547,
+    "verdict": "PASS"
+  }
+]

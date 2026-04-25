@@ -1,0 +1,62 @@
+[
+  {
+    "tag": "CR.1-trend",
+    "asset": "BTC",
+    "window": "2025-H1",
+    "variant": "trend",
+    "run_id": "cr-btc-trend-20250105_20250704-short",
+    "trades": 46,
+    "pnl_pct": -0.9575309200684612,
+    "sharpe": -0.3476562375118196,
+    "mdd_pct": 5.6138874131743375,
+    "final_eq": 9904.246907993154,
+    "cost_r": 0.9718860772571026,
+    "mc_p5": 9174.640373745206,
+    "verdict": "FAIL (Sh<1.0, MCp5<9500)"
+  },
+  {
+    "tag": "CR.1-naked",
+    "asset": "BTC",
+    "window": "2025-H1",
+    "variant": "naked",
+    "run_id": "cr-btc-naked-20250105_20250704-short",
+    "trades": 82,
+    "pnl_pct": 0.6971354451015266,
+    "sharpe": 0.232894680655545,
+    "mdd_pct": 4.080659863919042,
+    "final_eq": 10069.713544510152,
+    "cost_r": 0.9563996530233912,
+    "mc_p5": 9459.907111553586,
+    "verdict": "FAIL (Sh<1.0, MCp5<9500)"
+  },
+  {
+    "tag": "CR.2-trend",
+    "asset": "ETH",
+    "window": "2025-H1",
+    "variant": "trend",
+    "run_id": "cr-eth-trend-20250105_20250704-short-v2",
+    "trades": 62,
+    "pnl_pct": 5.778835452089992,
+    "sharpe": 1.3913972473978844,
+    "mdd_pct": 4.891998790306315,
+    "final_eq": 10577.883545208999,
+    "cost_r": 0.9664698534798681,
+    "mc_p5": 9429.440859654447,
+    "verdict": "FAIL (MCp5<9500)"
+  },
+  {
+    "tag": "CR.2-naked",
+    "asset": "ETH",
+    "window": "2025-H1",
+    "variant": "naked",
+    "run_id": "cr-eth-naked-20250105_20250704-short",
+    "trades": 100,
+    "pnl_pct": 2.9086775850049262,
+    "sharpe": 0.5501451396055386,
+    "mdd_pct": 7.254700205265991,
+    "final_eq": 10290.867758500492,
+    "cost_r": 0.9492373126891831,
+    "mc_p5": 8780.035641456921,
+    "verdict": "FAIL (Sh<1.0, MCp5<9500, costr<0.95)"
+  }
+]

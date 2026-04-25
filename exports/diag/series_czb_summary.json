@@ -1,0 +1,32 @@
+[
+  {
+    "tag": "CZB.1",
+    "asset": "DOT",
+    "window": "2025-H2",
+    "run_id": "czb-dot-bollinger-short-naked-2025h2",
+    "rsi_naked_sh": 0.498,
+    "trades": 127,
+    "pnl_pct": 9.1048123492659,
+    "sharpe": 1.3301229919054194,
+    "mdd_pct": 12.522199572928727,
+    "final_eq": 10910.48123492659,
+    "cost_r": 0.9421409723339164,
+    "mc_p5": 9295.4342999351,
+    "verdict": "FAIL (MCp5<9500, costr<0.95)"
+  },
+  {
+    "tag": "CZB.2",
+    "asset": "AVAX",
+    "window": "2025-H2",
+    "run_id": "czb-avax-bollinger-short-naked-2025h2",
+    "rsi_naked_sh": -0.054,
+    "trades": 116,
+    "pnl_pct": -1.6209825285729673,
+    "sharpe": -0.16506966409818782,
+    "mdd_pct": 13.254564744978477,
+    "final_eq": 9837.901747142703,
+    "cost_r": 0.9387394515241743,
+    "mc_p5": 8180.778691242697,
+    "verdict": "FAIL (Sh<1.0, MCp5<9500, costr<0.95, PnL<3%)"
+  }
+]

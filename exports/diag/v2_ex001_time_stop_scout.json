@@ -1,0 +1,214 @@
+{
+  "results": [
+    {
+      "asset": "BTCUSDT",
+      "variant": "ts48",
+      "ts_bars": 48,
+      "run_id": "v2-ex001-btcusdt-ts48-30m",
+      "ok": true,
+      "elapsed": 11.3,
+      "metrics": {
+        "trades": 126,
+        "sharpe": 0.1443,
+        "pnl_pct": 1.0547,
+        "mdd_pct": 5.7019
+      }
+    },
+    {
+      "asset": "BTCUSDT",
+      "variant": "raw",
+      "ts_bars": 0,
+      "run_id": "v2-ex001-btcusdt-raw-30m",
+      "ok": true,
+      "elapsed": 11.6,
+      "metrics": {
+        "trades": 126,
+        "sharpe": 0.1443,
+        "pnl_pct": 1.0547,
+        "mdd_pct": 5.7019
+      }
+    },
+    {
+      "asset": "ETHUSDT",
+      "variant": "ts24",
+      "ts_bars": 24,
+      "run_id": "v2-ex001-ethusdt-ts24-30m",
+      "ok": true,
+      "elapsed": 11.9,
+      "metrics": {
+        "trades": 222,
+        "sharpe": 0.146,
+        "pnl_pct": 1.5651,
+        "mdd_pct": 5.808
+      }
+    },
+    {
+      "asset": "BTCUSDT",
+      "variant": "ts12",
+      "ts_bars": 12,
+      "run_id": "v2-ex001-btcusdt-ts12-30m",
+      "ok": true,
+      "elapsed": 12.0,
+      "metrics": {
+        "trades": 137,
+        "sharpe": 0.0166,
+        "pnl_pct": -0.03,
+        "mdd_pct": 4.7122
+      }
+    },
+    {
+      "asset": "BTCUSDT",
+      "variant": "ts24",
+      "ts_bars": 24,
+      "run_id": "v2-ex001-btcusdt-ts24-30m",
+      "ok": true,
+      "elapsed": 12.8,
+      "metrics": {
+        "trades": 127,
+        "sharpe": 0.1332,
+        "pnl_pct": 0.9588,
+        "mdd_pct": 5.7019
+      }
+    },
+    {
+      "asset": "ETHUSDT",
+      "variant": "ts12",
+      "ts_bars": 12,
+      "run_id": "v2-ex001-ethusdt-ts12-30m",
+      "ok": true,
+      "elapsed": 13.0,
+      "metrics": {
+        "trades": 243,
+        "sharpe": -0.0371,
+        "pnl_pct": -0.9294,
+        "mdd_pct": 7.6333
+      }
+    },
+    {
+      "asset": "BTCUSDT",
+      "variant": "ts06",
+      "ts_bars": 6,
+      "run_id": "v2-ex001-btcusdt-ts06-30m",
+      "ok": true,
+      "elapsed": 13.1,
+      "metrics": {
+        "trades": 148,
+        "sharpe": -1.1789,
+        "pnl_pct": -7.4572,
+        "mdd_pct": 9.6
+      }
+    },
+    {
+      "asset": "ETHUSDT",
+      "variant": "ts06",
+      "ts_bars": 6,
+      "run_id": "v2-ex001-ethusdt-ts06-30m",
+      "ok": true,
+      "elapsed": 13.4,
+      "metrics": {
+        "trades": 265,
+        "sharpe": -0.4873,
+        "pnl_pct": -5.4955,
+        "mdd_pct": 10.3583
+      }
+    },
+    {
+      "asset": "ETHUSDT",
+      "variant": "raw",
+      "ts_bars": 0,
+      "run_id": "v2-ex001-ethusdt-raw-30m",
+      "ok": true,
+      "elapsed": 13.6,
+      "metrics": {
+        "trades": 222,
+        "sharpe": 0.1507,
+        "pnl_pct": 1.6321,
+        "mdd_pct": 5.808
+      }
+    },
+    {
+      "asset": "ETHUSDT",
+      "variant": "ts48",
+      "ts_bars": 48,
+      "run_id": "v2-ex001-ethusdt-ts48-30m",
+      "ok": true,
+      "elapsed": 13.8,
+      "metrics": {
+        "trades": 222,
+        "sharpe": 0.1507,
+        "pnl_pct": 1.6321,
+        "mdd_pct": 5.808
+      }
+    },
+    {
+      "asset": "SOLUSDT",
+      "variant": "raw",
+      "ts_bars": 0,
+      "run_id": "v2-ex001-solusdt-raw-30m",
+      "ok": true,
+      "elapsed": 10.6,
+      "metrics": {
+        "trades": 273,
+        "sharpe": -0.2096,
+        "pnl_pct": -4.5552,
+        "mdd_pct": 14.5114
+      }
+    },
+    {
+      "asset": "SOLUSDT",
+      "variant": "ts06",
+      "ts_bars": 6,
+      "run_id": "v2-ex001-solusdt-ts06-30m",
+      "ok": true,
+      "elapsed": 10.5,
+      "metrics": {
+        "trades": 333,
+        "sharpe": -0.0739,
+        "pnl_pct": -1.5124,
+        "mdd_pct": 7.8263
+      }
+    },
+    {
+      "asset": "SOLUSDT",
+      "variant": "ts12",
+      "ts_bars": 12,
+      "run_id": "v2-ex001-solusdt-ts12-30m",
+      "ok": true,
+      "elapsed": 10.2,
+      "metrics": {
+        "trades": 304,
+        "sharpe": 0.1511,
+        "pnl_pct": 1.8577,
+        "mdd_pct": 10.0789
+      }
+    },
+    {
+      "asset": "SOLUSDT",
+      "variant": "ts24",
+      "ts_bars": 24,
+      "run_id": "v2-ex001-solusdt-ts24-30m",
+      "ok": true,
+      "elapsed": 10.2,
+      "metrics": {
+        "trades": 274,
+        "sharpe": -0.1413,
+        "pnl_pct": -3.3483,
+        "mdd_pct": 13.4266
+      }
+    },
+    {
+      "asset": "SOLUSDT",
+      "variant": "ts48",
+      "ts_bars": 48,
+      "run_id": "v2-ex001-solusdt-ts48-30m",
+      "ok": true,
+      "elapsed": 10.0,
+      "metrics": {
+        "trades": 273,
+        "sharpe": -0.2096,
+        "pnl_pct": -4.5552,
+        "mdd_pct": 14.5114
+      }
+    }
+  ]
+}

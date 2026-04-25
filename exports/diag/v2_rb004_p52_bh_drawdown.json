@@ -1,0 +1,717 @@
+{
+  "results": [
+    {
+      "asset": "BTCUSDT",
+      "window": "2022-H2",
+      "dd_thresh": 25.0,
+      "run_id": "v2-rb004-p52gate-btcusdt-2022-h2-dd25",
+      "ok": true,
+      "elapsed": 4.3,
+      "metrics": {
+        "trades": 4,
+        "sharpe": -0.9596,
+        "pnl_pct": -0.4681,
+        "mdd_pct": 0.8948
+      },
+      "error": null
+    },
+    {
+      "asset": "BTCUSDT",
+      "window": "2023-H2",
+      "dd_thresh": 25.0,
+      "run_id": "v2-rb004-p52gate-btcusdt-2023-h2-dd25",
+      "ok": true,
+      "elapsed": 4.3,
+      "metrics": {
+        "trades": 2,
+        "sharpe": 0.5701,
+        "pnl_pct": 0.3747,
+        "mdd_pct": 1.1039
+      },
+      "error": null
+    },
+    {
+      "asset": "BTCUSDT",
+      "window": "2022-H1",
+      "dd_thresh": 25.0,
+      "run_id": "v2-rb004-p52gate-btcusdt-2022-h1-dd25",
+      "ok": true,
+      "elapsed": 4.4,
+      "metrics": {
+        "trades": 5,
+        "sharpe": 0.0527,
+        "pnl_pct": 0.0446,
+        "mdd_pct": 1.1114
+      },
+      "error": null
+    },
+    {
+      "asset": "BTCUSDT",
+      "window": "2023-H2",
+      "dd_thresh": 35.0,
+      "run_id": "v2-rb004-p52gate-btcusdt-2023-h2-dd35",
+      "ok": true,
+      "elapsed": 4.3,
+      "metrics": {
+        "trades": 2,
+        "sharpe": 0.5701,
+        "pnl_pct": 0.3747,
+        "mdd_pct": 1.1039
+      },
+      "error": null
+    },
+    {
+      "asset": "BTCUSDT",
+      "window": "2022-H2",
+      "dd_thresh": 15.0,
+      "run_id": "v2-rb004-p52gate-btcusdt-2022-h2-dd15",
+      "ok": true,
+      "elapsed": 4.4,
+      "metrics": {
+        "trades": 3,
+        "sharpe": -1.0498,
+        "pnl_pct": -0.3422,
+        "mdd_pct": 0.7695
+      },
+      "error": null
+    },
+    {
+      "asset": "BTCUSDT",
+      "window": "2022-H1",
+      "dd_thresh": 15.0,
+      "run_id": "v2-rb004-p52gate-btcusdt-2022-h1-dd15",
+      "ok": true,
+      "elapsed": 4.5,
+      "metrics": {
+        "trades": 3,
+        "sharpe": 0.3807,
+        "pnl_pct": 0.3879,
+        "mdd_pct": 0.899
+      },
+      "error": null
+    },
+    {
+      "asset": "BTCUSDT",
+      "window": "2024-H1",
+      "dd_thresh": 15.0,
+      "run_id": "v2-rb004-p52gate-btcusdt-2024-h1-dd15",
+      "ok": true,
+      "elapsed": 4.3,
+      "metrics": {
+        "trades": 4,
+        "sharpe": -1.7981,
+        "pnl_pct": -1.1354,
+        "mdd_pct": 1.3773
+      },
+      "error": null
+    },
+    {
+      "asset": "BTCUSDT",
+      "window": "2022-H2",
+      "dd_thresh": 35.0,
+      "run_id": "v2-rb004-p52gate-btcusdt-2022-h2-dd35",
+      "ok": true,
+      "elapsed": 4.5,
+      "metrics": {
+        "trades": 4,
+        "sharpe": -0.9596,
+        "pnl_pct": -0.4681,
+        "mdd_pct": 0.8948
+      },
+      "error": null
+    },
+    {
+      "asset": "BTCUSDT",
+      "window": "2023-H2",
+      "dd_thresh": 15.0,
+      "run_id": "v2-rb004-p52gate-btcusdt-2023-h2-dd15",
+      "ok": true,
+      "elapsed": 4.6,
+      "metrics": {
+        "trades": 2,
+        "sharpe": 0.5701,
+        "pnl_pct": 0.3747,
+        "mdd_pct": 1.1039
+      },
+      "error": null
+    },
+    {
+      "asset": "BTCUSDT",
+      "window": "2022-H1",
+      "dd_thresh": 35.0,
+      "run_id": "v2-rb004-p52gate-btcusdt-2022-h1-dd35",
+      "ok": true,
+      "elapsed": 4.6,
+      "metrics": {
+        "trades": 6,
+        "sharpe": -0.2536,
+        "pnl_pct": -0.3388,
+        "mdd_pct": 1.6626
+      },
+      "error": null
+    },
+    {
+      "asset": "ETHUSDT",
+      "window": "2022-H1",
+      "dd_thresh": 15.0,
+      "run_id": "v2-rb004-p52gate-ethusdt-2022-h1-dd15",
+      "ok": true,
+      "elapsed": 3.3,
+      "metrics": {
+        "trades": 1,
+        "sharpe": -0.4877,
+        "pnl_pct": -0.283,
+        "mdd_pct": 1.0637
+      },
+      "error": null
+    },
+    {
+      "asset": "BTCUSDT",
+      "window": "2024-H2",
+      "dd_thresh": 35.0,
+      "run_id": "v2-rb004-p52gate-btcusdt-2024-h2-dd35",
+      "ok": true,
+      "elapsed": 3.4,
+      "metrics": {
+        "trades": 1,
+        "sharpe": 1.5101,
+        "pnl_pct": 0.7998,
+        "mdd_pct": 0.3873
+      },
+      "error": null
+    },
+    {
+      "asset": "BTCUSDT",
+      "window": "2024-H2",
+      "dd_thresh": 15.0,
+      "run_id": "v2-rb004-p52gate-btcusdt-2024-h2-dd15",
+      "ok": true,
+      "elapsed": 3.5,
+      "metrics": {
+        "trades": 1,
+        "sharpe": 1.5101,
+        "pnl_pct": 0.7998,
+        "mdd_pct": 0.3873
+      },
+      "error": null
+    },
+    {
+      "asset": "BTCUSDT",
+      "window": "2024-H2",
+      "dd_thresh": 25.0,
+      "run_id": "v2-rb004-p52gate-btcusdt-2024-h2-dd25",
+      "ok": true,
+      "elapsed": 3.5,
+      "metrics": {
+        "trades": 1,
+        "sharpe": 1.5101,
+        "pnl_pct": 0.7998,
+        "mdd_pct": 0.3873
+      },
+      "error": null
+    },
+    {
+      "asset": "BTCUSDT",
+      "window": "2024-H1",
+      "dd_thresh": 35.0,
+      "run_id": "v2-rb004-p52gate-btcusdt-2024-h1-dd35",
+      "ok": true,
+      "elapsed": 3.6,
+      "metrics": {
+        "trades": 3,
+        "sharpe": 0.5616,
+        "pnl_pct": 0.5313,
+        "mdd_pct": 0.8403
+      },
+      "error": null
+    },
+    {
+      "asset": "BTCUSDT",
+      "window": "2024-H1",
+      "dd_thresh": 25.0,
+      "run_id": "v2-rb004-p52gate-btcusdt-2024-h1-dd25",
+      "ok": true,
+      "elapsed": 3.8,
+      "metrics": {
+        "trades": 3,
+        "sharpe": 0.5616,
+        "pnl_pct": 0.5313,
+        "mdd_pct": 0.8403
+      },
+      "error": null
+    },
+    {
+      "asset": "ETHUSDT",
+      "window": "2022-H2",
+      "dd_thresh": 25.0,
+      "run_id": "v2-rb004-p52gate-ethusdt-2022-h2-dd25",
+      "ok": true,
+      "elapsed": 3.5,
+      "metrics": {
+        "trades": 4,
+        "sharpe": -1.0339,
+        "pnl_pct": -0.4597,
+        "mdd_pct": 1.0851
+      },
+      "error": null
+    },
+    {
+      "asset": "ETHUSDT",
+      "window": "2022-H2",
+      "dd_thresh": 15.0,
+      "run_id": "v2-rb004-p52gate-ethusdt-2022-h2-dd15",
+      "ok": true,
+      "elapsed": 3.6,
+      "metrics": {
+        "trades": 4,
+        "sharpe": -1.0339,
+        "pnl_pct": -0.4597,
+        "mdd_pct": 1.0851
+      },
+      "error": null
+    },
+    {
+      "asset": "ETHUSDT",
+      "window": "2022-H1",
+      "dd_thresh": 25.0,
+      "run_id": "v2-rb004-p52gate-ethusdt-2022-h1-dd25",
+      "ok": true,
+      "elapsed": 3.9,
+      "metrics": {
+        "trades": 2,
+        "sharpe": 0.6533,
+        "pnl_pct": 0.626,
+        "mdd_pct": 1.0637
+      },
+      "error": null
+    },
+    {
+      "asset": "ETHUSDT",
+      "window": "2022-H1",
+      "dd_thresh": 35.0,
+      "run_id": "v2-rb004-p52gate-ethusdt-2022-h1-dd35",
+      "ok": true,
+      "elapsed": 3.8,
+      "metrics": {
+        "trades": 2,
+        "sharpe": 0.6533,
+        "pnl_pct": 0.626,
+        "mdd_pct": 1.0637
+      },
+      "error": null
+    },
+    {
+      "asset": "ETHUSDT",
+      "window": "2023-H2",
+      "dd_thresh": 25.0,
+      "run_id": "v2-rb004-p52gate-ethusdt-2023-h2-dd25",
+      "ok": true,
+      "elapsed": 3.6,
+      "metrics": {
+        "trades": 1,
+        "sharpe": -0.0361,
+        "pnl_pct": -0.0395,
+        "mdd_pct": 1.1427
+      },
+      "error": null
+    },
+    {
+      "asset": "ETHUSDT",
+      "window": "2023-H2",
+      "dd_thresh": 15.0,
+      "run_id": "v2-rb004-p52gate-ethusdt-2023-h2-dd15",
+      "ok": true,
+      "elapsed": 3.7,
+      "metrics": {
+        "trades": 1,
+        "sharpe": -0.0361,
+        "pnl_pct": -0.0395,
+        "mdd_pct": 1.1427
+      },
+      "error": null
+    },
+    {
+      "asset": "ETHUSDT",
+      "window": "2022-H2",
+      "dd_thresh": 35.0,
+      "run_id": "v2-rb004-p52gate-ethusdt-2022-h2-dd35",
+      "ok": true,
+      "elapsed": 3.8,
+      "metrics": {
+        "trades": 5,
+        "sharpe": -0.2463,
+        "pnl_pct": -0.1758,
+        "mdd_pct": 1.0084
+      },
+      "error": null
+    },
+    {
+      "asset": "ETHUSDT",
+      "window": "2023-H2",
+      "dd_thresh": 35.0,
+      "run_id": "v2-rb004-p52gate-ethusdt-2023-h2-dd35",
+      "ok": true,
+      "elapsed": 3.7,
+      "metrics": {
+        "trades": 1,
+        "sharpe": -0.0361,
+        "pnl_pct": -0.0395,
+        "mdd_pct": 1.1427
+      },
+      "error": null
+    },
+    {
+      "asset": "ETHUSDT",
+      "window": "2024-H2",
+      "dd_thresh": 15.0,
+      "run_id": "v2-rb004-p52gate-ethusdt-2024-h2-dd15",
+      "ok": true,
+      "elapsed": 3.5,
+      "metrics": {
+        "trades": 2,
+        "sharpe": 0.3021,
+        "pnl_pct": 0.2953,
+        "mdd_pct": 1.2381
+      },
+      "error": null
+    },
+    {
+      "asset": "ETHUSDT",
+      "window": "2024-H1",
+      "dd_thresh": 35.0,
+      "run_id": "v2-rb004-p52gate-ethusdt-2024-h1-dd35",
+      "ok": true,
+      "elapsed": 3.6,
+      "metrics": {
+        "trades": 4,
+        "sharpe": 0.449,
+        "pnl_pct": 0.4841,
+        "mdd_pct": 1.1335
+      },
+      "error": null
+    },
+    {
+      "asset": "ETHUSDT",
+      "window": "2024-H1",
+      "dd_thresh": 15.0,
+      "run_id": "v2-rb004-p52gate-ethusdt-2024-h1-dd15",
+      "ok": true,
+      "elapsed": 3.8,
+      "metrics": {
+        "trades": 3,
+        "sharpe": 0.2886,
+        "pnl_pct": 0.227,
+        "mdd_pct": 0.7824
+      },
+      "error": null
+    },
+    {
+      "asset": "ETHUSDT",
+      "window": "2024-H1",
+      "dd_thresh": 25.0,
+      "run_id": "v2-rb004-p52gate-ethusdt-2024-h1-dd25",
+      "ok": true,
+      "elapsed": 3.7,
+      "metrics": {
+        "trades": 4,
+        "sharpe": 0.449,
+        "pnl_pct": 0.4841,
+        "mdd_pct": 1.1335
+      },
+      "error": null
+    },
+    {
+      "asset": "ETHUSDT",
+      "window": "2024-H2",
+      "dd_thresh": 35.0,
+      "run_id": "v2-rb004-p52gate-ethusdt-2024-h2-dd35",
+      "ok": true,
+      "elapsed": 3.5,
+      "metrics": {
+        "trades": 3,
+        "sharpe": 0.3906,
+        "pnl_pct": 0.4624,
+        "mdd_pct": 1.7155
+      },
+      "error": null
+    },
+    {
+      "asset": "ETHUSDT",
+      "window": "2024-H2",
+      "dd_thresh": 25.0,
+      "run_id": "v2-rb004-p52gate-ethusdt-2024-h2-dd25",
+      "ok": true,
+      "elapsed": 3.6,
+      "metrics": {
+        "trades": 3,
+        "sharpe": 0.3906,
+        "pnl_pct": 0.4624,
+        "mdd_pct": 1.7155
+      },
+      "error": null
+    },
+    {
+      "asset": "SOLUSDT",
+      "window": "2022-H1",
+      "dd_thresh": 15.0,
+      "run_id": "v2-rb004-p52gate-solusdt-2022-h1-dd15",
+      "ok": true,
+      "elapsed": 3.7,
+      "metrics": {
+        "trades": 0,
+        "sharpe": 0.0,
+        "pnl_pct": 0.0,
+        "mdd_pct": 0.0
+      },
+      "error": null
+    },
+    {
+      "asset": "SOLUSDT",
+      "window": "2022-H1",
+      "dd_thresh": 35.0,
+      "run_id": "v2-rb004-p52gate-solusdt-2022-h1-dd35",
+      "ok": true,
+      "elapsed": 3.7,
+      "metrics": {
+        "trades": 4,
+        "sharpe": 1.182,
+        "pnl_pct": 1.8763,
+        "mdd_pct": 1.8749
+      },
+      "error": null
+    },
+    {
+      "asset": "SOLUSDT",
+      "window": "2023-H2",
+      "dd_thresh": 25.0,
+      "run_id": "v2-rb004-p52gate-solusdt-2023-h2-dd25",
+      "ok": true,
+      "elapsed": 3.5,
+      "metrics": {
+        "trades": 2,
+        "sharpe": 1.9007,
+        "pnl_pct": 2.6902,
+        "mdd_pct": 0.9681
+      },
+      "error": null
+    },
+    {
+      "asset": "SOLUSDT",
+      "window": "2022-H1",
+      "dd_thresh": 25.0,
+      "run_id": "v2-rb004-p52gate-solusdt-2022-h1-dd25",
+      "ok": true,
+      "elapsed": 3.8,
+      "metrics": {
+        "trades": 2,
+        "sharpe": -0.4255,
+        "pnl_pct": -0.4079,
+        "mdd_pct": 1.2961
+      },
+      "error": null
+    },
+    {
+      "asset": "SOLUSDT",
+      "window": "2022-H2",
+      "dd_thresh": 35.0,
+      "run_id": "v2-rb004-p52gate-solusdt-2022-h2-dd35",
+      "ok": true,
+      "elapsed": 3.6,
+      "metrics": {
+        "trades": 2,
+        "sharpe": -0.5776,
+        "pnl_pct": -0.9608,
+        "mdd_pct": 3.4168
+      },
+      "error": null
+    },
+    {
+      "asset": "SOLUSDT",
+      "window": "2022-H2",
+      "dd_thresh": 25.0,
+      "run_id": "v2-rb004-p52gate-solusdt-2022-h2-dd25",
+      "ok": true,
+      "elapsed": 3.7,
+      "metrics": {
+        "trades": 1,
+        "sharpe": 0.3147,
+        "pnl_pct": 0.1523,
+        "mdd_pct": 0.9545
+      },
+      "error": null
+    },
+    {
+      "asset": "SOLUSDT",
+      "window": "2023-H2",
+      "dd_thresh": 15.0,
+      "run_id": "v2-rb004-p52gate-solusdt-2023-h2-dd15",
+      "ok": true,
+      "elapsed": 3.7,
+      "metrics": {
+        "trades": 1,
+        "sharpe": 2.3191,
+        "pnl_pct": 2.4194,
+        "mdd_pct": 0.8548
+      },
+      "error": null
+    },
+    {
+      "asset": "SOLUSDT",
+      "window": "2022-H2",
+      "dd_thresh": 15.0,
+      "run_id": "v2-rb004-p52gate-solusdt-2022-h2-dd15",
+      "ok": true,
+      "elapsed": 3.8,
+      "metrics": {
+        "trades": 1,
+        "sharpe": 0.3147,
+        "pnl_pct": 0.1523,
+        "mdd_pct": 0.9545
+      },
+      "error": null
+    },
+    {
+      "asset": "SOLUSDT",
+      "window": "2023-H2",
+      "dd_thresh": 35.0,
+      "run_id": "v2-rb004-p52gate-solusdt-2023-h2-dd35",
+      "ok": true,
+      "elapsed": 3.9,
+      "metrics": {
+        "trades": 3,
+        "sharpe": 1.9929,
+        "pnl_pct": 3.3163,
+        "mdd_pct": 0.9681
+      },
+      "error": null
+    },
+    {
+      "asset": "SOLUSDT",
+      "window": "2024-H1",
+      "dd_thresh": 15.0,
+      "run_id": "v2-rb004-p52gate-solusdt-2024-h1-dd15",
+      "ok": true,
+      "elapsed": 4.0,
+      "metrics": {
+        "trades": 0,
+        "sharpe": 2.145,
+        "pnl_pct": 6.2735,
+        "mdd_pct": 2.1629
+      },
+      "error": null
+    },
+    {
+      "asset": "SOLUSDT",
+      "window": "2024-H1",
+      "dd_thresh": 25.0,
+      "run_id": "v2-rb004-p52gate-solusdt-2024-h1-dd25",
+      "ok": true,
+      "elapsed": 2.8,
+      "metrics": {
+        "trades": 1,
+        "sharpe": 1.9288,
+        "pnl_pct": 5.8183,
+        "mdd_pct": 2.1629
+      },
+      "error": null
+    },
+    {
+      "asset": "SOLUSDT",
+      "window": "2024-H2",
+      "dd_thresh": 15.0,
+      "run_id": "v2-rb004-p52gate-solusdt-2024-h2-dd15",
+      "ok": true,
+      "elapsed": 2.7,
+      "metrics": {
+        "trades": 2,
+        "sharpe": 1.804,
+        "pnl_pct": 1.7985,
+        "mdd_pct": 0.7543
+      },
+      "error": null
+    },
+    {
+      "asset": "SOLUSDT",
+      "window": "2024-H2",
+      "dd_thresh": 25.0,
+      "run_id": "v2-rb004-p52gate-solusdt-2024-h2-dd25",
+      "ok": true,
+      "elapsed": 2.7,
+      "metrics": {
+        "trades": 3,
+        "sharpe": 0.7932,
+        "pnl_pct": 0.9741,
+        "mdd_pct": 1.6888
+      },
+      "error": null
+    },
+    {
+      "asset": "SOLUSDT",
+      "window": "2024-H1",
+      "dd_thresh": 35.0,
+      "run_id": "v2-rb004-p52gate-solusdt-2024-h1-dd35",
+      "ok": true,
+      "elapsed": 2.7,
+      "metrics": {
+        "trades": 1,
+        "sharpe": 2.4454,
+        "pnl_pct": 8.3143,
+        "mdd_pct": 2.1629
+      },
+      "error": null
+    },
+    {
+      "asset": "SOLUSDT",
+      "window": "2024-H2",
+      "dd_thresh": 35.0,
+      "run_id": "v2-rb004-p52gate-solusdt-2024-h2-dd35",
+      "ok": true,
+      "elapsed": 2.6,
+      "metrics": {
+        "trades": 3,
+        "sharpe": 0.7932,
+        "pnl_pct": 0.9741,
+        "mdd_pct": 1.6888
+      },
+      "error": null
+    }
+  ],
+  "summary": [
+    {
+      "dd_thresh": 15.0,
+      "non_disc_windows_pass": 0,
+      "passes_per_window": {
+        "2022-H1": [],
+        "2022-H2": [],
+        "2023-H2": [],
+        "2024-H1": [],
+        "2024-H2": []
+      },
+      "gate_adr0030": false
+    },
+    {
+      "dd_thresh": 25.0,
+      "non_disc_windows_pass": 0,
+      "passes_per_window": {
+        "2022-H1": [],
+        "2022-H2": [],
+        "2023-H2": [],
+        "2024-H1": [],
+        "2024-H2": []
+      },
+      "gate_adr0030": false
+    },
+    {
+      "dd_thresh": 35.0,
+      "non_disc_windows_pass": 0,
+      "passes_per_window": {
+        "2022-H1": [],
+        "2022-H2": [],
+        "2023-H2": [],
+        "2024-H1": [],
+        "2024-H2": []
+      },
+      "gate_adr0030": false
+    }
+  ]
+}

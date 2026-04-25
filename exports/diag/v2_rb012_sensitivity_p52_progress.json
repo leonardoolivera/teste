@@ -1,0 +1,674 @@
+{
+  "BTC-18-55": {
+    "asset": "BTC",
+    "short": 18,
+    "long": 55,
+    "run_id": "v2-rb012-p52-ma18-55-btc-2024h2",
+    "ok": true,
+    "elapsed_s": 3.3,
+    "metrics": {
+      "trades": 32,
+      "sharpe": 2.6126,
+      "pnl_pct": 7.4794,
+      "final_eq": 10747.94
+    }
+  },
+  "BTC-18-50": {
+    "asset": "BTC",
+    "short": 18,
+    "long": 50,
+    "run_id": "v2-rb012-p52-ma18-50-btc-2024h2",
+    "ok": true,
+    "elapsed_s": 3.4,
+    "metrics": {
+      "trades": 38,
+      "sharpe": 2.1655,
+      "pnl_pct": 6.3017,
+      "final_eq": 10630.17
+    }
+  },
+  "BTC-18-45": {
+    "asset": "BTC",
+    "short": 18,
+    "long": 45,
+    "run_id": "v2-rb012-p52-ma18-45-btc-2024h2",
+    "ok": true,
+    "elapsed_s": 3.4,
+    "metrics": {
+      "trades": 38,
+      "sharpe": 2.0754,
+      "pnl_pct": 6.0026,
+      "final_eq": 10600.26
+    }
+  },
+  "BTC-20-55": {
+    "asset": "BTC",
+    "short": 20,
+    "long": 55,
+    "run_id": "v2-rb012-p52-ma20-55-btc-2024h2",
+    "ok": true,
+    "elapsed_s": 3.3,
+    "metrics": {
+      "trades": 33,
+      "sharpe": 2.2488,
+      "pnl_pct": 6.3717,
+      "final_eq": 10637.17
+    }
+  },
+  "BTC-22-45": {
+    "asset": "BTC",
+    "short": 22,
+    "long": 45,
+    "run_id": "v2-rb012-p52-ma22-45-btc-2024h2",
+    "ok": true,
+    "elapsed_s": 3.3,
+    "metrics": {
+      "trades": 39,
+      "sharpe": 1.9736,
+      "pnl_pct": 5.6474,
+      "final_eq": 10564.74
+    }
+  },
+  "BTC-18-60": {
+    "asset": "BTC",
+    "short": 18,
+    "long": 60,
+    "run_id": "v2-rb012-p52-ma18-60-btc-2024h2",
+    "ok": true,
+    "elapsed_s": 3.5,
+    "metrics": {
+      "trades": 31,
+      "sharpe": 3.0236,
+      "pnl_pct": 8.7613,
+      "final_eq": 10876.13
+    }
+  },
+  "BTC-22-50": {
+    "asset": "BTC",
+    "short": 22,
+    "long": 50,
+    "run_id": "v2-rb012-p52-ma22-50-btc-2024h2",
+    "ok": true,
+    "elapsed_s": 3.4,
+    "metrics": {
+      "trades": 34,
+      "sharpe": 2.0486,
+      "pnl_pct": 5.7911,
+      "final_eq": 10579.11
+    }
+  },
+  "BTC-20-60": {
+    "asset": "BTC",
+    "short": 20,
+    "long": 60,
+    "run_id": "v2-rb012-p52-ma20-60-btc-2024h2",
+    "ok": true,
+    "elapsed_s": 3.4,
+    "metrics": {
+      "trades": 30,
+      "sharpe": 2.8717,
+      "pnl_pct": 8.2673,
+      "final_eq": 10826.73
+    }
+  },
+  "BTC-20-50": {
+    "asset": "BTC",
+    "short": 20,
+    "long": 50,
+    "run_id": "v2-rb012-p52-ma20-50-btc-2024h2",
+    "ok": true,
+    "elapsed_s": 3.5,
+    "metrics": {
+      "trades": 36,
+      "sharpe": 2.3908,
+      "pnl_pct": 6.8617,
+      "final_eq": 10686.17
+    }
+  },
+  "BTC-20-45": {
+    "asset": "BTC",
+    "short": 20,
+    "long": 45,
+    "run_id": "v2-rb012-p52-ma20-45-btc-2024h2",
+    "ok": true,
+    "elapsed_s": 3.5,
+    "metrics": {
+      "trades": 37,
+      "sharpe": 1.9354,
+      "pnl_pct": 5.5563,
+      "final_eq": 10555.63
+    }
+  },
+  "BTC-25-55": {
+    "asset": "BTC",
+    "short": 25,
+    "long": 55,
+    "run_id": "v2-rb012-p52-ma25-55-btc-2024h2",
+    "ok": true,
+    "elapsed_s": 3.0,
+    "metrics": {
+      "trades": 29,
+      "sharpe": 2.8928,
+      "pnl_pct": 8.3019,
+      "final_eq": 10830.19
+    }
+  },
+  "BTC-22-55": {
+    "asset": "BTC",
+    "short": 22,
+    "long": 55,
+    "run_id": "v2-rb012-p52-ma22-55-btc-2024h2",
+    "ok": true,
+    "elapsed_s": 3.3,
+    "metrics": {
+      "trades": 31,
+      "sharpe": 2.3151,
+      "pnl_pct": 6.5288,
+      "final_eq": 10652.88
+    }
+  },
+  "BTC-22-60": {
+    "asset": "BTC",
+    "short": 22,
+    "long": 60,
+    "run_id": "v2-rb012-p52-ma22-60-btc-2024h2",
+    "ok": true,
+    "elapsed_s": 3.2,
+    "metrics": {
+      "trades": 31,
+      "sharpe": 2.9575,
+      "pnl_pct": 8.4957,
+      "final_eq": 10849.57
+    }
+  },
+  "ETH-18-45": {
+    "asset": "ETH",
+    "short": 18,
+    "long": 45,
+    "run_id": "v2-rb012-p52-ma18-45-eth-2024h2",
+    "ok": true,
+    "elapsed_s": 3.1,
+    "metrics": {
+      "trades": 36,
+      "sharpe": 2.1503,
+      "pnl_pct": 7.2922,
+      "final_eq": 10729.22
+    }
+  },
+  "BTC-25-45": {
+    "asset": "BTC",
+    "short": 25,
+    "long": 45,
+    "run_id": "v2-rb012-p52-ma25-45-btc-2024h2",
+    "ok": true,
+    "elapsed_s": 3.2,
+    "metrics": {
+      "trades": 39,
+      "sharpe": 2.002,
+      "pnl_pct": 5.4972,
+      "final_eq": 10549.72
+    }
+  },
+  "BTC-25-50": {
+    "asset": "BTC",
+    "short": 25,
+    "long": 50,
+    "run_id": "v2-rb012-p52-ma25-50-btc-2024h2",
+    "ok": true,
+    "elapsed_s": 3.3,
+    "metrics": {
+      "trades": 34,
+      "sharpe": 2.7812,
+      "pnl_pct": 7.9995,
+      "final_eq": 10799.95
+    }
+  },
+  "ETH-18-50": {
+    "asset": "ETH",
+    "short": 18,
+    "long": 50,
+    "run_id": "v2-rb012-p52-ma18-50-eth-2024h2",
+    "ok": true,
+    "elapsed_s": 3.1,
+    "metrics": {
+      "trades": 34,
+      "sharpe": 2.2412,
+      "pnl_pct": 7.5413,
+      "final_eq": 10754.13
+    }
+  },
+  "ETH-18-60": {
+    "asset": "ETH",
+    "short": 18,
+    "long": 60,
+    "run_id": "v2-rb012-p52-ma18-60-eth-2024h2",
+    "ok": true,
+    "elapsed_s": 3.1,
+    "metrics": {
+      "trades": 23,
+      "sharpe": 2.3066,
+      "pnl_pct": 7.6494,
+      "final_eq": 10764.94
+    }
+  },
+  "ETH-18-55": {
+    "asset": "ETH",
+    "short": 18,
+    "long": 55,
+    "run_id": "v2-rb012-p52-ma18-55-eth-2024h2",
+    "ok": true,
+    "elapsed_s": 3.1,
+    "metrics": {
+      "trades": 25,
+      "sharpe": 2.6068,
+      "pnl_pct": 8.839,
+      "final_eq": 10883.9
+    }
+  },
+  "BTC-25-60": {
+    "asset": "BTC",
+    "short": 25,
+    "long": 60,
+    "run_id": "v2-rb012-p52-ma25-60-btc-2024h2",
+    "ok": true,
+    "elapsed_s": 3.2,
+    "metrics": {
+      "trades": 26,
+      "sharpe": 3.099,
+      "pnl_pct": 9.0072,
+      "final_eq": 10900.72
+    }
+  },
+  "ETH-20-45": {
+    "asset": "ETH",
+    "short": 20,
+    "long": 45,
+    "run_id": "v2-rb012-p52-ma20-45-eth-2024h2",
+    "ok": true,
+    "elapsed_s": 3.2,
+    "metrics": {
+      "trades": 38,
+      "sharpe": 1.4823,
+      "pnl_pct": 4.8798,
+      "final_eq": 10487.98
+    }
+  },
+  "ETH-22-55": {
+    "asset": "ETH",
+    "short": 22,
+    "long": 55,
+    "run_id": "v2-rb012-p52-ma22-55-eth-2024h2",
+    "ok": true,
+    "elapsed_s": 3.1,
+    "metrics": {
+      "trades": 26,
+      "sharpe": 1.8029,
+      "pnl_pct": 5.8913,
+      "final_eq": 10589.13
+    }
+  },
+  "ETH-20-55": {
+    "asset": "ETH",
+    "short": 20,
+    "long": 55,
+    "run_id": "v2-rb012-p52-ma20-55-eth-2024h2",
+    "ok": true,
+    "elapsed_s": 3.2,
+    "metrics": {
+      "trades": 25,
+      "sharpe": 1.9885,
+      "pnl_pct": 6.5493,
+      "final_eq": 10654.93
+    }
+  },
+  "ETH-22-45": {
+    "asset": "ETH",
+    "short": 22,
+    "long": 45,
+    "run_id": "v2-rb012-p52-ma22-45-eth-2024h2",
+    "ok": true,
+    "elapsed_s": 3.2,
+    "metrics": {
+      "trades": 37,
+      "sharpe": 1.3069,
+      "pnl_pct": 4.2327,
+      "final_eq": 10423.27
+    }
+  },
+  "ETH-22-50": {
+    "asset": "ETH",
+    "short": 22,
+    "long": 50,
+    "run_id": "v2-rb012-p52-ma22-50-eth-2024h2",
+    "ok": true,
+    "elapsed_s": 3.2,
+    "metrics": {
+      "trades": 33,
+      "sharpe": 1.2597,
+      "pnl_pct": 4.0748,
+      "final_eq": 10407.48
+    }
+  },
+  "ETH-22-60": {
+    "asset": "ETH",
+    "short": 22,
+    "long": 60,
+    "run_id": "v2-rb012-p52-ma22-60-eth-2024h2",
+    "ok": true,
+    "elapsed_s": 3.2,
+    "metrics": {
+      "trades": 22,
+      "sharpe": 2.1543,
+      "pnl_pct": 7.1622,
+      "final_eq": 10716.22
+    }
+  },
+  "ETH-20-50": {
+    "asset": "ETH",
+    "short": 20,
+    "long": 50,
+    "run_id": "v2-rb012-p52-ma20-50-eth-2024h2",
+    "ok": true,
+    "elapsed_s": 3.4,
+    "metrics": {
+      "trades": 34,
+      "sharpe": 1.8807,
+      "pnl_pct": 6.2716,
+      "final_eq": 10627.16
+    }
+  },
+  "ETH-20-60": {
+    "asset": "ETH",
+    "short": 20,
+    "long": 60,
+    "run_id": "v2-rb012-p52-ma20-60-eth-2024h2",
+    "ok": true,
+    "elapsed_s": 3.4,
+    "metrics": {
+      "trades": 24,
+      "sharpe": 2.4805,
+      "pnl_pct": 8.4358,
+      "final_eq": 10843.58
+    }
+  },
+  "ETH-25-45": {
+    "asset": "ETH",
+    "short": 25,
+    "long": 45,
+    "run_id": "v2-rb012-p52-ma25-45-eth-2024h2",
+    "ok": true,
+    "elapsed_s": 3.3,
+    "metrics": {
+      "trades": 39,
+      "sharpe": 1.3504,
+      "pnl_pct": 4.3154,
+      "final_eq": 10431.54
+    }
+  },
+  "ETH-25-50": {
+    "asset": "ETH",
+    "short": 25,
+    "long": 50,
+    "run_id": "v2-rb012-p52-ma25-50-eth-2024h2",
+    "ok": true,
+    "elapsed_s": 3.3,
+    "metrics": {
+      "trades": 35,
+      "sharpe": 1.252,
+      "pnl_pct": 4.0145,
+      "final_eq": 10401.45
+    }
+  },
+  "ETH-25-55": {
+    "asset": "ETH",
+    "short": 25,
+    "long": 55,
+    "run_id": "v2-rb012-p52-ma25-55-eth-2024h2",
+    "ok": true,
+    "elapsed_s": 3.4,
+    "metrics": {
+      "trades": 26,
+      "sharpe": 1.7632,
+      "pnl_pct": 5.7707,
+      "final_eq": 10577.07
+    }
+  },
+  "ETH-25-60": {
+    "asset": "ETH",
+    "short": 25,
+    "long": 60,
+    "run_id": "v2-rb012-p52-ma25-60-eth-2024h2",
+    "ok": true,
+    "elapsed_s": 3.3,
+    "metrics": {
+      "trades": 24,
+      "sharpe": 1.9236,
+      "pnl_pct": 6.3683,
+      "final_eq": 10636.83
+    }
+  },
+  "SOL-18-45": {
+    "asset": "SOL",
+    "short": 18,
+    "long": 45,
+    "run_id": "v2-rb012-p52-ma18-45-sol-2024h2",
+    "ok": true,
+    "elapsed_s": 3.3,
+    "metrics": {
+      "trades": 36,
+      "sharpe": 1.1536,
+      "pnl_pct": 4.52,
+      "final_eq": 10452.0
+    }
+  },
+  "SOL-20-45": {
+    "asset": "SOL",
+    "short": 20,
+    "long": 45,
+    "run_id": "v2-rb012-p52-ma20-45-sol-2024h2",
+    "ok": true,
+    "elapsed_s": 3.3,
+    "metrics": {
+      "trades": 37,
+      "sharpe": 0.9428,
+      "pnl_pct": 3.6431,
+      "final_eq": 10364.31
+    }
+  },
+  "SOL-20-55": {
+    "asset": "SOL",
+    "short": 20,
+    "long": 55,
+    "run_id": "v2-rb012-p52-ma20-55-sol-2024h2",
+    "ok": true,
+    "elapsed_s": 3.3,
+    "metrics": {
+      "trades": 30,
+      "sharpe": 1.409,
+      "pnl_pct": 5.6565,
+      "final_eq": 10565.65
+    }
+  },
+  "SOL-18-50": {
+    "asset": "SOL",
+    "short": 18,
+    "long": 50,
+    "run_id": "v2-rb012-p52-ma18-50-sol-2024h2",
+    "ok": true,
+    "elapsed_s": 3.5,
+    "metrics": {
+      "trades": 33,
+      "sharpe": 1.5481,
+      "pnl_pct": 6.2146,
+      "final_eq": 10621.46
+    }
+  },
+  "SOL-18-55": {
+    "asset": "SOL",
+    "short": 18,
+    "long": 55,
+    "run_id": "v2-rb012-p52-ma18-55-sol-2024h2",
+    "ok": true,
+    "elapsed_s": 3.4,
+    "metrics": {
+      "trades": 31,
+      "sharpe": 1.6925,
+      "pnl_pct": 6.8005,
+      "final_eq": 10680.05
+    }
+  },
+  "SOL-18-60": {
+    "asset": "SOL",
+    "short": 18,
+    "long": 60,
+    "run_id": "v2-rb012-p52-ma18-60-sol-2024h2",
+    "ok": true,
+    "elapsed_s": 3.4,
+    "metrics": {
+      "trades": 26,
+      "sharpe": 1.6561,
+      "pnl_pct": 6.6743,
+      "final_eq": 10667.43
+    }
+  },
+  "SOL-20-60": {
+    "asset": "SOL",
+    "short": 20,
+    "long": 60,
+    "run_id": "v2-rb012-p52-ma20-60-sol-2024h2",
+    "ok": true,
+    "elapsed_s": 3.5,
+    "metrics": {
+      "trades": 25,
+      "sharpe": 1.5343,
+      "pnl_pct": 6.1434,
+      "final_eq": 10614.34
+    }
+  },
+  "SOL-20-50": {
+    "asset": "SOL",
+    "short": 20,
+    "long": 50,
+    "run_id": "v2-rb012-p52-ma20-50-sol-2024h2",
+    "ok": true,
+    "elapsed_s": 3.8,
+    "metrics": {
+      "trades": 32,
+      "sharpe": 1.2176,
+      "pnl_pct": 4.7906,
+      "final_eq": 10479.06
+    }
+  },
+  "SOL-22-55": {
+    "asset": "SOL",
+    "short": 22,
+    "long": 55,
+    "run_id": "v2-rb012-p52-ma22-55-sol-2024h2",
+    "ok": true,
+    "elapsed_s": 2.9,
+    "metrics": {
+      "trades": 28,
+      "sharpe": 1.8386,
+      "pnl_pct": 7.5706,
+      "final_eq": 10757.06
+    }
+  },
+  "SOL-22-45": {
+    "asset": "SOL",
+    "short": 22,
+    "long": 45,
+    "run_id": "v2-rb012-p52-ma22-45-sol-2024h2",
+    "ok": true,
+    "elapsed_s": 3.0,
+    "metrics": {
+      "trades": 40,
+      "sharpe": 0.9708,
+      "pnl_pct": 3.7482,
+      "final_eq": 10374.82
+    }
+  },
+  "SOL-22-50": {
+    "asset": "SOL",
+    "short": 22,
+    "long": 50,
+    "run_id": "v2-rb012-p52-ma22-50-sol-2024h2",
+    "ok": true,
+    "elapsed_s": 3.0,
+    "metrics": {
+      "trades": 30,
+      "sharpe": 1.3081,
+      "pnl_pct": 5.2799,
+      "final_eq": 10527.99
+    }
+  },
+  "SOL-25-55": {
+    "asset": "SOL",
+    "short": 25,
+    "long": 55,
+    "run_id": "v2-rb012-p52-ma25-55-sol-2024h2",
+    "ok": true,
+    "elapsed_s": 2.8,
+    "metrics": {
+      "trades": 29,
+      "sharpe": 1.319,
+      "pnl_pct": 5.3622,
+      "final_eq": 10536.22
+    }
+  },
+  "SOL-25-45": {
+    "asset": "SOL",
+    "short": 25,
+    "long": 45,
+    "run_id": "v2-rb012-p52-ma25-45-sol-2024h2",
+    "ok": true,
+    "elapsed_s": 2.9,
+    "metrics": {
+      "trades": 40,
+      "sharpe": 0.9926,
+      "pnl_pct": 3.8435,
+      "final_eq": 10384.35
+    }
+  },
+  "SOL-22-60": {
+    "asset": "SOL",
+    "short": 22,
+    "long": 60,
+    "run_id": "v2-rb012-p52-ma22-60-sol-2024h2",
+    "ok": true,
+    "elapsed_s": 2.9,
+    "metrics": {
+      "trades": 25,
+      "sharpe": 2.0112,
+      "pnl_pct": 8.2287,
+      "final_eq": 10822.87
+    }
+  },
+  "SOL-25-60": {
+    "asset": "SOL",
+    "short": 25,
+    "long": 60,
+    "run_id": "v2-rb012-p52-ma25-60-sol-2024h2",
+    "ok": true,
+    "elapsed_s": 2.9,
+    "metrics": {
+      "trades": 24,
+      "sharpe": 1.3685,
+      "pnl_pct": 5.5145,
+      "final_eq": 10551.45
+    }
+  },
+  "SOL-25-50": {
+    "asset": "SOL",
+    "short": 25,
+    "long": 50,
+    "run_id": "v2-rb012-p52-ma25-50-sol-2024h2",
+    "ok": true,
+    "elapsed_s": 2.9,
+    "metrics": {
+      "trades": 32,
+      "sharpe": 1.0623,
+      "pnl_pct": 4.1302,
+      "final_eq": 10413.02
+    }
+  }
+}

@@ -1,0 +1,204 @@
+{
+  "results": [
+    {
+      "id": "S03",
+      "manifest": "bollinger_width_regime_v2",
+      "symbol": "BTCUSDT",
+      "run_id": "v2-stack13-p60-s03-btcusdt-30m",
+      "ok": true,
+      "elapsed": 12.9,
+      "metrics": {
+        "trades": 109,
+        "sharpe": 0.6223,
+        "pnl_pct": 5.4676,
+        "mdd_pct": 3.9866
+      }
+    },
+    {
+      "id": "S02",
+      "manifest": "bollinger_width_regime_v2",
+      "symbol": "ETHUSDT",
+      "run_id": "v2-stack13-p60-s02-ethusdt-30m",
+      "ok": true,
+      "elapsed": 12.9,
+      "metrics": {
+        "trades": 189,
+        "sharpe": 0.885,
+        "pnl_pct": 12.5309,
+        "mdd_pct": 5.5396
+      }
+    },
+    {
+      "id": "S01",
+      "manifest": "bollinger_width_regime_v2",
+      "symbol": "ETHUSDT",
+      "run_id": "v2-stack13-p60-s01-ethusdt-30m",
+      "ok": true,
+      "elapsed": 12.9,
+      "metrics": {
+        "trades": 189,
+        "sharpe": 0.885,
+        "pnl_pct": 12.5309,
+        "mdd_pct": 5.5396
+      }
+    },
+    {
+      "id": "S04",
+      "manifest": "bollinger_width_regime_v2",
+      "symbol": "SOLUSDT",
+      "run_id": "v2-stack13-p60-s04-solusdt-30m",
+      "ok": true,
+      "elapsed": 12.9,
+      "metrics": {
+        "trades": 239,
+        "sharpe": 0.251,
+        "pnl_pct": 4.0121,
+        "mdd_pct": 10.379
+      }
+    },
+    {
+      "id": "S07",
+      "manifest": "bollinger_short_width",
+      "symbol": "ETHUSDT",
+      "run_id": "v2-stack13-p60-s07-ethusdt-30m",
+      "ok": true,
+      "elapsed": 13.0,
+      "metrics": {
+        "trades": 389,
+        "sharpe": 0.5486,
+        "pnl_pct": 10.4434,
+        "mdd_pct": 15.0102
+      }
+    },
+    {
+      "id": "S06",
+      "manifest": "bollinger_short_width",
+      "symbol": "BTCUSDT",
+      "run_id": "v2-stack13-p60-s06-btcusdt-30m",
+      "ok": true,
+      "elapsed": 13.1,
+      "metrics": {
+        "trades": 244,
+        "sharpe": 0.1119,
+        "pnl_pct": 0.9858,
+        "mdd_pct": 7.2126
+      }
+    },
+    {
+      "id": "S08",
+      "manifest": "bollinger_short_width",
+      "symbol": "SOLUSDT",
+      "run_id": "v2-stack13-p60-s08-solusdt-30m",
+      "ok": true,
+      "elapsed": 13.1,
+      "metrics": {
+        "trades": 523,
+        "sharpe": 0.4588,
+        "pnl_pct": 12.586,
+        "mdd_pct": 14.4797
+      }
+    },
+    {
+      "id": "S05",
+      "manifest": "bollinger_short_width",
+      "symbol": "SOLUSDT",
+      "run_id": "v2-stack13-p60-s05-solusdt-30m",
+      "ok": true,
+      "elapsed": 13.2,
+      "metrics": {
+        "trades": 523,
+        "sharpe": 0.4588,
+        "pnl_pct": 12.586,
+        "mdd_pct": 14.4797
+      }
+    },
+    {
+      "id": "S10",
+      "manifest": "rsi_short_pure_2025h2",
+      "symbol": "BTCUSDT",
+      "run_id": "v2-stack13-p60-s10-btcusdt-30m",
+      "ok": true,
+      "elapsed": 22.1,
+      "metrics": {
+        "trades": 424,
+        "sharpe": -0.5812,
+        "pnl_pct": -11.7474,
+        "mdd_pct": 22.027
+      }
+    },
+    {
+      "id": "S09",
+      "manifest": "rsi_long_width_eth_2024h2",
+      "symbol": "ETHUSDT",
+      "run_id": "v2-stack13-p60-s09-ethusdt-30m",
+      "ok": true,
+      "elapsed": 24.2,
+      "metrics": {
+        "trades": 183,
+        "sharpe": -0.0873,
+        "pnl_pct": -1.4845,
+        "mdd_pct": 7.4305
+      }
+    },
+    {
+      "id": "S11",
+      "manifest": "rsi_short_pure_2025h2",
+      "symbol": "SOLUSDT",
+      "run_id": "v2-stack13-p60-s11-solusdt-30m",
+      "ok": true,
+      "elapsed": 17.9,
+      "metrics": {
+        "trades": 392,
+        "sharpe": -0.3811,
+        "pnl_pct": -16.8341,
+        "mdd_pct": 35.9199
+      }
+    },
+    {
+      "id": "S13",
+      "manifest": "rsi_short_width_2025h1",
+      "symbol": "BTCUSDT",
+      "run_id": "v2-stack13-p60-s13-btcusdt-30m",
+      "ok": true,
+      "elapsed": 19.8,
+      "metrics": {
+        "trades": 234,
+        "sharpe": 0.4213,
+        "pnl_pct": 4.7929,
+        "mdd_pct": 9.7328
+      }
+    },
+    {
+      "id": "S12",
+      "manifest": "rsi_short_trendhtf_sol_2025h1",
+      "symbol": "SOLUSDT",
+      "run_id": "v2-stack13-p60-s12-solusdt-30m",
+      "ok": true,
+      "elapsed": 73.7,
+      "metrics": {
+        "trades": 185,
+        "sharpe": 1.2008,
+        "pnl_pct": 29.1973,
+        "mdd_pct": 9.0388
+      }
+    }
+  ],
+  "verdicts": {
+    "S01": "MARGINAL",
+    "S02": "MARGINAL",
+    "S03": "MARGINAL",
+    "S04": "FAIL",
+    "S05": "FAIL",
+    "S06": "FAIL",
+    "S07": "FAIL",
+    "S08": "FAIL",
+    "S09": "FAIL",
+    "S10": "FAIL",
+    "S11": "FAIL",
+    "S12": "ROBUST",
+    "S13": "FAIL"
+  },
+  "n_robust": 1,
+  "n_marginal": 3,
+  "n_fail": 9
+}

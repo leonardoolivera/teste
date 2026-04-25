@@ -1,0 +1,804 @@
+
+======================================================================
+TF10B.1 | btcusdt_10m_20240705_20241231_binance_spot_resampled | RSI 30/70 short + width 10m
+======================================================================
+dataset          : btcusdt_10m_20240705_20241231_binance_spot_resampled
+strategy         : rsi period=14 oversold=30.00 overbought=70.00 long_only=False
+run_id           : tf10b-rsi-30-70-width-btc-2024h2-short-10m
+regime_filter    : bollinger_width:min_width_bps=250:num_std=1.5:window=30
+out_dir          : C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10b-rsi-30-70-width-btc-2024h2-short-10m
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-21T16:49:29.955410+00:00 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10b-rsi-30-70-width-btc-2024h2-short-10m\run.json
+walk_forward     : 4 fold(s), 46 trade(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10b-rsi-30-70-width-btc-2024h2-short-10m\walk_forward.json
+monte_carlo      : 1000 resamples, seed=42, median_final=9912.99 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10b-rsi-30-70-width-btc-2024h2-short-10m\monte_carlo.json
+cost_stress      : baseline + 2 cenario(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10b-rsi-30-70-width-btc-2024h2-short-10m\cost_stress.json
+
+======================================================================
+TF10B.2 | ethusdt_10m_20240705_20241231_binance_spot_resampled | RSI 30/70 short + width 10m
+======================================================================
+dataset          : ethusdt_10m_20240705_20241231_binance_spot_resampled
+strategy         : rsi period=14 oversold=30.00 overbought=70.00 long_only=False
+run_id           : tf10b-rsi-30-70-width-eth-2024h2-short-10m
+regime_filter    : bollinger_width:min_width_bps=250:num_std=1.5:window=30
+out_dir          : C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10b-rsi-30-70-width-eth-2024h2-short-10m
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-21T16:50:48.809090+00:00 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10b-rsi-30-70-width-eth-2024h2-short-10m\run.json
+walk_forward     : 4 fold(s), 91 trade(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10b-rsi-30-70-width-eth-2024h2-short-10m\walk_forward.json
+monte_carlo      : 1000 resamples, seed=42, median_final=9873.89 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10b-rsi-30-70-width-eth-2024h2-short-10m\monte_carlo.json
+cost_stress      : baseline + 2 cenario(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10b-rsi-30-70-width-eth-2024h2-short-10m\cost_stress.json
+
+======================================================================
+TF10B.3 | solusdt_10m_20240705_20241231_binance_spot_resampled | RSI 30/70 short + width 10m
+======================================================================
+dataset          : solusdt_10m_20240705_20241231_binance_spot_resampled
+strategy         : rsi period=14 oversold=30.00 overbought=70.00 long_only=False
+run_id           : tf10b-rsi-30-70-width-sol-2024h2-short-10m
+regime_filter    : bollinger_width:min_width_bps=250:num_std=1.5:window=30
+out_dir          : C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10b-rsi-30-70-width-sol-2024h2-short-10m
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-21T16:52:07.132897+00:00 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10b-rsi-30-70-width-sol-2024h2-short-10m\run.json
+walk_forward     : 4 fold(s), 161 trade(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10b-rsi-30-70-width-sol-2024h2-short-10m\walk_forward.json
+monte_carlo      : 1000 resamples, seed=42, median_final=10782.51 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10b-rsi-30-70-width-sol-2024h2-short-10m\monte_carlo.json
+cost_stress      : baseline + 2 cenario(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10b-rsi-30-70-width-sol-2024h2-short-10m\cost_stress.json
+
+======================================================================
+TF10B.4 | btcusdt_10m_20250105_20250704_binance_spot_resampled | RSI 30/70 short + width 10m
+======================================================================
+dataset          : btcusdt_10m_20250105_20250704_binance_spot_resampled
+strategy         : rsi period=14 oversold=30.00 overbought=70.00 long_only=False
+run_id           : tf10b-rsi-30-70-width-btc-2025h1-short-10m
+regime_filter    : bollinger_width:min_width_bps=250:num_std=1.5:window=30
+out_dir          : C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10b-rsi-30-70-width-btc-2025h1-short-10m
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-21T16:53:25.500383+00:00 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10b-rsi-30-70-width-btc-2025h1-short-10m\run.json
+walk_forward     : 4 fold(s), 40 trade(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10b-rsi-30-70-width-btc-2025h1-short-10m\walk_forward.json
+monte_carlo      : 1000 resamples, seed=42, median_final=9765.85 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10b-rsi-30-70-width-btc-2025h1-short-10m\monte_carlo.json
+cost_stress      : baseline + 2 cenario(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10b-rsi-30-70-width-btc-2025h1-short-10m\cost_stress.json
+
+======================================================================
+TF10B.5 | ethusdt_10m_20250105_20250704_binance_spot_resampled | RSI 30/70 short + width 10m
+======================================================================
+dataset          : ethusdt_10m_20250105_20250704_binance_spot_resampled
+strategy         : rsi period=14 oversold=30.00 overbought=70.00 long_only=False
+run_id           : tf10b-rsi-30-70-width-eth-2025h1-short-10m
+regime_filter    : bollinger_width:min_width_bps=250:num_std=1.5:window=30
+out_dir          : C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10b-rsi-30-70-width-eth-2025h1-short-10m
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-21T16:54:44.429525+00:00 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10b-rsi-30-70-width-eth-2025h1-short-10m\run.json
+walk_forward     : 4 fold(s), 129 trade(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10b-rsi-30-70-width-eth-2025h1-short-10m\walk_forward.json
+monte_carlo      : 1000 resamples, seed=42, median_final=9392.92 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10b-rsi-30-70-width-eth-2025h1-short-10m\monte_carlo.json
+cost_stress      : baseline + 2 cenario(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10b-rsi-30-70-width-eth-2025h1-short-10m\cost_stress.json
+
+======================================================================
+TF10B.6 | solusdt_10m_20250105_20250704_binance_spot_resampled | RSI 30/70 short + width 10m
+======================================================================
+dataset          : solusdt_10m_20250105_20250704_binance_spot_resampled
+strategy         : rsi period=14 oversold=30.00 overbought=70.00 long_only=False
+run_id           : tf10b-rsi-30-70-width-sol-2025h1-short-10m
+regime_filter    : bollinger_width:min_width_bps=250:num_std=1.5:window=30
+out_dir          : C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10b-rsi-30-70-width-sol-2025h1-short-10mC:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-21T16:56:03.841753+00:00 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10b-rsi-30-70-width-sol-2025h1-short-10m\run.json
+walk_forward     : 4 fold(s), 168 trade(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10b-rsi-30-70-width-sol-2025h1-short-10m\walk_forward.json
+monte_carlo      : 1000 resamples, seed=42, median_final=9694.47 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10b-rsi-30-70-width-sol-2025h1-short-10m\monte_carlo.json
+cost_stress      : baseline + 2 cenario(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10b-rsi-30-70-width-sol-2025h1-short-10m\cost_stress.json
+
+======================================================================
+TF10B.7 | btcusdt_10m_20250705_20251231_binance_spot_resampled | RSI 30/70 short + width 10m
+======================================================================
+dataset          : btcusdt_10m_20250705_20251231_binance_spot_resampled
+strategy         : rsi period=14 oversold=30.00 overbought=70.00 long_only=False
+run_id           : tf10b-rsi-30-70-width-btc-2025h2-short-10m
+regime_filter    : bollinger_width:min_width_bps=250:num_std=1.5:window=30
+out_dir          : C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10b-rsi-30-70-width-btc-2025h2-short-10m
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-21T16:57:23.139906+00:00 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10b-rsi-30-70-width-btc-2025h2-short-10m\run.json
+walk_forward     : 4 fold(s), 29 trade(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10b-rsi-30-70-width-btc-2025h2-short-10m\walk_forward.json
+monte_carlo      : 1000 resamples, seed=42, median_final=9912.80 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10b-rsi-30-70-width-btc-2025h2-short-10m\monte_carlo.json
+cost_stress      : baseline + 2 cenario(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10b-rsi-30-70-width-btc-2025h2-short-10m\cost_stress.json
+
+======================================================================
+TF10B.8 | ethusdt_10m_20250705_20251231_binance_spot_resampled | RSI 30/70 short + width 10m
+======================================================================
+dataset          : ethusdt_10m_20250705_20251231_binance_spot_resampled
+strategy         : rsi period=14 oversold=30.00 overbought=70.00 long_only=False
+run_id           : tf10b-rsi-30-70-width-eth-2025h2-short-10m
+regime_filter    : bollinger_width:min_width_bps=250:num_std=1.5:window=30
+out_dir          : C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10b-rsi-30-70-width-eth-2025h2-short-10m
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-21T16:58:40.992841+00:00 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10b-rsi-30-70-width-eth-2025h2-short-10m\run.json
+walk_forward     : 4 fold(s), 98 trade(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10b-rsi-30-70-width-eth-2025h2-short-10m\walk_forward.json
+monte_carlo      : 1000 resamples, seed=42, median_final=9599.17 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10b-rsi-30-70-width-eth-2025h2-short-10m\monte_carlo.json
+cost_stress      : baseline + 2 cenario(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10b-rsi-30-70-width-eth-2025h2-short-10m\cost_stress.json
+
+======================================================================
+TF10B.9 | solusdt_10m_20250705_20251231_binance_spot_resampled | RSI 30/70 short + width 10m
+======================================================================
+dataset          : solusdt_10m_20250705_20251231_binance_spot_resampled
+strategy         : rsi period=14 oversold=30.00 overbought=70.00 long_only=False
+run_id           : tf10b-rsi-30-70-width-sol-2025h2-short-10m
+regime_filter    : bollinger_width:min_width_bps=250:num_std=1.5:window=30
+out_dir          : C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10b-rsi-30-70-width-sol-2025h2-short-10m
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-21T16:59:58.916460+00:00 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10b-rsi-30-70-width-sol-2025h2-short-10m\run.json
+walk_forward     : 4 fold(s), 140 trade(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10b-rsi-30-70-width-sol-2025h2-short-10m\walk_forward.json
+monte_carlo      : 1000 resamples, seed=42, median_final=9080.43 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10b-rsi-30-70-width-sol-2025h2-short-10m\monte_carlo.json
+cost_stress      : baseline + 2 cenario(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10b-rsi-30-70-width-sol-2025h2-short-10m\cost_stress.json
+
+======================================================================
+TF10C.1 | btcusdt_10m_20240705_20241231_binance_spot_resampled | BB 30/1.5 long + width 10m
+======================================================================
+dataset          : btcusdt_10m_20240705_20241231_binance_spot_resampled
+strategy         : bollinger window=30 num_std=1.50 long_only=True
+run_id           : tf10c-bol-30-15-width-btc-2024h2-long-10m
+regime_filter    : bollinger_width:min_width_bps=250:num_std=1.5:window=30
+out_dir          : C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10c-bol-30-15-width-btc-2024h2-long-10m
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-21T17:01:18.309772+00:00 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10c-bol-30-15-width-btc-2024h2-long-10m\run.json
+walk_forward     : 4 fold(s), 25 trade(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10c-bol-30-15-width-btc-2024h2-long-10m\walk_forward.json
+monte_carlo      : 1000 resamples, seed=42, median_final=10112.06 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10c-bol-30-15-width-btc-2024h2-long-10m\monte_carlo.json
+cost_stress      : baseline + 2 cenario(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10c-bol-30-15-width-btc-2024h2-long-10m\cost_stress.json
+
+======================================================================
+TF10C.2 | ethusdt_10m_20240705_20241231_binance_spot_resampled | BB 30/1.5 long + width 10m
+======================================================================
+dataset          : ethusdt_10m_20240705_20241231_binance_spot_resampled
+strategy         : bollinger window=30 num_std=1.50 long_only=True
+run_id           : tf10c-bol-30-15-width-eth-2024h2-long-10m
+regime_filter    : bollinger_width:min_width_bps=250:num_std=1.5:window=30
+out_dir          : C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10c-bol-30-15-width-eth-2024h2-long-10m
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-21T17:01:50.771490+00:00 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10c-bol-30-15-width-eth-2024h2-long-10m\run.json
+walk_forward     : 4 fold(s), 28 trade(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10c-bol-30-15-width-eth-2024h2-long-10m\walk_forward.json
+monte_carlo      : 1000 resamples, seed=42, median_final=10126.19 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10c-bol-30-15-width-eth-2024h2-long-10m\monte_carlo.jsonC:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+
+cost_stress      : baseline + 2 cenario(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10c-bol-30-15-width-eth-2024h2-long-10m\cost_stress.json
+
+======================================================================
+TF10C.3 | solusdt_10m_20240705_20241231_binance_spot_resampled | BB 30/1.5 long + width 10m
+======================================================================
+dataset          : solusdt_10m_20240705_20241231_binance_spot_resampled
+strategy         : bollinger window=30 num_std=1.50 long_only=True
+run_id           : tf10c-bol-30-15-width-sol-2024h2-long-10m
+regime_filter    : bollinger_width:min_width_bps=250:num_std=1.5:window=30
+out_dir          : C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10c-bol-30-15-width-sol-2024h2-long-10m
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-21T17:02:23.182921+00:00 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10c-bol-30-15-width-sol-2024h2-long-10m\run.json
+walk_forward     : 4 fold(s), 61 trade(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10c-bol-30-15-width-sol-2024h2-long-10m\walk_forward.json
+monte_carlo      : 1000 resamples, seed=42, median_final=10211.64 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10c-bol-30-15-width-sol-2024h2-long-10m\monte_carlo.json
+cost_stress      : baseline + 2 cenario(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10c-bol-30-15-width-sol-2024h2-long-10m\cost_stress.json
+
+======================================================================
+TF10C.4 | btcusdt_10m_20250105_20250704_binance_spot_resampled | BB 30/1.5 long + width 10m
+======================================================================
+dataset          : btcusdt_10m_20250105_20250704_binance_spot_resampled
+strategy         : bollinger window=30 num_std=1.50 long_only=True
+run_id           : tf10c-bol-30-15-width-btc-2025h1-long-10m
+regime_filter    : bollinger_width:min_width_bps=250:num_std=1.5:window=30
+out_dir          : C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10c-bol-30-15-width-btc-2025h1-long-10m
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-21T17:02:56.050234+00:00 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10c-bol-30-15-width-btc-2025h1-long-10m\run.json
+walk_forward     : 4 fold(s), 16 trade(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10c-bol-30-15-width-btc-2025h1-long-10m\walk_forward.json
+monte_carlo      : 1000 resamples, seed=42, median_final=9942.82 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10c-bol-30-15-width-btc-2025h1-long-10m\monte_carlo.json
+cost_stress      : baseline + 2 cenario(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10c-bol-30-15-width-btc-2025h1-long-10m\cost_stress.json
+
+======================================================================
+TF10C.5 | ethusdt_10m_20250105_20250704_binance_spot_resampled | BB 30/1.5 long + width 10m
+======================================================================
+dataset          : ethusdt_10m_20250105_20250704_binance_spot_resampled
+strategy         : bollinger window=30 num_std=1.50 long_only=True
+run_id           : tf10c-bol-30-15-width-eth-2025h1-long-10m
+regime_filter    : bollinger_width:min_width_bps=250:num_std=1.5:window=30
+out_dir          : C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10c-bol-30-15-width-eth-2025h1-long-10m
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-21T17:03:29.301603+00:00 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10c-bol-30-15-width-eth-2025h1-long-10m\run.json
+walk_forward     : 4 fold(s), 36 trade(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10c-bol-30-15-width-eth-2025h1-long-10m\walk_forward.json
+monte_carlo      : 1000 resamples, seed=42, median_final=9693.62 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10c-bol-30-15-width-eth-2025h1-long-10m\monte_carlo.json
+cost_stress      : baseline + 2 cenario(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10c-bol-30-15-width-eth-2025h1-long-10m\cost_stress.json
+
+======================================================================
+TF10C.6 | solusdt_10m_20250105_20250704_binance_spot_resampled | BB 30/1.5 long + width 10m
+======================================================================
+dataset          : solusdt_10m_20250105_20250704_binance_spot_resampled
+strategy         : bollinger window=30 num_std=1.50 long_only=True
+run_id           : tf10c-bol-30-15-width-sol-2025h1-long-10m
+regime_filter    : bollinger_width:min_width_bps=250:num_std=1.5:window=30
+out_dir          : C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10c-bol-30-15-width-sol-2025h1-long-10m
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-21T17:04:01.115173+00:00 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10c-bol-30-15-width-sol-2025h1-long-10m\run.json
+walk_forward     : 4 fold(s), 75 trade(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10c-bol-30-15-width-sol-2025h1-long-10m\walk_forward.json
+monte_carlo      : 1000 resamples, seed=42, median_final=9530.39 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10c-bol-30-15-width-sol-2025h1-long-10m\monte_carlo.json
+cost_stress      : baseline + 2 cenario(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10c-bol-30-15-width-sol-2025h1-long-10m\cost_stress.json
+
+======================================================================
+TF10C.7 | btcusdt_10m_20250705_20251231_binance_spot_resampled | BB 30/1.5 long + width 10m
+======================================================================
+dataset          : btcusdt_10m_20250705_20251231_binance_spot_resampled
+strategy         : bollinger window=30 num_std=1.50 long_only=True
+run_id           : tf10c-bol-30-15-width-btc-2025h2-long-10m
+regime_filter    : bollinger_width:min_width_bps=250:num_std=1.5:window=30
+out_dir          : C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10c-bol-30-15-width-btc-2025h2-long-10m
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-21T17:04:35.738725+00:00 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10c-bol-30-15-width-btc-2025h2-long-10m\run.json
+walk_forward     : 4 fold(s), 13 trade(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10c-bol-30-15-width-btc-2025h2-long-10m\walk_forward.json
+monte_carlo      : 1000 resamples, seed=42, median_final=9929.54 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10c-bol-30-15-width-btc-2025h2-long-10m\monte_carlo.json
+cost_stress      : baseline + 2 cenario(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10c-bol-30-15-width-btc-2025h2-long-10m\cost_stress.json
+
+======================================================================
+TF10C.8 | ethusdt_10m_20250705_20251231_binance_spot_resampled | BB 30/1.5 long + width 10m
+======================================================================
+dataset          : ethusdt_10m_20250705_20251231_binance_spot_resampled
+strategy         : bollinger window=30 num_std=1.50 long_only=True
+run_id           : tf10c-bol-30-15-width-eth-2025h2-long-10m
+regime_filter    : bollinger_width:min_width_bps=250:num_std=1.5:window=30C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+
+out_dir          : C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10c-bol-30-15-width-eth-2025h2-long-10m
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-21T17:05:08.338386+00:00 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10c-bol-30-15-width-eth-2025h2-long-10m\run.json
+walk_forward     : 4 fold(s), 40 trade(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10c-bol-30-15-width-eth-2025h2-long-10m\walk_forward.json
+monte_carlo      : 1000 resamples, seed=42, median_final=9534.08 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10c-bol-30-15-width-eth-2025h2-long-10m\monte_carlo.json
+cost_stress      : baseline + 2 cenario(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10c-bol-30-15-width-eth-2025h2-long-10m\cost_stress.json
+
+======================================================================
+TF10C.9 | solusdt_10m_20250705_20251231_binance_spot_resampled | BB 30/1.5 long + width 10m
+======================================================================
+dataset          : solusdt_10m_20250705_20251231_binance_spot_resampled
+strategy         : bollinger window=30 num_std=1.50 long_only=True
+run_id           : tf10c-bol-30-15-width-sol-2025h2-long-10m
+regime_filter    : bollinger_width:min_width_bps=250:num_std=1.5:window=30
+out_dir          : C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10c-bol-30-15-width-sol-2025h2-long-10m
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-21T17:05:41.315705+00:00 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10c-bol-30-15-width-sol-2025h2-long-10m\run.json
+walk_forward     : 4 fold(s), 62 trade(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10c-bol-30-15-width-sol-2025h2-long-10m\walk_forward.json
+monte_carlo      : 1000 resamples, seed=42, median_final=9598.01 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10c-bol-30-15-width-sol-2025h2-long-10m\monte_carlo.json
+cost_stress      : baseline + 2 cenario(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10c-bol-30-15-width-sol-2025h2-long-10m\cost_stress.json
+
+======================================================================
+TF10D.1 | btcusdt_10m_20240705_20241231_binance_spot_resampled | RSI 30/70 long + width 10m
+======================================================================
+dataset          : btcusdt_10m_20240705_20241231_binance_spot_resampled
+strategy         : rsi period=14 oversold=30.00 overbought=70.00 long_only=True
+run_id           : tf10d-rsi-30-70-width-btc-2024h2-long-10m
+regime_filter    : bollinger_width:min_width_bps=250:num_std=1.5:window=30
+out_dir          : C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10d-rsi-30-70-width-btc-2024h2-long-10m
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-21T17:06:15.185009+00:00 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10d-rsi-30-70-width-btc-2024h2-long-10m\run.json
+walk_forward     : 4 fold(s), 31 trade(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10d-rsi-30-70-width-btc-2024h2-long-10m\walk_forward.json
+monte_carlo      : 1000 resamples, seed=42, median_final=10070.48 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10d-rsi-30-70-width-btc-2024h2-long-10m\monte_carlo.json
+cost_stress      : baseline + 2 cenario(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10d-rsi-30-70-width-btc-2024h2-long-10m\cost_stress.json
+
+======================================================================
+TF10D.2 | ethusdt_10m_20240705_20241231_binance_spot_resampled | RSI 30/70 long + width 10m
+======================================================================
+dataset          : ethusdt_10m_20240705_20241231_binance_spot_resampled
+strategy         : rsi period=14 oversold=30.00 overbought=70.00 long_only=True
+run_id           : tf10d-rsi-30-70-width-eth-2024h2-long-10m
+regime_filter    : bollinger_width:min_width_bps=250:num_std=1.5:window=30
+out_dir          : C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10d-rsi-30-70-width-eth-2024h2-long-10m
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-21T17:07:34.180077+00:00 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10d-rsi-30-70-width-eth-2024h2-long-10m\run.json
+walk_forward     : 4 fold(s), 48 trade(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10d-rsi-30-70-width-eth-2024h2-long-10m\walk_forward.json
+monte_carlo      : 1000 resamples, seed=42, median_final=9900.86 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10d-rsi-30-70-width-eth-2024h2-long-10m\monte_carlo.json
+cost_stress      : baseline + 2 cenario(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10d-rsi-30-70-width-eth-2024h2-long-10m\cost_stress.json
+
+======================================================================
+TF10D.3 | solusdt_10m_20240705_20241231_binance_spot_resampled | RSI 30/70 long + width 10m
+======================================================================
+dataset          : solusdt_10m_20240705_20241231_binance_spot_resampled
+strategy         : rsi period=14 oversold=30.00 overbought=70.00 long_only=True
+run_id           : tf10d-rsi-30-70-width-sol-2024h2-long-10m
+regime_filter    : bollinger_width:min_width_bps=250:num_std=1.5:window=30
+out_dir          : C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10d-rsi-30-70-width-sol-2024h2-long-10m
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-21T17:08:52.441243+00:00 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10d-rsi-30-70-width-sol-2024h2-long-10m\run.json
+walk_forward     : 4 fold(s), 91 trade(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10d-rsi-30-70-width-sol-2024h2-long-10m\walk_forward.json
+monte_carlo      : 1000 resamples, seed=42, median_final=10524.47 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10d-rsi-30-70-width-sol-2024h2-long-10m\monte_carlo.json
+cost_stress      : baseline + 2 cenario(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10d-rsi-30-70-width-sol-2024h2-long-10m\cost_stress.json
+
+======================================================================
+TF10D.4 | btcusdt_10m_20250105_20250704_binance_spot_resampled | RSI 30/70 long + width 10m
+======================================================================
+dataset          : btcusdt_10m_20250105_20250704_binance_spot_resampled
+strategy         : rsi period=14 oversold=30.00 overbought=70.00 long_only=True
+run_id           : tf10d-rsi-30-70-width-btc-2025h1-long-10m
+regime_filter    : bollinger_width:min_width_bps=250:num_std=1.5:window=30
+out_dir          : C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10d-rsi-30-70-width-btc-2025h1-long-10m
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-21T17:10:11.379835+00:00 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10d-rsi-30-70-width-btc-2025h1-long-10m\run.json
+walk_forward     : 4 fold(s), 17 trade(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10d-rsi-30-70-width-btc-2025h1-long-10m\walk_forward.json
+monte_carlo      : 1000 resamples, seed=42, median_final=10043.95 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10d-rsi-30-70-width-btc-2025h1-long-10m\monte_carlo.jsonC:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\leo-a\AppData\Local\Programs\Python\Python313\Lib\site-packages\numpy\lib\_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+
+cost_stress      : baseline + 2 cenario(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10d-rsi-30-70-width-btc-2025h1-long-10m\cost_stress.json
+
+======================================================================
+TF10D.5 | ethusdt_10m_20250105_20250704_binance_spot_resampled | RSI 30/70 long + width 10m
+======================================================================
+dataset          : ethusdt_10m_20250105_20250704_binance_spot_resampled
+strategy         : rsi period=14 oversold=30.00 overbought=70.00 long_only=True
+run_id           : tf10d-rsi-30-70-width-eth-2025h1-long-10m
+regime_filter    : bollinger_width:min_width_bps=250:num_std=1.5:window=30
+out_dir          : C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10d-rsi-30-70-width-eth-2025h1-long-10m
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-21T17:11:33.281318+00:00 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10d-rsi-30-70-width-eth-2025h1-long-10m\run.json
+walk_forward     : 4 fold(s), 61 trade(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10d-rsi-30-70-width-eth-2025h1-long-10m\walk_forward.json
+monte_carlo      : 1000 resamples, seed=42, median_final=9744.55 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10d-rsi-30-70-width-eth-2025h1-long-10m\monte_carlo.json
+cost_stress      : baseline + 2 cenario(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10d-rsi-30-70-width-eth-2025h1-long-10m\cost_stress.json
+
+======================================================================
+TF10D.6 | solusdt_10m_20250105_20250704_binance_spot_resampled | RSI 30/70 long + width 10m
+======================================================================
+dataset          : solusdt_10m_20250105_20250704_binance_spot_resampled
+strategy         : rsi period=14 oversold=30.00 overbought=70.00 long_only=True
+run_id           : tf10d-rsi-30-70-width-sol-2025h1-long-10m
+regime_filter    : bollinger_width:min_width_bps=250:num_std=1.5:window=30
+out_dir          : C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10d-rsi-30-70-width-sol-2025h1-long-10m
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-21T17:12:57.719200+00:00 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10d-rsi-30-70-width-sol-2025h1-long-10m\run.json
+walk_forward     : 4 fold(s), 91 trade(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10d-rsi-30-70-width-sol-2025h1-long-10m\walk_forward.json
+monte_carlo      : 1000 resamples, seed=42, median_final=10235.08 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10d-rsi-30-70-width-sol-2025h1-long-10m\monte_carlo.json
+cost_stress      : baseline + 2 cenario(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10d-rsi-30-70-width-sol-2025h1-long-10m\cost_stress.json
+
+======================================================================
+TF10D.7 | btcusdt_10m_20250705_20251231_binance_spot_resampled | RSI 30/70 long + width 10m
+======================================================================
+dataset          : btcusdt_10m_20250705_20251231_binance_spot_resampled
+strategy         : rsi period=14 oversold=30.00 overbought=70.00 long_only=True
+run_id           : tf10d-rsi-30-70-width-btc-2025h2-long-10m
+regime_filter    : bollinger_width:min_width_bps=250:num_std=1.5:window=30
+out_dir          : C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10d-rsi-30-70-width-btc-2025h2-long-10m
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-21T17:14:19.377329+00:00 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10d-rsi-30-70-width-btc-2025h2-long-10m\run.json
+walk_forward     : 4 fold(s), 20 trade(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10d-rsi-30-70-width-btc-2025h2-long-10m\walk_forward.json
+monte_carlo      : 1000 resamples, seed=42, median_final=9918.04 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10d-rsi-30-70-width-btc-2025h2-long-10m\monte_carlo.json
+cost_stress      : baseline + 2 cenario(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10d-rsi-30-70-width-btc-2025h2-long-10m\cost_stress.json
+
+======================================================================
+TF10D.8 | ethusdt_10m_20250705_20251231_binance_spot_resampled | RSI 30/70 long + width 10m
+======================================================================
+dataset          : ethusdt_10m_20250705_20251231_binance_spot_resampled
+strategy         : rsi period=14 oversold=30.00 overbought=70.00 long_only=True
+run_id           : tf10d-rsi-30-70-width-eth-2025h2-long-10m
+regime_filter    : bollinger_width:min_width_bps=250:num_std=1.5:window=30
+out_dir          : C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10d-rsi-30-70-width-eth-2025h2-long-10m
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-21T17:15:37.686239+00:00 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10d-rsi-30-70-width-eth-2025h2-long-10m\run.json
+walk_forward     : 4 fold(s), 49 trade(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10d-rsi-30-70-width-eth-2025h2-long-10m\walk_forward.json
+monte_carlo      : 1000 resamples, seed=42, median_final=9710.60 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10d-rsi-30-70-width-eth-2025h2-long-10m\monte_carlo.json
+cost_stress      : baseline + 2 cenario(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10d-rsi-30-70-width-eth-2025h2-long-10m\cost_stress.json
+
+======================================================================
+TF10D.9 | solusdt_10m_20250705_20251231_binance_spot_resampled | RSI 30/70 long + width 10m
+======================================================================
+dataset          : solusdt_10m_20250705_20251231_binance_spot_resampled
+strategy         : rsi period=14 oversold=30.00 overbought=70.00 long_only=True
+run_id           : tf10d-rsi-30-70-width-sol-2025h2-long-10m
+regime_filter    : bollinger_width:min_width_bps=250:num_std=1.5:window=30
+out_dir          : C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10d-rsi-30-70-width-sol-2025h2-long-10m
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-21T17:16:54.925516+00:00 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10d-rsi-30-70-width-sol-2025h2-long-10m\run.json
+walk_forward     : 4 fold(s), 68 trade(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10d-rsi-30-70-width-sol-2025h2-long-10m\walk_forward.json
+monte_carlo      : 1000 resamples, seed=42, median_final=9548.04 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10d-rsi-30-70-width-sol-2025h2-long-10m\monte_carlo.json
+cost_stress      : baseline + 2 cenario(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10d-rsi-30-70-width-sol-2025h2-long-10m\cost_stress.json
+
+======================================================================
+TF10E.1 | solusdt_10m_20240705_20241231_binance_spot_resampled | RSI 25/75 short + trend_htf SOL 10m
+======================================================================
+dataset          : solusdt_10m_20240705_20241231_binance_spot_resampled
+strategy         : rsi period=14 oversold=25.00 overbought=75.00 long_only=False
+run_id           : tf10e-rsi-25-75-trendhtf-sol-2024h2-short-10m
+regime_filter    : trend_htf:htf=4h:mode=short_only:sma_window=50
+out_dir          : C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10e-rsi-25-75-trendhtf-sol-2024h2-short-10m
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-21T17:18:12.163791+00:00 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10e-rsi-25-75-trendhtf-sol-2024h2-short-10m\run.json
+walk_forward     : 4 fold(s), 118 trade(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10e-rsi-25-75-trendhtf-sol-2024h2-short-10m\walk_forward.json
+monte_carlo      : 1000 resamples, seed=42, median_final=10259.28 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10e-rsi-25-75-trendhtf-sol-2024h2-short-10m\monte_carlo.json
+cost_stress      : baseline + 2 cenario(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10e-rsi-25-75-trendhtf-sol-2024h2-short-10m\cost_stress.json
+
+======================================================================
+TF10E.2 | solusdt_10m_20250105_20250704_binance_spot_resampled | RSI 25/75 short + trend_htf SOL 10m
+======================================================================
+dataset          : solusdt_10m_20250105_20250704_binance_spot_resampled
+strategy         : rsi period=14 oversold=25.00 overbought=75.00 long_only=False
+run_id           : tf10e-rsi-25-75-trendhtf-sol-2025h1-short-10m
+regime_filter    : trend_htf:htf=4h:mode=short_only:sma_window=50
+out_dir          : C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10e-rsi-25-75-trendhtf-sol-2025h1-short-10m
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-21T17:24:23.804439+00:00 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10e-rsi-25-75-trendhtf-sol-2025h1-short-10m\run.json
+walk_forward     : 4 fold(s), 143 trade(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10e-rsi-25-75-trendhtf-sol-2025h1-short-10m\walk_forward.json
+monte_carlo      : 1000 resamples, seed=42, median_final=10479.92 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10e-rsi-25-75-trendhtf-sol-2025h1-short-10m\monte_carlo.json
+cost_stress      : baseline + 2 cenario(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10e-rsi-25-75-trendhtf-sol-2025h1-short-10m\cost_stress.json
+
+======================================================================
+TF10E.3 | solusdt_10m_20250705_20251231_binance_spot_resampled | RSI 25/75 short + trend_htf SOL 10m
+======================================================================
+dataset          : solusdt_10m_20250705_20251231_binance_spot_resampled
+strategy         : rsi period=14 oversold=25.00 overbought=75.00 long_only=False
+run_id           : tf10e-rsi-25-75-trendhtf-sol-2025h2-short-10m
+regime_filter    : trend_htf:htf=4h:mode=short_only:sma_window=50
+out_dir          : C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10e-rsi-25-75-trendhtf-sol-2025h2-short-10m
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-21T17:30:36.433140+00:00 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10e-rsi-25-75-trendhtf-sol-2025h2-short-10m\run.json
+walk_forward     : 4 fold(s), 169 trade(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10e-rsi-25-75-trendhtf-sol-2025h2-short-10m\walk_forward.json
+monte_carlo      : 1000 resamples, seed=42, median_final=9924.94 -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10e-rsi-25-75-trendhtf-sol-2025h2-short-10m\monte_carlo.json
+cost_stress      : baseline + 2 cenario(s) -> C:\Users\leo-a\OneDrive\Área de Trabalho\Testador de Estrategias\teste\results\validation\tf10e-rsi-25-75-trendhtf-sol-2025h2-short-10m\cost_stress.json
+
+Série TF10m Fase 2 completa (30 runs).

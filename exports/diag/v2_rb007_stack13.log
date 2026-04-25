@@ -1,0 +1,43 @@
+[V2-RB007 stack13] total jobs: 39 (13 combos × 3 fee levels)
+  done: 0 | todo: 39
+[1/39] S01  bollinger_width_regime_v2      ETHUSDT  2024-H1  fee=5bps   sh=1.7321 tr=35 elapsed=6.7s
+[2/39] S03  bollinger_width_regime_v2      BTCUSDT  2024-H2  fee=5bps   sh=1.5354 tr=20 elapsed=6.7s
+[3/39] S02  bollinger_width_regime_v2      ETHUSDT  2025-H1  fee=10bps  sh=1.2546 tr=37 elapsed=6.8s
+[4/39] S03  bollinger_width_regime_v2      BTCUSDT  2024-H2  fee=15bps  sh=0.9106 tr=20 elapsed=6.7s
+[5/39] S01  bollinger_width_regime_v2      ETHUSDT  2024-H1  fee=10bps  sh=1.452 tr=35 elapsed=6.8s
+[6/39] S02  bollinger_width_regime_v2      ETHUSDT  2025-H1  fee=5bps   sh=1.492 tr=37 elapsed=6.8s
+[7/39] S01  bollinger_width_regime_v2      ETHUSDT  2024-H1  fee=15bps  sh=1.1718 tr=35 elapsed=6.8s
+[8/39] S03  bollinger_width_regime_v2      BTCUSDT  2024-H2  fee=10bps  sh=1.2231 tr=20 elapsed=6.8s
+[9/39] S02  bollinger_width_regime_v2      ETHUSDT  2025-H1  fee=15bps  sh=1.0166 tr=37 elapsed=6.8s
+[10/39] S04  bollinger_width_regime_v2      SOLUSDT  2024-H2  fee=5bps   sh=2.5029 tr=55 elapsed=6.8s
+[11/39] S04  bollinger_width_regime_v2      SOLUSDT  2024-H2  fee=15bps  sh=1.8104 tr=55 elapsed=3.7s
+[12/39] S06  bollinger_short_width          BTCUSDT  2025-H1  fee=5bps   sh=0.2323 tr=18 elapsed=3.7s
+[13/39] S06  bollinger_short_width          BTCUSDT  2025-H1  fee=10bps  sh=0.0222 tr=18 elapsed=3.8s
+[14/39] S05  bollinger_short_width          SOLUSDT  2024-H2  fee=5bps   sh=2.2135 tr=66 elapsed=3.9s
+[15/39] S07  bollinger_short_width          ETHUSDT  2025-H1  fee=5bps   sh=1.6822 tr=53 elapsed=3.8s
+[16/39] S06  bollinger_short_width          BTCUSDT  2025-H1  fee=15bps  sh=-0.1882 tr=18 elapsed=3.8s
+[17/39] S04  bollinger_width_regime_v2      SOLUSDT  2024-H2  fee=10bps  sh=2.1565 tr=55 elapsed=4.0s
+[18/39] S05  bollinger_short_width          SOLUSDT  2024-H2  fee=10bps  sh=1.7611 tr=66 elapsed=3.9s
+[19/39] S07  bollinger_short_width          ETHUSDT  2025-H1  fee=10bps  sh=1.3591 tr=53 elapsed=3.8s
+[20/39] S05  bollinger_short_width          SOLUSDT  2024-H2  fee=15bps  sh=1.3102 tr=66 elapsed=3.9s
+[21/39] S07  bollinger_short_width          ETHUSDT  2025-H1  fee=15bps  sh=1.0358 tr=53 elapsed=3.9s
+[22/39] S08  bollinger_short_width          SOLUSDT  2025-H1  fee=5bps   sh=-0.151 tr=61 elapsed=3.9s
+[23/39] S08  bollinger_short_width          SOLUSDT  2025-H1  fee=10bps  sh=-0.4765 tr=61 elapsed=3.9s
+[24/39] S08  bollinger_short_width          SOLUSDT  2025-H1  fee=15bps  sh=-0.8015 tr=61 elapsed=4.0s
+[25/39] S10  rsi_short_pure_2025h2          BTCUSDT  2025-H2  fee=10bps  sh=-2.9447 tr=58 elapsed=6.0s
+[26/39] S10  rsi_short_pure_2025h2          BTCUSDT  2025-H2  fee=5bps   sh=-2.343 tr=58 elapsed=6.0s
+[27/39] S10  rsi_short_pure_2025h2          BTCUSDT  2025-H2  fee=15bps  sh=-3.5387 tr=58 elapsed=6.0s
+[28/39] S09  rsi_long_width_eth_2024h2      ETHUSDT  2024-H2  fee=10bps  sh=1.429 tr=30 elapsed=6.5s
+[29/39] S09  rsi_long_width_eth_2024h2      ETHUSDT  2024-H2  fee=15bps  sh=1.0831 tr=30 elapsed=6.5s
+[30/39] S09  rsi_long_width_eth_2024h2      ETHUSDT  2024-H2  fee=5bps   sh=1.7745 tr=30 elapsed=6.6s
+[31/39] S11  rsi_short_pure_2025h2          SOLUSDT  2025-H2  fee=10bps  sh=0.0287 tr=60 elapsed=6.2s
+[32/39] S11  rsi_short_pure_2025h2          SOLUSDT  2025-H2  fee=5bps   sh=0.4006 tr=60 elapsed=6.4s
+[33/39] S11  rsi_short_pure_2025h2          SOLUSDT  2025-H2  fee=15bps  sh=-0.3428 tr=60 elapsed=6.3s
+[34/39] S13  rsi_short_width_2025h1         BTCUSDT  2025-H1  fee=5bps   sh=1.4094 tr=16 elapsed=6.4s
+[35/39] S13  rsi_short_width_2025h1         BTCUSDT  2025-H1  fee=15bps  sh=0.9671 tr=16 elapsed=6.3s
+[36/39] S13  rsi_short_width_2025h1         BTCUSDT  2025-H1  fee=10bps  sh=1.1884 tr=16 elapsed=6.5s
+[37/39] S12  rsi_short_trendhtf_sol_2025h1  SOLUSDT  2025-H1  fee=5bps   sh=0.5554 tr=25 elapsed=15.8s
+[38/39] S12  rsi_short_trendhtf_sol_2025h1  SOLUSDT  2025-H1  fee=10bps  sh=0.352 tr=25 elapsed=15.9s
+[39/39] S12  rsi_short_trendhtf_sol_2025h1  SOLUSDT  2025-H1  fee=15bps  sh=0.1484 tr=25 elapsed=15.9s
+
+DONE wall=33s

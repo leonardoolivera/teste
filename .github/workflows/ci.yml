@@ -30,3 +30,13 @@ jobs:
 
       - name: Tests (pytest)
         run: uv run pytest -q
+
+      - name: Validate agentic artifacts (ADR-0020)
+        run: uv run python scripts/validate_artifacts.py
+
+      - name: Anti-hardcode gate (ADR-0009)
+        run: |
+          if grep -rE '\b(BTC|ETH|SOL)\b' src/; then
+            echo "Symbol hardcode detected in src/ — ver ADR-0009."
+            exit 1
+          fi

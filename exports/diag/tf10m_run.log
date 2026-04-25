@@ -1,0 +1,396 @@
+﻿C:\Users\leo-a\AppData\Local\Programs\Python\Python313\python.exe : INFO alpha_forge.backtest backtest.start 
+dataset_id=btcusdt_10m_20240705_20241231_binance_spot_resampled#fold1 bars=5184 
+strategy=BollingerMeanReversionStrategy capital=10000.00 fee_bps=5.0000 slip_bps=2.0000 sizing=fixed_notional
+No linha:1 caractere:78
++ ... ias\teste'; C:\Users\leo-a\AppData\Local\Programs\Python\Python313\py ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (INFO alpha_forg...=fixed_notional:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+INFO alpha_forge.backtest backtest.end dataset_id=btcusdt_10m_20240705_20241231_binance_spot_resampled#fold1 bars=5184 
+fills=18 rejections=0 trades=9 final_equity=10023.31
+INFO alpha_forge.backtest backtest.start dataset_id=btcusdt_10m_20240705_20241231_binance_spot_resampled#fold2 
+bars=5184 strategy=BollingerMeanReversionStrategy capital=10000.00 fee_bps=5.0000 slip_bps=2.0000 sizing=fixed_notional
+INFO alpha_forge.backtest backtest.end dataset_id=btcusdt_10m_20240705_20241231_binance_spot_resampled#fold2 bars=5184 
+fills=4 rejections=0 trades=2 final_equity=10002.65
+INFO alpha_forge.backtest backtest.start dataset_id=btcusdt_10m_20240705_20241231_binance_spot_resampled#fold3 
+bars=5184 strategy=BollingerMeanReversionStrategy capital=10000.00 fee_bps=5.0000 slip_bps=2.0000 sizing=fixed_notional
+INFO alpha_forge.backtest backtest.end dataset_id=btcusdt_10m_20240705_20241231_binance_spot_resampled#fold3 bars=5184 
+fills=24 rejections=0 trades=12 final_equity=10039.55
+INFO alpha_forge.backtest backtest.start dataset_id=btcusdt_10m_20240705_20241231_binance_spot_resampled#fold4 
+bars=5184 strategy=BollingerMeanReversionStrategy capital=10000.00 fee_bps=5.0000 slip_bps=2.0000 sizing=fixed_notional
+INFO alpha_forge.backtest backtest.end dataset_id=btcusdt_10m_20240705_20241231_binance_spot_resampled#fold4 bars=5184 
+fills=26 rejections=0 trades=13 final_equity=10020.69
+INFO alpha_forge.backtest backtest.start dataset_id=btcusdt_10m_20240705_20241231_binance_spot_resampled bars=25920 
+strategy=BollingerMeanReversionStrategy capital=10000.00 fee_bps=5.0000 slip_bps=2.0000 sizing=fixed_notional
+INFO alpha_forge.backtest backtest.end dataset_id=btcusdt_10m_20240705_20241231_binance_spot_resampled bars=25920 
+fills=100 rejections=0 trades=50 final_equity=10029.40
+INFO alpha_forge.backtest backtest.start dataset_id=btcusdt_10m_20240705_20241231_binance_spot_resampled#stress1 
+bars=25920 strategy=BollingerMeanReversionStrategy capital=10000.00 fee_bps=15.0000 slip_bps=2.0000 
+sizing=fixed_notional
+INFO alpha_forge.backtest backtest.end dataset_id=btcusdt_10m_20240705_20241231_binance_spot_resampled#stress1 
+bars=25920 fills=100 rejections=0 trades=50 final_equity=9828.89
+INFO alpha_forge.backtest backtest.start dataset_id=btcusdt_10m_20240705_20241231_binance_spot_resampled#stress2 
+bars=25920 strategy=BollingerMeanReversionStrategy capital=10000.00 fee_bps=5.0000 slip_bps=2.0000 
+sizing=fixed_notional
+INFO alpha_forge.backtest backtest.end dataset_id=btcusdt_10m_20240705_20241231_binance_spot_resampled#stress2 
+bars=25920 fills=100 rejections=0 trades=50 final_equity=9828.89
+INFO alpha_forge.backtest backtest.start dataset_id=ethusdt_10m_20240705_20241231_binance_spot_resampled#fold1 
+bars=5184 strategy=BollingerMeanReversionStrategy capital=10000.00 fee_bps=5.0000 slip_bps=2.0000 sizing=fixed_notional
+INFO alpha_forge.backtest backtest.end dataset_id=ethusdt_10m_20240705_20241231_binance_spot_resampled#fold1 bars=5184 
+fills=30 rejections=0 trades=15 final_equity=10048.40
+INFO alpha_forge.backtest backtest.start dataset_id=ethusdt_10m_20240705_20241231_binance_spot_resampled#fold2 
+bars=5184 strategy=BollingerMeanReversionStrategy capital=10000.00 fee_bps=5.0000 slip_bps=2.0000 sizing=fixed_notional
+INFO alpha_forge.backtest backtest.end dataset_id=ethusdt_10m_20240705_20241231_binance_spot_resampled#fold2 bars=5184 
+fills=14 rejections=0 trades=7 final_equity=10019.80
+INFO alpha_forge.backtest backtest.start dataset_id=ethusdt_10m_20240705_20241231_binance_spot_resampled#fold3 
+bars=5184 strategy=BollingerMeanReversionStrategy capital=10000.00 fee_bps=5.0000 slip_bps=2.0000 sizing=fixed_notional
+INFO alpha_forge.backtest backtest.end dataset_id=ethusdt_10m_20240705_20241231_binance_spot_resampled#fold3 bars=5184 
+fills=36 rejections=0 trades=18 final_equity=10208.67
+INFO alpha_forge.backtest backtest.start dataset_id=ethusdt_10m_20240705_20241231_binance_spot_resampled#fold4 
+bars=5184 strategy=BollingerMeanReversionStrategy capital=10000.00 fee_bps=5.0000 slip_bps=2.0000 sizing=fixed_notional
+INFO alpha_forge.backtest backtest.end dataset_id=ethusdt_10m_20240705_20241231_binance_spot_resampled#fold4 bars=5184 
+fills=40 rejections=0 trades=20 final_equity=9935.73
+INFO alpha_forge.backtest backtest.start dataset_id=ethusdt_10m_20240705_20241231_binance_spot_resampled bars=25920 
+strategy=BollingerMeanReversionStrategy capital=10000.00 fee_bps=5.0000 slip_bps=2.0000 sizing=fixed_notional
+INFO alpha_forge.backtest backtest.end dataset_id=ethusdt_10m_20240705_20241231_binance_spot_resampled bars=25920 
+fills=160 rejections=0 trades=80 final_equity=10336.33
+INFO alpha_forge.backtest backtest.start dataset_id=ethusdt_10m_20240705_20241231_binance_spot_resampled#stress1 
+bars=25920 strategy=BollingerMeanReversionStrategy capital=10000.00 fee_bps=15.0000 slip_bps=2.0000 
+sizing=fixed_notional
+INFO alpha_forge.backtest backtest.end dataset_id=ethusdt_10m_20240705_20241231_binance_spot_resampled#stress1 
+bars=25920 fills=160 rejections=0 trades=80 final_equity=10016.08
+INFO alpha_forge.backtest backtest.start dataset_id=ethusdt_10m_20240705_20241231_binance_spot_resampled#stress2 
+bars=25920 strategy=BollingerMeanReversionStrategy capital=10000.00 fee_bps=5.0000 slip_bps=2.0000 
+sizing=fixed_notional
+INFO alpha_forge.backtest backtest.end dataset_id=ethusdt_10m_20240705_20241231_binance_spot_resampled#stress2 
+bars=25920 fills=160 rejections=0 trades=80 final_equity=10016.08
+INFO alpha_forge.backtest backtest.start dataset_id=solusdt_10m_20240705_20241231_binance_spot_resampled#fold1 
+bars=5184 strategy=BollingerMeanReversionStrategy capital=10000.00 fee_bps=5.0000 slip_bps=2.0000 sizing=fixed_notional
+INFO alpha_forge.backtest backtest.end dataset_id=solusdt_10m_20240705_20241231_binance_spot_resampled#fold1 bars=5184 
+fills=48 rejections=0 trades=24 final_equity=10086.64
+INFO alpha_forge.backtest backtest.start dataset_id=solusdt_10m_20240705_20241231_binance_spot_resampled#fold2 
+bars=5184 strategy=BollingerMeanReversionStrategy capital=10000.00 fee_bps=5.0000 slip_bps=2.0000 sizing=fixed_notional
+INFO alpha_forge.backtest backtest.end dataset_id=solusdt_10m_20240705_20241231_binance_spot_resampled#fold2 bars=5184 
+fills=15 rejections=0 trades=7 final_equity=9923.21
+INFO alpha_forge.backtest backtest.start dataset_id=solusdt_10m_20240705_20241231_binance_spot_resampled#fold3 
+bars=5184 strategy=BollingerMeanReversionStrategy capital=10000.00 fee_bps=5.0000 slip_bps=2.0000 sizing=fixed_notional
+INFO alpha_forge.backtest backtest.end dataset_id=solusdt_10m_20240705_20241231_binance_spot_resampled#fold3 bars=5184 
+fills=62 rejections=0 trades=31 final_equity=10016.12
+INFO alpha_forge.backtest backtest.start dataset_id=solusdt_10m_20240705_20241231_binance_spot_resampled#fold4 
+bars=5184 strategy=BollingerMeanReversionStrategy capital=10000.00 fee_bps=5.0000 slip_bps=2.0000 sizing=fixed_notional
+INFO alpha_forge.backtest backtest.end dataset_id=solusdt_10m_20240705_20241231_binance_spot_resampled#fold4 bars=5184 
+fills=72 rejections=0 trades=36 final_equity=10472.46
+INFO alpha_forge.backtest backtest.start dataset_id=solusdt_10m_20240705_20241231_binance_spot_resampled bars=25920 
+strategy=BollingerMeanReversionStrategy capital=10000.00 fee_bps=5.0000 slip_bps=2.0000 sizing=fixed_notional
+INFO alpha_forge.backtest backtest.end dataset_id=solusdt_10m_20240705_20241231_binance_spot_resampled bars=25920 
+fills=298 rejections=0 trades=149 final_equity=10331.04
+INFO alpha_forge.backtest backtest.start dataset_id=solusdt_10m_20240705_20241231_binance_spot_resampled#stress1 
+bars=25920 strategy=BollingerMeanReversionStrategy capital=10000.00 fee_bps=15.0000 slip_bps=2.0000 
+sizing=fixed_notional
+INFO alpha_forge.backtest backtest.end dataset_id=solusdt_10m_20240705_20241231_binance_spot_resampled#stress1 
+bars=25920 fills=298 rejections=0 trades=149 final_equity=9733.44
+INFO alpha_forge.backtest backtest.start dataset_id=solusdt_10m_20240705_20241231_binance_spot_resampled#stress2 
+bars=25920 strategy=BollingerMeanReversionStrategy capital=10000.00 fee_bps=5.0000 slip_bps=2.0000 
+sizing=fixed_notional
+INFO alpha_forge.backtest backtest.end dataset_id=solusdt_10m_20240705_20241231_binance_spot_resampled#stress2 
+bars=25920 fills=298 rejections=0 trades=149 final_equity=9733.44
+INFO alpha_forge.backtest backtest.start dataset_id=btcusdt_10m_20250105_20250704_binance_spot_resampled#fold1 
+bars=5212 strategy=BollingerMeanReversionStrategy capital=10000.00 fee_bps=5.0000 slip_bps=2.0000 sizing=fixed_notional
+INFO alpha_forge.backtest backtest.end dataset_id=btcusdt_10m_20250105_20250704_binance_spot_resampled#fold1 bars=5212 
+fills=22 rejections=0 trades=11 final_equity=9864.59
+INFO alpha_forge.backtest backtest.start dataset_id=btcusdt_10m_20250105_20250704_binance_spot_resampled#fold2 
+bars=5212 strategy=BollingerMeanReversionStrategy capital=10000.00 fee_bps=5.0000 slip_bps=2.0000 sizing=fixed_notional
+INFO alpha_forge.backtest backtest.end dataset_id=btcusdt_10m_20250105_20250704_binance_spot_resampled#fold2 bars=5212 
+fills=14 rejections=0 trades=7 final_equity=10077.86
+INFO alpha_forge.backtest backtest.start dataset_id=btcusdt_10m_20250105_20250704_binance_spot_resampled#fold3 
+bars=5212 strategy=BollingerMeanReversionStrategy capital=10000.00 fee_bps=5.0000 slip_bps=2.0000 sizing=fixed_notional
+INFO alpha_forge.backtest backtest.end dataset_id=btcusdt_10m_20250105_20250704_binance_spot_resampled#fold3 bars=5212 
+fills=2 rejections=0 trades=1 final_equity=10012.49
+INFO alpha_forge.backtest backtest.start dataset_id=btcusdt_10m_20250105_20250704_binance_spot_resampled#fold4 
+bars=5216 strategy=BollingerMeanReversionStrategy capital=10000.00 fee_bps=5.0000 slip_bps=2.0000 sizing=fixed_notional
+INFO alpha_forge.backtest backtest.end dataset_id=btcusdt_10m_20250105_20250704_binance_spot_resampled#fold4 bars=5216 
+fills=8 rejections=0 trades=4 final_equity=10011.51
+INFO alpha_forge.backtest backtest.start dataset_id=btcusdt_10m_20250105_20250704_binance_spot_resampled bars=26064 
+strategy=BollingerMeanReversionStrategy capital=10000.00 fee_bps=5.0000 slip_bps=2.0000 sizing=fixed_notional
+INFO alpha_forge.backtest backtest.end dataset_id=btcusdt_10m_20250105_20250704_binance_spot_resampled bars=26064 
+fills=64 rejections=0 trades=32 final_equity=9911.36
+INFO alpha_forge.backtest backtest.start dataset_id=btcusdt_10m_20250105_20250704_binance_spot_resampled#stress1 
+bars=26064 strategy=BollingerMeanReversionStrategy capital=10000.00 fee_bps=15.0000 slip_bps=2.0000 
+sizing=fixed_notional
+INFO alpha_forge.backtest backtest.end dataset_id=btcusdt_10m_20250105_20250704_binance_spot_resampled#stress1 
+bars=26064 fills=64 rejections=0 trades=32 final_equity=9783.01
+INFO alpha_forge.backtest backtest.start dataset_id=btcusdt_10m_20250105_20250704_binance_spot_resampled#stress2 
+bars=26064 strategy=BollingerMeanReversionStrategy capital=10000.00 fee_bps=5.0000 slip_bps=2.0000 
+sizing=fixed_notional
+INFO alpha_forge.backtest backtest.end dataset_id=btcusdt_10m_20250105_20250704_binance_spot_resampled#stress2 
+bars=26064 fills=64 rejections=0 trades=32 final_equity=9783.01
+INFO alpha_forge.backtest backtest.start dataset_id=ethusdt_10m_20250105_20250704_binance_spot_resampled#fold1 
+bars=5212 strategy=BollingerMeanReversionStrategy capital=10000.00 fee_bps=5.0000 slip_bps=2.0000 sizing=fixed_notional
+INFO alpha_forge.backtest backtest.end dataset_id=ethusdt_10m_20250105_20250704_binance_spot_resampled#fold1 bars=5212 
+fills=56 rejections=0 trades=28 final_equity=9571.17
+INFO alpha_forge.backtest backtest.start dataset_id=ethusdt_10m_20250105_20250704_binance_spot_resampled#fold2 
+bars=5212 strategy=BollingerMeanReversionStrategy capital=10000.00 fee_bps=5.0000 slip_bps=2.0000 sizing=fixed_notional
+INFO alpha_forge.backtest backtest.end dataset_id=ethusdt_10m_20250105_20250704_binance_spot_resampled#fold2 bars=5212 
+fills=44 rejections=0 trades=22 final_equity=9908.95
+INFO alpha_forge.backtest backtest.start dataset_id=ethusdt_10m_20250105_20250704_binance_spot_resampled#fold3 
+bars=5212 strategy=BollingerMeanReversionStrategy capital=10000.00 fee_bps=5.0000 slip_bps=2.0000 sizing=fixed_notional
+INFO alpha_forge.backtest backtest.end dataset_id=ethusdt_10m_20250105_20250704_binance_spot_resampled#fold3 bars=5212 
+fills=42 rejections=0 trades=21 final_equity=9824.72
+INFO alpha_forge.backtest backtest.start dataset_id=ethusdt_10m_20250105_20250704_binance_spot_resampled#fold4 
+bars=5216 strategy=BollingerMeanReversionStrategy capital=10000.00 fee_bps=5.0000 slip_bps=2.0000 sizing=fixed_notional
+INFO alpha_forge.backtest backtest.end dataset_id=ethusdt_10m_20250105_20250704_binance_spot_resampled#fold4 bars=5216 
+fills=28 rejections=0 trades=14 final_equity=10123.23
+INFO alpha_forge.backtest backtest.start dataset_id=ethusdt_10m_20250105_20250704_binance_spot_resampled bars=26064 
+strategy=BollingerMeanReversionStrategy capital=10000.00 fee_bps=5.0000 slip_bps=2.0000 sizing=fixed_notional
+INFO alpha_forge.backtest backtest.end dataset_id=ethusdt_10m_20250105_20250704_binance_spot_resampled bars=26064 
+fills=220 rejections=0 trades=110 final_equity=8754.56
+INFO alpha_forge.backtest backtest.start dataset_id=ethusdt_10m_20250105_20250704_binance_spot_resampled#stress1 
+bars=26064 strategy=BollingerMeanReversionStrategy capital=10000.00 fee_bps=15.0000 slip_bps=2.0000 
+sizing=fixed_notional
+INFO alpha_forge.backtest backtest.end dataset_id=ethusdt_10m_20250105_20250704_binance_spot_resampled#stress1 
+bars=26064 fills=220 rejections=0 trades=110 final_equity=8313.89
+INFO alpha_forge.backtest backtest.start dataset_id=ethusdt_10m_20250105_20250704_binance_spot_resampled#stress2 
+bars=26064 strategy=BollingerMeanReversionStrategy capital=10000.00 fee_bps=5.0000 slip_bps=2.0000 
+sizing=fixed_notional
+INFO alpha_forge.backtest backtest.end dataset_id=ethusdt_10m_20250105_20250704_binance_spot_resampled#stress2 
+bars=26064 fills=220 rejections=0 trades=110 final_equity=8313.89
+
+======================================================================
+TF10.1 | btcusdt_10m_20240705_20241231_binance_spot_resampled | BB+width 20/2.0 short 10m
+======================================================================
+dataset          : btcusdt_10m_20240705_20241231_binance_spot_resampled
+strategy         : bollinger window=20 num_std=2.00 long_only=False
+run_id           : tf10-btc-bol-width-20-2-short-10m-2024h2
+regime_filter    : bollinger_width:min_width_bps=250:num_std=1.5:window=30
+out_dir          : C:\Users\leo-a\OneDrive\�rea de Trabalho\Testador de Estrategias\teste\results\validation\tf10-btc-bol-width-20-2-short-10m-2024h2
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-21T16:33:19.547432+00:00 -> C:\Users\leo-a\OneDrive\�rea de Trabalho\Testador de Estrategias\teste\results\validation\tf10-btc-bol-width-20-2-short-10m-2024h2\run.json
+walk_forward     : 4 fold(s), 36 trade(s) -> C:\Users\leo-a\OneDrive\�rea de Trabalho\Testador de Estrategias\teste\results\validation\tf10-btc-bol-width-20-2-short-10m-2024h2\walk_forward.json
+monte_carlo      : 1000 resamples, seed=42, median_final=10095.32 -> C:\Users\leo-a\OneDrive\�rea de Trabalho\Testador de Estrategias\teste\results\validation\tf10-btc-bol-width-20-2-short-10m-2024h2\monte_carlo.json
+cost_stress      : baseline + 2 cenario(s) -> C:\Users\leo-a\OneDrive\�rea de Trabalho\Testador de Estrategias\teste\results\validation\tf10-btc-bol-width-20-2-short-10m-2024h2\cost_stress.json
+
+======================================================================
+TF10.2 | ethusdt_10m_20240705_20241231_binance_spot_resampled | BB+width 20/2.0 short 10m
+======================================================================
+dataset          : ethusdt_10m_20240705_20241231_binance_spot_resampled
+strategy         : bollinger window=20 num_std=2.00 long_only=False
+run_id           : tf10-eth-bol-width-20-2-short-10m-2024h2
+regime_filter    : bollinger_width:min_width_bps=250:num_std=1.5:window=30
+out_dir          : C:\Users\leo-a\OneDrive\�rea de Trabalho\Testador de Estrategias\teste\results\validation\tf10-eth-bol-width-20-2-short-10m-2024h2
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-21T16:33:53.322359+00:00 -> C:\Users\leo-a\OneDrive\�rea de Trabalho\Testador de Estrategias\teste\results\validation\tf10-eth-bol-width-20-2-short-10m-2024h2\run.json
+walk_forward     : 4 fold(s), 60 trade(s) -> C:\Users\leo-a\OneDrive\�rea de Trabalho\Testador de Estrategias\teste\results\validation\tf10-eth-bol-width-20-2-short-10m-2024h2\walk_forward.json
+monte_carlo      : 1000 resamples, seed=42, median_final=10213.72 -> C:\Users\leo-a\OneDrive\�rea de Trabalho\Testador de Estrategias\teste\results\validation\tf10-eth-bol-width-20-2-short-10m-2024h2\monte_carlo.json
+cost_stress      : baseline + 2 cenario(s) -> C:\Users\leo-a\OneDrive\�rea de Trabalho\Testador de Estrategias\teste\results\validation\tf10-eth-bol-width-20-2-short-10m-2024h2\cost_stress.json
+
+======================================================================
+TF10.3 | solusdt_10m_20240705_20241231_binance_spot_resampled | BB+width 20/2.0 short 10m
+======================================================================
+dataset          : solusdt_10m_20240705_20241231_binance_spot_resampled
+strategy         : bollinger window=20 num_std=2.00 long_only=False
+run_id           : tf10-sol-bol-width-20-2-short-10m-2024h2
+regime_filter    : bollinger_width:min_width_bps=250:num_std=1.5:window=30
+out_dir          : C:\Users\leo-a\OneDrive\�rea de Trabalho\Testador de Estrategias\teste\results\validation\tf10-sol-bol-width-20-2-short-10m-2024h2
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-21T16:34:25.675225+00:00 -> C:\Users\leo-a\OneDrive\�rea de Trabalho\Testador de Estrategias\teste\results\validation\tf10-sol-bol-width-20-2-short-10m-2024h2\run.json
+walk_forward     : 4 fold(s), 98 trade(s) -> C:\Users\leo-a\OneDrive\�rea de Trabalho\Testador de Estrategias\teste\results\validation\tf10-sol-bol-width-20-2-short-10m-2024h2\walk_forward.json
+monte_carlo      : 1000 resamples, seed=42, median_final=10521.53 -> C:\Users\leo-a\OneDrive\�rea de Trabalho\Testador de Estrategias\teste\results\validation\tf10-sol-bol-width-20-2-short-10m-2024h2\monte_carlo.json
+cost_stress      : baseline + 2 cenario(s) -> C:\Users\leo-a\OneDrive\�rea de Trabalho\Testador de Estrategias\teste\results\validation\tf10-sol-bol-width-20-2-short-10m-2024h2\cost_stress.json
+
+======================================================================
+TF10.4 | btcusdt_10m_20250105_20250704_binance_spot_resampled | BB+width 20/2.0 short 10m
+======================================================================
+dataset          : btcusdt_10m_20250105_20250704_binance_spot_resampled
+strategy         : bollinger window=20 num_std=2.00 long_only=False
+run_id           : tf10-btc-bol-width-20-2-short-10m-2025h1
+regime_filter    : bollinger_width:min_width_bps=250:num_std=1.5:window=30
+out_dir          : C:\Users\leo-a\OneDrive\�rea de Trabalho\Testador de Estrategias\teste\results\validation\tf10-btc-bol-width-20-2-short-10m-2025h1
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-21T16:35:00.000201+00:00 -> C:\Users\leo-a\OneDrive\�rea de Trabalho\Testador de Estrategias\teste\results\validation\tf10-btc-bol-width-20-2-short-10m-2025h1\run.json
+walk_forward     : 4 fold(s), 23 trade(s) -> C:\Users\leo-a\OneDrive\�rea de Trabalho\Testador de Estrategias\teste\results\validation\tf10-btc-bol-width-20-2-short-10m-2025h1\walk_forward.json
+monte_carlo      : 1000 resamples, seed=42, median_final=9971.33 -> C:\Users\leo-a\OneDrive\�rea de Trabalho\Testador de Estrategias\teste\results\validation\tf10-btc-bol-width-20-2-short-10m-2025h1\monte_carlo.json
+cost_stress      : baseline + 2 cenario(s) -> C:\Users\leo-a\OneDrive\�rea de Trabalho\Testador de Estrategias\teste\results\validation\tf10-btc-bol-width-20-2-short-10m-2025h1\cost_stress.json
+
+======================================================================
+TF10.5 | ethusdt_10m_20250105_20250704_binance_spot_resampled | BB+width 20/2.0 short 10m
+======================================================================
+dataset          : ethusdt_10m_20250105_20250704_binance_spot_resampled
+strategy         : bollinger window=20 num_std=2.00 long_only=False
+run_id           : tf10-eth-bol-width-20-2-short-10m-2025h1
+regime_filter    : bollinger_width:min_width_bps=250:num_std=1.5:window=30
+out_dir          : C:\Users\leo-a\OneDrive\�rea de Trabalho\Testador de Estrategias\teste\results\validation\tf10-eth-bol-width-20-2-short-10m-2025h1
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-21T16:35:34.126998+00:00 -> C:\Users\leo-a\OneDrive\�rea de Trabalho\Testador de Estrategias\teste\results\validation\tf10-eth-bol-width-20-2-short-10m-2025h1\run.json
+walk_forward     : 4 fold(s), 85 trade(s) -> C:\Users\leo-a\OneDrive\�rea de Trabalho\Testador de Estrategias\teste\results\validation\tf10-eth-bol-width-20-2-short-10m-2025h1\walk_forward.json
+monte_carlo      : 1000 resamples, seed=42, median_final=9439.21 -> C:\Users\leo-a\OneDrive\�rea de Trabalho\Testador de Estrategias\teste\results\validation\tf10-eth-bol-width-20-2-short-10m-2025h1\monte_carlo.json
+cost_stress      : baseline + 2 cenario(s) -> C:\Users\leo-a\OneDrive\�rea de Trabalho\Testador de Estrategias\teste\results\validation\tf10-eth-bol-width-20-2-short-10m-2025h1\cost_stress.json
+
+======================================================================
+TF10.6 | solusdt_10m_20250105_20250704_binance_spot_resampled | BB+width 20/2.0 short 10m
+======================================================================
+dataset          : solusdt_10m_20250105_20250704_binance_spot_resampled
+strategy         : bollinger window=20 num_std=2.00 long_only=False
+run_id           : tf10-sol-bol-width-20-2-short-10m-2025h1
+regime_filter    : bollinger_width:min_width_bps=250:num_std=1.5:window=30
+out_dir          : C:\Users\leo-a\OneDrive\�rea de Trabalho\Testador de Estrategias\teste\results\validation\tf10-sol-bol-width-20-2-short-10m-2025h1
+INFO alpha_forge.backtest backtest.start dataset_id=solusdt_10m_20250105_20250704_binance_spot_resampled#fold1 
+bars=5212 strategy=BollingerMeanReversionStrategy capital=10000.00 fee_bps=5.0000 slip_bps=2.0000 sizing=fixed_notional
+INFO alpha_forge.backtest backtest.end dataset_id=solusdt_10m_20250105_20250704_binance_spot_resampled#fold1 bars=5212 
+fills=108 rejections=0 trades=54 final_equity=9750.60
+INFO alpha_forge.backtest backtest.start dataset_id=solusdt_10m_20250105_20250704_binance_spot_resampled#fold2 
+bars=5212 strategy=BollingerMeanReversionStrategy capital=10000.00 fee_bps=5.0000 slip_bps=2.0000 sizing=fixed_notional
+INFO alpha_forge.backtest backtest.end dataset_id=solusdt_10m_20250105_20250704_binance_spot_resampled#fold2 bars=5212 
+fills=82 rejections=0 trades=41 final_equity=9567.39
+INFO alpha_forge.backtest backtest.start dataset_id=solusdt_10m_20250105_20250704_binance_spot_resampled#fold3 
+bars=5212 strategy=BollingerMeanReversionStrategy capital=10000.00 fee_bps=5.0000 slip_bps=2.0000 sizing=fixed_notional
+INFO alpha_forge.backtest backtest.end dataset_id=solusdt_10m_20250105_20250704_binance_spot_resampled#fold3 bars=5212 
+fills=40 rejections=0 trades=20 final_equity=10204.10
+INFO alpha_forge.backtest backtest.start dataset_id=solusdt_10m_20250105_20250704_binance_spot_resampled#fold4 
+bars=5216 strategy=BollingerMeanReversionStrategy capital=10000.00 fee_bps=5.0000 slip_bps=2.0000 sizing=fixed_notional
+INFO alpha_forge.backtest backtest.end dataset_id=solusdt_10m_20250105_20250704_binance_spot_resampled#fold4 bars=5216 
+fills=50 rejections=0 trades=25 final_equity=10045.85
+INFO alpha_forge.backtest backtest.start dataset_id=solusdt_10m_20250105_20250704_binance_spot_resampled bars=26064 
+strategy=BollingerMeanReversionStrategy capital=10000.00 fee_bps=5.0000 slip_bps=2.0000 sizing=fixed_notional
+INFO alpha_forge.backtest backtest.end dataset_id=solusdt_10m_20250105_20250704_binance_spot_resampled bars=26064 
+fills=370 rejections=0 trades=185 final_equity=9482.81
+INFO alpha_forge.backtest backtest.start dataset_id=solusdt_10m_20250105_20250704_binance_spot_resampled#stress1 
+bars=26064 strategy=BollingerMeanReversionStrategy capital=10000.00 fee_bps=15.0000 slip_bps=2.0000 
+sizing=fixed_notional
+INFO alpha_forge.backtest backtest.end dataset_id=solusdt_10m_20250105_20250704_binance_spot_resampled#stress1 
+bars=26064 fills=370 rejections=0 trades=185 final_equity=8741.92
+INFO alpha_forge.backtest backtest.start dataset_id=solusdt_10m_20250105_20250704_binance_spot_resampled#stress2 
+bars=26064 strategy=BollingerMeanReversionStrategy capital=10000.00 fee_bps=5.0000 slip_bps=2.0000 
+sizing=fixed_notional
+INFO alpha_forge.backtest backtest.end dataset_id=solusdt_10m_20250105_20250704_binance_spot_resampled#stress2 
+bars=26064 fills=370 rejections=0 trades=185 final_equity=8741.92
+INFO alpha_forge.backtest backtest.start dataset_id=btcusdt_10m_20250705_20251231_binance_spot_resampled#fold1 
+bars=5184 strategy=BollingerMeanReversionStrategy capital=10000.00 fee_bps=5.0000 slip_bps=2.0000 sizing=fixed_notional
+INFO alpha_forge.backtest backtest.end dataset_id=btcusdt_10m_20250705_20251231_binance_spot_resampled#fold1 bars=5184 
+fills=2 rejections=0 trades=1 final_equity=10006.64
+INFO alpha_forge.backtest backtest.start dataset_id=btcusdt_10m_20250705_20251231_binance_spot_resampled#fold2 
+bars=5184 strategy=BollingerMeanReversionStrategy capital=10000.00 fee_bps=5.0000 slip_bps=2.0000 sizing=fixed_notional
+INFO alpha_forge.backtest backtest.end dataset_id=btcusdt_10m_20250705_20251231_binance_spot_resampled#fold2 bars=5184 
+fills=8 rejections=0 trades=4 final_equity=9987.74
+INFO alpha_forge.backtest backtest.start dataset_id=btcusdt_10m_20250705_20251231_binance_spot_resampled#fold3 
+bars=5184 strategy=BollingerMeanReversionStrategy capital=10000.00 fee_bps=5.0000 slip_bps=2.0000 sizing=fixed_notional
+INFO alpha_forge.backtest backtest.end dataset_id=btcusdt_10m_20250705_20251231_binance_spot_resampled#fold3 bars=5184 
+fills=14 rejections=0 trades=7 final_equity=10003.00
+INFO alpha_forge.backtest backtest.start dataset_id=btcusdt_10m_20250705_20251231_binance_spot_resampled#fold4 
+bars=5184 strategy=BollingerMeanReversionStrategy capital=10000.00 fee_bps=5.0000 slip_bps=2.0000 sizing=fixed_notional
+INFO alpha_forge.backtest backtest.end dataset_id=btcusdt_10m_20250705_20251231_binance_spot_resampled#fold4 bars=5184 
+fills=6 rejections=0 trades=3 final_equity=10021.25
+INFO alpha_forge.backtest backtest.start dataset_id=btcusdt_10m_20250705_20251231_binance_spot_resampled bars=25920 
+strategy=BollingerMeanReversionStrategy capital=10000.00 fee_bps=5.0000 slip_bps=2.0000 sizing=fixed_notional
+INFO alpha_forge.backtest backtest.end dataset_id=btcusdt_10m_20250705_20251231_binance_spot_resampled bars=25920 
+fills=30 rejections=0 trades=15 final_equity=10018.62
+INFO alpha_forge.backtest backtest.start dataset_id=btcusdt_10m_20250705_20251231_binance_spot_resampled#stress1 
+bars=25920 strategy=BollingerMeanReversionStrategy capital=10000.00 fee_bps=15.0000 slip_bps=2.0000 
+sizing=fixed_notional
+INFO alpha_forge.backtest backtest.end dataset_id=btcusdt_10m_20250705_20251231_binance_spot_resampled#stress1 
+bars=25920 fills=30 rejections=0 trades=15 final_equity=9958.60
+INFO alpha_forge.backtest backtest.start dataset_id=btcusdt_10m_20250705_20251231_binance_spot_resampled#stress2 
+bars=25920 strategy=BollingerMeanReversionStrategy capital=10000.00 fee_bps=5.0000 slip_bps=2.0000 
+sizing=fixed_notional
+INFO alpha_forge.backtest backtest.end dataset_id=btcusdt_10m_20250705_20251231_binance_spot_resampled#stress2 
+bars=25920 fills=30 rejections=0 trades=15 final_equity=9958.60
+INFO alpha_forge.backtest backtest.start dataset_id=ethusdt_10m_20250705_20251231_binance_spot_resampled#fold1 
+bars=5184 strategy=BollingerMeanReversionStrategy capital=10000.00 fee_bps=5.0000 slip_bps=2.0000 sizing=fixed_notional
+INFO alpha_forge.backtest backtest.end dataset_id=ethusdt_10m_20250705_20251231_binance_spot_resampled#fold1 bars=5184 
+fills=30 rejections=0 trades=15 final_equity=9774.16
+INFO alpha_forge.backtest backtest.start dataset_id=ethusdt_10m_20250705_20251231_binance_spot_resampled#fold2 
+bars=5184 strategy=BollingerMeanReversionStrategy capital=10000.00 fee_bps=5.0000 slip_bps=2.0000 sizing=fixed_notional
+INFO alpha_forge.backtest backtest.end dataset_id=ethusdt_10m_20250705_20251231_binance_spot_resampled#fold2 bars=5184 
+fills=24 rejections=0 trades=12 final_equity=9916.24
+INFO alpha_forge.backtest backtest.start dataset_id=ethusdt_10m_20250705_20251231_binance_spot_resampled#fold3 
+bars=5184 strategy=BollingerMeanReversionStrategy capital=10000.00 fee_bps=5.0000 slip_bps=2.0000 sizing=fixed_notional
+INFO alpha_forge.backtest backtest.end dataset_id=ethusdt_10m_20250705_20251231_binance_spot_resampled#fold3 bars=5184 
+fills=72 rejections=0 trades=36 final_equity=9990.25
+INFO alpha_forge.backtest backtest.start dataset_id=ethusdt_10m_20250705_20251231_binance_spot_resampled#fold4 
+bars=5184 strategy=BollingerMeanReversionStrategy capital=10000.00 fee_bps=5.0000 slip_bps=2.0000 sizing=fixed_notional
+INFO alpha_forge.backtest backtest.end dataset_id=ethusdt_10m_20250705_20251231_binance_spot_resampled#fold4 bars=5184 
+fills=26 rejections=0 trades=13 final_equity=9907.27
+INFO alpha_forge.backtest backtest.start dataset_id=ethusdt_10m_20250705_20251231_binance_spot_resampled bars=25920 
+strategy=BollingerMeanReversionStrategy capital=10000.00 fee_bps=5.0000 slip_bps=2.0000 sizing=fixed_notional
+INFO alpha_forge.backtest backtest.end dataset_id=ethusdt_10m_20250705_20251231_binance_spot_resampled bars=25920 
+fills=170 rejections=0 trades=85 final_equity=9562.46
+INFO alpha_forge.backtest backtest.start dataset_id=ethusdt_10m_20250705_20251231_binance_spot_resampled#stress1 
+bars=25920 strategy=BollingerMeanReversionStrategy capital=10000.00 fee_bps=15.0000 slip_bps=2.0000 
+sizing=fixed_notional
+INFO alpha_forge.backtest backtest.end dataset_id=ethusdt_10m_20250705_20251231_binance_spot_resampled#stress1 
+bars=25920 fills=170 rejections=0 trades=85 final_equity=9222.32
+INFO alpha_forge.backtest backtest.start dataset_id=ethusdt_10m_20250705_20251231_binance_spot_resampled#stress2 
+bars=25920 strategy=BollingerMeanReversionStrategy capital=10000.00 fee_bps=5.0000 slip_bps=2.0000 
+sizing=fixed_notional
+INFO alpha_forge.backtest backtest.end dataset_id=ethusdt_10m_20250705_20251231_binance_spot_resampled#stress2 
+bars=25920 fills=170 rejections=0 trades=85 final_equity=9222.32
+INFO alpha_forge.backtest backtest.start dataset_id=solusdt_10m_20250705_20251231_binance_spot_resampled#fold1 
+bars=5184 strategy=BollingerMeanReversionStrategy capital=10000.00 fee_bps=5.0000 slip_bps=2.0000 sizing=fixed_notional
+INFO alpha_forge.backtest backtest.end dataset_id=solusdt_10m_20250705_20251231_binance_spot_resampled#fold1 bars=5184 
+fills=62 rejections=0 trades=31 final_equity=9983.48
+INFO alpha_forge.backtest backtest.start dataset_id=solusdt_10m_20250705_20251231_binance_spot_resampled#fold2 
+bars=5184 strategy=BollingerMeanReversionStrategy capital=10000.00 fee_bps=5.0000 slip_bps=2.0000 sizing=fixed_notional
+INFO alpha_forge.backtest backtest.end dataset_id=solusdt_10m_20250705_20251231_binance_spot_resampled#fold2 bars=5184 
+fills=60 rejections=0 trades=30 final_equity=9906.99
+INFO alpha_forge.backtest backtest.start dataset_id=solusdt_10m_20250705_20251231_binance_spot_resampled#fold3 
+bars=5184 strategy=BollingerMeanReversionStrategy capital=10000.00 fee_bps=5.0000 slip_bps=2.0000 sizing=fixed_notional
+INFO alpha_forge.backtest backtest.end dataset_id=solusdt_10m_20250705_20251231_binance_spot_resampled#fold3 bars=5184 
+fills=66 rejections=0 trades=33 final_equity=9633.99
+INFO alpha_forge.backtest backtest.start dataset_id=solusdt_10m_20250705_20251231_binance_spot_resampled#fold4 
+bars=5184 strategy=BollingerMeanReversionStrategy capital=10000.00 fee_bps=5.0000 slip_bps=2.0000 sizing=fixed_notional
+INFO alpha_forge.backtest backtest.end dataset_id=solusdt_10m_20250705_20251231_binance_spot_resampled#fold4 bars=5184 
+fills=40 rejections=0 trades=20 final_equity=9991.50
+INFO alpha_forge.backtest backtest.start dataset_id=solusdt_10m_20250705_20251231_binance_spot_resampled bars=25920 
+strategy=BollingerMeanReversionStrategy capital=10000.00 fee_bps=5.0000 slip_bps=2.0000 sizing=fixed_notional
+INFO alpha_forge.backtest backtest.end dataset_id=solusdt_10m_20250705_20251231_binance_spot_resampled bars=25920 
+fills=270 rejections=0 trades=135 final_equity=9614.40
+INFO alpha_forge.backtest backtest.start dataset_id=solusdt_10m_20250705_20251231_binance_spot_resampled#stress1 
+bars=25920 strategy=BollingerMeanReversionStrategy capital=10000.00 fee_bps=15.0000 slip_bps=2.0000 
+sizing=fixed_notional
+INFO alpha_forge.backtest backtest.end dataset_id=solusdt_10m_20250705_20251231_binance_spot_resampled#stress1 
+bars=25920 fills=270 rejections=0 trades=135 final_equity=9074.81
+INFO alpha_forge.backtest backtest.start dataset_id=solusdt_10m_20250705_20251231_binance_spot_resampled#stress2 
+bars=25920 strategy=BollingerMeanReversionStrategy capital=10000.00 fee_bps=5.0000 slip_bps=2.0000 
+sizing=fixed_notional
+INFO alpha_forge.backtest backtest.end dataset_id=solusdt_10m_20250705_20251231_binance_spot_resampled#stress2 
+bars=25920 fills=270 rejections=0 trades=135 final_equity=9074.81
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-21T16:36:07.128746+00:00 -> C:\Users\leo-a\OneDrive\�rea de Trabalho\Testador de Estrategias\teste\results\validation\tf10-sol-bol-width-20-2-short-10m-2025h1\run.json
+walk_forward     : 4 fold(s), 140 trade(s) -> C:\Users\leo-a\OneDrive\�rea de Trabalho\Testador de Estrategias\teste\results\validation\tf10-sol-bol-width-20-2-short-10m-2025h1\walk_forward.json
+monte_carlo      : 1000 resamples, seed=42, median_final=9589.44 -> C:\Users\leo-a\OneDrive\�rea de Trabalho\Testador de Estrategias\teste\results\validation\tf10-sol-bol-width-20-2-short-10m-2025h1\monte_carlo.json
+cost_stress      : baseline + 2 cenario(s) -> C:\Users\leo-a\OneDrive\�rea de Trabalho\Testador de Estrategias\teste\results\validation\tf10-sol-bol-width-20-2-short-10m-2025h1\cost_stress.json
+
+======================================================================
+TF10.7 | btcusdt_10m_20250705_20251231_binance_spot_resampled | BB+width 20/2.0 short 10m
+======================================================================
+dataset          : btcusdt_10m_20250705_20251231_binance_spot_resampled
+strategy         : bollinger window=20 num_std=2.00 long_only=False
+run_id           : tf10-btc-bol-width-20-2-short-10m-2025h2
+regime_filter    : bollinger_width:min_width_bps=250:num_std=1.5:window=30
+out_dir          : C:\Users\leo-a\OneDrive\�rea de Trabalho\Testador de Estrategias\teste\results\validation\tf10-btc-bol-width-20-2-short-10m-2025h2
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-21T16:36:43.483307+00:00 -> C:\Users\leo-a\OneDrive\�rea de Trabalho\Testador de Estrategias\teste\results\validation\tf10-btc-bol-width-20-2-short-10m-2025h2\run.json
+walk_forward     : 4 fold(s), 15 trade(s) -> C:\Users\leo-a\OneDrive\�rea de Trabalho\Testador de Estrategias\teste\results\validation\tf10-btc-bol-width-20-2-short-10m-2025h2\walk_forward.json
+monte_carlo      : 1000 resamples, seed=42, median_final=10018.39 -> C:\Users\leo-a\OneDrive\�rea de Trabalho\Testador de Estrategias\teste\results\validation\tf10-btc-bol-width-20-2-short-10m-2025h2\monte_carlo.json
+cost_stress      : baseline + 2 cenario(s) -> C:\Users\leo-a\OneDrive\�rea de Trabalho\Testador de Estrategias\teste\results\validation\tf10-btc-bol-width-20-2-short-10m-2025h2\cost_stress.json
+
+======================================================================
+TF10.8 | ethusdt_10m_20250705_20251231_binance_spot_resampled | BB+width 20/2.0 short 10m
+======================================================================
+dataset          : ethusdt_10m_20250705_20251231_binance_spot_resampled
+strategy         : bollinger window=20 num_std=2.00 long_only=False
+run_id           : tf10-eth-bol-width-20-2-short-10m-2025h2
+regime_filter    : bollinger_width:min_width_bps=250:num_std=1.5:window=30
+out_dir          : C:\Users\leo-a\OneDrive\�rea de Trabalho\Testador de Estrategias\teste\results\validation\tf10-eth-bol-width-20-2-short-10m-2025h2
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-21T16:37:14.982251+00:00 -> C:\Users\leo-a\OneDrive\�rea de Trabalho\Testador de Estrategias\teste\results\validation\tf10-eth-bol-width-20-2-short-10m-2025h2\run.json
+walk_forward     : 4 fold(s), 76 trade(s) -> C:\Users\leo-a\OneDrive\�rea de Trabalho\Testador de Estrategias\teste\results\validation\tf10-eth-bol-width-20-2-short-10m-2025h2\walk_forward.json
+monte_carlo      : 1000 resamples, seed=42, median_final=9611.34 -> C:\Users\leo-a\OneDrive\�rea de Trabalho\Testador de Estrategias\teste\results\validation\tf10-eth-bol-width-20-2-short-10m-2025h2\monte_carlo.json
+cost_stress      : baseline + 2 cenario(s) -> C:\Users\leo-a\OneDrive\�rea de Trabalho\Testador de Estrategias\teste\results\validation\tf10-eth-bol-width-20-2-short-10m-2025h2\cost_stress.json
+
+======================================================================
+TF10.9 | solusdt_10m_20250705_20251231_binance_spot_resampled | BB+width 20/2.0 short 10m
+======================================================================
+dataset          : solusdt_10m_20250705_20251231_binance_spot_resampled
+strategy         : bollinger window=20 num_std=2.00 long_only=False
+run_id           : tf10-sol-bol-width-20-2-short-10m-2025h2
+regime_filter    : bollinger_width:min_width_bps=250:num_std=1.5:window=30
+out_dir          : C:\Users\leo-a\OneDrive\�rea de Trabalho\Testador de Estrategias\teste\results\validation\tf10-sol-bol-width-20-2-short-10m-2025h2
+run_metadata     : alpha_forge=0.0.0, ts=2026-04-21T16:37:48.375207+00:00 -> C:\Users\leo-a\OneDrive\�rea de Trabalho\Testador de Estrategias\teste\results\validation\tf10-sol-bol-width-20-2-short-10m-2025h2\run.json
+walk_forward     : 4 fold(s), 114 trade(s) -> C:\Users\leo-a\OneDrive\�rea de Trabalho\Testador de Estrategias\teste\results\validation\tf10-sol-bol-width-20-2-short-10m-2025h2\walk_forward.json
+monte_carlo      : 1000 resamples, seed=42, median_final=9519.23 -> C:\Users\leo-a\OneDrive\�rea de Trabalho\Testador de Estrategias\teste\results\validation\tf10-sol-bol-width-20-2-short-10m-2025h2\monte_carlo.json
+cost_stress      : baseline + 2 cenario(s) -> C:\Users\leo-a\OneDrive\�rea de Trabalho\Testador de Estrategias\teste\results\validation\tf10-sol-bol-width-20-2-short-10m-2025h2\cost_stress.json
+
+S�rie TF10m completa (9 runs).

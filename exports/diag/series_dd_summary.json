@@ -1,0 +1,22 @@
+[
+  {
+    "tag": "DD.1",
+    "label": "AVAX rsi+width 2025H2",
+    "h1_sharpe": 1.64,
+    "pass_gate": false,
+    "trades": 90,
+    "pnl_pct": 1.757170229515026,
+    "sharpe": 0.376577752931765,
+    "mdd_pct": 8.184322853680788
+  },
+  {
+    "tag": "DD.2",
+    "label": "AVAX rsi+trendhtf 2025H2",
+    "h1_sharpe": 1.77,
+    "pass_gate": false,
+    "trades": 54,
+    "pnl_pct": 2.874560609231791,
+    "sharpe": 0.662189851652561,
+    "mdd_pct": 8.352059349957223
+  }
+]

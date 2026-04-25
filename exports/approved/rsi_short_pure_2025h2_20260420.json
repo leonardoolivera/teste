@@ -1,0 +1,148 @@
+{
+  "strategy_name": "rsi_short_pure_2025h2",
+  "manifest_version": "v8",
+  "supersedes": "rsi_short_pure_2025h2_20260419.json",
+  "complementary_to": "rsi_short_width_2025h1_20260419.json",
+  "alpha_forge_commit": "ab7c2ad6891f44a2fd66d0b46a219729da191a1e",
+  "approved_at": "2026-04-20T05:10:00Z",
+  "approval_adr": "decisions/0098-series-cz-closeout-link-promotes-v8-padrao-20-seletivo.md",
+  "prior_approval_adr": "decisions/0068-manifest-v4-audit-closeout-split-v4a-v4b.md",
+  "live_status": "superseded",
+  "live_status_since": "2026-04-20T05:10:00Z",
+  "superseded_by": "rsi_short_pure_2025h2_20260420b.json",
+  "superseded_at": "2026-04-20T06:00:00Z",
+  "superseded_reason": "LINK cross-window FAIL (ADR-0106). LINK 2025-H2 Sh=1.76 nao replica em 2025-H1 (0.51) nem 2024-H2 (-1.34). Padrao 25: stack ativo requer >=2 janelas OOS PASS. v8.1 remove LINK, mantem BTC+SOL.",
+  "audit_adr": "decisions/0098-series-cz-closeout-link-promotes-v8-padrao-20-seletivo.md",
+  "audit_closeout_adr": "decisions/0098-series-cz-closeout-link-promotes-v8-padrao-20-seletivo.md",
+  "runtime_contract": "faithful",
+  "runtime_invariants": {
+    "entry_fill": "market_at_open_next_bar",
+    "exit_fill": "market_at_open_next_bar",
+    "sizing": "fixed_notional_literal",
+    "stop_loss": "disabled",
+    "signal_arbitration": "exit_wins_on_tie"
+  },
+  "engine": {
+    "family": "rsi",
+    "params": {
+      "period": 14,
+      "oversold": 30,
+      "overbought": 70,
+      "long_only": false,
+      "regime_filter": null
+    }
+  },
+  "approved_combos": [
+    {
+      "symbol": "BTCUSDT",
+      "timeframe": "1h",
+      "validation_window": "2025-07-05..2025-12-31",
+      "window_tag": "2025-H2",
+      "regime": "misto",
+      "oos_trades": 92,
+      "oos_sharpe": 1.640,
+      "oos_mdd_pct": 4.974,
+      "oos_pnl_pct": 5.126,
+      "cost_stress_ratio_min": 0.9556,
+      "mc_p5_final_equity": 9796,
+      "approved_in": "v4",
+      "source_tag": "CH.7",
+      "source_run_id": "audit-v4-b-btc-20250705_20251231-nofilter",
+      "note": "Herdado de v3 (20260419). Filter neutral em audit Gate B: Sh com filter=2.63, sem filter=1.64. Mantido sem filter para seguir Padrao 12."
+    },
+    {
+      "symbol": "SOLUSDT",
+      "timeframe": "1h",
+      "validation_window": "2025-07-05..2025-12-31",
+      "window_tag": "2025-H2",
+      "regime": "misto",
+      "oos_trades": 86,
+      "oos_sharpe": 2.300,
+      "oos_mdd_pct": 5.135,
+      "oos_pnl_pct": 13.812,
+      "cost_stress_ratio_min": 0.9621,
+      "mc_p5_final_equity": 9898,
+      "approved_in": "v4",
+      "source_tag": "CH.9",
+      "source_run_id": "audit-v4-b-sol-20250705_20251231-nofilter",
+      "note": "Herdado de v3 (20260419). Filter PREJUDICIAL em audit Gate B. Seed stability PASS 3/3."
+    },
+    {
+      "symbol": "LINKUSDT",
+      "timeframe": "1h",
+      "validation_window": "2025-07-05..2025-12-31",
+      "window_tag": "2025-H2",
+      "regime": "misto",
+      "oos_trades": 84,
+      "oos_sharpe": 1.760,
+      "oos_mdd_pct": 5.80,
+      "oos_pnl_pct": 11.73,
+      "cost_stress_ratio_min": 0.9590,
+      "mc_p5_final_equity": 10150,
+      "approved_in": "v8",
+      "source_tag": "CZ.3",
+      "source_run_id": "cz-link-rsi-short-naked-2025h2",
+      "note": "Novo em v8 (ADR-0098). CZ 1/3 PASS: DOT Sh=0.50 FAIL, AVAX Sh=-0.05 FAIL, LINK Sh=1.76 PASS. Dentro do range majors 2025-H2 (BTC 1.64, SOL 2.30). Padrao 20 refinado como seletivo-por-ativo; Gate 4 correlacao nao executado neste closeout."
+    }
+  ],
+  "validation": {
+    "method": "walk-forward-5fold + monte_carlo_1000 + cost_stress",
+    "cost_model_baseline_pct": 0.14,
+    "cost_model_stress_fee_plus_10_pct": 0.34,
+    "cost_stress_ratio_min": 0.95,
+    "seed_monte_carlo": 42,
+    "notes": "BTC+SOL: audit v4 Gate B + v4b seed stability. LINK: single-seed 42 da serie CZ (seed stability nao replicada ainda; backlog)."
+  },
+  "execution_hints": {
+    "position_sizing": "fixed_notional_per_trade",
+    "notional_per_trade_quote_ccy": 2000,
+    "entry_rule_long": "RSI(14) cruza abaixo de 30 usando close[t-1] (ADR-0027)",
+    "entry_rule_short": "RSI(14) cruza acima de 70 usando close[t-1] (ADR-0027)",
+    "exit_rule": "RSI(14) retorna para zona neutra (long: RSI>=50; short: RSI<=50) usando close[t-1]",
+    "regime_gate": "none (sem filter; manifest escopado a regime 2025-H2 misto)",
+    "causal_invariant": "engine ignora window.iloc[-1]; sinal em t usa apenas closes ate t-1 inclusive (ADR-0002)",
+    "signal_arbitration": "EXIT vence ENTER quando disparam na mesma barra (ADR-0011)",
+    "reverse_on_signal": "permitido; incorre double cost (ADR-0012)"
+  },
+  "disallow_sizing_modes": ["snowball", "kelly_like", "martingale"],
+  "disallow_sizing_reason": "Herdado ADR-0028/0029 + confirmado empiricamente ADR-0064.",
+  "series_source": {
+    "series_tag": "CH + audit v4b + CZ.3",
+    "preregister_adr": "decisions/0061-series-ch-rsi-short-width-300-preregister.md",
+    "closeout_adr": "decisions/0062-series-ch-closeout-rsi-short-width-300-pass.md",
+    "audit_adr": "decisions/0067-manifest-v4-audit-rsi-short-width.md",
+    "audit_closeout_adr": "decisions/0068-manifest-v4-audit-closeout-split-v4a-v4b.md",
+    "cz_preregister_adr": "decisions/0097-series-cz-rsi-short-naked-altcoins-2025h2-preregister.md",
+    "cz_closeout_adr": "decisions/0098-series-cz-closeout-link-promotes-v8-padrao-20-seletivo.md",
+    "v4b_seed_stability": "PASS 6/6 em {42, 1337, 2024} x {CH.7, CH.9}",
+    "link_seed_stability": "PENDENTE (backlog)",
+    "raw_data": "exports/diag/series_cz_summary.json"
+  },
+  "expansion_policy": {
+    "rule": "Combos fora de approved_combos requerem nova ADR + nova serie. Manifest escopado a regime 2025-H2 misto sem filter; adicionar 2025-H1 chop sem filter requer audit Gate B separado (ja sabemos que falha em majors 2025-H1).",
+    "regime_dependence_note": "RSI short puro eh seletivo por ativo em 2025-H2 misto: BTC/SOL/LINK PASS, DOT/AVAX FAIL. Padrao 20 refinado (ADR-0098): direcao short-side tem edge-potencial em crypto 1h, mas qualidade >=Sh 1.0 eh asset-specific.",
+    "excluded_combos": [
+      {
+        "symbol": "DOTUSDT",
+        "timeframe": "1h",
+        "window_tag": "2025-H2",
+        "source_tag": "CZ.1",
+        "reason": "Sh=0.498 FAIL (MCp5<9500, PnL<3%). Candidato a CZA (RSI+filter) em backlog."
+      },
+      {
+        "symbol": "AVAXUSDT",
+        "timeframe": "1h",
+        "window_tag": "2025-H2",
+        "source_tag": "CZ.2",
+        "reason": "Sh=-0.054 FAIL (negativo). PnL negativo; filter improvavel recuperar sem refino."
+      },
+      {
+        "symbol": "ETHUSDT",
+        "timeframe": "1h",
+        "window_tag": "2025-H2",
+        "source_tag": "CH.8",
+        "reason": "Herdado de v3: Sh 0.81 com filter < 1.0; sem filter nao testado."
+      }
+    ]
+  }
+}

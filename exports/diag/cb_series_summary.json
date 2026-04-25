@@ -1,0 +1,162 @@
+{
+  "gate_adr": "0041",
+  "passes": 2,
+  "total": 9,
+  "series_verdict": "FAIL",
+  "pilots": [
+    {
+      "tag": "CB.1",
+      "asset": "eth",
+      "period": "20230705_20231231",
+      "atr_bps": 105,
+      "trades": 6,
+      "sharpe": 0.8168,
+      "mdd_pct": 0.4469,
+      "final_eq": 10032.2466,
+      "cost_r": 0.9976,
+      "mc_p5": 9899.7104,
+      "mc_mdd_p95": 1.288,
+      "verdict": "FAIL",
+      "fail_reasons": [
+        "trades",
+        "Sharpe"
+      ]
+    },
+    {
+      "tag": "CB.2",
+      "asset": "btc",
+      "period": "20230705_20231231",
+      "atr_bps": 55,
+      "trades": 24,
+      "sharpe": 1.9153,
+      "mdd_pct": 0.8724,
+      "final_eq": 10162.4975,
+      "cost_r": 0.989,
+      "mc_p5": 10018.0863,
+      "mc_mdd_p95": 0.8536,
+      "verdict": "FAIL",
+      "fail_reasons": [
+        "trades"
+      ]
+    },
+    {
+      "tag": "CB.3",
+      "asset": "sol",
+      "period": "20230705_20231231",
+      "atr_bps": 100,
+      "trades": 39,
+      "sharpe": 1.8475,
+      "mdd_pct": 2.0724,
+      "final_eq": 10522.3692,
+      "cost_r": 0.9817,
+      "mc_p5": 10032.4689,
+      "mc_mdd_p95": 3.3697,
+      "verdict": "PASS",
+      "fail_reasons": []
+    },
+    {
+      "tag": "CB.4",
+      "asset": "eth",
+      "period": "20250105_20250704",
+      "atr_bps": 105,
+      "trades": 36,
+      "sharpe": -0.7649,
+      "mdd_pct": 3.9447,
+      "final_eq": 9800.8442,
+      "cost_r": 0.9812,
+      "mc_p5": 9176.6417,
+      "mc_mdd_p95": 9.154,
+      "verdict": "FAIL",
+      "fail_reasons": [
+        "Sharpe",
+        "MCp5"
+      ]
+    },
+    {
+      "tag": "CB.5",
+      "asset": "btc",
+      "period": "20250105_20250704",
+      "atr_bps": 55,
+      "trades": 33,
+      "sharpe": 1.0424,
+      "mdd_pct": 2.2728,
+      "final_eq": 10174.0918,
+      "cost_r": 0.9803,
+      "mc_p5": 9864.5087,
+      "mc_mdd_p95": 3.0104,
+      "verdict": "PASS",
+      "fail_reasons": []
+    },
+    {
+      "tag": "CB.6",
+      "asset": "sol",
+      "period": "20250105_20250704",
+      "atr_bps": 100,
+      "trades": 53,
+      "sharpe": 0.1263,
+      "mdd_pct": 8.0272,
+      "final_eq": 10028.894,
+      "cost_r": 0.9718,
+      "mc_p5": 9161.1345,
+      "mc_mdd_p95": 10.8672,
+      "verdict": "FAIL",
+      "fail_reasons": [
+        "Sharpe",
+        "MCp5"
+      ]
+    },
+    {
+      "tag": "CB.7",
+      "asset": "eth",
+      "period": "20250705_20251231",
+      "atr_bps": 105,
+      "trades": 34,
+      "sharpe": 0.7097,
+      "mdd_pct": 2.1087,
+      "final_eq": 10151.0811,
+      "cost_r": 0.9846,
+      "mc_p5": 9583.2398,
+      "mc_mdd_p95": 5.9471,
+      "verdict": "FAIL",
+      "fail_reasons": [
+        "Sharpe"
+      ]
+    },
+    {
+      "tag": "CB.8",
+      "asset": "btc",
+      "period": "20250705_20251231",
+      "atr_bps": 55,
+      "trades": 36,
+      "sharpe": -1.9758,
+      "mdd_pct": 3.1913,
+      "final_eq": 9685.3536,
+      "cost_r": 0.9832,
+      "mc_p5": 9363.7673,
+      "mc_mdd_p95": 6.6838,
+      "verdict": "FAIL",
+      "fail_reasons": [
+        "Sharpe",
+        "fe"
+      ]
+    },
+    {
+      "tag": "CB.9",
+      "asset": "sol",
+      "period": "20250705_20251231",
+      "atr_bps": 100,
+      "trades": 48,
+      "sharpe": -0.0796,
+      "mdd_pct": 5.3279,
+      "final_eq": 9967.2746,
+      "cost_r": 0.9765,
+      "mc_p5": 9188.6512,
+      "mc_mdd_p95": 10.5893,
+      "verdict": "FAIL",
+      "fail_reasons": [
+        "Sharpe",
+        "MCp5"
+      ]
+    }
+  ]
+}
